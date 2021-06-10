@@ -4,21 +4,21 @@
   background-position: center 30%;
   background-repeat: no-repeat;
   color: #fff;
-  padding: 50px 0;
+  padding: 52px 0;
 }
 
 .banner-large-font {
-  font-size: 44px;
-  line-height: 44px;
+  font-size: 52px;
+  line-height: 52px;
 }
 
 .banner-medium-font {
-  font-size: 28px;
-  line-height: 28px;
-  margin: 24px 0;
+  font-size: 32px;
+  line-height: 32px;
+  margin: 32px 0;
 }
 
 .banner-small-font {
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 24px;
+  line-height: 24px;
 }
