@@ -5,6 +5,10 @@ html {
 html,
 body {
   font-family: "Noto Sans", sans-serif;
+  color: #353554;
+  background-color: #f9fafc;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -14,7 +18,7 @@ a {
 .banner-section {
   background-image: url("../img/hisarli-banner-dark-blue.jpg");
   background-size: cover;
-  background-position: center 0;
+  background-position: center 10%;
   background-repeat: no-repeat;
   color: #fff;
   padding: 86px 0;
@@ -40,13 +44,13 @@ a {
   overflow: hidden;
   max-height: 0;
   opacity: 0;
-  transition: max-height 600ms cubic-bezier(0, 1, 0, 1), opacity 400ms;
+  transition: max-height 400ms cubic-bezier(0, 1, 0, 1), opacity 400ms;
 }
 
 .trunc.visible {
   max-height: 3000px;
   opacity: 1;
-  transition: max-height 600ms ease-in-out, opacity 600ms;
+  transition: max-height 800ms ease-in-out, opacity 800ms;
 }
 
 .sec-24-lr {
@@ -138,6 +142,7 @@ a.a-footer-social > img {
 
 .li-inner-wrap {
   width: 100%;
+  line-height: 24px;
 }
 
 h1,
@@ -145,8 +150,10 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Shippori Mincho B1", serif;
+  font-family: "Libre Baskerville", serif;
   margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h3.sec-h3 {
