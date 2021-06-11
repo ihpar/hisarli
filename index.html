@@ -15,52 +15,58 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/material.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/top-nav.css" />
   </head>
   <body>
     <div class="mdl-layout">
-      <div class="mdl-layout__header mdl-layout__header--waterfall">
-        <div class="mdl-layout__header-row">
-          <!-- Navigation -->
-          <div class="navigation-container">
-            <nav class="mdl-navigation">
-              <a class="mdl-navigation__link" href="">Ana Sayfa</a>
-              <a class="mdl-navigation__link" id="tn-sym">Sempozyum Bilgileri</a>
-              <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-left mdl-js-ripple-effect" for="tn-sym">
-                <li class="mdl-menu__item">5.0 Lollipop</li>
-                <li class="mdl-menu__item">4.4 KitKat</li>
-                <li class="mdl-menu__item">4.3 Jelly Bean</li>
-                <li class="mdl-menu__item">Android History</li>
+      <!-- Navigation -->
+      <div class="menu-container">
+        <nav>
+          <ul class="menu">
+            <li class="dropdown">
+              <a href="#">Ana Sayfa</a>
+            </li>
+            <li class="dropdown">
+              Sempozyum Bilgileri
+              <ul class="dropdown_menu rot-x-menu">
+                <li class="dropdown_item-1"><a href="#">Önemli Tarihler</a></li>
+                <li class="dropdown_item-2"><a href="#">Program</a></li>
+                <li class="dropdown_item-3"><a href="#">Geçmiş Sempozyumlar</a></li>
+                <li class="dropdown_item-4"><a href="#">Katılım Ücreti</a></li>
+                <li class="dropdown_item-5"><a href="#">Ulaşım</a></li>
               </ul>
-              <a class="mdl-navigation__link" href="" id="more-button">Kurullar</a>
-              <a class="mdl-navigation__link" href="">Etkinlikler</a>
-              <a class="mdl-navigation__link" href="">Gençlik Semineri</a>
-              <a class="mdl-navigation__link" href="">Hisarlı Ahmet</a>
-              <a class="mdl-navigation__link" href="">İletişim</a>
-            </nav>
-          </div>
-        </div>
-      </div>
-
-      <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title"> Logo </span>
-        <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">Phones</a>
-          <a class="mdl-navigation__link" href="">Tablets</a>
-          <a class="mdl-navigation__link" href="">Wear</a>
-          <a class="mdl-navigation__link" href="">TV</a>
-          <a class="mdl-navigation__link" href="">Auto</a>
-          <a class="mdl-navigation__link" href="">One</a>
-          <a class="mdl-navigation__link" href="">Play</a>
-          <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Versions</span>
-          <a class="mdl-navigation__link" href="">Lollipop 5.0</a>
-          <a class="mdl-navigation__link" href="">KitKat 4.4</a>
-          <a class="mdl-navigation__link" href="">Jelly Bean 4.3</a>
-          <a class="mdl-navigation__link" href="">Android history</a>
+            </li>
+            <li class="dropdown">
+              Hisarlı Ahmet
+              <ul class="dropdown_menu rot-x-menu">
+                <li class="dropdown_item-1"><a href="#">Hisarlı Ahmet Hakkında</a></li>
+                <li class="dropdown_item-2"><a href="#">Kütahya Güzel S. Derneği</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">Kurullar</a>
+            </li>
+            <li class="dropdown">
+              Etkinlikler
+              <ul class="dropdown_menu rot-x-menu">
+                <li class="dropdown_item-1"><a href="#">Konserler</a></li>
+                <li class="dropdown_item-2"><a href="#">Konferans</a></li>
+                <li class="dropdown_item-3"><a href="#">Atölye Çalışmaları</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">Gençlik Seminerleri</a>
+            </li>
+            <li class="dropdown">
+              <a href="#">İletişim</a>
+            </li>
+          </ul>
         </nav>
       </div>
+      <!--Eof Navigation -->
 
       <div class="mdl-layout__content" style="display: flex; flex-direction: column">
         <div style="flex-grow: 1">
@@ -375,6 +381,58 @@
                   <span class="mdl-list__item-primary-content"
                     >Kütaya Sağlik Bi̇li̇mleri̇ Üni̇versi̇tesi̇ Rektörü Sn. Prof. Dr. Vural Kavuncu</span
                   >
+                </li>
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content">kütahya mi̇lli̇ eği̇ti̇m müdürü Sn. hasan başyi̇ği̇t</span>
+                </li>
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content"
+                    >Kütahya Ti̇caret ve Sanayi̇ Odasi Başkanı Sn. i̇smet Özotraç</span
+                  >
+                </li>
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content"
+                    >Kütahya İl Kültür ve Turi̇zm Müdürü Sn. Zekeri̇ya Ünal</span
+                  >
+                </li>
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content"
+                    >Kütahya Kültür ve Sosyal İşler Müdürü Sn. İsmai̇l Şen</span
+                  >
+                </li>
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content"
+                    >Kütahya Ahmet Yakupoğlu Güzel Sanatlar Li̇sesi̇ Müdürü Sn. Mustafa Demi̇r</span
+                  >
+                </li>
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content">Kütahya Güzel Sanatlar Derneği̇ Yöneti̇m Kurulu</span>
+                </li>
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content">AKÜ Devlet Konservatuvarı Yöneti̇m Kurulu</span>
+                </li>
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content"
+                    >AKÜ Devlet Konservatuvarı Mezunlar Derneği̇ Yöneti̇m Kurulu</span
+                  >
+                </li>
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content">Çatık Madenci̇li̇k Sn. İsmet Çatık (Ana Sponsor)"</span>
+                </li>
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content">Delen Ti̇caret Sn. Ni̇hat Delen</span>
+                </li>
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content">Kırdar Bi̇lgi̇ören Koleji̇</span>
+                </li>
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content">Kaşi̇ Ahmet Çi̇ni̇ Serami̇k Sn. Ahmet Özmutaf</span>
+                </li>
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content">İzge Yayıncılık</span>
+                </li>
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content">Başkent Müzikevi</span>
                 </li>
               </ul>
             </div>

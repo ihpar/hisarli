@@ -1,0 +1,136 @@
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #001219;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+ul.menu {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.dropdown {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  font-size: 18px;
+  perspective: 1000px;
+  z-index: 100;
+}
+.dropdown:hover {
+  background: #2980b9;
+  cursor: pointer;
+}
+.dropdown:hover .dropdown_menu li {
+  display: block;
+}
+.dropdown_menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  perspective: 1000px;
+  z-index: -1;
+}
+.dropdown_menu li {
+  display: none;
+  color: #fff;
+  background-color: #34495e;
+  padding: 10px 20px;
+  font-size: 16px;
+  opacity: 0;
+}
+.dropdown_menu li:hover {
+  background-color: #2980b9;
+}
+.dropdown:hover .dropdown_menu--animated {
+  display: block;
+}
+.dropdown_menu--animated {
+  display: none;
+}
+.dropdown_menu--animated li {
+  display: block;
+  opacity: 1;
+}
+.rot-x-menu .dropdown_item-1 {
+  transform-origin: top center;
+  animation: rotateX 200ms 40ms ease-in-out forwards;
+}
+.rot-x-menu .dropdown_item-2 {
+  transform-origin: top center;
+  animation: rotateX 200ms 80ms ease-in-out forwards;
+}
+.rot-x-menu .dropdown_item-3 {
+  transform-origin: top center;
+  animation: rotateX 200ms 120ms ease-in-out forwards;
+}
+.rot-x-menu .dropdown_item-4 {
+  transform-origin: top center;
+  animation: rotateX 200ms 160ms ease-in-out forwards;
+}
+.rot-x-menu .dropdown_item-5 {
+  transform-origin: top center;
+  animation: rotateX 200ms 200ms ease-in-out forwards;
+}
+
+@-moz-keyframes rotateX {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  50% {
+    transform: rotateX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+@-webkit-keyframes rotateX {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  50% {
+    transform: rotateX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+@-o-keyframes rotateX {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  50% {
+    transform: rotateX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+@keyframes rotateX {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  50% {
+    transform: rotateX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
