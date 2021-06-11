@@ -27,7 +27,7 @@ ul.menu {
   z-index: 100;
 }
 .dropdown:hover {
-  background: #2980b9;
+  background: #07264c;
   cursor: pointer;
 }
 .dropdown:hover .dropdown_menu li {
@@ -44,13 +44,13 @@ ul.menu {
 .dropdown_menu li {
   display: none;
   color: #fff;
-  background-color: #34495e;
+  background-color: #193b66;
   padding: 10px 32px;
   font-size: 16px;
   opacity: 0;
 }
 .dropdown_menu li:hover {
-  background-color: #2980b9;
+  background-color: #2a568c;
 }
 .dropdown:hover .dropdown_menu--animated {
   display: block;
