@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="mdl-layout mdl-js-layout">
+    <div class="mdl-layout">
       <div class="mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
           <!-- Navigation -->
@@ -65,7 +65,7 @@
       <div class="mdl-layout__content" style="display: flex; flex-direction: column">
         <div style="flex-grow: 1">
           <!-- Banner -->
-          <div class="banner-section mdl-typography--text-center">
+          <div class="banner-section mdl-typography--text-center" id="top">
             <h1 class="banner-large-font">11. Uluslararası Hisarlı Ahmet Sempozyumu</h1>
             <h2 class="banner-medium-font">Müzikte Yeni Yönelimler</h2>
             <h3 class="banner-small-font">3 - 6 Haziran 2021 Çevrimiçi</h3>
@@ -74,7 +74,7 @@
           <!-- Icerik -->
 
           <!-- Satir 1 Amac ve Kapsam -->
-          <section>
+          <section class="pad-tb-24">
             <div class="mdl-grid">
               <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet sec-24-lr">
                 <h4>Amaç ve Kapsam</h4>
@@ -223,7 +223,7 @@
           </section>
 
           <!-- Satir 2 Duyurular -->
-          <section>
+          <section class="pad-tb-24" style="background-color: #f3f3f3">
             <div class="pad-25-per">
               <h3 class="center-text">Duyurular</h3>
               <ul class="mdl-list">
@@ -255,7 +255,7 @@
           </section>
 
           <!-- Satir 3 Konusmacilar -->
-          <section>
+          <section class="pad-tb-24">
             <h3 class="center-text">Davetli Konuşmacılar</h3>
             <div class="mdl-grid">
               <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
@@ -314,7 +314,7 @@
           </section>
 
           <!-- Satir 4 Bilim Kurulu -->
-          <section>
+          <section class="pad-tb-24" style="background-color: #f3f3f3">
             <h3 class="center-text">Bilim Kurulu Başkanları</h3>
 
             <div class="mdl-grid" style="justify-content: center">
@@ -340,7 +340,7 @@
           </section>
 
           <!-- Satir 5 Teşekkürler -->
-          <section>
+          <section class="pad-tb-24">
             <div class="pad-25-per">
               <h3 class="center-text">
                 <i class="material-icons">filter_vintage</i> Katkılarınızdan Dolayı Teşekkür Ederiz
@@ -398,16 +398,18 @@
                 <img alt="twitter sayfasi" src="img/social/logo-twitter.svg" />
               </a>
             </div>
-            <div class="mdl-mega-footer--right-section">Right</div>
+            <div class="mdl-mega-footer--right-section">
+              <a href="#top" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                <i class="material-icons">arrow_upward</i>
+              </a>
+            </div>
           </div>
 
           <div class="mdl-mega-footer--middle-section">
             <p class="mdl-typography--font-light">
-              © 2021 11. Uluslararası Hisarlı Ahmet Sempozyumu – 11<sup>th</sup> International Hisarli Ahmet Symposium
+              © 2021 11. Uluslararası Hisarlı Ahmet Sempozyumu | 11<sup>th</sup> International Hisarli Ahmet Symposium
             </p>
           </div>
-
-          <div class="mdl-mega-footer--bottom-section">Footer Bottom</div>
         </footer>
       </div>
     </div>
