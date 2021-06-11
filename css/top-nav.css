@@ -7,6 +7,7 @@ nav {
 nav a {
   color: #fff;
   text-decoration: none;
+  font-weight: normal;
 }
 ul.menu {
   display: flex;
@@ -15,7 +16,7 @@ ul.menu {
   padding: 0;
 }
 .dropdown {
-  padding: 20px 40px;
+  padding: 16px 32px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,7 +45,7 @@ ul.menu {
   display: none;
   color: #fff;
   background-color: #34495e;
-  padding: 10px 20px;
+  padding: 10px 32px;
   font-size: 16px;
   opacity: 0;
 }
