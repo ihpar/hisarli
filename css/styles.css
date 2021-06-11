@@ -7,13 +7,17 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
+a {
+  font-weight: bold;
+}
+
 .banner-section {
-  background-image: url("../img/hisarli-banner-dark.jpg");
+  background-image: url("../img/hisarli-banner-dark-blue.jpg");
   background-size: cover;
-  background-position: center 30%;
+  background-position: center 0;
   background-repeat: no-repeat;
   color: #fff;
-  padding: 52px 0;
+  padding: 86px 0;
 }
 
 .banner-large-font {
@@ -43,6 +47,12 @@ body {
   max-height: 3000px;
   opacity: 1;
   transition: max-height 600ms ease-in-out, opacity 600ms;
+}
+
+.papered {
+  background-color: #f9f4e0;
+  background-image: url("../img/paper-0.png");
+  background-repeat: repeat;
 }
 
 .sec-24-lr {

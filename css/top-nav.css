@@ -2,7 +2,7 @@ nav {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #001219;
+  background-color: #001126;
 }
 nav a {
   color: #fff;
@@ -63,23 +63,23 @@ ul.menu {
 }
 .rot-x-menu .dropdown_item-1 {
   transform-origin: top center;
-  animation: rotateX 200ms 40ms ease-in-out forwards;
+  animation: rotateX 250ms 50ms ease-in-out forwards;
 }
 .rot-x-menu .dropdown_item-2 {
   transform-origin: top center;
-  animation: rotateX 200ms 80ms ease-in-out forwards;
+  animation: rotateX 250ms 100ms ease-in-out forwards;
 }
 .rot-x-menu .dropdown_item-3 {
   transform-origin: top center;
-  animation: rotateX 200ms 120ms ease-in-out forwards;
+  animation: rotateX 250ms 150ms ease-in-out forwards;
 }
 .rot-x-menu .dropdown_item-4 {
   transform-origin: top center;
-  animation: rotateX 200ms 160ms ease-in-out forwards;
+  animation: rotateX 250ms 200ms ease-in-out forwards;
 }
 .rot-x-menu .dropdown_item-5 {
   transform-origin: top center;
-  animation: rotateX 200ms 200ms ease-in-out forwards;
+  animation: rotateX 250ms 250ms ease-in-out forwards;
 }
 
 @-moz-keyframes rotateX {
