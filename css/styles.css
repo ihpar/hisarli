@@ -98,6 +98,31 @@ a {
   }
 }
 
+@media (max-width: 780px) {
+  .banner-large-font {
+    font-size: 44px;
+    line-height: 44px;
+  }
+
+  .banner-medium-font {
+    font-size: 26px;
+    line-height: 26px;
+    margin: 26px 0;
+  }
+
+  .banner-small-font {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .banner-large-font {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
 .mdl-list.no-pad .mdl-list__item {
   padding: 0;
   min-height: auto;
