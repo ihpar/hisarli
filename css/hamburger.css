@@ -2,17 +2,25 @@
   display: none;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 975px) {
+  #dv-spacer {
+    display: none;
+  }
+
+  ul.pc-menu {
+    display: none;
+  }
+
   #menuToggle {
     display: inline-flex;
   }
 }
+
 #menuToggle {
   flex-direction: column;
   position: relative;
   top: 20px;
   left: 20px;
-  float: left;
   z-index: 111;
   -webkit-user-select: none;
   user-select: none;
@@ -83,7 +91,7 @@
 #phone-menu {
   position: absolute;
   width: 100vw;
-  padding: 0;
+  padding: 48px 0 24px 0;
   background-color: #07264c;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
@@ -93,17 +101,14 @@
   top: -20px;
 }
 
-#phone-menu li {
-  transition-delay: 2s;
-}
-
-#phone-menu li a {
+#phone-menu ul li a {
   display: block;
   padding: 10px 0;
   color: #fff;
   font-size: 18px;
+  text-align: center;
 }
 
-#menuToggle input:checked ~ ul {
+#menuToggle input:checked ~ div {
   transform: none;
 }
