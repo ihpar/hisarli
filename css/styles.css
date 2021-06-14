@@ -16,14 +16,49 @@ a {
 }
 
 .banner-section {
-  /* background-image: url("../img/hisarli-banner-dark-blue.jpg"); */
-  background-image: url("../img/hisarli_heykel_dark_short.png");
   background-size: cover;
-  background-position: 0 0;
+  background-position: center 0;
   background-repeat: no-repeat;
   color: #fff;
   padding: 86px 0;
 }
+
+/* site 0 */
+.banner-section-0 {
+  background-image: url("../img/banners/hisarli-banner-dark-blue.jpg");
+}
+
+/* site 1 */
+.banner-section-1 {
+  background-image: url("../img/banners/hisarli-banner-1.jpeg");
+  background-position: 100% 0;
+}
+
+/* site 2 */
+.banner-section-2 {
+  background-image: url("../img/banners/hisarli-banner-2.jpeg");
+  background-position: 100% 0;
+}
+
+/* site 3 */
+.banner-section-3 {
+  padding: 0;
+}
+.banner-section-3 img {
+  width: 100%;
+}
+
+/* site 4 */
+.banner-section-4 {
+  background-image: url("../img/banners/hisarli-banner-dark-blue.jpg");
+}
+
+/* site 5 */
+.banner-section-5 {
+  background-image: url("../img/banners/hisarli-banner-dark-blue.jpg");
+}
+
+/* eof trials */
 
 .banner-large-font {
   font-size: 52px;
