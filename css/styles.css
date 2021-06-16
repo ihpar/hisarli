@@ -11,6 +11,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.mdl-layout {
+  flex-grow: 1;
+}
+
 a {
   font-weight: bold;
 }
