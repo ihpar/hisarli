@@ -116,6 +116,38 @@ a {
   }
 }
 
+/* site 5 */
+.banner-section-5 {
+  background-image: url("../img/banners/ah-heykel-1-wide-bright.jpg");
+  color: #001126;
+  background-position: 100% 0;
+}
+
+/* site 6 */
+.banner-section-6 {
+  background-image: url("../img/banners/ah-heykel-1-wide.jpg");
+  color: #fff;
+  background-position: 100% 0;
+  /*
+  text-shadow: 0px 0px 4px #666;
+  */
+  text-shadow: 0 2px 7px #495c74, 0 -1px 4px #ddd4a1;
+}
+
+/* site 7 */
+.banner-section-7 {
+  background-image: url("../img/banners/ah-heykel-1-wide.jpg");
+  background-position: 100% 0;
+  color: #001126;
+  background-position: 100% 0;
+}
+
+.banner-section-7 h1,
+.banner-section-7 h2,
+.banner-section-7 h3 {
+  text-shadow: 0 6px 6px #fffef0, 0 -3px 6px #cce3ff;
+}
+
 /* eof trials */
 
 .banner-large-font {
