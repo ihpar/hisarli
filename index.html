@@ -16,6 +16,7 @@
         rel="stylesheet"
       />
       <link rel="stylesheet" href="css/reset.css" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
       <style type="text/css">
         html {
           width: 100%;
@@ -31,6 +32,7 @@
           width: 100%;
           height: 100%;
         }
+
         h1,
         h2 {
           display: block;
@@ -38,6 +40,7 @@
           width: 100%;
           text-align: center;
         }
+
         h1 {
           font-size: 38px;
           color: #fff;
@@ -48,6 +51,24 @@
           font-weight: bold;
           animation: blink 2s infinite alternate;
         }
+
+        h3 {
+          font-size: 32px;
+          color: #fff;
+        }
+
+        @media screen and (max-width: 485px) {
+          h3 {
+            font-size: 24px;
+          }
+        }
+
+        @media screen and (max-width: 330px) {
+          h3 {
+            font-size: 20px;
+          }
+        }
+
         .main {
           width: 100%;
           height: 100%;
@@ -60,6 +81,7 @@
           background-size: 20%;
           background-position: 100% 100%;
         }
+
         @keyframes blink {
           from {
             color: #ccc;
@@ -78,6 +100,21 @@
       <h2>&nbsp;</h2>
       <h1 class="en">12th International Hisarli Ahmet Symposium</h1>
       <h2 class="en">Coming soon</h2>
+      <h2>&nbsp;</h2>
+      <h3>
+        contact<i class="material-icons small-at" style="position: relative; top: 4px; margin: 0 6px">alternate_email</i
+        >hisarliahmet<span
+          style="
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: #fff;
+            margin: 0 6px;
+          "
+        ></span
+        >org
+      </h3>
     </div>
   </body>
 </html>
