@@ -23,20 +23,13 @@
         }
         body {
           font-family: "Noto Sans", sans-serif;
-          background-color: #f2f4f7;
-          /*
-          background-image: url("assets/AhmetHoca/BannerFoto_1.jpg");
+          background-color: #333;
+          background-image: url("img/banners/clouds.jpg");
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center center;
-          */
-          color: #21252b;
           width: 100%;
           height: 100%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
         }
         h1,
         h2 {
@@ -44,29 +37,47 @@
           margin: 10px 0;
           width: 100%;
           text-align: center;
-          color: #333;
         }
         h1 {
           font-size: 38px;
+          color: #fff;
         }
+
         h2 {
           font-size: 32px;
-          color: #555;
+          font-weight: bold;
+          animation: blink 2s infinite alternate;
         }
-        h1.en {
-          color: #444;
+        .main {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-image: url("img/banners/heykel_transparent.png");
+          background-repeat: no-repeat;
+          background-size: 20%;
+          background-position: 100% 100%;
         }
-        h2.en {
-          color: #666;
+        @keyframes blink {
+          from {
+            color: #ccc;
+          }
+          to {
+            color: #fff;
+          }
         }
       </style>
     </head>
   </head>
   <body>
-    <h1>12. Uluslararası Hisarlı Ahmet Sempozyumu</h1>
-    <h2>Yapım aşamasındadır</h2>
-    <h2>&nbsp;</h2>
-    <h1 class="en">12th International Hisarli Ahmet Symposium</h1>
-    <h2 class="en">Coming soon</h2>
+    <div class="main">
+      <h1>12. Uluslararası Hisarlı Ahmet Sempozyumu</h1>
+      <h2>Yapım aşamasındadır</h2>
+      <h2>&nbsp;</h2>
+      <h1 class="en">12th International Hisarli Ahmet Symposium</h1>
+      <h2 class="en">Coming soon</h2>
+    </div>
   </body>
 </html>
