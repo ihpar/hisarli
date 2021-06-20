@@ -119,10 +119,12 @@
       <div class="mdl-layout__content" style="display: flex; flex-direction: column">
         <div style="flex-grow: 1">
           <!-- Banner -->
-          <div class="banner-section banner-section-4 mdl-typography--text-center">
-            <h1 class="banner-large-font">11. Uluslararası Hisarlı Ahmet Sempozyumu</h1>
-            <h2 class="banner-medium-font">Müzikte Yeni Yönelimler</h2>
-            <h3 class="banner-small-font">3 - 6 Haziran 2021 Çevrimiçi</h3>
+          <div class="banner-section mdl-typography--text-center">
+            <div class="hisarli-heykel">
+              <h1 class="banner-large-font">12. Uluslararası Hisarlı Ahmet Sempozyumu</h1>
+              <h2 class="banner-medium-font">Müzikte Yeni Yönelimler</h2>
+              <h3 class="banner-small-font">3 - 6 Haziran 2021 Çevrimiçi</h3>
+            </div>
           </div>
 
           <!-- Icerik -->
@@ -132,27 +134,29 @@
             <div class="pad-25-per">
               <h3 class="center-text sec-h3">Özet Gönderim Formu</h3>
               <form action="#">
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                  <input class="mdl-textfield__input" type="text" id="txt-name-surname" />
-                  <label class="mdl-textfield__label" for="txt-name-surname">Ad Soyad</label>
-                </div>
-                <div>
+                <div class="row">
                   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="txt-name-surname" />
+                    <label class="mdl-textfield__label" for="txt-name-surname">Ad Soyad</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label col-6">
                     <input class="mdl-textfield__input" type="text" id="txt-email" />
                     <label class="mdl-textfield__label" for="txt-email">Email</label>
                   </div>
-                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label col-6">
                     <input class="mdl-textfield__input" type="text" id="txt-phone" />
                     <label class="mdl-textfield__label" for="txt-phone">Telefon</label>
                   </div>
                 </div>
-                <div>
+                <div class="row">
                   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                     <textarea class="mdl-textfield__input" type="text" rows="2" id="txt-address"></textarea>
                     <label class="mdl-textfield__label" for="txt-address">Adres</label>
                   </div>
                 </div>
-                <div>
+                <div class="row">
                   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                     <input class="mdl-textfield__input" type="text" id="txt-zip" />
                     <label class="mdl-textfield__label" for="txt-zip">Posta Kodu</label>
@@ -162,7 +166,7 @@
                     <label class="mdl-textfield__label" for="txt-country">Ülke</label>
                   </div>
                 </div>
-                <div>
+                <div class="row">
                   <div class="mdl-textfield">
                     <label for="fup-photo">Fotoğrafınız</label>
                     <input type="file" id="fup-photo" name="fup-photo" />
