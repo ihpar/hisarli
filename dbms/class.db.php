@@ -27,7 +27,7 @@ if (!$isProduction) {
     define('DB_HOST', '127.0.0.1');
     define('DB_USER', '');
     define('DB_PASS', '');
-    define('DB_NAME', 'his');
+    define('DB_NAME', 'hisarli');
     define('SEND_ERRORS_TO', '');
     // TODO change in release
     define('DISPLAY_DEBUG', true);
