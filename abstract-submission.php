@@ -4,17 +4,30 @@ session_start();
 header('Content-Type: text/html; charset=UTF-8');
 
 if ($_SERVER["HTTPS"] != "on") {
-    header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
-    exit();
+  header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
+  exit();
+}
+
+if(isset($_GET["lang"])) {
+  $accept_langs = ["tr", "en"]; 
+  $lang = in_array($lang, $accept_langs) ? $lang : "en";
+  $_SESSION["lang"]= $lang;
+}
+
+if (!isset($_SESSION["lang"])) {
+  $lang = substr($_SERVER["HTTP_ACCEPT_LANGUAGE"], 0, 2);
+  $accept_langs = ["tr", "en"]; 
+  $lang = in_array($lang, $accept_langs) ? $lang : "en";
+  $_SESSION["lang"] = $lang;
 }
 
 require_once "dbms/utils.php";
 
 $is_secure = true;
-$page_name = "index";
+$page_name = "abstract-submission";
 
 if (!isset($_SESSION["sec_key"])) {
-    $_SESSION["sec_key"] = sha1(uniqid());
+  $_SESSION["sec_key"] = sha1(uniqid());
 }
 ?>
 <!DOCTYPE html>
@@ -291,7 +304,7 @@ if (!isset($_SESSION["sec_key"])) {
 
         <!-- Footer -->
         <?php require_once("modules/footer.php"); ?>
-        
+
       </div>
     </div>
 
