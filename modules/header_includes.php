@@ -13,16 +13,8 @@ if(!$is_secure) {
 <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
 <link rel="manifest" href="img/site.webmanifest" />
 <link rel="preconnect" href="https://fonts.gstatic.com" />
-<link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet"
-/>
-
-<link
-    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap"
-    rel="stylesheet"
-/>
-
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 <link rel="stylesheet" href="css/reset.css" />
 <link rel="stylesheet" href="css/material.css" />

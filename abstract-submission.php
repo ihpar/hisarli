@@ -9,6 +9,7 @@ if ($_SERVER["HTTPS"] != "on") {
 }
 
 if(isset($_GET["lang"])) {
+  $lang = $_GET["lang"];
   $accept_langs = ["tr", "en"]; 
   $lang = in_array($lang, $accept_langs) ? $lang : "en";
   $_SESSION["lang"]= $lang;
