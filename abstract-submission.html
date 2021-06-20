@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>11. Uluslararası Hisarlı Ahmet Sempozyumu</title>
+    <title>12. Uluslararası Hisarlı Ahmet Sempozyumu</title>
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
@@ -27,7 +27,43 @@
     <link rel="stylesheet" href="css/top-nav.css" />
     <link rel="stylesheet" href="css/hamburger.css" />
     <link rel="stylesheet" href="css/waves.css" />
-    <style type="text/css"></style>
+    <style type="text/css">
+      .sec-wrap {
+        padding: 16px;
+      }
+
+      .row {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .row .col-12 {
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .row .col-6 {
+        width: 50%;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .mdl-textfield {
+        width: 100%;
+      }
+
+      input[type="text"],
+      textarea.mdl-textfield__input {
+        background-color: #f2f3f4;
+        padding: 12px 0px;
+        margin: 0;
+      }
+
+      button.full-width {
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
     <div class="mdl-layout">
@@ -131,52 +167,94 @@
 
           <!-- Satir 1 Form -->
           <section class="pad-tb-24">
-            <div class="pad-25-per">
-              <h3 class="center-text sec-h3">Özet Gönderim Formu</h3>
-              <form action="#">
-                <div class="row">
-                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="txt-name-surname" />
-                    <label class="mdl-textfield__label" for="txt-name-surname">Ad Soyad</label>
+            <div class="sec-wrap">
+              <div class="pad-25-per">
+                <h3 class="center-text sec-h3">Özet Gönderim Formu</h3>
+                <form action="#" id="frm-abstract">
+                  <!-- Row -->
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="txt-name-surname" />
+                        <label class="mdl-textfield__label" for="txt-name-surname">Ad Soyad</label>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label col-6">
-                    <input class="mdl-textfield__input" type="text" id="txt-email" />
-                    <label class="mdl-textfield__label" for="txt-email">Email</label>
+                  <!-- Row -->
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="txt-email" />
+                        <label class="mdl-textfield__label" for="txt-email">Email</label>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="txt-phone" />
+                        <label class="mdl-textfield__label" for="txt-phone">Telefon</label>
+                      </div>
+                    </div>
                   </div>
-                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label col-6">
-                    <input class="mdl-textfield__input" type="text" id="txt-phone" />
-                    <label class="mdl-textfield__label" for="txt-phone">Telefon</label>
+                  <!-- Row -->
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <textarea class="mdl-textfield__input" rows="2" id="txt-address"></textarea>
+                        <label class="mdl-textfield__label" for="txt-address">Adres</label>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <textarea class="mdl-textfield__input" type="text" rows="2" id="txt-address"></textarea>
-                    <label class="mdl-textfield__label" for="txt-address">Adres</label>
+                  <!-- Row -->
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="txt-zip" />
+                        <label class="mdl-textfield__label" for="txt-zip">Posta Kodu</label>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="txt-country" />
+                        <label class="mdl-textfield__label" for="txt-country">Ülke</label>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="txt-zip" />
-                    <label class="mdl-textfield__label" for="txt-zip">Posta Kodu</label>
+                  <!-- Row -->
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="mdl-textfield">
+                        <label for="fup-photo">Fotoğrafınız</label>
+                        <input type="file" id="fup-photo" name="fup-photo" />
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="mdl-textfield">
+                        <label for="fup-abstract">Özet Dosyanız</label>
+                        <input type="file" id="fup-abstract" name="fup-abstract" />
+                      </div>
+                    </div>
                   </div>
-                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="txt-country" />
-                    <label class="mdl-textfield__label" for="txt-country">Ülke</label>
+                  <!-- Row -->
+                  <div class="row">
+                    <div class="col-12">
+                      <button
+                        type="submit"
+                        form="frm-abstract"
+                        class="
+                          full-width
+                          mdl-button mdl-js-button
+                          mdl-button--raised
+                          mdl-js-ripple-effect
+                          mdl-button--accent
+                        "
+                      >
+                        Gönder
+                      </button>
+                    </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="mdl-textfield">
-                    <label for="fup-photo">Fotoğrafınız</label>
-                    <input type="file" id="fup-photo" name="fup-photo" />
-                  </div>
-                  <div class="mdl-textfield">
-                    <label for="fup-abstract">Özet Dosyanız</label>
-                    <input type="file" id="fup-abstract" name="fup-abstract" />
-                  </div>
-                </div>
-              </form>
+                  <!-- Row -->
+                </form>
+              </div>
             </div>
           </section>
 
