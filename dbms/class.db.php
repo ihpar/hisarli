@@ -25,10 +25,10 @@ $isProduction = false;
 if (!$isProduction) {
     // TODO change in release
     define('DB_HOST', '127.0.0.1');
-    define('DB_USER', 'root');
+    define('DB_USER', '');
     define('DB_PASS', '');
-    define('DB_NAME', 'isgmain');
-    define('SEND_ERRORS_TO', 'ismail@cs.deu.edu.tr');
+    define('DB_NAME', '');
+    define('SEND_ERRORS_TO', '');
     // TODO change in release
     define('DISPLAY_DEBUG', true);
 } else {
@@ -37,7 +37,7 @@ if (!$isProduction) {
     define('DB_USER', '');
     define('DB_PASS', '');
     define('DB_NAME', '');
-    define('SEND_ERRORS_TO', 'ismail@cs.deu.edu.tr');
+    define('SEND_ERRORS_TO', '');
     // TODO change in release
     define('DISPLAY_DEBUG', false);
 }
