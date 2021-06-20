@@ -1,131 +1,37 @@
+<?php 
+session_start();
+
+header('Content-Type: text/html; charset=UTF-8');
+
+if ($_SERVER["HTTPS"] != "on") {
+    header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
+    exit();
+}
+
+require_once "dbms/utils.php";
+
+$is_secure = true;
+$page_name = "index";
+
+if (!isset($_SESSION["sec_key"])) {
+    $_SESSION["sec_key"] = sha1(uniqid());
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>12. Uluslararası Hisarlı Ahmet Sempozyumu</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
-    <link rel="manifest" href="img/site.webmanifest" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/material.css" />
-    <link rel="stylesheet" href="css/styles.css?v=2" />
-    <link rel="stylesheet" href="css/top-nav.css" />
-    <link rel="stylesheet" href="css/hamburger.css" />
-    <link rel="stylesheet" href="css/waves.css" />
-    <style type="text/css"></style>
+    <?php require_once("modules/header_includes.php"); ?>
   </head>
   <body>
     <div class="mdl-layout">
       <!-- Navigation -->
-      <div class="menu-container" id="top">
-        <nav>
-          <!-- Hamburger -->
-          <div id="dv-spacer"></div>
-          <div id="menuToggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-            <div id="phone-menu">
-              <ul>
-                <li><a href="#">Ana Sayfa</a></li>
-                <li><a href="#">Önemli Tarihler</a></li>
-                <li><a href="#">Program</a></li>
-                <li><a href="#">Geçmiş Sempozyumlar</a></li>
-                <li><a href="#">Katılım Ücreti</a></li>
-                <li><a href="#">Ulaşım</a></li>
-                <li><a href="#">Hisarlı Ahmet Hakkında</a></li>
-                <li><a href="#">Kütahya Güzel S. Derneği</a></li>
-                <li><a href="#">Kurullar</a></li>
-                <li><a href="#">Konserler</a></li>
-                <li><a href="#">Konferans</a></li>
-                <li><a href="#">Atölye Çalışmaları</a></li>
-                <li><a href="#">Gençlik Seminerleri</a></li>
-                <li><a href="#">İletişim</a></li>
-              </ul>
-            </div>
-          </div>
-          <!-- Eof Hamburger -->
-          <!-- Masaustu Menu -->
-          <ul class="pc-menu">
-            <li class="dropdown">
-              <a href="#">Ana Sayfa</a>
-            </li>
-            <li class="dropdown">
-              Sempozyum Bilgileri
-              <ul class="dropdown_menu rot-x-menu">
-                <li class="dropdown_item-1"><a href="#">Önemli Tarihler</a></li>
-                <li class="dropdown_item-2"><a href="#">Program</a></li>
-                <li class="dropdown_item-3"><a href="#">Geçmiş Sempozyumlar</a></li>
-                <li class="dropdown_item-4"><a href="#">Katılım Ücreti</a></li>
-                <li class="dropdown_item-5"><a href="#">Ulaşım</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              Hisarlı Ahmet
-              <ul class="dropdown_menu rot-x-menu">
-                <li class="dropdown_item-1"><a href="#">Hisarlı Ahmet Hakkında</a></li>
-                <li class="dropdown_item-2"><a href="#">Kütahya Güzel S. Derneği</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#">Kurullar</a>
-            </li>
-            <li class="dropdown">
-              Etkinlikler
-              <ul class="dropdown_menu rot-x-menu">
-                <li class="dropdown_item-1"><a href="#">Konserler</a></li>
-                <li class="dropdown_item-2"><a href="#">Konferans</a></li>
-                <li class="dropdown_item-3"><a href="#">Atölye Çalışmaları</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#">Gençlik Seminerleri</a>
-            </li>
-            <li class="dropdown">
-              <a href="#">İletişim</a>
-            </li>
-          </ul>
-          <!-- Eof Masaustu Menu -->
-          <!-- Dil Secimi -->
-          <ul class="ul-flags">
-            <li>
-              <a class="a-flag tr" href="#">&nbsp;</a>
-            </li>
-            <li>
-              <a class="a-flag en" href="#">&nbsp;</a>
-            </li>
-          </ul>
-          <!-- Eof Dil Secimi -->
-        </nav>
-      </div>
+      <?php require_once("modules/navigation.php"); ?>
       <!--Eof Navigation -->
 
       <div class="mdl-layout__content" style="display: flex; flex-direction: column">
         <div style="flex-grow: 1">
           <!-- Banner -->
-          <div class="banner-section mdl-typography--text-center">
-            <div class="hisarli-heykel">
-              <h1 class="banner-large-font">12. Uluslararası Hisarlı Ahmet Sempozyumu</h1>
-              <h2 class="banner-medium-font">Müzikte Yeni Yönelimler</h2>
-              <h3 class="banner-small-font">3 - 6 Haziran 2021 Çevrimiçi</h3>
-            </div>
-          </div>
+          <?php require_once("modules/banner.php"); ?>
 
           <!-- Icerik -->
 
@@ -532,43 +438,9 @@
           <!-- Eof Icerik -->
         </div>
 
-        <footer class="mdl-mega-footer">
-          <div class="footer-top">
-            <div class="footer--left" class="a-footer-social">
-              <a href="#" target="_blank" class="a-footer-social">
-                <img alt="instagram sayfasi" src="img/social/logo-instagram-white.svg" />
-              </a>
-              &nbsp;
-              <a href="#" target="_blank" class="a-footer-social">
-                <img alt="facebook sayfasi" src="img/social/logo-facebook-white.svg" />
-              </a>
-              &nbsp;
-              <a href="#" target="_blank" class="a-footer-social">
-                <img alt="twitter sayfasi" src="img/social/logo-twitter-white.svg" />
-              </a>
-            </div>
-            <div class="footer--right">
-              <a href="#top" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
-                <i class="material-icons">arrow_upward</i>
-              </a>
-            </div>
-          </div>
+        <!-- Footer -->
+        <?php require_once("modules/footer.php"); ?>
 
-          <div class="mdl-mega-footer--middle-section">
-            <p class="no-bottom">contact<i class="material-icons small-at">alternate_email</i>hisarliahmet.org</p>
-            <p class="no-bottom">+90 272 218 26 29</p>
-            <p class="no-bottom">
-              Afyon Kocatepe Üniversitesi Devlet Konservatuvarı Ahmet Necdet Sezer Kampüsü, 03204 Afyonkarahisar
-              Merkez/Afyonkarahisar
-            </p>
-          </div>
-
-          <div class="mdl-mega-footer--bottom-section">
-            <p style="color: #aaa">
-              © 2021 11. Uluslararası Hisarlı Ahmet Sempozyumu | 11<sup>th</sup> International Hisarli Ahmet Symposium
-            </p>
-          </div>
-        </footer>
       </div>
     </div>
 

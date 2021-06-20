@@ -107,8 +107,10 @@
 }
 */
 #phone-menu {
+  box-sizing: border-box;
   position: absolute;
   width: 100vw;
+  min-height: 100vh;
   padding: 48px 0 24px 0;
   background-color: #07264c;
   -webkit-font-smoothing: antialiased;
