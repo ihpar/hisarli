@@ -1,17 +1,21 @@
 <?php 
 session_start();
 
-$is_secure = true;
+header('Content-Type: text/html; charset=UTF-8');
 
-$page_name = "index";
+if ($_SERVER["HTTPS"] != "on") {
+    header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
+    exit();
+}
 
 require_once "dbms/utils.php";
 
-require_once "modules/header_prefixes.php";
+$is_secure = true;
+$page_name = "index";
 
-require_once "langs/lang_global.php";
-
-require_once "langs/lang_index.php";
+if (!isset($_SESSION["sec_key"])) {
+    $_SESSION["sec_key"] = sha1(uniqid());
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,13 +39,147 @@ require_once "langs/lang_index.php";
           <section class="pad-tb-24">
             <div class="mdl-grid">
               <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet sec-24-lr">
-                <h3 class="sec-h3"><?php echo($lang_index["amac_ve_kapsam"][$pref_lang]); ?></h3>
+                <h3 class="sec-h3">Amaç ve Kapsam</h3>
                 <div style="text-align: justify">
-                  <?php echo($lang_index["amac_ve_kapsam_metin"][$pref_lang]); ?>
+                  <div>
+                    <p>
+                      Yönelim, içinde pek çok zamanı, değeri ve felsefeyi barındıran çok özellikli bir kavram, kavramlar
+                      üstü bir gerçekliktir. İnsan yaşamında kaçınılmaz olarak ortaya çıkan yönelim aslında hayatın her
+                      yerindedir: Çağdaş olandan geleneğe, geçmişten günümüze ve geleceğe, sekülerden ritüele,
+                      sıradanlıktan ideolojiye, eskiden yeniye ve hatta eski olandan daha eskiye, teknolojide,
+                      sosyolojide, sağlıkta, siyasette, ekonomide, hukukta, eğitimde, mühendislikte… Kısacası, hayatın
+                      her alanında vardır yönelim olgusu ve tabii kaçınılmaz olarak bilimde, sanatta ve müzikte de tüm
+                      etkisiyle kendini gösterir.
+                    </p>
+                    <p>
+                      Johansson’a göre yönelim, insanda yönelimsellik karakterinin kesin olarak ortaya çıkmasıyla
+                      mümkündür*. Brentano’ya göre ise yönelimsellik zihinde başlar davranışla sonlanır**. Bu davranış,
+                      bireyin yeni olanı arama çabasıyla sorunlar karşısında aldığı tavır ve çözüm arayışı olarak
+                      nitelenebilir. O halde yönelim; bir sorunu, bir derdi, bir sıkıntısı olanın bir tavır, bir duruş,
+                      bir çözüm arayışı içinde “daha olana hareketi” olarak açıklanabilir. Tıpkı müzikte olduğu gibi…
+                    </p>
+                  </div>
+                  <div id="div-truncated" class="trunc">
+                    <p>
+                      Hiçbir zaman durağan olmayan müzik tarihi, öncesine tepkiyle yeniye yönelen müzik, akım ve
+                      dönemlerle doludur ve yönelimlerin hiçbirisi kısa süreler içinde gerçekleşmemiştir. Barok
+                      vakarlığına tepkiyle doğan Rokoko, alışılagelmiş müzikal örgüler ve tonalitenin armonik eksenine
+                      karşıt olan atonalite, akustikten dijitale evrilen sahne performansları vs. müzikte yeni
+                      yönelimlerin ortaya çıkardığı uzun soluklu sonuçlar olarak düşünülebilir.
+                    </p>
+                    <p>
+                      Müzikte yeni bir yönelim gerçekten geçmiş olana karşı alınan bir tavır mı yoksa hayatın doğal
+                      akışı içinde ortaya çıkan olağan bir sonuç mu? İçeriğinde müzik olan her şeyde yeni bir yönelim
+                      var mı yoksa yeni gibi görülen her şey aslında bir bütünün sıradan parçaları mı? Günümüz
+                      dünyasında müzikte yeni bir yönelime artık gerçekten ihtiyaç kaldı mı? Bu ve buna benzer pek çok
+                      soruya yanıt aradığımız XI. Uluslararası Hisarlı Ahmet Sempozyumu’nun bu yılki teması “Müzikte
+                      Yeni Yönelimler”, yine ve her zaman insan ve toplum odaklı.
+                    </p>
+                    <p>
+                      Kütahya ve bilim/sanat dünyası için artık geleneksel hale gelen Uluslararası Hisarlı Ahmet
+                      Sempozyumu’nun on birincisine tüm bilim/sanat insanlarını davet etmekten onur duyuyoruz.
+                      Sempozyuma değerli bildirileriyle katılacak tüm araştırmacılardan alana katkı sağlayıcı, bilimsel
+                      temelleri olan ve özgün yapıda bildiriler hazırlamalarını temenni ediyor, XI. Uluslararası Hisarlı
+                      Ahmet Sempozyumu için alanı müzik olan ve yeni bir yönelimi işaret eden tüm bilimsel ve sanatsal
+                      çalışmalarla birlikte “Müzikte Yeni Yönelimler” teması altında aşağıdaki alt başlıklar ve
+                      etrafında şekillenen değerli çalışmalarınızı bekliyoruz.
+                    </p>
+                  </div>
+                  <a href="#" id="show-p-trunc" data-state="collapsed">Devamı...</a>
                 </div>
               </div>
-              <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet sec-24-lr">
-                <img src="img/banners/hisarli-11-afis.jpg" style="width: 100%;">
+              <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet sec-24-lr sec-0-r">
+                <h3 class="sec-h3">Alt Başlıklar</h3>
+                <!-- Alt Basliklar -->
+                <div class="mdl-grid no-pad">
+                  <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
+                    <ul class="mdl-list no-pad mr-16">
+                      <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                          <i class="material-icons mdl-list__item-icon">category</i>
+                          Müzik Araştırmasında Yeni Yönelimler
+                        </span>
+                      </li>
+                      <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                          <i class="material-icons mdl-list__item-icon">category</i>
+                          Müzik Teknolojisinde Yeni Yönelimler
+                        </span>
+                      </li>
+                      <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                          <i class="material-icons mdl-list__item-icon">category</i>
+                          Müzik Eğitiminde Yeni Yönelimler
+                        </span>
+                      </li>
+                      <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                          <i class="material-icons mdl-list__item-icon">category</i>
+                          Müzik Teorisinde Yeni Yönelimler
+                        </span>
+                      </li>
+                      <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                          <i class="material-icons mdl-list__item-icon">category</i>
+                          Müzik Üretiminde Yeni Yönelimler
+                        </span>
+                      </li>
+                      <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                          <i class="material-icons mdl-list__item-icon">category</i>
+                          Müzik İcrası ve İcracılığında Yeni Yönelimler
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
+                    <ul class="mdl-list no-pad">
+                      <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                          <i class="material-icons mdl-list__item-icon">category</i>
+                          Müzikte Yerel ve Küresel Dinamikler
+                        </span>
+                      </li>
+                      <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                          <i class="material-icons mdl-list__item-icon">category</i>
+                          Müzik Biliminde Güncel Yaklaşımlar
+                        </span>
+                      </li>
+                      <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                          <i class="material-icons mdl-list__item-icon">category</i>
+                          Değişim ve Müzik Endüstrisi
+                        </span>
+                      </li>
+                      <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                          <i class="material-icons mdl-list__item-icon">category</i>
+                          Müzikte Değişim ve Gelişim
+                        </span>
+                      </li>
+                      <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                          <i class="material-icons mdl-list__item-icon">category</i>
+                          Toplumsal Değişim ve Müzik
+                        </span>
+                      </li>
+                      <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                          <i class="material-icons mdl-list__item-icon">category</i>
+                          Müzikte Çağdaşlık
+                        </span>
+                      </li>
+                      <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                          <i class="material-icons mdl-list__item-icon">category</i>
+                          Yeni Müzik
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Eof Alt Basliklar -->
               </div>
             </div>
           </section>
@@ -317,11 +455,11 @@ require_once "langs/lang_index.php";
 
           if (devami.getAttribute("data-state") === "collapsed") {
             devami.setAttribute("data-state", "expanded");
-            devami.innerHTML = '<?php echo($lang_index["gizle"][$pref_lang]); ?>';
+            devami.innerHTML = "Gizle";
             clipDiv.classList.add("visible");
           } else {
             devami.setAttribute("data-state", "collapsed");
-            devami.innerHTML = '<?php echo($lang_index["devami"][$pref_lang]); ?>';
+            devami.innerHTML = "Devamı...";
             clipDiv.classList.remove("visible");
           }
         });

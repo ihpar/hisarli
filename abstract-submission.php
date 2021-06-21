@@ -1,35 +1,17 @@
 <?php 
 session_start();
 
-header('Content-Type: text/html; charset=UTF-8');
+$is_secure = true;
 
-if ($_SERVER["HTTPS"] != "on") {
-  header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
-  exit();
-}
-
-if(isset($_GET["lang"])) {
-  $lang = $_GET["lang"];
-  $accept_langs = ["tr", "en"]; 
-  $lang = in_array($lang, $accept_langs) ? $lang : "en";
-  $_SESSION["lang"]= $lang;
-}
-
-if (!isset($_SESSION["lang"])) {
-  $lang = substr($_SERVER["HTTP_ACCEPT_LANGUAGE"], 0, 2);
-  $accept_langs = ["tr", "en"]; 
-  $lang = in_array($lang, $accept_langs) ? $lang : "en";
-  $_SESSION["lang"] = $lang;
-}
+$page_name = "abstract-submission";
 
 require_once "dbms/utils.php";
 
-$is_secure = true;
-$page_name = "abstract-submission";
+require_once "modules/header_prefixes.php";
 
-if (!isset($_SESSION["sec_key"])) {
-  $_SESSION["sec_key"] = sha1(uniqid());
-}
+require_once "langs/lang_global.php";
+
+require_once "langs/lang_abstract-submission.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -156,7 +138,7 @@ if (!isset($_SESSION["sec_key"])) {
           <section class="pad-tb-24">
             <div class="sec-wrap">
               <div class="pad-25-per">
-                <h3 class="center-text sec-h3">Özet Gönderim Formu</h3>
+                <h3 class="center-text sec-h3"><?php echo($lang_abs_sub["bildiri_ozeti_gonderim_formu"][$pref_lang]); ?></h3>
                 <form action="#" id="frm-abstract">
                   <!-- Row -->
                   <div class="row">

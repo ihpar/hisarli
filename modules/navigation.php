@@ -35,10 +35,10 @@ if(!$is_secure) {
     <!-- Masaustu Menu -->
     <ul class="pc-menu">
     <li class="dropdown">
-        <a href="index.php">Ana Sayfa</a>
+        <a href="index.php"><?php echo($lang_global["ana_sayfa"][$pref_lang]); ?></a>
     </li>
     <li class="dropdown">
-        Sempozyum Bilgileri
+        <?php echo($lang_global["sempozyum_bilgileri"][$pref_lang]); ?>
         <ul class="dropdown_menu rot-x-menu">
         <li class="dropdown_item-1"><a href="#">Önemli Tarihler</a></li>
         <li class="dropdown_item-2"><a href="#">Program</a></li>
@@ -48,17 +48,17 @@ if(!$is_secure) {
         </ul>
     </li>
     <li class="dropdown">
-        Hisarlı Ahmet
+        <?php echo($lang_global["hisarli_ahmet"][$pref_lang]); ?>
         <ul class="dropdown_menu rot-x-menu">
         <li class="dropdown_item-1"><a href="#">Hisarlı Ahmet Hakkında</a></li>
         <li class="dropdown_item-2"><a href="#">Kütahya Güzel S. Derneği</a></li>
         </ul>
     </li>
     <li class="dropdown">
-        <a href="#">Kurullar</a>
+        <a href="#"><?php echo($lang_global["kurullar"][$pref_lang]); ?></a>
     </li>
     <li class="dropdown">
-        Etkinlikler
+        <?php echo($lang_global["etkinlikler"][$pref_lang]); ?>
         <ul class="dropdown_menu rot-x-menu">
         <li class="dropdown_item-1"><a href="#">Konserler</a></li>
         <li class="dropdown_item-2"><a href="#">Konferans</a></li>
@@ -66,10 +66,10 @@ if(!$is_secure) {
         </ul>
     </li>
     <li class="dropdown">
-        <a href="#">Gençlik Seminerleri</a>
+        <a href="#"><?php echo($lang_global["genclik_seminerleri"][$pref_lang]); ?></a>
     </li>
     <li class="dropdown">
-        <a href="#">İletişim</a>
+        <a href="#"><?php echo($lang_global["iletisim"][$pref_lang]); ?></a>
     </li>
     </ul>
     <!-- Eof Masaustu Menu -->
