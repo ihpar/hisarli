@@ -6,10 +6,12 @@ if(!$is_secure) {
 
 header('Content-Type: text/html; charset=UTF-8');
 
+/*
 if ($_SERVER["HTTPS"] != "on") {
   header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
   exit();
 }
+*/
 
 if(isset($_GET["lang"])) {
   $lang = $_GET["lang"];
