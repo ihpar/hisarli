@@ -5,5 +5,5 @@ $db = DB::getInstance();
 
 $user_types = $db->get_results("SELECT * FROM user_types");
 foreach ($user_types as $user) {
-    var_dump($user) . '<br />';
+    var_dump($user) . "<br><br>";
 }
