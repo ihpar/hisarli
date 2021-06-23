@@ -11,7 +11,7 @@
 .custom-shape-divider-bottom-1623439955 svg {
   position: relative;
   display: block;
-  width: calc(147% + 1.3px);
+  width: calc(147% + 2px);
   height: 41px;
 }
 
@@ -31,7 +31,7 @@
 .custom-shape-divider-top-1623440107 svg {
   position: relative;
   display: block;
-  width: calc(104% + 1.3px);
+  width: calc(104% + 2px);
   height: 24px;
   transform: rotateY(180deg);
 }
@@ -53,7 +53,7 @@
 .custom-shape-divider-bottom-1623440211 svg {
   position: relative;
   display: block;
-  width: calc(100% + 1.3px);
+  width: calc(100% + 2px);
   height: 49px;
   transform: rotateY(180deg);
 }
