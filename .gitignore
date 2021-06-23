@@ -1,3 +1,9 @@
 .vscode/ftp-sync.json
 **/.DS_Store
 dbms/class.db.php
+/.idea/dataSources.xml
+/.idea/hisarli.iml
+/.idea/modules.xml
+/.idea/sqldialects.xml
+/.idea/vcs.xml
+/.idea/.gitignore
