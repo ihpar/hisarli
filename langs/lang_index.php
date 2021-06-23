@@ -1,16 +1,16 @@
-<?php 
+<?php
 
-if(!$is_secure) {
-  exit(0);
+if (!$is_secure) {
+    exit(0);
 }
 
 $lang_index = [
-  "amac_ve_kapsam" => [
-      "en" => "Objectives and Scope",
-      "tr" => "Amaç ve Kapsam"
-  ],
-  "amac_ve_kapsam_metin" => [
-      "en" => "<div>
+    "amac_ve_kapsam" => [
+        "en" => "Objectives and Scope",
+        "tr" => "Amaç ve Kapsam"
+    ],
+    "amac_ve_kapsam_metin" => [
+        "en" => "<div>
       <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at urna at felis molestie feugiat. Sed vitae blandit nulla, nec porttitor diam. Donec dapibus finibus eros vitae maximus. Nunc ornare lectus sit amet nulla aliquam aliquet. Sed facilisis magna et gravida imperdiet. Cras a sapien tristique, tempus enim et, interdum felis. Vestibulum porta libero nec ligula cursus lobortis. Integer et purus et eros convallis sollicitudin.
       </p>
@@ -30,7 +30,7 @@ $lang_index = [
       </p>
     </div>
     <a href=\"#\" id=\"show-p-trunc\" data-state=\"collapsed\">Continue...</a>",
-      "tr" => "<div>
+        "tr" => "<div>
       <p>
         Yönelim, içinde pek çok zamanı, değeri ve felsefeyi barındıran çok özellikli bir kavram, kavramlar
         üstü bir gerçekliktir. İnsan yaşamında kaçınılmaz olarak ortaya çıkan yönelim aslında hayatın her
@@ -75,19 +75,17 @@ $lang_index = [
       </p>
     </div>
     <a href=\"#\" id=\"show-p-trunc\" data-state=\"collapsed\">Devamı...</a>"
-  ],
-  "devami" => [
-      "en" => "Continue...",
-      "tr" => "Devamı..."
-  ],
-  "gizle" => [
-      "en" => "Hide",
-      "tr" => "Gizle"
-  ],
-  "alt_basliklar" => [
-    "en" => "Subtopics",
-    "tr" => "Alt Başlıklar"
-  ]
+    ],
+    "devami" => [
+        "en" => "Continue...",
+        "tr" => "Devamı..."
+    ],
+    "gizle" => [
+        "en" => "Hide",
+        "tr" => "Gizle"
+    ],
+    "alt_basliklar" => [
+        "en" => "Subtopics",
+        "tr" => "Alt Başlıklar"
+    ]
 ];
-
-?>
