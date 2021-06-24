@@ -87,5 +87,187 @@ $lang_index = [
     "alt_basliklar" => [
         "en" => "Subtopics",
         "tr" => "Alt Başlıklar"
-    ]
+    ],
+    "alt_basliklar_metin" => [
+      "en" => ' <div class="mdl-grid no-pad">
+      <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
+        <ul class="mdl-list no-pad mr-16">
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">category</i>
+              Lorem ipsum dolor sit amet
+            </span>
+          </li>
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">category</i>
+              Consectetur adipiscing elit
+            </span>
+          </li>
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">category</i>
+              Müzik Eğitiminde Yeni Yönelimler
+            </span>
+          </li>
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">category</i>
+              Müzik Teorisinde Yeni Yönelimler
+            </span>
+          </li>
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">category</i>
+              Müzik Üretiminde Yeni Yönelimler
+            </span>
+          </li>
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">category</i>
+              Müzik İcrası ve İcracılığında Yeni Yönelimler
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
+        <ul class="mdl-list no-pad">
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">category</i>
+              Müzikte Yerel ve Küresel Dinamikler
+            </span>
+          </li>
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">category</i>
+              Müzik Biliminde Güncel Yaklaşımlar
+            </span>
+          </li>
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">category</i>
+              Değişim ve Müzik Endüstrisi
+            </span>
+          </li>
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">category</i>
+              Müzikte Değişim ve Gelişim
+            </span>
+          </li>
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">category</i>
+              Toplumsal Değişim ve Müzik
+            </span>
+          </li>
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">category</i>
+              Müzikte Çağdaşlık
+            </span>
+          </li>
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">category</i>
+              Yeni Müzik
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>',
+      "tr" => ' <div class="mdl-grid no-pad">
+      <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
+        <ul class="mdl-list no-pad mr-16">
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">category</i>
+              Müzik Araştırmasında Yeni Yönelimler
+            </span>
+          </li>
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">category</i>
+              Müzik Teknolojisinde Yeni Yönelimler
+            </span>
+          </li>
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">category</i>
+              Müzik Eğitiminde Yeni Yönelimler
+            </span>
+          </li>
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">category</i>
+              Müzik Teorisinde Yeni Yönelimler
+            </span>
+          </li>
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">category</i>
+              Müzik Üretiminde Yeni Yönelimler
+            </span>
+          </li>
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">category</i>
+              Müzik İcrası ve İcracılığında Yeni Yönelimler
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
+        <ul class="mdl-list no-pad">
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">category</i>
+              Müzikte Yerel ve Küresel Dinamikler
+            </span>
+          </li>
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">category</i>
+              Müzik Biliminde Güncel Yaklaşımlar
+            </span>
+          </li>
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">category</i>
+              Değişim ve Müzik Endüstrisi
+            </span>
+          </li>
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">category</i>
+              Müzikte Değişim ve Gelişim
+            </span>
+          </li>
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">category</i>
+              Toplumsal Değişim ve Müzik
+            </span>
+          </li>
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">category</i>
+              Müzikte Çağdaşlık
+            </span>
+          </li>
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">category</i>
+              Yeni Müzik
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>'
+    ],
+    "duyurular" => [
+        "en" => "Announcements",
+        "tr" => "Duyurular"
+    ],
 ];

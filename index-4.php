@@ -190,9 +190,7 @@ require_once "langs/lang_index.php";
 
         <!-- Afiş -->
         <section class="pad-tb-24">
-          <div class="pad-25-per">
-            <img src="img/banners/hisarli-11-afis.jpg" class="img-afis">
-          </div>
+          <img src="img/banners/hisarli-11-afis.jpg" class="img-afis">
         </section>
 
         <!-- Satir 5 Teşekkürler -->

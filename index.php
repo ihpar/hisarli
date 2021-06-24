@@ -46,94 +46,7 @@ require_once "langs/lang_index.php";
             <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet sec-24-lr sec-0-r">
               <h3 class="sec-h3"><?php echo($lang_index["alt_basliklar"][$pref_lang]); ?></h3>
               <!-- Alt Basliklar -->
-              <div class="mdl-grid no-pad">
-                <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
-                  <ul class="mdl-list no-pad mr-16">
-                    <li class="mdl-list__item">
-                      <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">category</i>
-                        Müzik Araştırmasında Yeni Yönelimler
-                      </span>
-                    </li>
-                    <li class="mdl-list__item">
-                      <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">category</i>
-                        Müzik Teknolojisinde Yeni Yönelimler
-                      </span>
-                    </li>
-                    <li class="mdl-list__item">
-                      <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">category</i>
-                        Müzik Eğitiminde Yeni Yönelimler
-                      </span>
-                    </li>
-                    <li class="mdl-list__item">
-                      <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">category</i>
-                        Müzik Teorisinde Yeni Yönelimler
-                      </span>
-                    </li>
-                    <li class="mdl-list__item">
-                      <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">category</i>
-                        Müzik Üretiminde Yeni Yönelimler
-                      </span>
-                    </li>
-                    <li class="mdl-list__item">
-                      <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">category</i>
-                        Müzik İcrası ve İcracılığında Yeni Yönelimler
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
-                  <ul class="mdl-list no-pad">
-                    <li class="mdl-list__item">
-                      <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">category</i>
-                        Müzikte Yerel ve Küresel Dinamikler
-                      </span>
-                    </li>
-                    <li class="mdl-list__item">
-                      <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">category</i>
-                        Müzik Biliminde Güncel Yaklaşımlar
-                      </span>
-                    </li>
-                    <li class="mdl-list__item">
-                      <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">category</i>
-                        Değişim ve Müzik Endüstrisi
-                      </span>
-                    </li>
-                    <li class="mdl-list__item">
-                      <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">category</i>
-                        Müzikte Değişim ve Gelişim
-                      </span>
-                    </li>
-                    <li class="mdl-list__item">
-                      <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">category</i>
-                        Toplumsal Değişim ve Müzik
-                      </span>
-                    </li>
-                    <li class="mdl-list__item">
-                      <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">category</i>
-                        Müzikte Çağdaşlık
-                      </span>
-                    </li>
-                    <li class="mdl-list__item">
-                      <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">category</i>
-                        Yeni Müzik
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              <?php echo($lang_index["alt_basliklar_metin"][$pref_lang]); ?>
               <!-- Eof Alt Basliklar -->
             </div>
           </div>
@@ -150,7 +63,7 @@ require_once "langs/lang_index.php";
 
         <section class="pad-tb-24" style="background-color: #f2f4f7">
           <div class="pad-25-per">
-            <h3 class="center-text sec-h3">Duyurular</h3>
+            <h3 class="center-text sec-h3"><?php echo($lang_index["duyurular"][$pref_lang]); ?></h3>
             <ul class="mdl-list">
               <li class="mdl-list__item">
                 <span class="mdl-list__item-primary-content">
