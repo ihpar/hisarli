@@ -18,6 +18,11 @@ require_once "langs/lang_index.php";
 
 <head>
   <?php require_once("modules/header_includes.php"); ?>
+  <style type="text/css">
+  .img-afis {
+    width: 100%;
+  }
+  </style>
 </head>
 
 <body>
@@ -183,16 +188,13 @@ require_once "langs/lang_index.php";
           </div>
         </section>
 
-        <!-- Satir 5 Teşekkürler -->
-        <div class="custom-shape-divider-bottom-1623440211">
-          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path
-              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-              class="shape-fill"></path>
-          </svg>
-        </div>
+        <!-- Afiş -->
+        <section class="pad-tb-24">
+          <img src="img/banners/hisarli-11-afis.jpg" class="img-afis">
+        </section>
 
-        <section class="pad-tb-24" style="background-color: #f2f4f7">
+        <!-- Satir 5 Teşekkürler -->
+        <section class="pad-tb-24">
           <div class="pad-25-per">
             <h3 class="center-text sec-h3">Katkılarınızdan Dolayı Teşekkür Ederiz</h3>
             <ul class="mdl-list center-text">
