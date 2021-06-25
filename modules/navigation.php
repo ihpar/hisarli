@@ -14,13 +14,13 @@ if(!$is_secure) {
     <span></span>
     <div id="phone-menu">
         <ul>
-        <li><a href="index.php">Ana Sayfa</a></li>
+        <li><a href="index.php"><?php echo($lang_global["ana_sayfa"][$pref_lang]); ?></a></li>
         <li><a href="#">Önemli Tarihler</a></li>
         <li><a href="#">Program</a></li>
         <li><a href="#">Geçmiş Sempozyumlar</a></li>
         <li><a href="#">Katılım Ücreti</a></li>
         <li><a href="#">Ulaşım</a></li>
-        <li><a href="#">Hisarlı Ahmet Hakkında</a></li>
+        <li><a href="hisarli.php">Hisarlı Ahmet Hakkında</a></li>
         <li><a href="#">Kütahya Güzel S. Derneği</a></li>
         <li><a href="#">Kurullar</a></li>
         <li><a href="#">Konserler</a></li>
@@ -50,7 +50,7 @@ if(!$is_secure) {
     <li class="dropdown">
         <?php echo($lang_global["hisarli_ahmet"][$pref_lang]); ?>
         <ul class="dropdown_menu rot-x-menu">
-        <li class="dropdown_item-1"><a href="#">Hisarlı Ahmet Hakkında</a></li>
+        <li class="dropdown_item-1"><a href="hisarli.php"><?php echo($lang_global["hisarli_ahmet_hakkinda"][$pref_lang]); ?></a></li>
         <li class="dropdown_item-2"><a href="#">Kütahya Güzel S. Derneği</a></li>
         </ul>
     </li>
