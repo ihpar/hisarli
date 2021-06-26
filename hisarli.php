@@ -32,9 +32,31 @@ require_once "langs/lang_hisarli.php";
 
       .cerceve {
           border-style: solid;
-          border-width: 32px;
-          border-color: #757575;
+          border-width: 16px;
+          border-color: #bbb;
           padding: 16px;
+      }
+
+      h3.sec-h3 {
+          margin-bottom: 18px;
+      }
+
+      h4.sec-h4 {
+          font-size: 14px;
+          margin-bottom: 16px;
+      }
+
+      @media (max-width: 839px) {
+          .pad-10-per {
+              padding: 0 24px;
+          }
+      }
+
+      @media (max-width: 550px) {
+          .img-full {
+              width: 100%;
+              margin: 0 0 16px 0;
+          }
       }
   </style>
 </head>
@@ -55,47 +77,50 @@ require_once "langs/lang_hisarli.php";
         <div class="pad-10-per">
           <div class="cerceve">
             <h3 class="center-text sec-h3"><?php echo($lang_hisarli["hisarli_ahmet_kimdir"][$pref_lang]); ?></h3>
+            <h4 class="center-text sec-h4"><?php echo($lang_hisarli["bu_yazi"][$pref_lang]); ?></h4>
             <img src="img/hisarli-ahmet-fotograf-1.jpg" class="img-full">
             <p>
-              Hisarlı Ahmet, 13/7/1908’de Kütahya Kale-i Bâla– yukarı hisar’ da Ayşe hanım ile Musta’ -Mustafa – beyin
-              ikinci oğulları olarak dünyaya gelmiş, çocukluğu ve gençliği kavaf /kunduracı olan babasının yanında
-              geçmiştir. Kayda değer olmamakla beraber, Hisarlı gençlerle karşı tepe /Hıdırlık gençleri “sapankaya”
-              denilen iki uzun ipin arasındaki meşine taş koyarak biri birilerine atıp güya savaş oyunları oynadıklarını
-              anlatırdı. Bir de Topbaşı denen yerde türkü çığırdında civar köylerden sesinin duyulduğu haberlerinin
+              Hisarlı Ahmet, 13 Temmuz 1908’de Kütahya Kale-i Bâla'da (Yukarı Hisar) Ayşe Hanım ile Musta’ (Mustafa)
+              beyin
+              ikinci oğulları olarak dünyaya gelmiş; çocukluğu ve gençliği kavaf (kunduracı) olan babasının yanında
+              geçmiştir. Kayda değer olmamakla birlikte, Hisarlı, Karşı Tepe (Hıdırlık) gençleriyle “sapankaya”
+              denilen iki uzun ipin arasındaki meşine taş koyarak, taşı birbirlerine atıp güya savaş oyunları
+              oynadıklarını;
+              Topbaşı denen yerde türkü çığırdığında civar köylerden sesinin duyulduğu haberlerinin
               geldiğini zevkle anlatırdı.
             </p>
             <p>
-              Hayatının akışını değiştirecek, onu dünyaya taşıyacak bağlama ile tanışması “YOL VERGİSİ” ödemediği ya da
-              ödeyemediğinden üç günlük mahpus/hapis cezasını çekmek için girdiği mahpushanede tanıdığı bir genç
-              sayessinde oluyor. Çıkar çıkmaz hemen bir kile ya da mintan’a aldığı bağlasması dedem tarafından
-              kırılıyor.
-              Gene alıyor, gene kırılıyor. Sonunda dedem pes ediyor. Hisarlı bağlamayı ilerletiyor. O dönemin ustaları
-              olan Dülger’in Hüsesyin Ağa ve Çerkezlerin Ethem Efendi’den feyz alıyor. Sesinin güzelliği, repertuarının
-              genişliği, bağlamadaki ustalığı dillere destan olmuştu. Ailesine bağlıydı. Tabiatı sever. Her yaştaki
-              insanla arkadaş olabilirdi. Bunların da üstüne arkadaş canlılığı ve bağlılığı gençlerin haftalık
+              Hayatının akışını değiştirecek, onu dünyaya taşıyacak bağlamayla tanışması, “yol vergisi” ödemediği ya da
+              ödeyemediğinden, üç günlük mahpus (hapis) cezasını çekmek için girdiği mahpushanede tanıdığı bir genç
+              sayessinde oluyor. Çıkar çıkmaz hemen bir kil ya da mintana aldığı bağlamasını dedem kırıyor.
+              Gene alıyor, gene kırıyor. Sonunda dedem pes ediyor. Hisarlı bağlamayı ilerletiyor. O dönemin ustaları
+              olan Dülger’in Hüseyin Ağa ve Çerkezler'in Ethem Efendi’den feyz alıyor. Sesinin güzelliği, repertuarının
+              genişliği, bağlamadaki ustalığı dillere destan olmuş. Ailesine bağlı. Tabiatı sever. Her yaştaki
+              insanla arkadaş olabilir. Bunların da üstüne arkadaş canlılığı ve bağlılığı, gençlerin haftalık
               toplantısı
-              olan GEZEK’ lerin aranan kişisi yapıyor onu.
+              olan Gezek'de aranan kişi yaptı onu.
             </p>
             <p>
-              Gençlerin yetişmesi, eğitilmesi ve sosyal hayata adapte olmasında büyük yararları olan bu gezeklerin katı
-              kuralları vardı… Toplantıya geç kalınmaz, bir anlatım esnasında lafa karışılmaz, türkü çığrılmağa
-              başlandığında sessizlik hakim olur, yer minderlerinde ve sedir denen 15-20 cm yüksekslikteki yerlerde
-              rahatça oturulduğu için hemen ayaklar toplanır, diz çökülür ya da bağdaş kurulur, sigara içilmez. Bu
-              kurallar çiğnendiğinde de Gezek Başı’nın uygun gördüğü ceza uygulanır. Kişi zengin ise uzak bir çeşmeden
+              Gençlerin yetişmesi, eğitilmesi ve sosyal hayata adapte olmasında büyük yararları olan bu Gezeklerin katı
+              kuralları vardı. Toplantıya geç kalınmaz, bir anlatım esnasında lafa karışılmaz, türkü çığrılmağa
+              başlandığında sessizlik hakim olurdu. Yer minderlerinde ve sedir denen 15-20 cm yükseklikteki yerlerde
+              rahatça oturulduğu için hemen ayaklar toplanır, diz çökülür ya da bağdaş kurulurdu. Sigara içilmezdi. Bu
+              kurallar çiğnendiğinde de Gezek Başı’nın uygun gördüğü ceza uygulanırdı. Kişi zengin ise uzak bir çeşmeden
               su
-              getirmesi, fakir ise, iki tepsi baklava getirmesi istenir… Babam’dan dinlediğim bir anekdotu anlatmak
-              istiyorum; yemek faslı başlar, tez canlı birisi dayanamaz baklavadan bir samsa atar ağzına. Bir de ne
-              görsün! Tat yerine ağzında berbat bir şey hemen kaş göz işareti evin delikanlısı uzak bir çeşmeden su
-              getirmesi bahanesiyle uzaklaştırılır, baklava yok edilir. Delikanlı geldiğinde de “çok güzel olmuş sana
-              bırakmadık” derler. Toplantı sonu evin hanımı şerbet tenceresini dolu görünce iş işten geçmiştir artık.
+              getirmesi, fakir ise, iki tepsi baklava getirmesi istenirdi. Babam’dan dinlediğim bir anekdotu anlatmak
+              istiyorum: Yemek faslı başlar. Tez canlı birisi olduğundan dayanamaz baklavadan bir samsa atar ağzına. Bir
+              de ne
+              görsün! Tat yerine ağzında berbat bir şey. Hemen kaş göz işareti evin delikanlısı uzak bir çeşmeden su
+              getirmesi bahanesiyle uzaklaştırılır. Baklava yok edilir. Delikanlı geldiğinde de “çok güzel olmuş sana
+              bırakmadık” denir. Toplantı sonu evin hanımı şerbet tenceresini dolu görünce iş işten geçmiştir artık.
               Eşinin de bu olaydan haberdar olmadığını anlar. Konukların bu zarif hareketi onu mahcup etmiştir. Hatasını
-              düzeltmek için daveti hemen tekrarlamak ister. Sosyal ilişkilerde buna benzer daha nice güzel olaylar.
-              İşte
-              delikanlıların güngörmüşlüğü, yani hayat hakkında bir şeyler bildiği hele hele de askerliğini yapmış
-              olması;
-              genç kızların da “Kızlar İçin’de” yetişmeleri. Bu gezekler gençler üzerinde olumlu izler bırakması
+              düzeltmek için daveti hemen tekrarlamak ister. Sosyal ilişkilerde buna benzer daha nice güzel olaylar
+              yaşanmıştır.
+              Delikanlıların güngörmüşlüğü, yani hayat hakkında bir şeyler bildiği hele hele de askerliğini yapmış
+              olmaları,
+              genç kızların kızlar içinde yetişmeleri vs. Tüm bunlar, Gezek gençleri üzerinde olumlu izler bırakması
               açısından
-              çok önemlidir.
+              oldukça önemlidir.
             </p>
             <p>
               Bu toplantılarda bulunmak gençler için adeta bir referans sayılır. “CUMA DEBLEĞİ“ çalmış diye de iltifat
@@ -421,9 +446,6 @@ require_once "langs/lang_hisarli.php";
             </p>
             <p>
               - MUSTAFA HİSARLI Yüksek Mimar, TRT Sanatçısı
-            </p>
-            <p>
-              Bu yazı Hisarlı Ahmet ve Kütahya Türküleri Sempozyum Bildirileri Kitabından alınmıştır.
             </p>
           </div>
         </div>

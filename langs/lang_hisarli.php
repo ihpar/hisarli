@@ -9,9 +9,9 @@ $lang_hisarli = [
         "en" => "Who is Hisarli Ahmet?",
         "tr" => "Hisarlı Ahmet Kimdir?"
     ],
-    "sempozyum_bilgileri" => [
-        "en" => "Symposium Info",
-        "tr" => "Sempozyum Bilgileri"
+    "bu_yazi" => [
+        "en" => '(Cited from "Hisarlı Ahmet ve Kütahya Türküleri Sempozyumu" proceedings book)',
+        "tr" => '(Hisarlı Ahmet\'in oğlu, TRT Sanatçısı ve Yüksek Mimar MUSTAFA HİSARLI\'nın kaleme aldığı bu yazı, Hisarlı Ahmet ve Kütahya Türküleri Sempozyumu bildiri kitapçığından alınmıştır)'
     ]
 ];
 
