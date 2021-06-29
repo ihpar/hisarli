@@ -109,7 +109,7 @@ require_once "langs/lang_index.php";
 
       <!-- Satir 3 Konusmacilar -->
       <section class="pad-tb-24">
-        <h3 class="center-text sec-h3">Davetli Konuşmacılar</h3>
+        <h3 class="center-text sec-h3"><?php echo($lang_index["davetli_konusmacilar"][$pref_lang]); ?></h3>
         <div class="mdl-grid">
           <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
             <!-- Card -->
@@ -166,7 +166,7 @@ require_once "langs/lang_index.php";
 
       <!-- Satir 4 Bilim Kurulu -->
       <section class="pad-tb-24">
-        <h3 class="center-text sec-h3">Bilim Kurulu Başkanları</h3>
+        <h3 class="center-text sec-h3"><?php echo($lang_index["bilim_kurulu_baskanlari"][$pref_lang]); ?></h3>
 
         <div class="mdl-grid" style="justify-content: center">
           <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
@@ -196,7 +196,7 @@ require_once "langs/lang_index.php";
       <!-- Satir 5 Teşekkürler -->
       <section class="pad-tb-24">
         <div class="pad-25-per">
-          <h3 class="center-text sec-h3">Katkılarınızdan Dolayı Teşekkür Ederiz</h3>
+          <h3 class="center-text sec-h3"><?php echo($lang_index["katkilarinizdan_dolayi"][$pref_lang]); ?></h3>
           <ul class="mdl-list center-text">
             <li class="mdl-list__item">
                 <span class="mdl-list__item-primary-content">Kültür ve Turizm Bakanı Sn. Mehmet Nuri

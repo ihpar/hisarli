@@ -89,7 +89,7 @@ $lang_index = [
         "tr" => "Alt Başlıklar"
     ],
     "alt_basliklar_metin" => [
-      "en" => ' <div class="mdl-grid no-pad">
+        "en" => ' <div class="mdl-grid no-pad">
       <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
         <ul class="mdl-list no-pad mr-16">
           <li class="mdl-list__item">
@@ -177,7 +177,7 @@ $lang_index = [
         </ul>
       </div>
     </div>',
-      "tr" => ' <div class="mdl-grid no-pad">
+        "tr" => ' <div class="mdl-grid no-pad">
       <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
         <ul class="mdl-list no-pad mr-16">
           <li class="mdl-list__item">
@@ -270,4 +270,16 @@ $lang_index = [
         "en" => "Announcements",
         "tr" => "Duyurular"
     ],
+    "davetli_konusmacilar" => [
+        "en" => "Invited Speakers",
+        "tr" => "Davetli Konuşmacılar"
+    ],
+    "bilim_kurulu_baskanlari" => [
+        "en" => "Scientific Board",
+        "tr" => "Bilim Kurulu Başkanları"
+    ],
+    "katkilarinizdan_dolayi" => [
+        "en" => "Thank You For Your Contribution ",
+        "tr" => "Katkılarınızdan Dolayı Teşekkür Ederiz"
+    ]
 ];
