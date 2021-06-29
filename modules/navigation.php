@@ -21,7 +21,7 @@ if(!$is_secure) {
         <li><a href="#">Katılım Ücreti</a></li>
         <li><a href="#">Ulaşım</a></li>
         <li><a href="hisarli.php">Hisarlı Ahmet Hakkında</a></li>
-        <li><a href="#">Kütahya Güzel S. Derneği</a></li>
+        <li><a href="kgsd.php">Kütahya Güzel S. Derneği</a></li>
         <li><a href="#">Kurullar</a></li>
         <li><a href="#">Konserler</a></li>
         <li><a href="#">Konferans</a></li>
@@ -51,7 +51,7 @@ if(!$is_secure) {
         <?php echo($lang_global["hisarli_ahmet"][$pref_lang]); ?>
         <ul class="dropdown_menu rot-x-menu">
         <li class="dropdown_item-1"><a href="hisarli.php"><?php echo($lang_global["hisarli_ahmet_hakkinda"][$pref_lang]); ?></a></li>
-        <li class="dropdown_item-2"><a href="#">Kütahya Güzel S. Derneği</a></li>
+        <li class="dropdown_item-2"><a href="kgsd.php">Kütahya Güzel S. Derneği</a></li>
         </ul>
     </li>
     <li class="dropdown">
