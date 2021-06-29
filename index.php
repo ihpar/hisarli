@@ -259,7 +259,7 @@ require_once "langs/lang_index.php";
             </li>
             <li class="mdl-list__item">
                 <span class="mdl-list__item-primary-content">Çatık Madencilik Sn. ismet Çatık (Ana
-                  Sponsor)"</span>
+                  Sponsor)</span>
             </li>
             <li class="mdl-list__item">
               <span class="mdl-list__item-primary-content">Delen Ticaret Sn. Nihat Delen</span>

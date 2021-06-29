@@ -13,6 +13,10 @@ $lang_global = [
         "en" => "Symposium Info",
         "tr" => "Sempozyum Bilgileri"
     ],
+    "onemli_tarihler" => [
+        "en" => "Important Dates",
+        "tr" => "Önemli Tarihler"
+    ],
     "hisarli_ahmet" => [
         "en" => "Hisarli Ahmet",
         "tr" => "Hisarlı Ahmet"

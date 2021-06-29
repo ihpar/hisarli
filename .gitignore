@@ -11,3 +11,4 @@ dbms/class.db.php
 /.idea/php.xml
 /.idea/deployment.xml
 /.idea/webServers.xml
+/tester.php
