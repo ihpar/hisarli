@@ -19,11 +19,6 @@ require_once "langs/lang_important-dates.php";
 <head>
     <?php require_once("modules/header_includes.php"); ?>
   <style type="text/css">
-      .img-full {
-          float: left;
-          width: 50%;
-          margin: 0 16px 16px 0;
-      }
 
       .pad-10-per {
           padding: 0 10%;
@@ -41,27 +36,16 @@ require_once "langs/lang_important-dates.php";
           padding: 16px;
           margin-left: auto;
           margin-right: auto;
+          display: inline-block;
       }
 
       h3.sec-h3 {
           margin-bottom: 18px;
       }
 
-      h4.sec-h4 {
-          font-size: 24px;
-          margin-bottom: 16px;
-      }
-
       @media (max-width: 839px) {
           .pad-10-per {
               padding: 0 24px;
-          }
-      }
-
-      @media (max-width: 550px) {
-          .img-full {
-              width: 100%;
-              margin: 0 0 16px 0;
           }
       }
   </style>
@@ -81,29 +65,29 @@ require_once "langs/lang_important-dates.php";
       <!-- Icerik -->
       <section class="pad-tb-24">
         <div class="pad-10-per">
-          <div class="cerceve">
+          <div class="cerceve" style="overflow-x:auto;">
             <h3 class="center-text sec-h3"><?php echo($lang_important_dates["onemli_tarihler"][$pref_lang]); ?></h3>
-            <table class="mdl-data-table mdl-shadow--2dp">
+            <table class="mdl-data-table">
               <tbody>
               <tr>
-                <td class="mdl-data-table__cell--non-numeric">Bildiri Özetlerinin Son Gönderimi</td>
-                <td>28 Mart 2021</td>
+                <td class="mdl-data-table__cell--non-numeric"><?php echo($lang_important_dates["ozet_son"][$pref_lang]); ?></td>
+                <td><?php echo($lang_important_dates["ozet_son_tarih"][$pref_lang]); ?></td>
               </tr>
               <tr>
-                <td class="mdl-data-table__cell--non-numeric">Kabul Edilen Özetlerin İlanı</td>
-                <td>9 Nisan 2021</td>
+                <td class="mdl-data-table__cell--non-numeric"><?php echo($lang_important_dates["bildiri_ilan"][$pref_lang]); ?></td>
+                <td><?php echo($lang_important_dates["bildiri_ilan_tarih"][$pref_lang]); ?></td>
               </tr>
               <tr>
-                <td class="mdl-data-table__cell--non-numeric">Katılım Ücretlerinin Son Gönderim Tarihi</td>
-                <td>20 Nisan 2021</td>
+                <td class="mdl-data-table__cell--non-numeric"><?php echo($lang_important_dates["ucret_son"][$pref_lang]); ?></td>
+                <td><?php echo($lang_important_dates["ucret_son_tarih"][$pref_lang]); ?></td>
               </tr>
               <tr>
-                <td class="mdl-data-table__cell--non-numeric">Sempozyum Programı İlanı</td>
-                <td>5 Mayıs 2021</td>
+                <td class="mdl-data-table__cell--non-numeric"><?php echo($lang_important_dates["program_ilan"][$pref_lang]); ?></td>
+                <td><?php echo($lang_important_dates["program_ilan_tarih"][$pref_lang]); ?></td>
               </tr>
               <tr>
-                <td class="mdl-data-table__cell--non-numeric">Sempozyum Tarihi</td>
-                <td>3-4-5-6 Haziran 2021</td>
+                <td class="mdl-data-table__cell--non-numeric"><?php echo($lang_important_dates["sempozyum_tarihi"][$pref_lang]); ?></td>
+                <td><?php echo($lang_important_dates["sempozyum_tarihi_tarih"][$pref_lang]); ?></td>
               </tr>
               </tbody>
             </table>

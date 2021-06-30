@@ -19,12 +19,6 @@ require_once "langs/lang_kgsd.php";
 <head>
     <?php require_once("modules/header_includes.php"); ?>
   <style type="text/css">
-      .img-full {
-          float: left;
-          width: 50%;
-          margin: 0 16px 16px 0;
-      }
-
       .pad-10-per {
           padding: 0 10%;
           text-align: justify;
@@ -46,7 +40,7 @@ require_once "langs/lang_kgsd.php";
 
       h4.sec-h4 {
           font-size: 24px;
-          margin-bottom: 16px;
+          margin: 16px auto;
       }
 
       @media (max-width: 839px) {
@@ -55,11 +49,12 @@ require_once "langs/lang_kgsd.php";
           }
       }
 
-      @media (max-width: 550px) {
-          .img-full {
-              width: 100%;
-              margin: 0 0 16px 0;
-          }
+      .centered-content {
+          text-align: center;
+      }
+
+      .centered-content span.mdl-list__item-primary-content {
+          display: inline-block;
       }
   </style>
 </head>
@@ -82,427 +77,369 @@ require_once "langs/lang_kgsd.php";
             <h3 class="center-text sec-h3"><?php echo($lang_kgsd["kgsd"][$pref_lang]); ?></h3>
 
             <h4 class="center-text sec-h4"><?php echo($lang_kgsd["yonetim_kurulu_uyeleri"][$pref_lang]); ?></h4>
-            <ul class="mdl-list">
-              <li class="mdl-list__item">
-          <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
-              MUSTAFA KEMAL ALTINSOY
-          </span>
+            <ul class="mdl-list centered-content">
+              <li class="mdl-list__item mdl-list__item--two-line">
+                <span class="mdl-list__item-primary-content">
+                  <span>MUSTAFA KEMAL ALTINSOY (Başkan)</span>
+                  <span class="mdl-list__item-sub-title">Sanatçı</span>
+                </span>
               </li>
-              <li class="mdl-list__item">
-          <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
-              NİHAT DELEN
-          </span>
+              <li class="mdl-list__item mdl-list__item--two-line">
+                <span class="mdl-list__item-primary-content">
+                  <span>NİHAT DELEN</span>
+                  <span class="mdl-list__item-sub-title">İş adamı</span>
+                </span>
               </li>
-              <li class="mdl-list__item">
-          <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
-              BİRSEN GÜZEN
-          </span>
+              <li class="mdl-list__item mdl-list__item--two-line">
+                <span class="mdl-list__item-primary-content">
+                  <span>UĞUR TÜRKMEN</span>
+                  <span class="mdl-list__item-sub-title">Akademisyen</span>
+                </span>
               </li>
-              <li class="mdl-list__item">
-          <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
-              AHMET UMU
-          </span>
+              <li class="mdl-list__item mdl-list__item--two-line">
+                <span class="mdl-list__item-primary-content">
+                  <span>ALİ SARIKOYUNCU</span>
+                  <span class="mdl-list__item-sub-title">Akademisyen</span>
+                </span>
               </li>
-              <li class="mdl-list__item">
-          <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
-              UĞUR TÜKMEN
-          </span>
+              <li class="mdl-list__item mdl-list__item--two-line">
+                <span class="mdl-list__item-primary-content">
+                  <span>ADİL ÖZKAN</span>
+                  <span class="mdl-list__item-sub-title">Sanatçı</span>
+                </span>
               </li>
-              <li class="mdl-list__item">
-          <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
-              MURAT SARIYILDIZ
-          </span>
+              <li class="mdl-list__item mdl-list__item--two-line">
+                <span class="mdl-list__item-primary-content">
+                  <span>HALİM TÜRKMEN</span>
+                  <span class="mdl-list__item-sub-title">Öğretmen</span>
+                </span>
               </li>
-              <li class="mdl-list__item">
-          <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
-              LÜTFÜ GÜRPINAR          </span>
+              <li class="mdl-list__item mdl-list__item--two-line">
+                <span class="mdl-list__item-primary-content">
+                  <span>OSMAN ÖZDEMİR</span>
+                  <span class="mdl-list__item-sub-title">Öğretmen</span>
+                </span>
               </li>
             </ul>
 
             <h4 class="center-text sec-h4"><?php echo($lang_kgsd["dernek_uyeleri"][$pref_lang]); ?></h4>
-            <ul class="mdl-list">
+            <ul class="mdl-list centered-content">
+
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
-              AKİL GÜR
-          </span>
-              </li>
-              <li class="mdl-list__item">
-          <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               AHMET SAĞLAM
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               DOĞAN ŞAPCI
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               HÜSEYİN EFE
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               ERHAN AKALIN
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               CELAL KARABAY
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               AHMET ÖZKAYA
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               AHMET UMU
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               M.ALİ GÖKER
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               İSMAİL YİĞİT
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               NİHAT DELEN
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               MEHMET GÜRSOY
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               OSMAN ZEKİ COŞKUN
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               A.ALİ KADIOĞLU
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               HASAN H.ÖZMUTAF
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               LÜTFÜ GÜRPINAR
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               BİRSEN GÜZEN
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               AYŞE ECE DELEN
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               SEMA GÜRAL
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               CEYDA ÇETİN
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               İSMET BAĞRIYANIK
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               UĞUR TÜRKMEN
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               GÜLER YILMAZ
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               H.İBRAHİM TÜRKOĞLU
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               MEHMET KOÇER
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               MURAT SARIYILDIZ
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               NURSEL SARIYILDIZ
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               İBRAHİM ERDEYER
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               RECEP ZENGİN
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               ERCİYES AKÇAY
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               ALİ RIZA MUSLU
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               MEHMET YILDIRIM
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               ALİ SOYCAN
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               SERDAR SÜLÜKİ
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               YILMAZ DURMAZ
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               FAHRİ ÇETİNKAYA
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               HASAN DURGUN
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               MÜKERREM SELÇUKER
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               AHMET ÇAKMAK
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               HÜRDOĞAN ÇELİK
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               AYŞE KAÇAN
           </span>
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">person</i>
               MUSTAFA KEMAL ALTINSOY          </span>
               </li>
             </ul>
 
             <h4 class="center-text sec-h4"><?php echo($lang_kgsd["dernek_etkinlikleri"][$pref_lang]); ?></h4>
             <div>
-              <p>27-28-29 Ağustos 1997&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kütahya
-                Çavdarhisar Kültür Ve Turizm Festivalinde Kültür Sarayında açılan sergilere eserler ile (Çini, Resim,
-                Elmas, Takılar gibi) katılım<br></p>
+              <p>27-28-29 Ağustos 1997 --> Çavdarhisar Kültür ve Turizm Festivali kapsamında Kütahya Kültür Sarayı'nda
+                çini, resim, elmas, takı vs. sergisi<br></p>
 
-              <p>6 Eylül 1997 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Kütahya Kültür Sarayında Türk Sanat Müziği konseri</p>
+              <p>6 Eylül 1997 --> Kütahya Kültür Saray'ında Türk Sanat Müziği konseri</p>
 
-              <p>24-29 Kasım 1997 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ankara
-                Türk-Amerikan Derneğinde Kütahya Haftası etkinliği tertip edilerek konser, sergiler ve gala gecesinde
-                yemek, müzik ve tarihi bayan kıyafetleri defilesi</p>
+              <p>24-29 Kasım 1997 --> Ankara Türk-Amerikan Derneği'nde Kütahya haftası etkinliği. Konser, sergiler ve
+                gala gecesinde
+                yemek, müzik ve tarihi kadın kıyafetleri defilesi</p>
 
-              <p>Mart 1998 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Kütahya Kültür Sarayında Tiyatro kolumuzca Refik Erduran’ın “Bir Ayı Masalı” oyunu sahneye
-                konulmuştur.</p>
+              <p>Mart 1998 --> Kütahya Kültür Sarayı'nda tiyatro kolumuzca Refik Erduran’ın “Bir Ayı Masalı” oyununun
+                sahnelenmesi</p>
 
-              <p>08/13Haziran 1998 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;Eskişehir’de Kütahya Tanıtım Haftası Etkinliklerinde sergiler düzenlenmiş ve 10.06.1998 tarihinde
-                büyük bir gala gecesi düzenlenerek müzik ve yemek verilmiş ve tarihi bayan giysileri defilesi
-                yapılmıştır.</p>
+              <p>8-13 Haziran 1998 --> Eskişehir’de Kütahya tanıtım haftası etkinliklerinde sergiler. 10.06.1998
+                tarihinde
+                büyük bir gala gecesi. Müzik ve yemek eşliğinde tarihi kadın giysileri defilesi</p>
 
-              <p>25 Kasım /1Aralık 1998 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bursa’da Kütahya
-                Tanıtım Haftası düzenlenerek sergiler ve gala gecesi otelde Kütahya Halk Oyunları, müzik konseri ve
-                tarihi kadın kıyafetleri defilesi yemek eşliğinde yapılmıştır.</p>
+              <p>25 Kasım - 1 Aralık 1998 --> Bursa’da Kütahya
+                tanıtım haftası. Sergiler ve gala gecesi. Yemek eşliğinde Kütahya Halk Oyunları. Konser ve
+                tarihi kadın kıyafetleri defilesi</p>
 
-              <p>Haziran 1999 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                (Tuncay Cücenoğlunun) “Dosya” isimli Tiyatro eseri sahneye konulmuştur.</p>
+              <p>Haziran 1999 --> Tuncay Cücenoğlu'nun “Dosya” isimli tiyatro eserinin sahnelenmesi</p>
 
-              <p>26 Haziran 1999 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Kütahya Kültür Sarayında Türk Müziği Konseri</p>
+              <p>26 Haziran 1999 --> Kütahya Kültür Sarayı'nda Türk Müziği konseri</p>
 
-              <p>26 Haziran 1999&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Kültür Sarayında Osmanlı Devletinin Kuruluşunun 700. yılının kutlamaları Münasebeti ile Osmanlı
-                Padişahlarının kendi bestelerinden derlenen Türk Müziği Konseri icra edilmiştir.</p>
+              <p>26 Haziran 1999 --> Kütahya Kültür Sarayı'nda Osmanlı Devleti kuruluşunun 700. yılının kutlamaları.
+                Osmanlı
+                padişahlarının kendi bestelerinden derlenen Türk Müziği konseri</p>
 
-              <p>07/16 Nisan 2000 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                İstanbul Harbiye Askeri Müzede “İl İl Türkiye Kütahya Haftası” yapılmış olup; resim, çini, tarihi bayan
-                giysisi ve diğer (Elde yapılan örtüler gibi). Altın ve Gümüş Eserler Sergisi.</p>
+              <p>7-16 Nisan 2000 --> İstanbul Harbiye Askeri Müzede “İl İl Türkiye Kütahya Haftası”. Resim, çini, tarihi
+                bayan
+                giysisi, elde yapılan örtüler, altın ve gümüş eerler sergisi.</p>
 
-              <p>10 Ekim 2000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                “THE PRESİDENT” Otelinde Türk Basınının iştiraki ile tarihi bayan giysileri defilesi.</p>
+              <p>10 Ekim 2000 --> “The President” otelde Türk basınının iştiraki ile tarihi kadın giysileri defilesi</p>
 
-              <p>06 Mayıs 2000 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Türk müziği topluluğumuzca Kütahya Kültür Sarayında konser.</p>
+              <p>06 Mayıs 2000 --> Türk Müziği topluluğumuzca Kütahya Kültür Sarayı'nda konser.</p>
 
-              <p>08/14 Kasım 2000 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                İzmir Atatürk Kültür Merkezinde basın iştiraki ile Resim, çini, kuyumculuk sanatı eserleri ve tarihi
-                kadın el işlemeleri sergileri.</p>
+              <p>8-14 Kasım 2000 --> İzmir Atatürk Kültür Merkezi'nde basın iştiraki ile resim, çini, kuyumculuk sanatı
+                eserleri ve tarihi
+                kadın el işlemeleri sergileri</p>
 
-              <p>13 Kasım 2001 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Gala gecesi İzmir “Balçova Prenses Otelinde” yemekli Kütahya Türküleri ve Türk Müziği eşliğinde Kütahya
-                Tanıtım Gecesinde; tarihi bayan giysileri defilesi düzenlenmiştir. &nbsp;(Gala gecelerinde yapılan bütün
+              <p>13 Kasım 2001 --> Gala gecesi: İzmir-Balçova Prenses Otel'de Kütahya Türküleri ve Türk Müziği eşliğinde
+                yemekli Kütahya
+                tanıtım gecesi. Tarihi kadın giysileri defilesi. &nbsp;(Gala gecelerinde yapılan bütün
                 defilelerde Kütahyalı kızlarımız mankenlik yapmışlardır. Defileler üç etaplı olup birinci etapta
-                yirminci yüzyılda elle dokunmuş modern gece kıyafetlerinin eski Türk motifleri ile yapılmış olması
-                orijinaldir. 2.etapta Kütahya Kına Gecelerinde bayanlarca giyilen bütün Kütahya kıyafetlerinin elle,
+                20.yy'da elle dokunmuş modern gece kıyafetlerinin eski Türk motifleri ile yapılmış olması
+                orijinaldir. 2.etapta Kütahya kına gecelerinde kadınlarca giyilen bütün Kütahya kıyafetlerinin elle,
                 kasnakta ve gergefte işlenmiş olması ayrıcalığı vardır. Yaklaşık 100-150-200-250-300 senelik tarihi
-                sandıklarda saklanan antika kıyafetler olup sadece derneğimizce defilede kullanılması çok büyük bir
+                sandıklarda saklanan antika kıyafetlerin sadece derneğimizce defilede kullanılması çok büyük bir
                 ayrıcalıktır)</p>
 
-              <p>2001 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Kütahya’da Çini sanatçılarının 1951 senesinde 5846 sayılı kanununa göre gelir vergisinden muaf olup
-                “stopaj” ile belge düzenlenmesine kurul kurulmuş ve Çini Sanatçısı Eser Belgesi almaya hak kazanmıştır.
-                Bu husus derneğimizin ciddi takibi neticesinde meydana çıkartılmıştır.</p>
+              <p>2001 --> 1951'de yürürlüğe giren 5846 sayılı kanununa göre gelir vergisinden muaf olan Kütahya’da çini
+                sanatçılarının
+                “stopaj”la belge düzenlenmesine yönelik bir kurul kurulmuş olup sanatçılar "Çini Sanatçısı Eser Belgesi"
+                almaya hak kazanmıştır.
+                Bu durum, derneğimizin ciddi takibi neticesinde sonuçlandırılmıştır</p>
 
-              <p>24 Mayıs 2002&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Kütahya Kültür Sarayında Derneğimizce Klasik Türk Müziği Konseri.</p>
-
-
-              <p>23 Haziran 2002 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Dernek Türk Müziği topluluğu tarafından Kütahya Kültür Sarayında Klasik Türk Müziği konseri</p>
+              <p>24 Mayıs 2002 --> Kütahya Kültür Sarayı'nda Klasik Türk Müziği Konseri.</p>
 
 
-              <p>30 Eylül /09 Kasım 2002 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ankara Zafer Çarşısında
-                Kütahya Tanıtım Haftası Etkinliği&nbsp; koordinasyonu yapılmış ve resim, çini,bayan tarihi el işlemeleri
-                ve giysileri sergisi yapılmıştır.</p>
+              <p>23 Haziran 2002 --> Derneğimiz Türk Müziği topluluğu tarafından Kütahya Kültür Sarayı'nda klasik Türk
+                Müziği konseri</p>
 
 
-              <p>31 Mayıs /21 Haziran 2003 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kütahya Kültür Sarayında Türk Müziği
-                Konseri.</p>
+              <p>30 Eylül-09 Kasım 2002 --> Ankara Zafer Çarşısı'nda Kütahya tanıtım haftası etkinliği. Resim, çini,
+                kadın tarihi el işlemeleri
+                ve giysileri sergisi</p>
 
 
-              <p>Şubat 2004 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Dumlupınar Üniversitesi’nde Türk Müziği Konseri.</p>
+              <p>31 Mayıs-21 Haziran 2003 --> Kütahya Kültür Sarayı'nda Türk Müziği konseri.</p>
 
 
-              <p>09 Aralık 2004 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Avrasya İzmir Fuarına Derneğimizce el sanatlarımız ile iştirak edilmiştir.</p>
+              <p>Şubat 2004 --> Dumlupınar Üniversitesi’nde Türk Müziği konseri</p>
 
 
-              <p>11/21 Kasım 2005 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Beylerbeyi Sarayı Bahçesindeki 2.Mahmut’tan kalma 130 metre boyunda 5 metre genişliğindeki 650m²‘lik&nbsp;
-                Tünel Sergi Sarayı Milli Saraylar Milli Saraylar Daire Başkanlığı tarafından T.B.M.M&nbsp; onayı ile
-                derneğimize tahsis edilmiş olup çini, resimler, bayan takıları, altın ve elmas mücevherler ile tarihi
-                bayan giysilerinin elde kasnak ve gergef ile işlenmiş eserleri sergilenmiş tarihi kıyafetlerin yirminci&nbsp;
-                yüzyılda yapılmış gece kıyafetlerine işlenmiş olup motifleri Kütahya kına gecelerinde gergef ve kasnakta
-                yapılmış bayan kıyafetleri ile yaklaşık 100 yıllık olan 150-200-250-300 yıllık altın ve gümüş simle
+              <p>09 Aralık 2004 --> Avrasya İzmir Fuarı'na derneğimizce el sanatlarımızla katılım</p>
+
+
+              <p>11-21 Kasım 2005 --> Beylerbeyi Sarayı Bahçesi'ndeki II.Mahmut’dan kalma 130m boy ve 5m genişliğindeki
+                650m²‘lik Tünel Sergi Sarayı, Milli Saraylar Daire Başkanlığı tarafından TBMM onayıyla
+                derneğimize tahsis edilmiş olup çini, resim, kadın takıları, altın ve elmas mücevherlerle tarihi
+                kadın giysilerinin elde kasnak ve gergefle işlenmiş eserleri sergilenmiştir. Tarihi kıyafetlerin
+                20.yy.'da yapılmış gece kıyafetlerine işlenmiş olup motifleri Kütahya kına gecelerinde gergef ve
+                kasnakta
+                yapılmış kadın kıyafetleriyle 150-200-250-300 yıllık altın ve gümüş simle
                 işlenmiş tarihi kıyafetler defilesi Kütahyalı manken kızlarımız tarafından gerçekleştirilmiştir.</p>
 
 
-              <p>16 Haziran 2006 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Kütahya Azot Sitesi salonunda Türk Müziği Konseri.</p>
+              <p>16 Haziran 2006 --> Kütahya Azot Sitesi salonunda Türk Müziği konseri.</p>
 
 
-              <p>20 Ekim 2007 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kütahya
-                Kültür Sarayında Türk Müziği Konseri.</p>
+              <p>20 Ekim 2007 --> Kütahya Kültür Sarayı'nda Türk Müziği konseri.</p>
 
 
-              <p>26 Nisan 2008 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Polis Evi Salonunda derneğimizin kuruluşunun 10.yılı yemekli ve müzikli olarak kutlama etkinliği.</p>
+              <p>26 Nisan 2008 --> Polis Evi Salonu'nda derneğimizin kuruluşunun 10.yılının yemekli ve müzikli
+                kutlaması</p>
 
 
-              <p>10 Ekim 2008 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Dumlupınar Üniversitesi Merkez Kampüsü Konser Salonunda<br>Atatürk’ümüzün Sevdiği&nbsp; Arialar, Türk
-                Sanat Müziği eserleri ve Türküleri ile Kütahya Türküleri Konseri Piyanist, Tenor ve Soprano katılımıyla
-                &nbsp;ve Kütahya Güzel Sanatlar Lisesi Korosu desteğiyle &nbsp;ile Atatürk’ümüzü Anma Gecesi.</p>
+              <p>10 Ekim 2008 --> Dumlupınar Üniversitesi Merkez Kampüs Konser Salonu'nda<br>Atatürk’ümüzün sevdiği
+                aryalar, Türk
+                Sanat Müziği eserleri ve türküleriyle, Kütahya türküleri konseri. Piyanist, tenor ve soprano
+                sanatçılarının katılımıyla
+                &nbsp;ve Kütahya Güzel Sanatlar Lisesi Korosu desteğiyle Atatürk’ümüzü anma gecesi</p>
 
 
-              <p>27 Aralık 2008 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Kütahya Kültür Sarayında Müzikli Operet/Müzikaller sunumu.</p>
+              <p>27 Aralık 2008 --> Kütahya Kültür Sarayı'nda operet ve müzikaller sunumu</p>
 
-              <p>Uluslararası Hisarlı Ahmet Sempozyumları (2009-2021)</p>
+              <p>2009'dan bu yana kesintisiz olarak --> ULUSLARARASI HİSARLI AHMET SEMPOZYUMLARI </p>
 
             </div>
 
@@ -613,60 +550,6 @@ require_once "langs/lang_kgsd.php";
             Madde 8-Dernek genel kurulu olağan toplantısını 3 yılda bir ve haziran ayı içerisinde yapar.          </span>
               </li>
             </ul>
-
-            <h4 class="center-text sec-h4"><?php echo($lang_kgsd["dernek_yonetim_kurulu"][$pref_lang]); ?></h4>
-            <ul class="mdl-list">
-              <li class="mdl-list__item mdl-list__item--two-line">
-                <span class="mdl-list__item-primary-content">
-                  <i class="material-icons mdl-list__item-avatar">person</i>
-                  <span>MUSTAFA KEMAL ALTINSOY (Başkan)</span>
-                  <span class="mdl-list__item-sub-title">Sanatçı</span>
-                </span>
-              </li>
-              <li class="mdl-list__item mdl-list__item--two-line">
-                <span class="mdl-list__item-primary-content">
-                  <i class="material-icons mdl-list__item-avatar">person</i>
-                  <span>NİHAT DELEN</span>
-                  <span class="mdl-list__item-sub-title">İş adamı</span>
-                </span>
-              </li>
-              <li class="mdl-list__item mdl-list__item--two-line">
-                <span class="mdl-list__item-primary-content">
-                  <i class="material-icons mdl-list__item-avatar">person</i>
-                  <span>UĞUR TÜRKMEN</span>
-                  <span class="mdl-list__item-sub-title">Akademisyen</span>
-                </span>
-              </li>
-              <li class="mdl-list__item mdl-list__item--two-line">
-                <span class="mdl-list__item-primary-content">
-                  <i class="material-icons mdl-list__item-avatar">person</i>
-                  <span>ALİ SARIKOYUNCU</span>
-                  <span class="mdl-list__item-sub-title">Akademisyen</span>
-                </span>
-              </li>
-              <li class="mdl-list__item mdl-list__item--two-line">
-                <span class="mdl-list__item-primary-content">
-                  <i class="material-icons mdl-list__item-avatar">person</i>
-                  <span>ADİL ÖZKAN</span>
-                  <span class="mdl-list__item-sub-title">Sanatçı</span>
-                </span>
-              </li>
-              <li class="mdl-list__item mdl-list__item--two-line">
-                <span class="mdl-list__item-primary-content">
-                  <i class="material-icons mdl-list__item-avatar">person</i>
-                  <span>HALİM TÜRKMEN</span>
-                  <span class="mdl-list__item-sub-title">Öğretmen</span>
-                </span>
-              </li>
-              <li class="mdl-list__item mdl-list__item--two-line">
-                <span class="mdl-list__item-primary-content">
-                  <i class="material-icons mdl-list__item-avatar">person</i>
-                  <span>OSMAN ÖZDEMİR</span>
-                  <span class="mdl-list__item-sub-title">Öğretmen</span>
-                </span>
-              </li>
-            </ul>
-
           </div>
         </div>
       </section>
