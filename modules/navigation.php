@@ -22,7 +22,7 @@ if (!$is_secure) {
           <li><a href="#">Ulaşım</a></li>
           <li><a href="hisarli.php">Hisarlı Ahmet Hakkında</a></li>
           <li><a href="kgsd.php">Kütahya Güzel S. Derneği</a></li>
-          <li><a href="#">Kurullar</a></li>
+          <li><a href="boards.php"><?php echo($lang_global["kurullar"][$pref_lang]); ?></a></li>
           <li><a href="#">Konserler</a></li>
           <li><a href="#">Konferans</a></li>
           <li><a href="#">Atölye Çalışmaları</a></li>
@@ -57,7 +57,7 @@ if (!$is_secure) {
         </ul>
       </li>
       <li class="dropdown">
-        <a href="#"><?php echo($lang_global["kurullar"][$pref_lang]); ?></a>
+        <a href="boards.php"><?php echo($lang_global["kurullar"][$pref_lang]); ?></a>
       </li>
       <li class="dropdown">
           <?php echo($lang_global["etkinlikler"][$pref_lang]); ?>

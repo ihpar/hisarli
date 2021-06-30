@@ -26,7 +26,7 @@ $lang_global = [
         "tr" => "Hisarlı Ahmet Hakkında"
     ],
     "kurullar" => [
-        "en" => "Board",
+        "en" => "Boards",
         "tr" => "Kurullar"
     ],
     "etkinlikler" => [
