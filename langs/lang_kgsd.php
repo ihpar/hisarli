@@ -10,12 +10,12 @@ $lang_kgsd = [
         "tr" => "Kütahya Güzel Sanatlar Derneği"
     ],
     "yonetim_kurulu_uyeleri" => [
-        "en" => "Kütahya Fine Arts Association Board Members",
-        "tr" => "Kütahya Güzel Sanatlar Derneği̇ Yöneti̇m Kurulu Üyeleri̇"
+        "en" => "Association Board",
+        "tr" => "Yöneti̇m Kurulu"
     ],
     "dernek_uyeleri" => [
-        "en" => "Kütahya Fine Arts Association Members",
-        "tr" => "Kütahya Güzel Sanatlar Derneği̇ Üyeleri̇"
+        "en" => "Association Members",
+        "tr" => "Dernek Üyeleri̇"
     ],
     "dernek_etkinlikleri" => [
         "en" => "Kütahya Fine Arts Association Activities",

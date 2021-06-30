@@ -50,7 +50,7 @@ $lang_global = [
         "tr" => "Müzikte Yeni Yönelimler"
     ],
     "tarih_ve_yer" => [
-        "en" => "June 3rd - 6th 2021 Online",
+        "en" => "3 - 6 June 2021 Online",
         "tr" => "3 - 6 Haziran 2021 Çevrimiçi"
     ]
 ];

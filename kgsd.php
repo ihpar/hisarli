@@ -49,6 +49,10 @@ require_once "langs/lang_kgsd.php";
           }
       }
 
+      .mdl-list__item .mdl-list__item-primary-content {
+          line-height: normal;
+      }
+
       .centered-content {
           text-align: center;
       }
@@ -56,6 +60,7 @@ require_once "langs/lang_kgsd.php";
       .centered-content span.mdl-list__item-primary-content {
           display: inline-block;
       }
+
   </style>
 </head>
 
@@ -332,7 +337,149 @@ require_once "langs/lang_kgsd.php";
             </ul>
 
             <h4 class="center-text sec-h4"><?php echo($lang_kgsd["dernek_etkinlikleri"][$pref_lang]); ?></h4>
-            <div>
+            <ul class="mdl-list">
+              <li class="mdl-list__item">
+          <span class="mdl-list__item-primary-content">
+            27-28-29 Ağustos 1997 --> Çavdarhisar Kültür ve Turizm Festivali kapsamında Kütahya Kültür Sarayı'nda çini, resim, elmas, takı vs. sergisi
+          </span>
+              </li>
+              <li class="mdl-list__item">
+          <span class="mdl-list__item-primary-content">
+            6 Eylül 1997 --> Kütahya Kültür Saray'ında Türk Sanat Müziği konseri
+          </span>
+              </li>
+              <li class="mdl-list__item">
+          <span class="mdl-list__item-primary-content">
+            24-29 Kasım 1997 --> Ankara Türk-Amerikan Derneği'nde Kütahya haftası etkinliği. Konser, sergiler ve gala gecesinde yemek, müzik ve tarihi kadın kıyafetleri defilesi
+          </span>
+              </li>
+              <li class="mdl-list__item">
+          <span class="mdl-list__item-primary-content">
+            Mart 1998 --> Kütahya Kültür Sarayı'nda tiyatro kolumuzca Refik Erduran’ın “Bir Ayı Masalı” oyununun sahnelenmesi
+          </span>
+              </li>
+              <li class="mdl-list__item">
+          <span class="mdl-list__item-primary-content">
+            8-13 Haziran 1998 --> Eskişehir’de Kütahya tanıtım haftası etkinliklerinde sergiler. 10.06.1998 tarihinde büyük bir gala gecesi. Müzik ve yemek eşliğinde tarihi kadın giysileri defilesi
+          </span>
+              </li>
+              <li class="mdl-list__item">
+          <span class="mdl-list__item-primary-content">
+            25 Kasım - 1 Aralık 1998 --> Bursa’da Kütahya tanıtım haftası. Sergiler ve gala gecesi. Yemek eşliğinde Kütahya Halk Oyunları. Konser ve tarihi kadın kıyafetleri defilesi
+          </span>
+              </li>
+              <li class="mdl-list__item">
+          <span class="mdl-list__item-primary-content">
+            Haziran 1999 --> Tuncay Cücenoğlu'nun “Dosya” isimli tiyatro eserinin sahnelenmesi
+          </span>
+              </li>
+              <li class="mdl-list__item">
+          <span class="mdl-list__item-primary-content">
+            26 Haziran 1999 --> Kütahya Kültür Sarayı'nda Türk Müziği konseri
+          </span>
+              </li>
+              <li class="mdl-list__item">
+          <span class="mdl-list__item-primary-content">
+            26 Haziran 1999 --> Kütahya Kültür Sarayı'nda Osmanlı Devleti kuruluşunun 700. yılının kutlamaları. Osmanlı padişahlarının kendi bestelerinden derlenen Türk Müziği konseri
+          </span>
+              </li>
+              <li class="mdl-list__item">
+          <span class="mdl-list__item-primary-content">
+            7-16 Nisan 2000 --> İstanbul Harbiye Askeri Müzede “İl İl Türkiye Kütahya Haftası”. Resim, çini, tarihi bayan giysisi, elde yapılan örtüler, altın ve gümüş eerler sergisi.
+          </span>
+              </li>
+              <li class="mdl-list__item">
+          <span class="mdl-list__item-primary-content">
+            10 Ekim 2000 --> “The President” otelde Türk basınının iştiraki ile tarihi kadın giysileri defilesi
+          </span>
+              </li>
+              <li class="mdl-list__item">
+          <span class="mdl-list__item-primary-content">
+            06 Mayıs 2000 --> Türk Müziği topluluğumuzca Kütahya Kültür Sarayı'nda konser.
+          </span>
+              </li>
+              <li class="mdl-list__item">
+          <span class="mdl-list__item-primary-content">
+            8-14 Kasım 2000 --> İzmir Atatürk Kültür Merkezi'nde basın iştiraki ile resim, çini, kuyumculuk sanatı eserleri ve tarihi kadın el işlemeleri sergileri
+          </span>
+              </li>
+              <li class="mdl-list__item">
+          <span class="mdl-list__item-primary-content">
+            13 Kasım 2001 --> Gala gecesi: İzmir-Balçova Prenses Otel'de Kütahya Türküleri ve Türk Müziği eşliğinde yemekli Kütahya tanıtım gecesi. Tarihi kadın giysileri defilesi.  (Gala gecelerinde yapılan bütün defilelerde Kütahyalı kızlarımız mankenlik yapmışlardır. Defileler üç etaplı olup birinci etapta 20.yy'da elle dokunmuş modern gece kıyafetlerinin eski Türk motifleri ile yapılmış olması orijinaldir. 2.etapta Kütahya kına gecelerinde kadınlarca giyilen bütün Kütahya kıyafetlerinin elle, kasnakta ve gergefte işlenmiş olması ayrıcalığı vardır. Yaklaşık 100-150-200-250-300 senelik tarihi sandıklarda saklanan antika kıyafetlerin sadece derneğimizce defilede kullanılması çok büyük bir ayrıcalıktır)
+          </span>
+              </li>
+              <li class="mdl-list__item">
+          <span class="mdl-list__item-primary-content">
+            2001 --> 1951'de yürürlüğe giren 5846 sayılı kanununa göre gelir vergisinden muaf olan Kütahya’da çini sanatçılarının “stopaj”la belge düzenlenmesine yönelik bir kurul kurulmuş olup sanatçılar "Çini Sanatçısı Eser Belgesi" almaya hak kazanmıştır. Bu durum, derneğimizin ciddi takibi neticesinde sonuçlandırılmıştır
+          </span>
+              </li>
+              <li class="mdl-list__item">
+          <span class="mdl-list__item-primary-content">
+            24 Mayıs 2002 --> Kütahya Kültür Sarayı'nda Klasik Türk Müziği Konseri.
+          </span>
+              </li>
+              <li class="mdl-list__item">
+          <span class="mdl-list__item-primary-content">
+            23 Haziran 2002 --> Derneğimiz Türk Müziği topluluğu tarafından Kütahya Kültür Sarayı'nda klasik Türk Müziği konseri
+          </span>
+              </li>
+              <li class="mdl-list__item">
+          <span class="mdl-list__item-primary-content">
+            30 Eylül-09 Kasım 2002 --> Ankara Zafer Çarşısı'nda Kütahya tanıtım haftası etkinliği. Resim, çini, kadın tarihi el işlemeleri ve giysileri sergisi
+          </span>
+              </li>
+              <li class="mdl-list__item">
+          <span class="mdl-list__item-primary-content">
+            31 Mayıs-21 Haziran 2003 --> Kütahya Kültür Sarayı'nda Türk Müziği konseri.
+          </span>
+              </li>
+              <li class="mdl-list__item">
+          <span class="mdl-list__item-primary-content">
+            Şubat 2004 --> Dumlupınar Üniversitesi’nde Türk Müziği konseri
+          </span>
+              </li>
+              <li class="mdl-list__item">
+          <span class="mdl-list__item-primary-content">
+            09 Aralık 2004 --> Avrasya İzmir Fuarı'na derneğimizce el sanatlarımızla katılım
+          </span>
+              </li>
+              <li class="mdl-list__item">
+          <span class="mdl-list__item-primary-content">
+            11-21 Kasım 2005 --> Beylerbeyi Sarayı Bahçesi'ndeki II.Mahmut’dan kalma 130m boy ve 5m genişliğindeki 650m²‘lik Tünel Sergi Sarayı, Milli Saraylar Daire Başkanlığı tarafından TBMM onayıyla derneğimize tahsis edilmiş olup çini, resim, kadın takıları, altın ve elmas mücevherlerle tarihi kadın giysilerinin elde kasnak ve gergefle işlenmiş eserleri sergilenmiştir. Tarihi kıyafetlerin 20.yy.'da yapılmış gece kıyafetlerine işlenmiş olup motifleri Kütahya kına gecelerinde gergef ve kasnakta yapılmış kadın kıyafetleriyle 150-200-250-300 yıllık altın ve gümüş simle işlenmiş tarihi kıyafetler defilesi Kütahyalı manken kızlarımız tarafından gerçekleştirilmiştir.
+          </span>
+              </li>
+              <li class="mdl-list__item">
+          <span class="mdl-list__item-primary-content">
+            16 Haziran 2006 --> Kütahya Azot Sitesi salonunda Türk Müziği konseri.
+          </span>
+              </li>
+              <li class="mdl-list__item">
+          <span class="mdl-list__item-primary-content">
+            20 Ekim 2007 --> Kütahya Kültür Sarayı'nda Türk Müziği konseri.
+          </span>
+              </li>
+              <li class="mdl-list__item">
+          <span class="mdl-list__item-primary-content">
+            26 Nisan 2008 --> Polis Evi Salonu'nda derneğimizin kuruluşunun 10.yılının yemekli ve müzikli kutlaması
+          </span>
+              </li>
+              <li class="mdl-list__item">
+          <span class="mdl-list__item-primary-content">
+            10 Ekim 2008 --> Dumlupınar Üniversitesi Merkez Kampüs Konser Salonu'nda Atatürk’ümüzün sevdiği aryalar, Türk Sanat Müziği eserleri ve türküleriyle, Kütahya türküleri konseri. Piyanist, tenor ve soprano sanatçılarının katılımıyla  ve Kütahya Güzel Sanatlar Lisesi Korosu desteğiyle Atatürk’ümüzü anma gecesi
+          </span>
+              </li>
+              <li class="mdl-list__item">
+          <span class="mdl-list__item-primary-content">
+            27 Aralık 2008 --> Kütahya Kültür Sarayı'nda operet ve müzikaller sunumu
+          </span>
+              </li>
+              <li class="mdl-list__item">
+          <span class="mdl-list__item-primary-content">
+            2009'dan bu yana kesintisiz olarak --> ULUSLARARASI HİSARLI AHMET SEMPOZYUMLARI          </span>
+              </li>
+            </ul>
+
+            <div style="display: none;">
               <p>27-28-29 Ağustos 1997 --> Çavdarhisar Kültür ve Turizm Festivali kapsamında Kütahya Kültür Sarayı'nda
                 çini, resim, elmas, takı vs. sergisi<br></p>
 
@@ -442,6 +589,7 @@ require_once "langs/lang_kgsd.php";
               <p>2009'dan bu yana kesintisiz olarak --> ULUSLARARASI HİSARLI AHMET SEMPOZYUMLARI </p>
 
             </div>
+
 
             <h4 class="center-text sec-h4"><?php echo($lang_kgsd["dernek_tuzugu"][$pref_lang]); ?></h4>
             <ul class="mdl-list">
