@@ -20,14 +20,17 @@ if (!$is_secure) {
           <li><a href="#">Geçmiş Sempozyumlar</a></li>
           <li><a href="#">Katılım Ücreti</a></li>
           <li><a href="#">Ulaşım</a></li>
-          <li><a href="hisarli.php">Hisarlı Ahmet Hakkında</a></li>
+          <li><a href="hisarli.php"><?php echo($lang_global["hisarli_ahmet_hakkinda"][$pref_lang]); ?></a></li>
           <li><a href="kgsd.php">Kütahya Güzel S. Derneği</a></li>
-          <li><a href="boards.php"><?php echo($lang_global["kurullar"][$pref_lang]); ?></a></li>
+          <li><a href="honor-board.php"><?php echo($lang_global["onur_kurulu"][$pref_lang]); ?></a></li>
+          <li><a href="executive-board.php"><?php echo($lang_global["yurutme_kurulu"][$pref_lang]); ?></a></li>
+          <li><a href="scientific-committee.php"><?php echo($lang_global["bilim_kurulu"][$pref_lang]); ?></a></li>
+          <li><a href="organizing-committee.php"><?php echo($lang_global["duzenleme_kurulu"][$pref_lang]); ?></a></li>
           <li><a href="#">Konserler</a></li>
           <li><a href="#">Konferans</a></li>
           <li><a href="#">Atölye Çalışmaları</a></li>
-          <li><a href="#">Gençlik Seminerleri</a></li>
-          <li><a href="#">İletişim</a></li>
+          <li><a href="#"><?php echo($lang_global["genclik_seminerleri"][$pref_lang]); ?></a></li>
+          <li><a href="#"><?php echo($lang_global["iletisim"][$pref_lang]); ?></a></li>
         </ul>
       </div>
     </div>
@@ -57,7 +60,17 @@ if (!$is_secure) {
         </ul>
       </li>
       <li class="dropdown">
-        <a href="boards.php"><?php echo($lang_global["kurullar"][$pref_lang]); ?></a>
+          <?php echo($lang_global["kurullar"][$pref_lang]); ?>
+        <ul class="dropdown_menu rot-x-menu">
+          <li class="dropdown_item-1"><a
+                href="honor-board.php"><?php echo($lang_global["onur_kurulu"][$pref_lang]); ?></a></li>
+          <li class="dropdown_item-2"><a
+                href="executive-board.php"><?php echo($lang_global["yurutme_kurulu"][$pref_lang]); ?></a></li>
+          <li class="dropdown_item-1"><a
+                href="scientific-committee.php"><?php echo($lang_global["bilim_kurulu"][$pref_lang]); ?></a></li>
+          <li class="dropdown_item-2"><a
+                href="organizing-committee.php"><?php echo($lang_global["duzenleme_kurulu"][$pref_lang]); ?></a></li>
+        </ul>
       </li>
       <li class="dropdown">
           <?php echo($lang_global["etkinlikler"][$pref_lang]); ?>

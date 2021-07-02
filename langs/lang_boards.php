@@ -13,6 +13,10 @@ $lang_boards = [
         "en" => "Honor Board",
         "tr" => "Onur Kurulu"
     ],
+    "bilim_kurulu" => [
+        "en" => "Scientific Committee",
+        "tr" => "Bilim Kurulu"
+    ],
     "bilim_kurulu_baskanlari" => [
         "en" => "Scientific Committee Chairmen",
         "tr" => "Bilim Kurulu Başkanları"

@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-if(!$is_secure) {
+if (!$is_secure) {
     exit(0);
 }
 
@@ -26,8 +26,24 @@ $lang_global = [
         "tr" => "Hisarlı Ahmet Hakkında"
     ],
     "kurullar" => [
-        "en" => "Boards",
+        "en" => "Committees",
         "tr" => "Kurullar"
+    ],
+    "onur_kurulu" => [
+        "en" => "Honor Board",
+        "tr" => "Onur Kurulu"
+    ],
+    "yurutme_kurulu" => [
+        "en" => "Executive Board",
+        "tr" => "Yürütme Kurulu"
+    ],
+    "bilim_kurulu" => [
+        "en" => "Scientific Committee",
+        "tr" => "Bilim Kurulu"
+    ],
+    "duzenleme_kurulu" => [
+        "en" => "Organizing Committee",
+        "tr" => "Düzenleme Kurulu"
     ],
     "etkinlikler" => [
         "en" => "Activities",
