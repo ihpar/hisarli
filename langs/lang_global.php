@@ -9,9 +9,17 @@ $lang_global = [
         "en" => "Home",
         "tr" => "Ana Sayfa"
     ],
+    "bildiri_gonderimi" => [
+        "en" => "Paper Submission",
+        "tr" => "Bildiri Gönderimi"
+    ],
+    "yazim_kurallari" => [
+        "en" => "Paper Guidelines",
+        "tr" => "Yazım Kuralları"
+    ],
     "sempozyum_bilgileri" => [
-        "en" => "Symposium Info",
-        "tr" => "Sempozyum Bilgileri"
+        "en" => "Symposium",
+        "tr" => "Sempozyum"
     ],
     "onemli_tarihler" => [
         "en" => "Important Dates",

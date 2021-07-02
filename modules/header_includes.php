@@ -2,7 +2,7 @@
 if(!$is_secure) {
     exit(0);
 }
-$css_ver = "?v=4";
+$css_ver = "?v=7";
 ?>
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
