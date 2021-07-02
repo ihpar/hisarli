@@ -16,6 +16,7 @@ if (!$is_secure) {
         <ul>
           <li><a href="index.php"><?php echo($lang_global["ana_sayfa"][$pref_lang]); ?></a></li>
           <li><a href="important-dates.php"><?php echo($lang_global["onemli_tarihler"][$pref_lang]); ?></a></li>
+          <li><a href="paper-guidelines.php"><?php echo($lang_global["yazim_kurallari"][$pref_lang]); ?></a></li>
           <li><a href="#">Program</a></li>
           <li><a href="#">Geçmiş Sempozyumlar</a></li>
           <li><a href="#">Katılım Ücreti</a></li>
@@ -73,9 +74,9 @@ if (!$is_secure) {
                 href="honor-board.php"><?php echo($lang_global["onur_kurulu"][$pref_lang]); ?></a></li>
           <li class="dropdown_item-2"><a
                 href="executive-board.php"><?php echo($lang_global["yurutme_kurulu"][$pref_lang]); ?></a></li>
-          <li class="dropdown_item-1"><a
+          <li class="dropdown_item-3"><a
                 href="scientific-committee.php"><?php echo($lang_global["bilim_kurulu"][$pref_lang]); ?></a></li>
-          <li class="dropdown_item-2"><a
+          <li class="dropdown_item-4"><a
                 href="organizing-committee.php"><?php echo($lang_global["duzenleme_kurulu"][$pref_lang]); ?></a></li>
         </ul>
       </li>
