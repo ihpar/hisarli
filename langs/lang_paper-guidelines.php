@@ -6,8 +6,8 @@ if (!$is_secure) {
 
 $lang_paper_guidelines = [
     "paper_guidelines" => [
-        "en" => "Paper Guidelines",
-        "tr" => "Yazım Kuralları"
+        "en" => "Full-Text Guidelines",
+        "tr" => "Tam Metin Yazım Kuralları"
     ],
     "full_text_guidelines" => [
         "en" => "

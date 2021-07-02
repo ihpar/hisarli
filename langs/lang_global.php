@@ -17,6 +17,10 @@ $lang_global = [
         "en" => "Paper Guidelines",
         "tr" => "Yazım Kuralları"
     ],
+    "tam_metin_yazim_kurallari" => [
+        "en" => "Full-Text Guidelines",
+        "tr" => "Tam Metin Yazım Kuralları"
+    ],
     "sempozyum_bilgileri" => [
         "en" => "Symposium",
         "tr" => "Sempozyum"

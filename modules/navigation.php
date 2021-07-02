@@ -16,7 +16,7 @@ if (!$is_secure) {
         <ul>
           <li><a href="index.php"><?php echo($lang_global["ana_sayfa"][$pref_lang]); ?></a></li>
           <li><a href="important-dates.php"><?php echo($lang_global["onemli_tarihler"][$pref_lang]); ?></a></li>
-          <li><a href="paper-guidelines.php"><?php echo($lang_global["yazim_kurallari"][$pref_lang]); ?></a></li>
+          <li><a href="paper-guidelines.php"><?php echo($lang_global["tam_metin_yazim_kurallari"][$pref_lang]); ?></a></li>
           <li><a href="#">Program</a></li>
           <li><a href="#">Geçmiş Sempozyumlar</a></li>
           <li><a href="#">Katılım Ücreti</a></li>
@@ -42,15 +42,10 @@ if (!$is_secure) {
         <a href="index.php"><?php echo($lang_global["ana_sayfa"][$pref_lang]); ?></a>
       </li>
       <li class="dropdown">
-        <a href="index.php"><?php echo($lang_global["bildiri_gonderimi"][$pref_lang]); ?></a>
-        <ul class="dropdown_menu rot-x-menu">
-          <li class="dropdown_item-1"><a
-                href="paper-guidelines.php"><?php echo($lang_global["yazim_kurallari"][$pref_lang]); ?></a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
           <?php echo($lang_global["sempozyum_bilgileri"][$pref_lang]); ?>
         <ul class="dropdown_menu rot-x-menu">
+          <li class="dropdown_item-1"><a
+                href="paper-guidelines.php"><?php echo($lang_global["tam_metin_yazim_kurallari"][$pref_lang]); ?></a></li>
           <li class="dropdown_item-1"><a
                 href="important-dates.php"><?php echo($lang_global["onemli_tarihler"][$pref_lang]); ?></a></li>
           <li class="dropdown_item-2"><a href="#">Program</a></li>

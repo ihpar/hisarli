@@ -86,7 +86,8 @@ ul.pc-menu {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
+    /* width: 100%; */
+    width: max-content;
     perspective: 1000px;
     z-index: -1;
 }
