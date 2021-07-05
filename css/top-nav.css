@@ -143,6 +143,16 @@ ul.pc-menu {
     animation: rotateX 250ms 250ms ease-in-out forwards;
 }
 
+.rot-x-menu .dropdown_item-6 {
+    transform-origin: top center;
+    animation: rotateX 250ms 300ms ease-in-out forwards;
+}
+
+.rot-x-menu .dropdown_item-7 {
+    transform-origin: top center;
+    animation: rotateX 250ms 350ms ease-in-out forwards;
+}
+
 @-moz-keyframes rotateX {
     0% {
         opacity: 0;
