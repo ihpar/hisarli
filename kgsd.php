@@ -475,7 +475,7 @@ require_once "langs/lang_kgsd.php";
               </li>
               <li class="mdl-list__item">
           <span class="mdl-list__item-primary-content">
-            2009'dan bu yana kesintisiz olarak --> ULUSLARARASI HİSARLI AHMET SEMPOZYUMLARI          </span>
+            2009'dan bu yana her yıl --> ULUSLARARASI HİSARLI AHMET SEMPOZYUMU          </span>
               </li>
             </ul>
 
@@ -586,7 +586,7 @@ require_once "langs/lang_kgsd.php";
 
               <p>27 Aralık 2008 --> Kütahya Kültür Sarayı'nda operet ve müzikaller sunumu</p>
 
-              <p>2009'dan bu yana kesintisiz olarak --> ULUSLARARASI HİSARLI AHMET SEMPOZYUMLARI </p>
+              <p>2009'dan bu yana her yıl --> ULUSLARARASI HİSARLI AHMET SEMPOZYUMU </p>
 
             </div>
 
