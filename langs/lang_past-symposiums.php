@@ -15,8 +15,8 @@ $lang_past_symposiums = [
         "tr" => "Geçmiş Sempozyumlar"
     ],
     "ilan_edilecektir" => [
-        "en" => "To be announced.",
-        "tr" => "İlan edilecektir."
+        "en" => "Coming soon.",
+        "tr" => "Yapım aşamasındadır."
     ]
 
 ];
