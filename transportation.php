@@ -67,7 +67,9 @@ require_once "langs/lang_transportation.php";
         <div class="pad-10-per">
           <div class="cerceve">
             <h3 class="center-text sec-h3"><?php echo($lang_transportation["ulasim"][$pref_lang]); ?></h3>
-              <?php echo($lang_transportation["ilan_edilecektir"][$pref_lang]); ?>
+              <?php echo($lang_transportation["ulasim_bilgileri"][$pref_lang]); ?>
+
+
           </div>
         </div>
       </section>
