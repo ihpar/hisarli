@@ -16,6 +16,14 @@ function is_null_or_empty_string($str): bool
     return (!isset($str) || trim($str) === '');
 }
 
+require_once "dbms/utils.php";
+
+require_once "modules/header_prefixes.php";
+
+require_once "langs/lang_global.php";
+
+require_once "langs/lang_contact.php";
+
 if ($_POST) {
     $form_posted = true;
     $visitor_email = "";
@@ -24,7 +32,7 @@ if ($_POST) {
     $email_body = "<div>";
 
     if (isset($_POST['txt-name-surname'])) {
-        $visitor_name = filter_var($_POST['txt-name-surname'], FILTER_SANITIZE_STRING);
+        $visitor_name = filter_var(trim($_POST['txt-name-surname']), FILTER_SANITIZE_STRING);
         $email_body .= "<div>
                            <label><b>Ad Soyad:</b></label>&nbsp;<span>" . $visitor_name . "</span>
                         </div>";
@@ -32,7 +40,7 @@ if ($_POST) {
 
     if (isset($_POST['txt-email'])) {
         $visitor_email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['txt-email']);
-        $visitor_email = filter_var($visitor_email, FILTER_VALIDATE_EMAIL);
+        $visitor_email = filter_var(trim($_POST['txt-email']), FILTER_VALIDATE_EMAIL);
         $email_body .= "<div>
                            <label><b>Email:</b></label>&nbsp;<span>" . $visitor_email . "</span>
                         </div>";
@@ -46,47 +54,39 @@ if ($_POST) {
     }
 
     if (isset($_POST['txt-message'])) {
-        $visitor_message = htmlspecialchars($_POST['txt-message']);
+        $visitor_message = htmlspecialchars(trim($_POST['txt-message']));
         $email_body .= "<div>
                            <label><b>Mesaj:</b></label>
                            <div>" . $visitor_message . "</div>
                         </div>";
     }
 
-    if (is_null_or_empty_string($visitor_name) ||
-        is_null_or_empty_string($visitor_email) ||
-        is_null_or_empty_string($visitor_phone) ||
-        is_null_or_empty_string($visitor_message)) {
-        $contact_form_result = "Üzgünüz, mesajınız iletilemedi.";
-    } else {
+    $contact_form_result = $lang_contact["uzgunuz"][$pref_lang];
+
+    if (!is_null_or_empty_string($visitor_name) &&
+        !is_null_or_empty_string($visitor_email) &&
+        !is_null_or_empty_string($visitor_phone) &&
+        !is_null_or_empty_string($visitor_message)) {
         $recipient = "contact@hisarliahmet.org";
-
-
         $email_body .= "</div>";
-        $contact_form_result = "Teşekkürler " . $visitor_name . ". Mesajınız tarafımıza iletilmiştir.";
 
         $headers = 'MIME-Version: 1.0' . "\r\n"
             . 'Content-type: text/html; charset=utf-8' . "\r\n"
             . 'From: ' . $visitor_email . "\r\n";
 
-        error_reporting(0);
-
         if (mail($recipient, "İletişim Formu", $email_body, $headers)) {
-            $contact_form_result = "Teşekkürler " . $visitor_name . ". Mesajınız tarafımıza iletilmiştir.";
+            $contact_form_result = $lang_contact["tesekkurler"][$pref_lang] . " " . $visitor_name . ". " . $lang_contact["iletilmistir"][$pref_lang];
         } else {
-            $contact_form_result = "Üzgünüz, mesajınız iletilemedi.";
+            // $contact_form_result .= "<br>Email hatası.";
         }
+    } else {
+        /*
+          $contact_form_result .= "<br>Eksik alanlar var.<br>" . "Ad:" . $visitor_name . "<br>" .
+              "Email:" . $visitor_email . "<br>" . "Tel:" . $visitor_phone . "<br>" . "Msg:" . $visitor_message . "<br>" . var_dump($_POST);
+        */
     }
 
 }
-
-require_once "dbms/utils.php";
-
-require_once "modules/header_prefixes.php";
-
-require_once "langs/lang_global.php";
-
-require_once "langs/lang_contact.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -238,18 +238,22 @@ require_once "langs/lang_contact.php";
       <section class="pad-tb-24">
         <div class="pad-10-per">
           <div class="cerceve">
-            <h3 class="center-text sec-h3"><?php echo($lang_contact["contact"][$pref_lang]); ?></h3>
+            <h3 class="center-text sec-h3"><?php echo($lang_contact["iletisim"][$pref_lang]); ?></h3>
             <div class="mdl-grid">
               <div class="mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--12-col-phone">
                 <!-- Iletisim Formu -->
-                <h4 class="sec-h4">İletişim Formu</h4>
+                <h4 class="sec-h4"><?php echo($lang_contact["iletisim_formu"][$pref_lang]); ?></h4>
                 <form action="contact.php" method="post" id="frm-contact">
                   <!-- Row -->
                   <div class="row">
                     <div class="col-12">
                       <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                         <input class="mdl-textfield__input" type="text" id="txt-name-surname" name="txt-name-surname"/>
-                        <label class="mdl-textfield__label" for="txt-name-surname">Ad Soyad</label>
+                        <label class="mdl-textfield__label" for="txt-name-surname">
+                            <?php echo($lang_contact["ad_soyad"][$pref_lang]); ?>
+                        </label>
+                        <span
+                            class="mdl-textfield__error"><?php echo($lang_contact["bos_birakilamaz"][$pref_lang]); ?></span>
                       </div>
                     </div>
                   </div>
@@ -258,13 +262,21 @@ require_once "langs/lang_contact.php";
                     <div class="col-6 pr-8">
                       <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                         <input class="mdl-textfield__input" type="text" id="txt-email" name="txt-email"/>
-                        <label class="mdl-textfield__label" for="txt-email">Email</label>
+                        <label class="mdl-textfield__label" for="txt-email">
+                            <?php echo($lang_contact["email"][$pref_lang]); ?>
+                        </label>
+                        <span
+                            class="mdl-textfield__error"><?php echo($lang_contact["bos_birakilamaz"][$pref_lang]); ?></span>
                       </div>
                     </div>
                     <div class="col-6 pl-8">
                       <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                         <input class="mdl-textfield__input" type="text" id="txt-phone" name="txt-phone"/>
-                        <label class="mdl-textfield__label" for="txt-phone">Telefon</label>
+                        <label class="mdl-textfield__label" for="txt-phone">
+                            <?php echo($lang_contact["telefon"][$pref_lang]); ?>
+                        </label>
+                        <span
+                            class="mdl-textfield__error"><?php echo($lang_contact["bos_birakilamaz"][$pref_lang]); ?></span>
                       </div>
                     </div>
                   </div>
@@ -272,15 +284,20 @@ require_once "langs/lang_contact.php";
                   <div class="row">
                     <div class="col-12">
                       <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <textarea class="mdl-textfield__input" rows="18" id="txt-message" name="txt-message"></textarea>
-                        <label class="mdl-textfield__label" for="txt-message">Mesajınız</label>
+                        <textarea class="mdl-textfield__input" rows="10" id="txt-message" name="txt-message"></textarea>
+                        <label class="mdl-textfield__label" for="txt-message">
+                            <?php echo($lang_contact["mesaj"][$pref_lang]); ?>
+                        </label>
+                        <span
+                            class="mdl-textfield__error"><?php echo($lang_contact["bos_birakilamaz"][$pref_lang]); ?></span>
                       </div>
                     </div>
                   </div>
                   <!-- Row -->
-                  <div class="row">
+                  <div class="row" style="margin-top: 20px">
                     <div class="col-12">
                       <button
+                          id="btn-submit-form"
                           type="submit"
                           form="frm-contact"
                           class="
@@ -291,7 +308,7 @@ require_once "langs/lang_contact.php";
                           mdl-button--accent
                         "
                       >
-                        Gönder
+                          <?php echo($lang_contact["gonder"][$pref_lang]); ?>
                       </button>
                     </div>
                   </div>
@@ -302,14 +319,15 @@ require_once "langs/lang_contact.php";
               </div>
               <div class="mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--12-col-phone">
                 <!-- Iletisim bilgileri -->
-                <h4 class="sec-h4">Sempozyum Yeri</h4>
+                <h4 class="sec-h4"><?php echo($lang_contact["sempozyum_yeri"][$pref_lang]); ?></h4>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3082.1431198431633!2d29.98402031536593!3d39.42088797949336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2452196b64b65a36!2sHilton%20Garden%20Inn%20Kutahya!5e0!3m2!1str!2str!4v1594212695370!5m2!1str!2str"
                     width="100%" height="450" frameborder="0"
                     style="border: 0px; pointer-events: none; margin-bottom: 16px; margin-top: 20px;"
                     allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
-                <h4 class="sec-h4" style="margin-bottom: 16px;">İletişim Bilgileri</h4>
+                <h4 class="sec-h4"
+                    style="margin-bottom: 16px;"><?php echo($lang_contact["iletisim_bilgileri"][$pref_lang]); ?></h4>
                 <p><a href="tel:+90 272 218 26 29">+90 272 218 26 29</a></p>
                 <p>contact<i class="material-icons small-at">alternate_email</i>hisarliahmet.org</p>
                 <p>https://hisarliahmet.org</p>
@@ -350,6 +368,39 @@ require_once "langs/lang_contact.php";
 
     (function () {
         // auto run
+        const btnSubmit = document.querySelector("#btn-submit-form");
+
+        const txtNameSurname = document.querySelector("#txt-name-surname");
+        const txtEmail = document.querySelector("#txt-email");
+        const txtPhone = document.querySelector("#txt-phone");
+        const txtMessage = document.querySelector("#txt-message");
+        btnSubmit.addEventListener('click', (e) => {
+            if (!txtNameSurname.value) {
+                txtNameSurname.parentNode.classList.add("is-invalid");
+                txtNameSurname.focus();
+                e.preventDefault();
+                return;
+            }
+            if (!txtEmail.value) {
+                txtEmail.parentNode.classList.add("is-invalid");
+                txtEmail.focus();
+                e.preventDefault();
+                return;
+            }
+            if (!txtPhone.value) {
+                txtPhone.parentNode.classList.add("is-invalid");
+                txtPhone.focus();
+                e.preventDefault();
+                return;
+            }
+            if (!txtMessage.value) {
+                txtMessage.parentNode.classList.add("is-invalid");
+                txtMessage.focus();
+                e.preventDefault();
+                return;
+            }
+        });
+        // form post result
         <?php if ($form_posted) { ?>
         hideContactFormResult();
         <?php } ?>
