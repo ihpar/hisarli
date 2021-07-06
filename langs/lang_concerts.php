@@ -19,14 +19,8 @@ $lang_concerts = [
         "tr" => "<a href=\"img/concerts/konser-tablo.pdf\">Konser program tablosunu indirmek için tıklayınız.</a>"
     ],
     "program_metni" => [
-        "en" => "
-<img src=\"img/concerts/k1.jpg\" class=\"img-full\">
-<img src=\"img/concerts/k2.jpg\" class=\"img-full\">
-<img src=\"img/concerts/k3.jpg\" class=\"img-full\">",
-        "tr" => "
-<img src=\"img/concerts/k1.jpg\" class=\"img-full\">
-<img src=\"img/concerts/k2.jpg\" class=\"img-full\">
-<img src=\"img/concerts/k3.jpg\" class=\"img-full\">"
+        "en" => "",
+        "tr" => ""
     ]
 
 ];

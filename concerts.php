@@ -74,7 +74,6 @@ require_once "langs/lang_concerts.php";
             <p style="text-align: center;">
                 <?php echo($lang_concerts["konser_programi"][$pref_lang]); ?>
             </p>
-              <?php echo($lang_concerts["program_metni"][$pref_lang]); ?>
           </div>
         </div>
       </section>
