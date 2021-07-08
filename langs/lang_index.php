@@ -11,25 +11,37 @@ $lang_index = [
     ],
     "amac_ve_kapsam_metin" => [
         "en" => '<div>
-      <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at urna at felis molestie feugiat. Sed vitae blandit nulla, nec porttitor diam. Donec dapibus finibus eros vitae maximus. Nunc ornare lectus sit amet nulla aliquam aliquet. Sed facilisis magna et gravida imperdiet. Cras a sapien tristique, tempus enim et, interdum felis. Vestibulum porta libero nec ligula cursus lobortis. Integer et purus et eros convallis sollicitudin.
-      </p>
-      <p>
-      Phasellus in placerat dolor. Nullam eget libero mattis mi porta faucibus sit amet quis sapien. Fusce fermentum, libero ut luctus malesuada, sapien mauris efficitur nibh, vel bibendum enim neque vel eros. Phasellus viverra, turpis in hendrerit eleifend, sapien risus porta nulla, vel imperdiet ipsum ipsum sit amet arcu. Vestibulum eu magna in neque interdum vulputate sit amet nec mauris. Integer interdum augue in dolor eleifend, id mattis quam convallis. Curabitur porttitor a eros nec rutrum. Vivamus vel enim risus. Integer volutpat turpis ut tellus efficitur, in ornare dui interdum.
-      </p>
-    </div>
-    <div id="div-truncated" class="trunc">
-      <p>
-      Mauris pharetra, velit suscipit volutpat sodales, massa lorem luctus augue, non porta arcu augue id justo. Praesent facilisis consectetur metus vel ultrices. Nullam felis eros, imperdiet ut tortor a, feugiat hendrerit urna. In eget metus ut justo tempor accumsan id eu dolor. Vivamus id felis fringilla, molestie nibh in, dignissim sapien. Nam iaculis, ex in placerat consectetur, risus mi iaculis nisl, a pellentesque massa orci id odio. In hac habitasse platea dictumst. Vestibulum vel nisi eget est rutrum sodales. In aliquet ante vitae libero pharetra porttitor. Donec odio velit, bibendum ut tellus ac, egestas ornare neque.
-      </p>
-      <p>
-      Cras justo lorem, fermentum id magna nec, eleifend molestie nulla. Donec nec ipsum mi. Morbi vitae turpis quis ante dictum mollis. Donec tincidunt mi a lectus iaculis, eget lobortis metus maximus. Cras feugiat porta odio eu euismod. Ut a aliquam quam. Nullam luctus leo sed nibh ullamcorper eleifend. Proin varius suscipit augue, et dapibus purus fringilla at. Curabitur rhoncus in tortor eu viverra. Nullam dapibus eu ex eu tincidunt. Duis convallis urna vitae sem ultricies fermentum. Duis tellus ex, condimentum in lacus eget, tincidunt vestibulum mauris.
-      </p>
-      <p>
-      Donec imperdiet vehicula tortor, eu tincidunt libero consectetur in. Curabitur lectus enim, lacinia vel lobortis vel, imperdiet vel ante. Nulla arcu massa, aliquet et nisl id, sagittis eleifend nisl. Nulla facilisi. Proin vitae suscipit orci. Aliquam sem mauris, eleifend eu neque imperdiet, pharetra interdum erat. Pellentesque tincidunt fringilla varius. Cras volutpat neque at nulla pretium, nec mollis lacus sagittis. Sed blandit, urna eu elementum auctor, diam dui vehicula augue, eget lacinia mi diam eget quam. Ut pellentesque nisi id nisl congue gravida. Proin consequat erat pretium arcu vestibulum facilisis. Nulla finibus augue at convallis ullamcorper.
-      </p>
-    </div>
-    <a href="#" id="show-p-trunc" data-state="collapsed">Continue...</a>',
+<p>Tendency is a multi-featured concept, which includes various eras, values and philosophies, making it a supra-conceptual fact.
+Tendency, an inevitable aspect of human life is all around us; from contemporary to traditional,
+from the past to today and then the future, from secular to ritualistic, from ordinary to ideological,
+from old to new or even from old to older, in technology, sociology, health, politics, economy, law,
+education, engineering… Briefly, the fact of tendency manifests itself in all aspects of life and inevitably science, arts and music.</p>
+
+<p>According to Johansson*, tendency is possible if only the character of intentionality manifests itself in humans.
+Brentano**, on the other hand, states that tendency begins in the mind and ends in behavior.
+This behavior can be identified as the attitude towards the problems that one faces in the search for the new and a search for solutions.
+Therefore, tendency can be explained as the movement of one who has a problem, a trouble, a distress towards an attitude,
+a stand and a search for resolve. Just like it is in music…</p>
+</div>
+
+<div id="div-truncated" class="trunc">
+<p>Music history, which has never been stable, is full of music, trends and eras that are aimed towards the new with reactions to the past. 
+These tendencies have never happened in short periods. 
+Roccoco which has emerged with a reaction to Baroque, Atonality, which stands opposite to the usual musical patterns and the harmonic basis of tonality, 
+stage performances which have evolved from acoustic to digital etc. can all be thought of as long lasting results of new tendencies in music.</p>
+   
+<p>Is a new tendency in music is really a reaction to towards the past or an ordinary result emerging from the natural flow of life? 
+Is there a new tendency in everything with music in its essence or are all these tendencies, which are considered new, 
+ordinary fragments of a whole? Is there really need for a tendency towards something new in today’s world? 
+The theme of the 11th Hisarlı Ahmet Music Symposium is “New Tendencies in Music”, 
+again and always focusing on human and society we are searching for answers to questions such as the above.</p>
+   
+<p>We are honored to invite you to the International Hisarlı Ahmet Music Symposium which has become traditional for both Kütahya 
+and the world of science and arts. We expect your studies both point out new tendencies in the field of music and the subjects 
+based on around subheadings below:</p>
+</div>
+
+<a href="#" id="show-p-trunc" data-state="collapsed">Continue...</a>',
         "tr" => '<div>
       <p>
         Yönelim, içinde pek çok zamanı, değeri ve felsefeyi barındıran çok özellikli bir kavram, kavramlar
@@ -95,37 +107,37 @@ $lang_index = [
           <li class="mdl-list__item">
             <span class="mdl-list__item-primary-content">
               <i class="material-icons mdl-list__item-icon">category</i>
-              Lorem ipsum dolor sit amet
+              New Tendencies in Music Researches
             </span>
           </li>
           <li class="mdl-list__item">
             <span class="mdl-list__item-primary-content">
               <i class="material-icons mdl-list__item-icon">category</i>
-              Consectetur adipiscing elit
+              New Tendencies in Music Technology
             </span>
           </li>
           <li class="mdl-list__item">
             <span class="mdl-list__item-primary-content">
               <i class="material-icons mdl-list__item-icon">category</i>
-              Müzik Eğitiminde Yeni Yönelimler
+              New Tendencies in Music Education
             </span>
           </li>
           <li class="mdl-list__item">
             <span class="mdl-list__item-primary-content">
               <i class="material-icons mdl-list__item-icon">category</i>
-              Müzik Teorisinde Yeni Yönelimler
+              New Tendencies in Music Theory
             </span>
           </li>
           <li class="mdl-list__item">
             <span class="mdl-list__item-primary-content">
               <i class="material-icons mdl-list__item-icon">category</i>
-              Müzik Üretiminde Yeni Yönelimler
+              New Tendencies in Music Creating And Composing
             </span>
           </li>
           <li class="mdl-list__item">
             <span class="mdl-list__item-primary-content">
               <i class="material-icons mdl-list__item-icon">category</i>
-              Müzik İcrası ve İcracılığında Yeni Yönelimler
+              New Tendencies in Music Performances
             </span>
           </li>
         </ul>
@@ -135,43 +147,43 @@ $lang_index = [
           <li class="mdl-list__item">
             <span class="mdl-list__item-primary-content">
               <i class="material-icons mdl-list__item-icon">category</i>
-              Müzikte Yerel ve Küresel Dinamikler
+              New Music
             </span>
           </li>
           <li class="mdl-list__item">
             <span class="mdl-list__item-primary-content">
               <i class="material-icons mdl-list__item-icon">category</i>
-              Müzik Biliminde Güncel Yaklaşımlar
+              Changing and Music Industry
             </span>
           </li>
           <li class="mdl-list__item">
             <span class="mdl-list__item-primary-content">
               <i class="material-icons mdl-list__item-icon">category</i>
-              Değişim ve Müzik Endüstrisi
+              Changing and Evolution of Music
             </span>
           </li>
           <li class="mdl-list__item">
             <span class="mdl-list__item-primary-content">
               <i class="material-icons mdl-list__item-icon">category</i>
-              Müzikte Değişim ve Gelişim
+              Local and Global Dynamics in Music
             </span>
           </li>
           <li class="mdl-list__item">
             <span class="mdl-list__item-primary-content">
               <i class="material-icons mdl-list__item-icon">category</i>
-              Toplumsal Değişim ve Müzik
+              Social Change and Music
             </span>
           </li>
           <li class="mdl-list__item">
             <span class="mdl-list__item-primary-content">
               <i class="material-icons mdl-list__item-icon">category</i>
-              Müzikte Çağdaşlık
+              Contemporaneity in Music
             </span>
           </li>
           <li class="mdl-list__item">
             <span class="mdl-list__item-primary-content">
               <i class="material-icons mdl-list__item-icon">category</i>
-              Yeni Müzik
+              New Approaches in Musicology
             </span>
           </li>
         </ul>
