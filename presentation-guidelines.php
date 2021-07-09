@@ -3,7 +3,7 @@ session_start();
 
 $is_secure = true;
 
-$page_name = "paper-guidelines";
+$page_name = "presentation_guidelines";
 
 require_once "dbms/utils.php";
 
@@ -11,7 +11,7 @@ require_once "modules/header_prefixes.php";
 
 require_once "langs/lang_global.php";
 
-require_once "langs/lang_paper-guidelines.php";
+require_once "langs/lang_presentation-guidelines.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -67,8 +67,8 @@ require_once "langs/lang_paper-guidelines.php";
       <section class="pad-tb-24">
         <div class="pad-10-per">
           <div class="cerceve">
-            <h3 class="center-text sec-h3"><?php echo($lang_paper_guidelines["paper_guidelines"][$pref_lang]); ?></h3>
-              <?php echo($lang_paper_guidelines["full_text_guidelines"][$pref_lang]); ?>
+            <h3 class="center-text sec-h3"><?php echo($lang_presentation_guidelines["baslik"][$pref_lang]); ?></h3>
+              <?php echo($lang_presentation_guidelines["presentation_guidelines"][$pref_lang]); ?>
           </div>
         </div>
       </section>
