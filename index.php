@@ -70,31 +70,7 @@ require_once "langs/lang_index.php";
         <div class="pad-25-per">
           <h3 class="center-text sec-h3"><?php echo($lang_index["duyurular"][$pref_lang]); ?></h3>
           <ul class="mdl-list">
-            <li class="mdl-list__item">
-                <span class="mdl-list__item-primary-content">
-                  <i class="material-icons mdl-list__item-icon">campaign</i>
-                  <div class="li-inner-wrap">
-                    11. Uluslararası Hisarlı Ahmet Sempozyumu için özet gönderim süreci başlamıştır.
-                    <a href="#">Özet göndermek için tıklayınız.</a>
-                  </div>
-                </span>
-            </li>
-
-            <li class="mdl-list__item">
-                <span class="mdl-list__item-primary-content">
-                  <i class="material-icons mdl-list__item-icon">campaign</i>
-                  <div class="li-inner-wrap">Özet gönderimi 15 Nisan 2021'de sona erecektir.</div>
-                </span>
-            </li>
-            <li class="mdl-list__item">
-                <span class="mdl-list__item-primary-content">
-                  <i class="material-icons mdl-list__item-icon">campaign</i>
-                  <div class="li-inner-wrap">
-                    1. Ulusal Hisarlı Gençlik Seminerleri'ne kabul edilen çalışmalar belirlendi.
-                    <a href="#">Listeye ulaşmak için tıklayınız.</a>
-                  </div>
-                </span>
-            </li>
+              <?php echo($lang_index["duyurular_metin"][$pref_lang]); ?>
           </ul>
         </div>
       </section>

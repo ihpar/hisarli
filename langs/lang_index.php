@@ -282,6 +282,44 @@ based on around subheadings below:</p>
         "en" => "Announcements",
         "tr" => "Duyurular"
     ],
+    "duyurular_metin" => [
+        "en" => '
+        <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">campaign</i>
+              <div class="li-inner-wrap">
+                Full text submission will end on August 6, 2021.
+              </div>
+            </span>
+        </li>
+        <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">campaign</i>
+              <div class="li-inner-wrap">
+                <a href="paper-guidelines.php">Click here to see full-text guidelines.</a>
+              </div>
+            </span>
+        </li>
+        ',
+        "tr" => '
+        <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">campaign</i>
+              <div class="li-inner-wrap">
+                Tam metin gönderimi 6 Ağustos 2021\'de sona erecektir.
+              </div>
+            </span>
+        </li>
+        <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">campaign</i>
+              <div class="li-inner-wrap">
+                <a href="paper-guidelines.php">Tam metin yazım kuralları için tıklayınız.</a>
+              </div>
+            </span>
+        </li>
+        '
+    ],
     "davetli_konusmacilar" => [
         "en" => "Invited Speakers",
         "tr" => "Davetli Konuşmacılar"
