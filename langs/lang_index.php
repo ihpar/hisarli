@@ -288,7 +288,7 @@ based on around subheadings below:</p>
             <span class="mdl-list__item-primary-content">
               <i class="material-icons mdl-list__item-icon">campaign</i>
               <div class="li-inner-wrap">
-                Full text submission will end on August 6, 2021.
+                Full text submission will end on August 6, 2021. Click <a href="important-dates.php">here</a> to see the important dates.
               </div>
             </span>
         </li>
@@ -306,7 +306,7 @@ based on around subheadings below:</p>
             <span class="mdl-list__item-primary-content">
               <i class="material-icons mdl-list__item-icon">campaign</i>
               <div class="li-inner-wrap">
-                Tam metin gönderimi 6 Ağustos 2021\'de sona erecektir.
+                Tam metin gönderimi 6 Ağustos 2021\'de sona erecektir. Önemli tarihleri görmek için <a href="important-dates.php">tıklayınız.</a>
               </div>
             </span>
         </li>

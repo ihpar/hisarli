@@ -89,34 +89,42 @@ require_once "langs/lang_index.php";
         <div class="mdl-grid">
           <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
             <!-- Card -->
-            <div class="mdl-card mdl-shadow--2dp person-card" style="background-image: url('img/people/nadja.png')">
-              <div class="mdl-card__actions">Nadja Wallaszkovits</div>
-            </div>
+            <a href="biographies.php#nadja">
+              <div class="mdl-card mdl-shadow--2dp person-card" style="background-image: url('img/people/nadja.png')">
+                <div class="mdl-card__actions">Nadja Wallaszkovits</div>
+              </div>
+            </a>
             <!-- Eof Card -->
           </div>
 
           <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
             <!-- Card -->
-            <div class="mdl-card mdl-shadow--2dp person-card"
-                 style="background-image: url('img/people/johannes.png')">
-              <div class="mdl-card__actions">Johannes Kretz</div>
-            </div>
+            <a href="biographies.php#johannes">
+              <div class="mdl-card mdl-shadow--2dp person-card"
+                   style="background-image: url('img/people/johannes.png')">
+                <div class="mdl-card__actions">Johannes Kretz</div>
+              </div>
+            </a>
             <!-- Eof Card -->
           </div>
 
           <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
             <!-- Card -->
-            <div class="mdl-card mdl-shadow--2dp person-card" style="background-image: url('img/people/john.png')">
-              <div class="mdl-card__actions">John Rink</div>
-            </div>
+            <a href="biographies.php#john">
+              <div class="mdl-card mdl-shadow--2dp person-card" style="background-image: url('img/people/john.png')">
+                <div class="mdl-card__actions">John Rink</div>
+              </div>
+            </a>
             <!-- Eof Card -->
           </div>
 
           <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
             <!-- Card -->
-            <div class="mdl-card mdl-shadow--2dp person-card" style="background-image: url('img/people/turan.png')">
-              <div class="mdl-card__actions">Turan Sağer</div>
-            </div>
+            <a href="biographies.php#turan">
+              <div class="mdl-card mdl-shadow--2dp person-card" style="background-image: url('img/people/turan.png')">
+                <div class="mdl-card__actions">Turan Sağer</div>
+              </div>
+            </a>
             <!-- Eof Card -->
           </div>
         </div>
@@ -124,17 +132,21 @@ require_once "langs/lang_index.php";
         <div class="mdl-grid" style="justify-content: center">
           <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
             <!-- Card -->
-            <div class="mdl-card mdl-shadow--2dp person-card" style="background-image: url('img/people/ruhi.png')">
-              <div class="mdl-card__actions">Ruhi Ayangil</div>
-            </div>
+            <a href="biographies.php#ruhi">
+              <div class="mdl-card mdl-shadow--2dp person-card" style="background-image: url('img/people/ruhi.png')">
+                <div class="mdl-card__actions">Ruhi Ayangil</div>
+              </div>
+            </a>
             <!-- Eof Card -->
           </div>
 
           <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
             <!-- Card -->
-            <div class="mdl-card mdl-shadow--2dp person-card" style="background-image: url('img/people/melik.png')">
-              <div class="mdl-card__actions">Melik Ertuğrul Bayraktarkatal</div>
-            </div>
+            <a href="biographies.php#melik">
+              <div class="mdl-card mdl-shadow--2dp person-card" style="background-image: url('img/people/melik.png')">
+                <div class="mdl-card__actions">Melik Ertuğrul Bayraktarkatal</div>
+              </div>
+            </a>
             <!-- Eof Card -->
           </div>
         </div>
@@ -147,18 +159,22 @@ require_once "langs/lang_index.php";
         <div class="mdl-grid" style="justify-content: center">
           <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
             <!-- Card -->
-            <div class="mdl-card mdl-shadow--2dp person-card" style="background-image: url('img/people/cihan.png')">
-              <div class="mdl-card__actions">Cihan Işıkhan</div>
-            </div>
+            <a href="biographies.php#cihan">
+              <div class="mdl-card mdl-shadow--2dp person-card" style="background-image: url('img/people/cihan.png')">
+                <div class="mdl-card__actions">Cihan Işıkhan</div>
+              </div>
+            </a>
             <!-- Eof Card -->
           </div>
 
           <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
             <!-- Card -->
-            <div class="mdl-card mdl-shadow--2dp person-card"
-                 style="background-image: url('img/people/abdullah.png')">
-              <div class="mdl-card__actions">Abdullah Akat</div>
-            </div>
+            <a href="biographies.php#abdullah">
+              <div class="mdl-card mdl-shadow--2dp person-card"
+                   style="background-image: url('img/people/abdullah.png')">
+                <div class="mdl-card__actions">Abdullah Akat</div>
+              </div>
+            </a>
             <!-- Eof Card -->
           </div>
         </div>
