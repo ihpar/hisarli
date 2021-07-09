@@ -70,7 +70,7 @@ require_once "langs/lang_youth-seminars.php";
             <div style="width: 100%; text-align: center;">
               <img src="img/genclik/genclik_1.jpg" style="max-width: 100%;">
               <br>
-              <img src="img/genclik/genclik_1.jpg" style="max-width: 100%;">
+              <img src="img/genclik/genclik_2.jpg" style="max-width: 100%;">
             </div>
           </div>
         </div>
