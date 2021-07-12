@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 
 $is_secure = true;
 
@@ -18,7 +16,7 @@ require_once "modules/header_prefixes.php";
 require_once "langs/lang_global.php";
 
 
-require_once "langs/lang_boards.php";
+require_once "langs/lang_youth-seminars-important-dates.php";
 
 ?>
 
@@ -32,6 +30,7 @@ require_once "langs/lang_boards.php";
     <?php require_once("modules/header_includes.php"); ?>
 
   <style type="text/css">
+
 
       .pad-10-per {
 
@@ -75,16 +74,6 @@ require_once "langs/lang_boards.php";
 
       }
 
-
-      h4.sec-h4 {
-
-          font-size: 24px;
-
-          margin: 16px auto;
-
-      }
-
-
       table.mdl-data-table tr td:first-child {
 
           text-align: right;
@@ -124,7 +113,6 @@ require_once "langs/lang_boards.php";
 
       }
 
-
   </style>
 
 </head>
@@ -158,9 +146,7 @@ require_once "langs/lang_boards.php";
 
           <div class="cerceve" style="overflow-x:auto;">
 
-            <!-- Yürütme Kurulu -->
-
-            <h3 class="center-text sec-h3"><?php echo($lang_boards["yurutme_kurulu"][$pref_lang]); ?></h3>
+            <h3 class="center-text sec-h3"><?php echo($lang_youth_seminars_important_dates["onemli_tarihler"][$pref_lang]); ?></h3>
 
             <table class="mdl-data-table">
 
@@ -168,80 +154,51 @@ require_once "langs/lang_boards.php";
 
               <tr>
 
-                <td class="w-50"><p>Prof. Dr. Uğur TÜRKMEN</p></td>
+                <td class="w-50"><p><?php echo($lang_youth_seminars_important_dates["ozet_son"][$pref_lang]); ?></p></td>
 
-                <td class="w-50"><p>Çanakkale Onsekiz Mart Üniversitesi</p></td>
-
-              </tr>
-
-              <tr>
-
-                <td><p>Prof. Dr. Abdullah AKAT</p></td>
-
-                <td><p>İstanbul Üniversitesi</p></td>
+                <td class="w-50"><p><?php echo($lang_youth_seminars_important_dates["ozet_son_tarih"][$pref_lang]); ?></p></td>
 
               </tr>
 
               <tr>
 
-                <td><p>Prof. Dr. Cihan IŞIKHAN</p></td>
+                <td class="mdl-data-table__cell--non-numeric">
+                  <p><?php echo($lang_youth_seminars_important_dates["bildiri_ilan"][$pref_lang]); ?></p></td>
 
-                <td><p>Dokuz Eylül Üniversitesi</p></td>
-
-              </tr>
-
-              <tr>
-
-                <td><p>Prof. Türev BERKİ</p></td>
-
-                <td><p>Hacettepe Üniversitesi</p></td>
+                <td><p><?php echo($lang_youth_seminars_important_dates["bildiri_ilan_tarih"][$pref_lang]); ?></p></td>
 
               </tr>
 
               <tr>
 
-                <td><p>Doç. Çağhan ADAR</p></td>
+                <td class="mdl-data-table__cell--non-numeric">
+                  <p><?php echo($lang_youth_seminars_important_dates["ucret_son"][$pref_lang]); ?></p></td>
 
-                <td><p>Afyon Kocatepe Üniversitesi</p></td>
-
-              </tr>
-
-              <tr>
-
-                <td><p>Doç. Dr. Seyhan CANYAKAN</p></td>
-
-                <td><p>Afyon Kocatepe Üniversitesi</p></td>
+                <td><p><?php echo($lang_youth_seminars_important_dates["ucret_son_tarih"][$pref_lang]); ?></p></td>
 
               </tr>
 
               <tr>
 
-                <td><p>Prof. Lilian Maria TONELLA TÜZÜN</p></td>
+                <td class="mdl-data-table__cell--non-numeric">
+                  <p><?php echo($lang_youth_seminars_important_dates["program_ilan"][$pref_lang]); ?></p></td>
 
-                <td><p>Anadolu Üniversitesi</p></td>
-
-              </tr>
-
-              <tr>
-
-                <td><p>Öğr. Gör. Yunus Emre UĞUR</p></td>
-
-                <td><p>Afyon Kocatepe Üniversitesi</p></td>
+                <td><p><?php echo($lang_youth_seminars_important_dates["program_ilan_tarih"][$pref_lang]); ?></p></td>
 
               </tr>
 
               <tr>
 
-                <td><p>Öğr. Gör. Fakı Can YÜRÜK</p></td>
+                <td class="mdl-data-table__cell--non-numeric">
+                  <p><?php echo($lang_youth_seminars_important_dates["sempozyum_tarihi"][$pref_lang]); ?></p></td>
 
-                <td><p>Afyon Kocatepe Üniversitesi</p></td>
+                <td><p><?php echo($lang_youth_seminars_important_dates["sempozyum_tarihi_tarih"][$pref_lang]); ?></p></td>
 
               </tr>
 
               </tbody>
 
             </table>
-
 
           </div>
 
@@ -253,11 +210,6 @@ require_once "langs/lang_boards.php";
       <!-- Eof Icerik -->
 
     </div>
-
-
-    <!-- Footer -->
-
-      <?php require_once("modules/footer.php"); ?>
 
 
   </div>

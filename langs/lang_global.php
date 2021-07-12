@@ -116,9 +116,9 @@ $lang_global = [
 
     "hisarli_ahmet_hakkinda" => [
 
-        "en" => "About Hisarli Ahmet",
+        "en" => "About",
 
-        "tr" => "Hisarlı Ahmet Hakkında"
+        "tr" => "Hakkında"
 
     ],
 
@@ -134,7 +134,7 @@ $lang_global = [
 
         "en" => "The Voice of Hisarlı Ahmet",
 
-        "tr" => "Kendi Sesiyle Hisarlı Ahmet"
+        "tr" => "Kendi Sesi"
 
     ],
 
@@ -142,7 +142,7 @@ $lang_global = [
 
         "en" => "Hisarli Ahmet in Photos",
 
-        "tr" => "Fotoğraflarla Hisarlı Ahmet"
+        "tr" => "Albüm"
 
     ],
 
@@ -202,6 +202,30 @@ $lang_global = [
 
     ],
 
+    "genclik_seminerleri-program" => [
+
+        "en" => "Program",
+
+        "tr" => "Program"
+
+    ],
+
+    "genclik_seminerleri-general" => [
+
+        "en" => "General Information",
+
+        "tr" => "Genel Bilgiler"
+
+    ],
+
+    "genclik_seminerleri-kabul-edilenler" => [
+
+        "en" => "Accepted Presentation",
+
+        "tr" => "Kabul Edilen Bildiriler"
+
+    ],
+
     "iletisim" => [
 
         "en" => "Contact",
@@ -255,6 +279,14 @@ $lang_global = [
         "en" => "Conferences",
 
         "tr" => "Konferans"
+
+    ],
+
+    "kabul edilenler" => [
+
+        "en" => "Accepted Presentation",
+
+        "tr" => "Kabul Edilen Bildiriler"
 
     ],
 

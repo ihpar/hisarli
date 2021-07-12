@@ -32,6 +32,23 @@ if (!$is_secure) {
 
           <li><a href="index.php"><?php echo($lang_global["ana_sayfa"][$pref_lang]); ?></a></li>
 
+          <li><a href="important-dates.php"><?php echo($lang_global["onemli_tarihler"][$pref_lang]); ?></a></li>
+
+          <li><a href="schedule.php"><?php echo($lang_global["program"][$pref_lang]); ?></a></li>
+
+          <li><a href="participation-fee.php"><?php echo($lang_global["katılım_ücreti"][$pref_lang]); ?></a></li>
+
+          <li><a href="paper-guidelines.php"><?php echo($lang_global["tam_metin_yazim_kurallari"][$pref_lang]); ?></a>
+          </li>
+
+          <li><a
+                href="presentation-guidelines.php"><?php echo($lang_global["bildiri_sunum_kurallari"][$pref_lang]); ?></a>
+          </li>
+
+          <li><a href="past-symposiums.php"><?php echo($lang_global["gecmis_sempozyumlar"][$pref_lang]); ?></a></li>
+
+          <li><a href="transportation.php"><?php echo($lang_global["ulasim"][$pref_lang]); ?></a></li>
+
           <li><a href="hisarli.php"><?php echo($lang_global["hisarli_ahmet_hakkinda"][$pref_lang]); ?></a></li>
 
             <?php if ($pref_lang == "tr") { ?>
@@ -51,26 +68,6 @@ if (!$is_secure) {
               <li><a href="kgsd.php">Kütahya Güzel S. Derneği</a></li>
             <?php } ?>
 
-          <li><a href="important-dates.php"><?php echo($lang_global["onemli_tarihler"][$pref_lang]); ?></a></li>
-
-          <li><a href="participation-fee.php"><?php echo($lang_global["katılım_ücreti"][$pref_lang]); ?></a></li>
-
-          <li><a href="transportation.php"><?php echo($lang_global["ulasim"][$pref_lang]); ?></a></li>
-
-          <li><a
-                href="presentation-guidelines.php"><?php echo($lang_global["bildiri_sunum_kurallari"][$pref_lang]); ?></a>
-          </li>
-
-          <li><a href="paper-guidelines.php"><?php echo($lang_global["tam_metin_yazim_kurallari"][$pref_lang]); ?></a>
-          </li>
-
-          <li><a href="schedule.php"><?php echo($lang_global["program"][$pref_lang]); ?></a></li>
-
-          <li><a href="abstract-book.php"><?php echo($lang_global["ozet_kitapcik"][$pref_lang]); ?></a>
-          </li>
-
-          <li><a href="past-symposiums.php"><?php echo($lang_global["gecmis_sempozyumlar"][$pref_lang]); ?></a></li>
-
           <li><a href="honor-board.php"><?php echo($lang_global["onur_kurulu"][$pref_lang]); ?></a></li>
 
           <li><a href="executive-board.php"><?php echo($lang_global["yurutme_kurulu"][$pref_lang]); ?></a></li>
@@ -84,8 +81,6 @@ if (!$is_secure) {
           <li><a href="conferences.php"><?php echo($lang_global["konferanslar"][$pref_lang]); ?></a></li>
 
           <li><a href="workshops.php"><?php echo($lang_global["atolye_calismalari"][$pref_lang]); ?></a></li>
-
-          <li><a href="panel.php"><?php echo($lang_global["panel"][$pref_lang]); ?></a></li>
 
           <li><a href="youth-seminars.php"><?php echo($lang_global["genclik_seminerleri"][$pref_lang]); ?></a></li>
 
@@ -132,9 +127,7 @@ if (!$is_secure) {
                 href="hisarli-voice.php"><?php echo($lang_global["kendi_sesiyle"][$pref_lang]); ?></a>
           </li>
 
-            <?php if ($pref_lang == "tr") { ?>
-              <li class="dropdown_item-5"><a href="kgsd.php">Kütahya Güzel S. Derneği</a></li>
-            <?php } ?>
+
 
         </ul>
 
@@ -163,6 +156,9 @@ if (!$is_secure) {
           <li class="dropdown_item-5"><a
                 href="paper-guidelines.php"><?php echo($lang_global["tam_metin_yazim_kurallari"][$pref_lang]); ?></a>
           </li>
+            <?php if ($pref_lang == "tr") { ?>
+                <li class="dropdown_item-5"><a href="kgsd.php">Kütahya Güzel S. Derneği</a></li>
+            <?php } ?>
 
         </ul>
 
@@ -174,14 +170,17 @@ if (!$is_secure) {
 
         <ul class="dropdown_menu rot-x-menu">
 
-          <li class="dropdown_item-1"><a href="schedule.php"><?php echo($lang_global["program"][$pref_lang]); ?></a>
-          </li>
+            <li class="dropdown_item-1"><a href="accepted.php"><?php echo($lang_global["kabul edilenler"][$pref_lang]); ?></a>
+            </li>
 
-          <li class="dropdown_item-2"><a
-                href="abstract-book.php"><?php echo($lang_global["ozet_kitapcik"][$pref_lang]); ?></a>
+          <li class="dropdown_item-2"><a href="schedule.php"><?php echo($lang_global["program"][$pref_lang]); ?></a>
           </li>
 
           <li class="dropdown_item-3"><a
+                href="abstract-book.php"><?php echo($lang_global["ozet_kitapcik"][$pref_lang]); ?></a>
+          </li>
+
+          <li class="dropdown_item-4"><a
                 href="past-symposiums.php"><?php echo($lang_global["gecmis_sempozyumlar"][$pref_lang]); ?></a></li>
 
         </ul>
@@ -237,9 +236,18 @@ if (!$is_secure) {
 
       <li class="dropdown">
 
-        <a href="youth-seminars.php"><?php echo($lang_global["genclik_seminerleri"][$pref_lang]); ?></a>
+        <?php echo($lang_global["genclik_seminerleri"][$pref_lang]); ?>
 
-      </li>
+        <ul class="dropdown_menu rot-x-menu">
+
+            <li class="dropdown_item-1"><a href="youth-seminars-general.php"><?php echo($lang_global["genclik_seminerleri-general"][$pref_lang]); ?></a>
+            </li>
+            <li class="dropdown_item-2"><a href="youth-seminars-accepted.php"><?php echo($lang_global["genclik_seminerleri-kabul-edilenler"][$pref_lang]); ?></a>
+            </li>
+            <li class="dropdown_item-3"><a href="youth-seminars-program.php"><?php echo($lang_global["genclik_seminerleri-program"][$pref_lang]); ?></a>
+            </li>
+
+        </ul>
 
       <li class="dropdown">
 
