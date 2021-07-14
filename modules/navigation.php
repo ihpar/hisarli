@@ -242,9 +242,11 @@ if (!$is_secure) {
 
             <li class="dropdown_item-1"><a href="youth-seminars-general.php"><?php echo($lang_global["genclik_seminerleri-general"][$pref_lang]); ?></a>
             </li>
-            <li class="dropdown_item-2"><a href="youth-seminars-accepted.php"><?php echo($lang_global["genclik_seminerleri-kabul-edilenler"][$pref_lang]); ?></a>
+            <li class="dropdown_item-2"><a href="youth-seminars-invited.php"><?php echo($lang_global["genclik_seminerleri-invited"][$pref_lang]); ?></a>
             </li>
-            <li class="dropdown_item-3"><a href="youth-seminars-program.php"><?php echo($lang_global["genclik_seminerleri-program"][$pref_lang]); ?></a>
+            <li class="dropdown_item-3"><a href="youth-seminars-accepted.php"><?php echo($lang_global["genclik_seminerleri-kabul-edilenler"][$pref_lang]); ?></a>
+            </li>
+            <li class="dropdown_item-4"><a href="youth-seminars-program.php"><?php echo($lang_global["genclik_seminerleri-program"][$pref_lang]); ?></a>
             </li>
 
         </ul>

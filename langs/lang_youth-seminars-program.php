@@ -8,8 +8,8 @@ if (!$is_secure) {
 $lang_youth_sem = [
 
     "genclik_seminerleri-program" => [
-        "en" => "Program",
-        "tr" => "Program"
+        "en" => "Youth Seminars-Schedule",
+        "tr" => "Gençlik Seminerleri-Program"
     ],
     "ilan_edilecektir" => [
         "en" => "To be announced later.",

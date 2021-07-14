@@ -218,6 +218,13 @@ $lang_global = [
 
     ],
 
+    "genclik_seminerleri-invited" => [
+
+        "en" => "Invited Speaker",
+
+        "tr" => "Davetli Konuşmacı"
+
+    ],
     "genclik_seminerleri-kabul-edilenler" => [
 
         "en" => "Accepted Presentation",

@@ -11,7 +11,7 @@ require_once "modules/header_prefixes.php";
 
 require_once "langs/lang_global.php";
 
-require_once "langs/lang_youth-seminars-general.php";
+require_once "langs/lang_youth-seminars-invited.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -66,8 +66,8 @@ require_once "langs/lang_youth-seminars-general.php";
             <section class="pad-tb-24">
                 <div class="pad-10-per">
                     <div class="cerceve">
-                        <h3 class="center-text sec-h3"><?php echo($lang_youth_seminars_general["genel bilgiler"][$pref_lang]); ?></h3>
-                        <iframe src="img/assets/HisarliGenclikSeminer.pdf" width="100%" height="750px"></iframe>
+                        <h3 class="center-text sec-h3"><?php echo($lang_youth_seminars_invited["davetli"][$pref_lang]); ?></h3>
+                        <iframe src="img/assets/HisarliGenclikDavetliKonusmaci.pdf" width="100%" height="750px"></iframe>
                     </div>
                 </div>
             </section>
