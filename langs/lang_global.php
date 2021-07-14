@@ -122,11 +122,27 @@ $lang_global = [
 
     ],
 
+    "hisarli_ahmet_hakkinda_full" => [
+
+        "en" => "About Hisarli Ahmet",
+
+        "tr" => "Hisarlı Ahmet Hakkında"
+
+    ],
+
     "hakkinda_bir_yorum" => [
 
         "en" => "A Comment on Him",
 
         "tr" => "Hakkında Bir Yorum"
+
+    ],
+
+    "hakkinda_bir_yorum_full" => [
+
+        "en" => "A Comment on Hisarli Ahmet",
+
+        "tr" => "Hisarlı Ahmet Hakkında Bir Yorum"
 
     ],
 
@@ -138,11 +154,27 @@ $lang_global = [
 
     ],
 
+    "kendi_sesiyle_full" => [
+
+        "en" => "The Voice of Hisarli Ahmet",
+
+        "tr" => "Kendi Sesiyle Hisarli Ahmet"
+
+    ],
+
     "fotograflarla_hisarli_ahmet" => [
 
         "en" => "Hisarli Ahmet in Photos",
 
         "tr" => "Albüm"
+
+    ],
+
+    "fotograflarla_hisarli_ahmet_full" => [
+
+        "en" => "Hisarli Ahmet in Photos",
+
+        "tr" => "Hisarlı Ahmet Albüm"
 
     ],
 

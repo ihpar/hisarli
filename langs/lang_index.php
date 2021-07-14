@@ -288,6 +288,14 @@ based on around subheadings below:</p>
             <span class="mdl-list__item-primary-content">
               <i class="material-icons mdl-list__item-icon">campaign</i>
               <div class="li-inner-wrap">
+                Please submit your full-texts to <a href="mailto:contact@hisarliahmet.org">contact@hisarliahmet.org</a>
+              </div>
+            </span>
+        </li>
+        <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">campaign</i>
+              <div class="li-inner-wrap">
                 Full text submission will end on August 15, 2021. Click <a href="important-dates.php">here</a> to see the important dates.
               </div>
             </span>
@@ -302,6 +310,14 @@ based on around subheadings below:</p>
         </li>
         ',
         "tr" => '
+        <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">campaign</i>
+              <div class="li-inner-wrap">
+                Tam metinlerinizi <a href="mailto:contact@hisarliahmet.org">contact@hisarliahmet.org</a> adresine gönderebilirsiniz.
+              </div>
+            </span>
+        </li>
         <li class="mdl-list__item">
             <span class="mdl-list__item-primary-content">
               <i class="material-icons mdl-list__item-icon">campaign</i>
