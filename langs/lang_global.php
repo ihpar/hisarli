@@ -259,7 +259,7 @@ $lang_global = [
     ],
     "genclik_seminerleri-kabul-edilenler" => [
 
-        "en" => "Accepted Presentation",
+        "en" => "Accepted Papers",
 
         "tr" => "Kabul Edilen Bildiriler"
 
@@ -323,7 +323,7 @@ $lang_global = [
 
     "kabul edilenler" => [
 
-        "en" => "Accepted Presentation",
+        "en" => "Accepted Papers",
 
         "tr" => "Kabul Edilen Bildiriler"
 

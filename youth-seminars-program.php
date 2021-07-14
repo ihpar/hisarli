@@ -68,12 +68,11 @@ require_once "langs/lang_youth-seminars-program.php";
 
       <!-- Icerik -->
       <section class="pad-tb-24">
-        <div class="pad-10-per">
-          <div class="cerceve">
+        <div class="pad-10-per" style="overflow-x: auto;">
+          <div class="cerceve" style="width: 744px; margin: 0 auto;">
             <h3 class="center-text sec-h3"><?php echo($lang_youth_sem["genclik_seminerleri-program"][$pref_lang]); ?></h3>
-            <div style="width: 100%; display: flex; justify-content: center; overflow-x: auto;">
               <!-- Word table -->
-              <table style="width:538.4pt;border-collapse:collapse;border:none;">
+              <table style="width:538.4pt;border-collapse:collapse;border:none; margin: 0 auto;">
                 <tbody>
                 <tr>
                   <td style="width: 33.3pt;border-top: 1pt solid rgb(91, 155, 213);border-bottom: 1pt solid rgb(91, 155, 213);border-left: 1pt solid rgb(91, 155, 213);border-image: initial;border-right: none;background: rgb(0, 176, 240);padding: 0in 5.4pt;vertical-align: top;">
@@ -712,7 +711,6 @@ require_once "langs/lang_youth-seminars-program.php";
                 </tbody>
               </table>
               <!-- Eof word table -->
-            </div>
           </div>
         </div>
       </section>
