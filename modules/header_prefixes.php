@@ -25,7 +25,10 @@ if (isset($_GET["lang"])) {
 }
 
 if (!isset($_SESSION["lang"])) {
-    $lang = substr($_SERVER["HTTP_ACCEPT_LANGUAGE"], 0, 2);
+    $lang = "en";
+    if (isset($_SERVER["HTTP_ACCEPT_LANGUAGE"])) {
+        $lang = substr($_SERVER["HTTP_ACCEPT_LANGUAGE"], 0, 2);
+    }
     $accept_langs = ["tr", "en"];
     $lang = in_array($lang, $accept_langs) ? $lang : "en";
     $_SESSION["lang"] = $lang;

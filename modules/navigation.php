@@ -30,6 +30,8 @@ if (!$is_secure) {
 
         <ul>
 
+          <li><div class="li-mobile-section-header"><?php echo($lang_global["ana_sayfa"][$pref_lang]); ?></div></li>
+
           <li><a href="index.php"><?php echo($lang_global["ana_sayfa"][$pref_lang]); ?></a></li>
 
           <li><div class="li-mobile-section-header"><?php echo($lang_global["hisarli_ahmet"][$pref_lang]); ?></div></li>
@@ -117,6 +119,8 @@ if (!$is_secure) {
           <li><a
                 href="youth-seminars-program.php"><?php echo($lang_global["genclik_seminerleri-program"][$pref_lang]); ?></a>
           </li>
+
+          <li><div class="li-mobile-section-header"><a href="contact.php"><?php echo($lang_global["iletisim"][$pref_lang]); ?></a></div></li>
 
           <li><a href="contact.php"><?php echo($lang_global["iletisim"][$pref_lang]); ?></a></li>
 
