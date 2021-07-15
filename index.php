@@ -37,9 +37,25 @@ require_once "langs/lang_index.php";
         <?php require_once("modules/banner.php"); ?>
 
       <!-- Icerik -->
-
-      <!-- Satir 1 Amac ve Kapsam -->
+      <!-- Satir 1 Duyurular -->
       <section class="pad-tb-24">
+        <div class="pad-25-per">
+          <h3 class="center-text sec-h3"><?php echo($lang_index["duyurular"][$pref_lang]); ?></h3>
+          <ul class="mdl-list">
+              <?php echo($lang_index["duyurular_metin"][$pref_lang]); ?>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Satir 2 Amac ve Kapsam -->
+      <div class="custom-shape-divider-bottom-1623439955">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"></path>
+        </svg>
+      </div>
+      <section class="pad-tb-24" style="background-color: #f2f4f7">
         <div class="mdl-grid">
           <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet sec-24-lr">
             <!-- Amac ve Kapsam -->
@@ -56,25 +72,6 @@ require_once "langs/lang_index.php";
           </div>
         </div>
       </section>
-
-      <!-- Satir 2 Duyurular -->
-      <div class="custom-shape-divider-bottom-1623439955">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path
-              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-              class="shape-fill"></path>
-        </svg>
-      </div>
-
-      <section class="pad-tb-24" style="background-color: #f2f4f7">
-        <div class="pad-25-per">
-          <h3 class="center-text sec-h3"><?php echo($lang_index["duyurular"][$pref_lang]); ?></h3>
-          <ul class="mdl-list">
-              <?php echo($lang_index["duyurular_metin"][$pref_lang]); ?>
-          </ul>
-        </div>
-      </section>
-
       <div class="custom-shape-divider-top-1623440107">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path
