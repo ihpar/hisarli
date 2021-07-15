@@ -65,7 +65,7 @@ require_once "langs/lang_panel.php";
             <!-- Icerik -->
             <section class="pad-tb-24">
                 <div class="pad-10-per">
-                    <div class="cerceve">
+                    <div class="cerceve" style="text-align: center;">
                         <h3 class="center-text sec-h3"><?php echo($lang_panel["panel"][$pref_lang]); ?></h3>
                         <?php echo($lang_panel["ilan_edilecektir"][$pref_lang]); ?>
                     </div>

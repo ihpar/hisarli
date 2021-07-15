@@ -65,7 +65,7 @@ require_once "langs/lang_workshops.php";
             <!-- Icerik -->
             <section class="pad-tb-24">
                 <div class="pad-10-per">
-                    <div class="cerceve">
+                    <div class="cerceve" style="text-align: center;">
                         <h3 class="center-text sec-h3"><?php echo($lang_workshops["atolye_calismalari"][$pref_lang]); ?></h3>
                         <?php echo($lang_workshops["ilan_edilecektir"][$pref_lang]); ?>
                     </div>
