@@ -126,7 +126,7 @@ $lang_biographies = [
 
                 ",
         "tr" => "
-            <p>P1972 yılında Kahramanmaraş’ta doğdu. 1994 yılında İnönü Üniversitesi Eğitim Fakültesi Güzel Sanatlar
+            <p>1972 yılında Kahramanmaraş’ta doğdu. 1994 yılında İnönü Üniversitesi Eğitim Fakültesi Güzel Sanatlar
             Eğitimi Müzik Öğretmenliği Bölümü’nden mezun oldu. 1998 yılında Gazi Üniversitesi Fen Bilimleri
             Enstitüsü’nde Yüksek Lisans eğitimini, 2002 yılında Gazi Üniversitesi Eğitim Bilimleri Enstitüsü’nde
             Doktora eğitimini tamamladı.</p> 

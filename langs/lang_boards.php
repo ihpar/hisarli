@@ -10,7 +10,7 @@ $lang_boards = [
         "tr" => "Kurullar"
     ],
     "onur_kurulu" => [
-        "en" => "Honor Board",
+        "en" => "Honorary Board",
         "tr" => "Onur Kurulu"
     ],
     "bilim_kurulu" => [

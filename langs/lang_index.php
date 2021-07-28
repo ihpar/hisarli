@@ -288,18 +288,18 @@ based on around subheadings below:</p>
             <span class="mdl-list__item-primary-content">
               <i class="material-icons mdl-list__item-icon">campaign</i>
               <div class="li-inner-wrap">
-                Please submit your full-texts to <a href="mailto:contact@hisarliahmet.org">contact@hisarliahmet.org</a>
+                Full text submission will end on August 15, 2021. Please submit your full-texts to <a href="mailto:contact@hisarliahmet.org">contact@hisarliahmet.org</a>
               </div>
             </span>
         </li>
-        <li class="mdl-list__item">
+        <!--<li class="mdl-list__item">
             <span class="mdl-list__item-primary-content">
               <i class="material-icons mdl-list__item-icon">campaign</i>
               <div class="li-inner-wrap">
                 Full text submission will end on August 15, 2021. Click <a href="important-dates.php">here</a> to see the important dates.
               </div>
             </span>
-        </li>
+        </li>-->
         <li class="mdl-list__item">
             <span class="mdl-list__item-primary-content">
               <i class="material-icons mdl-list__item-icon">campaign</i>
@@ -314,18 +314,18 @@ based on around subheadings below:</p>
             <span class="mdl-list__item-primary-content">
               <i class="material-icons mdl-list__item-icon">campaign</i>
               <div class="li-inner-wrap">
-                Tam metinlerinizi <a href="mailto:contact@hisarliahmet.org">contact@hisarliahmet.org</a> adresine gönderebilirsiniz.
+                Tam metin gönderimi 15 Ağustos 2021\'de sona erecektir. Tam metinlerinizi <a href="mailto:contact@hisarliahmet.org">contact@hisarliahmet.org</a> adresine gönderebilirsiniz.
               </div>
             </span>
         </li>
-        <li class="mdl-list__item">
+        <!--<li class="mdl-list__item">
             <span class="mdl-list__item-primary-content">
               <i class="material-icons mdl-list__item-icon">campaign</i>
               <div class="li-inner-wrap">
                 Tam metin gönderimi 15 Ağustos 2021\'de sona erecektir. Önemli tarihleri görmek için <a href="important-dates.php">tıklayınız.</a>
               </div>
             </span>
-        </li>
+        </li>-->
         <li class="mdl-list__item">
             <span class="mdl-list__item-primary-content">
               <i class="material-icons mdl-list__item-icon">campaign</i>
@@ -341,7 +341,7 @@ based on around subheadings below:</p>
         "tr" => "Davetli Konuşmacılar"
     ],
     "bilim_kurulu_baskanlari" => [
-        "en" => "Scientific Board",
+        "en" => "Co-Chairman of Scientific Board",
         "tr" => "Bilim Kurulu Başkanları"
     ],
     "katkilarinizdan_dolayi" => [

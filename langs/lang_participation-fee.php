@@ -22,7 +22,7 @@ $lang_participation_fee = [
 
         "en" => "
 
-<p>The participation fee for a single paper is 20 Euros. (A 50% discount is applied to the second and subsequent papers).</p>
+<p>The participation fee for a single paper is <span style='font-weight: bold'> 20 Euro </span>(A 50% discount is applied to the second and subsequent papers).</p>
 <p>Symposium participation fee should be deposited to:</p>
 <p>VakıfBank, Kütahya Branch (by stating “Kütahya Fine Arts Association-Symposium”).</p>
 <p>IBAN: TR290001500158007273204047</p>
@@ -32,11 +32,11 @@ $lang_participation_fee = [
 ",
 
         "tr" => "
-<p>Öğretim elemanları dahil tüm katılımcılar için 150TL’dir.</p>
-<p>Öğretim elemanı olmayan öğrenciler için 150TL'dir.</p>
-<p>Yurtdışı katılımcılar (yabancılar) için 20 Euro’dur.</p>
+<p>Öğretim elemanları dahil tüm katılımcılar için <span style='font-weight: bold'> 150TL </span></p>
+<p>Öğrenciler (herhangi bir kurumda çalışmayan lisans, yüksek lisans, doktora öğrencisi) için <span style='font-weight: bold'> 150TL </span></p>
+<p>Yurtdışı katılımcılar (yabancılar) için <span style='font-weight: bold'> 20 Avro </span></p>
 <p>NOT 1: En az 2 bildiriyle katılımda 2. veya diğer her bir bildiriye %50 indirim uygulanır.</p>
-<p>NOT 2: Yazar sayısına bakılmaksızın her bildiri için tek ücret yatırılmalıdır.</p>
+<p>NOT 2: Yazar sayısına bakılmaksızın her bildiri için tek ücret alınır.</p>
 <p>HESAP BİLGİLERİ:</p>
 <p>VakıfBank, Kütahya Şubesi</p>
 <p>IBAN: TR290001500158007273204047 veya HESAP NO: 00158007273204047</p>

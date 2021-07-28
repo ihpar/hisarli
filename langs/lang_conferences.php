@@ -12,8 +12,8 @@ $lang_conferences = [
         "tr" => "Konferanslar"
     ],
     "ilan_edilecektir" => [
-        "en" => "To be announced later.",
-        "tr" => "Program daha sonra ilan edilecektir."
+        "en" => "TO BE ANNOUNCED LATER...",
+        "tr" => "DAHA SONRA İLAN EDİLECEKTİR..."
     ]
 ];
 

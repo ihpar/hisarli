@@ -15,8 +15,8 @@ $lang_concerts = [
         "tr" => "Konserler"
     ],
     "konser_programi" => [
-        "en" => "<a href=\"img/concerts/konser-tablo.pdf\">Click to download the concert program.</a>",
-        "tr" => "<a href=\"img/concerts/konser-tablo.pdf\">Konser program tablosunu indirmek için tıklayınız.</a>"
+        "en" => "<a href=\"img/concerts/katalog.pdf\">Click to download the concert catalog.</a>",
+        "tr" => "<a href=\"img/concerts/katalog.pdf\">Konser kataloğunu indirmek için tıklayınız.</a>"
     ],
     "program_metni" => [
         "en" => "",

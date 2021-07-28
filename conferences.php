@@ -110,13 +110,16 @@ require_once "langs/lang_conferences.php";
 
             <div class="mdl-grid">
               <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
-                <!-- Card -->
+
+                  <!-- Card -->
+                  <a href="biographies.php#nadja">
                 <div class="mdl-card mdl-shadow--2dp speaker-card">
                   <div class="card-image" style="background-image: url('img/people/nadja.png')"></div>
                   <div class="card-footer">
                     <a class="speaker-name" href="biographies.php#nadja">Nadja Wallaszkovits</a>
-                    <span class="conf-title">Konferans başlığı</span>
-                    <span class="conf-date">Konferans tarihi</span>
+                    <span class="conf-title">"Archiving our Musical Cultural Heritage: New Technologies and Trends in Preservation and Access"</span>
+                    <span class="conf-date">4 Haziran/June --- Cuma/Friday 19.00</span>
+                  </a>
                   </div>
                 </div>
                 <!-- Eof Card -->
@@ -124,12 +127,14 @@ require_once "langs/lang_conferences.php";
 
               <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
                 <!-- Card -->
+                  <a href="biographies.php#johannes">
                 <div class="mdl-card mdl-shadow--2dp speaker-card">
                   <div class="card-image" style="background-image: url('img/people/johannes.png')"></div>
                   <div class="card-footer">
                     <a class="speaker-name" href="biographies.php#johannes">Johannes Kretz</a>
-                    <span class="conf-title">Konferans başlığı</span>
-                    <span class="conf-date">Konferans tarihi</span>
+                    <span class="conf-title">"Composing Today, Moving from Model of a Lonesome Genius to Activism and Artistic Research"</span>
+                    <span class="conf-date">5 Haziran/June --- Cumartesi/Saturday 19.00</span>
+                  </a>
                   </div>
                 </div>
                 <!-- Eof Card -->
@@ -137,12 +142,14 @@ require_once "langs/lang_conferences.php";
 
               <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
                 <!-- Card -->
+                  <a href="biographies.php#john">
                 <div class="mdl-card mdl-shadow--2dp speaker-card">
                   <div class="card-image" style="background-image: url('img/people/john.png')"></div>
                   <div class="card-footer">
                     <a class="speaker-name" href="biographies.php#john">John Rink</a>
-                    <span class="conf-title">Konferans başlığı</span>
-                    <span class="conf-date">Konferans tarihi</span>
+                    <span class="conf-title">" 'Informed Listening’ in Action "</span>
+                    <span class="conf-date">3 Haziran/June --- Perşembe/Thursday 19.00</span>
+                  </a>
                   </div>
                 </div>
                 <!-- Eof Card -->
@@ -150,12 +157,14 @@ require_once "langs/lang_conferences.php";
 
               <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
                 <!-- Card -->
+                  <a href="biographies.php#turan">
                 <div class="mdl-card mdl-shadow--2dp speaker-card">
                   <div class="card-image" style="background-image: url('img/people/turan.png')"></div>
                   <div class="card-footer">
                     <a class="speaker-name" href="biographies.php#turan">Turan Sağer</a>
-                    <span class="conf-title">Konferans başlığı</span>
-                    <span class="conf-date">Konferans tarihi</span>
+                    <span class="conf-title">"Eğitim ve Etkinlikleriyle Pandemi Döneminde Sanatta Yeni Yönelimler"</span>
+                    <span class="conf-date">3 Haziran/June --- Perşembe/Thursday 11.30</span>
+                  </a>
                   </div>
                 </div>
                 <!-- Eof Card -->
@@ -165,12 +174,14 @@ require_once "langs/lang_conferences.php";
             <div class="mdl-grid" style="justify-content: center">
               <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
                 <!-- Card -->
+                  <a href="biographies.php#ruhi">
                 <div class="mdl-card mdl-shadow--2dp speaker-card">
                   <div class="card-image" style="background-image: url('img/people/ruhi.png')"></div>
                   <div class="card-footer">
                     <a class="speaker-name" href="biographies.php#ruhi">Ruhi Ayangil</a>
-                    <span class="conf-title">Konferans başlığı</span>
-                    <span class="conf-date">Konferans tarihi</span>
+                    <span class="conf-title">"Türk Müziği Modernleşme Sürecinde İki Özerk Örgütlenme Modeli: ATMOK ve TUMAC"</span>
+                    <span class="conf-date">5 Haziran/June --- Cumartesi/Saturday 11.30</span>
+                  </a>
                   </div>
                 </div>
                 <!-- Eof Card -->
@@ -178,12 +189,14 @@ require_once "langs/lang_conferences.php";
 
               <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
                 <!-- Card -->
+                  <a href="biographies.php#melik">
                 <div class="mdl-card mdl-shadow--2dp speaker-card">
                   <div class="card-image" style="background-image: url('img/people/melik.png')"></div>
                   <div class="card-footer">
                     <a class="speaker-name" href="biographies.php#melik">Melik Ertuğrul Bayraktarkatal</a>
-                    <span class="conf-title">Konferans başlığı</span>
-                    <span class="conf-date">Konferans tarihi</span>
+                    <span class="conf-title">"Makamın Yapıtaşı ve Çokseslilik"</span>
+                    <span class="conf-date">4 Haziran/June --- Cuma/Friday 11.30</span>
+                  </a>
                   </div>
                 </div>
                 <!-- Eof Card -->

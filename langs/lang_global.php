@@ -42,6 +42,14 @@ $lang_global = [
 
     ],
 
+    "konaklama" => [
+
+        "en" => "Accommodation",
+
+        "tr" => "Konaklama"
+
+    ],
+
     "bildiri_gonderimi" => [
 
         "en" => "Paper Submission",
@@ -188,7 +196,7 @@ $lang_global = [
 
     "onur_kurulu" => [
 
-        "en" => "Honor Board",
+        "en" => "Honorary Board",
 
         "tr" => "Onur Kurulu"
 
@@ -233,6 +241,15 @@ $lang_global = [
         "tr" => "Gençlik Seminerleri"
 
     ],
+
+    "genclik_seminerleri-duyuru" => [
+
+        "en" => "Announcement",
+
+        "tr" => "Duyuru"
+
+    ],
+
 
     "genclik_seminerleri-program" => [
 
