@@ -9,3 +9,7 @@ dbms/class.db.php
 /.idea/.gitignore
 /.idea/codeStyles/codeStyleConfig.xml
 /.idea/php.xml
+/.idea/deployment.xml
+/.idea/webServers.xml
+/tester.php
+/texts.txt
