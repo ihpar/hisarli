@@ -314,6 +314,14 @@ $lang_global = [
 
     ],
 
+    "yer" => [
+
+        "en" => "Kütahya Health Sciences University The Conference Hall",
+
+        "tr" => "Kütahya Sağlık Bilimleri Üniversitesi Rektörlük Konferans Salonu"
+
+    ],
+
     "katılım_ücreti" => [
 
         "en" => "Participation Fee",

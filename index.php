@@ -22,6 +22,14 @@ require_once "langs/lang_index.php";
       .img-afis {
           width: 100%;
       }
+
+      .mdl-list__item {
+          font-size: 15px;
+      }
+      .mdl-list__item-icon, .mdl-list__item-icon.material-icons {
+          width: 20px;
+          height: 20px;
+      }
   </style>
 </head>
 
@@ -264,6 +272,7 @@ require_once "langs/lang_index.php";
 
 <script src="js/material.js"></script>
 <script>
+    /*
     (function () {
         // devami butonu
         const devami = document.querySelector("#show-p-trunc");
@@ -283,6 +292,7 @@ require_once "langs/lang_index.php";
         });
         // eof devami
     })();
+    */
 </script>
 </body>
 
