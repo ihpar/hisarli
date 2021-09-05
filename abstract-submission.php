@@ -6,7 +6,7 @@ $is_secure = true;
 $page_name = "abstract-submission";
 
 $form_posted = false;
-$form_result = "Yes";
+$form_result = "";
 
 require_once "dbms/utils.php";
 
@@ -15,20 +15,119 @@ require_once "modules/header_prefixes.php";
 require_once "langs/lang_global.php";
 
 require_once "langs/lang_abstract-submission.php";
+
+function is_null_or_empty_string($str): bool
+{
+    return (!isset($str) || trim($str) === '');
+}
+
+if ($_POST) {
+    $form_posted = true;
+
+    $name_surname = "";
+    $institution = "";
+    $email = "";
+    $phone = "";
+    $address = "";
+    $cv = "";
+    $abstract_title = "";
+    $authors = "";
+    $abstract = "";
+    $keywords = "";
+
+    $email_body = "";
+
+    if (isset($_POST['txt-name-surname'])) {
+        $name_surname = filter_var(trim($_POST['txt-name-surname']), FILTER_SANITIZE_STRING);
+        $email_body .= "Ad Soyad: " . $name_surname . "<br>";
+    }
+
+    if (isset($_POST['txt-institution'])) {
+        $institution = filter_var(trim($_POST['txt-institution']), FILTER_SANITIZE_STRING);
+        $email_body .= "Kurum: " . $institution . "<br>";
+    }
+
+    if (isset($_POST['txt-email'])) {
+        $email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['txt-email']);
+        $email = filter_var(trim($email), FILTER_VALIDATE_EMAIL);
+        $email_body .= "Email: " . $email . "<br>";
+    }
+
+    if (isset($_POST['txt-phone'])) {
+        $phone = filter_var(trim($_POST['txt-phone']), FILTER_SANITIZE_STRING);
+        $email_body .= "Telefon: " . $phone . "<br>";
+    }
+
+    // photo
+
+    if (isset($_POST['txt-address'])) {
+        $address = filter_var(trim($_POST['txt-address']), FILTER_SANITIZE_STRING);
+        $email_body .= "Adres: " . $address . "<br>";
+    }
+
+    if (isset($_POST['txt-cv'])) {
+        $cv = filter_var(trim($_POST['txt-cv']), FILTER_SANITIZE_STRING);
+        $email_body .= "Özgeçmiş: " . $cv . "<br>";
+    }
+
+    // paper
+
+    if (isset($_POST['txt-abstract-title'])) {
+        $abstract_title = filter_var(trim($_POST['txt-abstract-title']), FILTER_SANITIZE_STRING);
+        $email_body .= "Başlık: " . $abstract_title . "<br>";
+    }
+
+    if (isset($_POST['txt-abstract-authors'])) {
+        $authors = filter_var(trim($_POST['txt-abstract-authors']), FILTER_SANITIZE_STRING);
+        $email_body .= "Yazar(lar): " . $authors . "<br>";
+    }
+
+    if (isset($_POST['txt-abstract'])) {
+        $abstract = filter_var(trim($_POST['txt-abstract']), FILTER_SANITIZE_STRING);
+        $email_body .= "Özet: " . $abstract . "<br>";
+    }
+
+    if (isset($_POST['txt-abstract-keywords'])) {
+        $keywords = filter_var(trim($_POST['txt-abstract-keywords']), FILTER_SANITIZE_STRING);
+        $email_body .= "Anahtar Kelimeler: " . $keywords . "<br>";
+    }
+
+    if (!is_null_or_empty_string($name_surname) &&
+        !is_null_or_empty_string($institution) &&
+        !is_null_or_empty_string($email) &&
+        !is_null_or_empty_string($phone) &&
+        !is_null_or_empty_string($address) &&
+        !is_null_or_empty_string($cv) &&
+        !is_null_or_empty_string($abstract_title) &&
+        !is_null_or_empty_string($authors) &&
+        !is_null_or_empty_string($abstract) &&
+        !is_null_or_empty_string($keywords)) {
+
+        $recipient = "abstracts@hisarliahmet.org";
+
+        $headers = 'MIME-Version: 1.0' . "\r\n"
+            . 'Content-type: text/html; charset=utf-8' . "\r\n"
+            . 'From: ' . $email . "\r\n";
+
+        // send mail
+        if (mail($recipient, "Özet Gönderim Formu", $email_body, $headers)) {
+            $form_result = $lang_abs_sub["tesekkurler"][$pref_lang] . " " . $name_surname . ". <br>" . $lang_abs_sub["iletilmistir"][$pref_lang];
+        } else {
+            $form_result = $lang_abs_sub["beklenmedik_hata"][$pref_lang];
+        }
+        // eof mail
+    } else {
+        // required fields
+        $form_result = $lang_abs_sub["form_eksik"][$pref_lang];
+    }
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <?php require_once("modules/header_includes.php"); ?>
     <style type="text/css">
-        .pad-25-per {
-            padding: 0 20%;
-        }
-
-        .sec-wrap {
-            padding: 16px;
-        }
-
         .pad-10-per {
             padding: 0 10%;
             text-align: justify;
@@ -86,16 +185,32 @@ require_once "langs/lang_abstract-submission.php";
             height: 0.1px;
         }
 
-        #spn-photo-result {
+        #spn-photo-result,
+        #spn-paper-result {
             margin-left: 12px;
             font-style: italic;
         }
 
-        .photo-row {
+        .photo-row,
+        .paper-row {
             display: flex;
             flex-direction: row;
             align-items: center;
-            margin-bottom: 16px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .spn-fup-error {
+            color: rgb(213, 0, 0);
+            position: absolute;
+            font-size: 12px;
+            margin-top: 60px;
+            visibility: hidden;
+            display: block;
+        }
+
+        .is-invalid .spn-fup-error {
+            visibility: visible;
         }
 
         @media (max-width: 1023px) {
@@ -130,17 +245,20 @@ require_once "langs/lang_abstract-submission.php";
                 padding-right: 0;
             }
 
-            .photo-label {
+            .photo-label,
+            .paper-label {
                 width: 100%;
                 box-sizing: border-box;
             }
 
-            #spn-photo-result {
+            #spn-photo-result,
+            #spn-paper-result {
                 margin: 16px 0 0 0;
                 width: 100%;
             }
 
-            .photo-row {
+            .photo-row,
+            .paper-row {
                 flex-direction: column;
             }
         }
@@ -159,6 +277,7 @@ require_once "langs/lang_abstract-submission.php";
             z-index: 111;
             opacity: 1;
             font-size: 24px;
+            line-height: 150%;
             transition: opacity 800ms;
         }
 
@@ -190,7 +309,8 @@ require_once "langs/lang_abstract-submission.php";
                             <div class="row">
                                 <div class="col-6">
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <input class="mdl-textfield__input" type="text" id="txt-name-surname"/>
+                                        <input class="mdl-textfield__input" type="text" id="txt-name-surname"
+                                               name="txt-name-surname"/>
                                         <label class="mdl-textfield__label" for="txt-name-surname">
                                             <?php echo($lang_abs_sub["ad_soyad"][$pref_lang]); ?>
                                         </label>
@@ -201,7 +321,8 @@ require_once "langs/lang_abstract-submission.php";
                                 </div>
                                 <div class="col-6">
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <input class="mdl-textfield__input" type="text" id="txt-institution"/>
+                                        <input class="mdl-textfield__input" type="text" id="txt-institution"
+                                               name="txt-institution"/>
                                         <label class="mdl-textfield__label" for="txt-institution">
                                             <?php echo($lang_abs_sub["kurum"][$pref_lang]); ?>
                                         </label>
@@ -215,7 +336,8 @@ require_once "langs/lang_abstract-submission.php";
                             <div class="row">
                                 <div class="col-6">
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <input class="mdl-textfield__input" type="text" id="txt-email"/>
+                                        <input class="mdl-textfield__input" type="text" id="txt-email"
+                                               name="txt-email"/>
                                         <label class="mdl-textfield__label" for="txt-email">
                                             <?php echo($lang_abs_sub["email"][$pref_lang]); ?>
                                         </label>
@@ -226,37 +348,10 @@ require_once "langs/lang_abstract-submission.php";
                                 </div>
                                 <div class="col-6">
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <input class="mdl-textfield__input" type="text" id="txt-phone"/>
+                                        <input class="mdl-textfield__input" type="text" id="txt-phone"
+                                               name="txt-phone"/>
                                         <label class="mdl-textfield__label" for="txt-phone">
                                             <?php echo($lang_abs_sub["telefon"][$pref_lang]); ?>
-                                        </label>
-                                        <span class="mdl-textfield__error">
-                                            <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Row -->
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <textarea class="mdl-textfield__input" rows="3" id="txt-address"></textarea>
-                                        <label class="mdl-textfield__label" for="txt-address">
-                                            <?php echo($lang_abs_sub["adres"][$pref_lang]); ?>
-                                        </label>
-                                        <span class="mdl-textfield__error">
-                                            <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Row -->
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <textarea class="mdl-textfield__input" rows="3" id="txt-cv"></textarea>
-                                        <label class="mdl-textfield__label" for="txt-cv">
-                                            <?php echo($lang_abs_sub["kisa_ozgecmis"][$pref_lang]); ?>
                                         </label>
                                         <span class="mdl-textfield__error">
                                             <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
@@ -282,13 +377,70 @@ require_once "langs/lang_abstract-submission.php";
                                     <span id="spn-photo-result">
                                         <?php echo($lang_abs_sub["fotograf_secilmedi"][$pref_lang]); ?>
                                     </span>
+                                    <span class="spn-fup-error">
+                                        <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
+                                    </span>
                                 </div>
                             </div>
                             <!-- Row -->
                             <div class="row">
                                 <div class="col-12">
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <input class="mdl-textfield__input" type="text" id="txt-abstract-title"/>
+                                        <textarea class="mdl-textfield__input" rows="3" id="txt-address"
+                                                  name="txt-address"></textarea>
+                                        <label class="mdl-textfield__label" for="txt-address">
+                                            <?php echo($lang_abs_sub["adres"][$pref_lang]); ?>
+                                        </label>
+                                        <span class="mdl-textfield__error">
+                                            <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Row -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <textarea class="mdl-textfield__input" rows="3" id="txt-cv"
+                                                  name="txt-cv"></textarea>
+                                        <label class="mdl-textfield__label" for="txt-cv">
+                                            <?php echo($lang_abs_sub["kisa_ozgecmis"][$pref_lang]); ?>
+                                        </label>
+                                        <span class="mdl-textfield__error">
+                                            <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Row -->
+                            <div class="row">
+                                <div class="col-12 paper-row">
+                                    <label
+                                            for="fup-paper"
+                                            class="
+                                            paper-label
+                                            mdl-button mdl-js-button
+                                            mdl-button--raised
+                                            mdl-js-ripple-effect
+                                            mdl-button--accent
+                                    ">
+                                        <?php echo($lang_abs_sub["ozet_yukleyiniz"][$pref_lang]); ?>
+                                    </label>
+                                    <input type="file" id="fup-paper" name="fup-paper"/>
+                                    <span id="spn-paper-result">
+                                        <?php echo($lang_abs_sub["ozet_secilmedi"][$pref_lang]); ?>
+                                    </span>
+                                    <span class="spn-fup-error">
+                                        <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- Row -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" id="txt-abstract-title"
+                                               name="txt-abstract-title"/>
                                         <label class="mdl-textfield__label" for="txt-abstract-title">
                                             <?php echo($lang_abs_sub["ozet_basligi"][$pref_lang]); ?>
                                         </label>
@@ -302,7 +454,8 @@ require_once "langs/lang_abstract-submission.php";
                             <div class="row">
                                 <div class="col-12">
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <input class="mdl-textfield__input" type="text" id="txt-abstract-authors"/>
+                                        <input class="mdl-textfield__input" type="text" id="txt-abstract-authors"
+                                               name="txt-abstract-authors"/>
                                         <label class="mdl-textfield__label" for="txt-abstract-authors">
                                             <?php echo($lang_abs_sub["yazarlar"][$pref_lang]); ?>
                                         </label>
@@ -316,7 +469,8 @@ require_once "langs/lang_abstract-submission.php";
                             <div class="row">
                                 <div class="col-12">
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <textarea class="mdl-textfield__input" rows="18" id="txt-abstract"></textarea>
+                                        <textarea class="mdl-textfield__input" rows="18" id="txt-abstract"
+                                                  name="txt-abstract"></textarea>
                                         <label class="mdl-textfield__label" for="txt-abstract">
                                             <?php echo($lang_abs_sub["ozet_metni"][$pref_lang]); ?>
                                         </label>
@@ -330,7 +484,8 @@ require_once "langs/lang_abstract-submission.php";
                             <div class="row">
                                 <div class="col-12">
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <input class="mdl-textfield__input" type="text" id="txt-abstract-keywords"/>
+                                        <input class="mdl-textfield__input" type="text" id="txt-abstract-keywords"
+                                               name="txt-abstract-keywords"/>
                                         <label class="mdl-textfield__label" for="txt-abstract-keywords">
                                             <?php echo($lang_abs_sub["anahtar_kelimeler"][$pref_lang]); ?>
                                         </label>
@@ -341,10 +496,11 @@ require_once "langs/lang_abstract-submission.php";
                                 </div>
                             </div>
                             <!-- Row -->
-                            <div class="row">
+                            <div class="row" style="margin-top: 20px;">
                                 <div class="col-12">
                                     <button
                                             id="btn-submit-form"
+                                            name="btn-submit-form"
                                             type="submit"
                                             form="frm-abstract"
                                             class="
@@ -382,6 +538,9 @@ require_once "langs/lang_abstract-submission.php";
 
 <script src="js/material.js"></script>
 <script>
+    let photoSelected = false;
+    let paperSelected = false;
+
     function hideContactFormResult() {
         let contactFormResultDiv = document.querySelector('#dv-contact-form-result');
         setTimeout(() => {
@@ -394,13 +553,28 @@ require_once "langs/lang_abstract-submission.php";
 
     (function () {
         // auto run
-        const file = document.querySelector("#fup-photo");
-        const fileInfo = document.querySelector("#spn-photo-result");
-        file.addEventListener("change", (e) => {
+        // photo upload
+        const filePhoto = document.querySelector("#fup-photo");
+        const filePhotoInfo = document.querySelector("#spn-photo-result");
+        filePhoto.addEventListener("change", (e) => {
             const [file] = e.target.files;
             const {name: fileName, size} = file;
             const fileSize = (size / 1000).toFixed(2);
-            fileInfo.innerHTML = fileName + " - " + fileSize + "KB";
+            filePhotoInfo.innerHTML = fileName + " - " + fileSize + "KB";
+            photoSelected = true;
+            filePhoto.parentNode.classList.remove("is-invalid");
+        });
+
+        // paper upload
+        const fileAbstract = document.querySelector("#fup-paper");
+        const fileAbstractInfo = document.querySelector("#spn-paper-result");
+        fileAbstract.addEventListener("change", (e) => {
+            const [file] = e.target.files;
+            const {name: fileName, size} = file;
+            const fileSize = (size / 1000).toFixed(2);
+            fileAbstractInfo.innerHTML = fileName + " - " + fileSize + "KB";
+            paperSelected = true;
+            fileAbstract.parentNode.classList.remove("is-invalid");
         });
 
         // submit section
@@ -442,36 +616,56 @@ require_once "langs/lang_abstract-submission.php";
                 e.preventDefault();
                 return;
             }
+
+            if (!photoSelected) {
+                filePhoto.parentNode.classList.add("is-invalid");
+                filePhoto.focus();
+                e.preventDefault();
+                return;
+            }
+
             if (!txtAddress.value) {
                 txtAddress.parentNode.classList.add("is-invalid");
                 txtAddress.focus();
                 e.preventDefault();
                 return;
             }
+
             if (!txtCv.value) {
                 txtCv.parentNode.classList.add("is-invalid");
                 txtCv.focus();
                 e.preventDefault();
                 return;
             }
+
+            if (!paperSelected) {
+                fileAbstract.parentNode.classList.add("is-invalid");
+                fileAbstract.focus();
+                e.preventDefault();
+                return;
+            }
+
             if (!txtAbstractTitle.value) {
                 txtAbstractTitle.parentNode.classList.add("is-invalid");
                 txtAbstractTitle.focus();
                 e.preventDefault();
                 return;
             }
+
             if (!txtAbstractAuthors.value) {
                 txtAbstractAuthors.parentNode.classList.add("is-invalid");
                 txtAbstractAuthors.focus();
                 e.preventDefault();
                 return;
             }
+
             if (!txtAbstract.value) {
                 txtAbstract.parentNode.classList.add("is-invalid");
                 txtAbstract.focus();
                 e.preventDefault();
                 return;
             }
+
             if (!txtAbstractKeywords.value) {
                 txtAbstractKeywords.parentNode.classList.add("is-invalid");
                 txtAbstractKeywords.focus();

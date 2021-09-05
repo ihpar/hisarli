@@ -21,6 +21,14 @@ $lang_abs_sub = [
         "en" => "Sorry, your submission could not be delivered.",
         "tr" => "Üzgünüz, başvurunuz iletilemedi."
     ],
+    "form_eksik" => [
+        "en" => "There are missing fields in your form. <br>Submission was not delivered.",
+        "tr" => "Formunuzda eksik alanlar bulunmaktadır. <br>Gönderiniz iletilmedi."
+    ],
+    "beklenmedik_hata" => [
+        "en" => "An unexpected error occurred. <br>Submission could not be delivered.",
+        "tr" => "Beklenmeyen bir hata oluştu. <br>Gönderiniz iletilemedi."
+    ],
     "bos_birakilamaz" => [
         "en" => "This field is required.",
         "tr" => "Bu alan boş bırakılamaz."
@@ -54,12 +62,20 @@ $lang_abs_sub = [
         "tr" => "Kısa Özgeçmiş"
     ],
     "fotograf_yukleyiniz" => [
-        "en" => "Upload Photo",
-        "tr" => "Fotoğraf Yükleyiniz"
+        "en" => "Upload Your Photo",
+        "tr" => "Fotoğrafınızı Yükleyiniz"
     ],
     "fotograf_secilmedi" => [
         "en" => "No photo selected.",
         "tr" => "Fotoğraf seçilmedi."
+    ],
+    "ozet_yukleyiniz" => [
+        "en" => "Upload Abstract File",
+        "tr" => "Özet Dosyanızı Yükleyiniz"
+    ],
+    "ozet_secilmedi" => [
+        "en" => "No file selected.",
+        "tr" => "Dosya seçilmedi."
     ],
     "ozet_basligi" => [
         "en" => "Abstract Title",
