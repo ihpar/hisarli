@@ -313,6 +313,11 @@ if ($_POST) {
             .paper-row {
                 flex-direction: column;
             }
+
+            .spn-fup-error {
+                margin-top: 72px;
+                left: 0;
+            }
         }
 
         #dv-contact-form-result {
@@ -414,7 +419,7 @@ if ($_POST) {
                             </div>
                             <!-- Row -->
                             <div class="row">
-                                <div class="col-12 photo-row">
+                                <div class="col-12 photo-row" style="position: relative;">
                                     <label
                                             for="fup-photo"
                                             class="
@@ -467,7 +472,7 @@ if ($_POST) {
                             </div>
                             <!-- Row -->
                             <div class="row">
-                                <div class="col-12 paper-row">
+                                <div class="col-12 paper-row" style="position: relative;">
                                     <label
                                             for="fup-paper"
                                             class="
