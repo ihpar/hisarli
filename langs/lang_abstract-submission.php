@@ -29,6 +29,14 @@ $lang_abs_sub = [
         "en" => "An unexpected error occurred. <br>Submission could not be delivered.",
         "tr" => "Beklenmeyen bir hata oluştu. <br>Gönderiniz iletilemedi."
     ],
+    "has_geri_bildirim_konusu" => [
+        "en" => "Hisarli Ahmet Symposium Abstract Submission",
+        "tr" => "Hisarli Ahmet Sempozyumu Ozet Gonderimi"
+    ],
+    "has_geri_bildirim_mesaji" => [
+        "en" => "We have received your study, titled {title} for Hisarli Ahmet Symposium. <br>Best regards.",
+        "tr" => "Hisarli Ahmet Sempozyumu için göndermiş olduğunuz {title} başlıklı çalışmanız tarafımıza iletilmiştir. <br>Sağlıklı günler dileriz."
+    ],
     "bos_birakilamaz" => [
         "en" => "This field is required.",
         "tr" => "Bu alan boş bırakılamaz."

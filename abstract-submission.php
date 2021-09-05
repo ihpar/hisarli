@@ -103,15 +103,28 @@ if ($_POST) {
         !is_null_or_empty_string($abstract) &&
         !is_null_or_empty_string($keywords)) {
 
-        $recipient = "abstracts@hisarliahmet.org";
+        $paper_dept_email = "abstracts@hisarliahmet.org";
 
         $headers = 'MIME-Version: 1.0' . "\r\n"
             . 'Content-type: text/html; charset=utf-8' . "\r\n"
             . 'From: ' . $email . "\r\n";
 
         // send mail
-        if (mail($recipient, "Özet Gönderim Formu", $email_body, $headers)) {
+        if (mail($paper_dept_email, "Özet Gönderim Formu", $email_body, $headers)) {
             $form_result = $lang_abs_sub["tesekkurler"][$pref_lang] . " " . $name_surname . ". <br>" . $lang_abs_sub["iletilmistir"][$pref_lang];
+
+            // notify sender back
+            $headers = 'MIME-Version: 1.0' . "\r\n"
+                . 'Content-type: text/html; charset=utf-8' . "\r\n"
+                . 'From: ' . $paper_dept_email . "\r\n";
+
+            $email_body = $lang_abs_sub["tesekkurler"][$pref_lang] . " " . $name_surname . ", <br>" .
+                $lang_abs_sub["has_geri_bildirim_mesaji"][$pref_lang];
+
+            $email_body = str_replace("{title}", $abstract_title, $email_body);
+
+            mail($email, $lang_abs_sub["has_geri_bildirim_konusu"][$pref_lang], $email_body, $headers);
+
         } else {
             $form_result = $lang_abs_sub["beklenmedik_hata"][$pref_lang];
         }
