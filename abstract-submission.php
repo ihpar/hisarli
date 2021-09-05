@@ -21,15 +21,28 @@ function is_null_or_empty_string($str): bool
     return (!isset($str) || trim($str) === '');
 }
 
+function generateRandomString($length = 10)
+{
+    return substr(str_shuffle(str_repeat($x = '123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil($length / strlen($x)))), 1, $length);
+}
+
 if ($_POST) {
     $form_posted = true;
+
+    $upload_dir = "uploads/Abs_" . date("Y");
+    if (!is_dir($upload_dir)) {
+        mkdir($upload_dir);
+    }
+    $upload_dir = $upload_dir . "/";
 
     $name_surname = "";
     $institution = "";
     $email = "";
     $phone = "";
+    $photo = "";
     $address = "";
     $cv = "";
+    $paper = "";
     $abstract_title = "";
     $authors = "";
     $abstract = "";
@@ -59,6 +72,18 @@ if ($_POST) {
     }
 
     // photo
+    $photo_base_name = basename($_FILES["fup-photo"]["name"]);
+    $photo_target_file = $upload_dir . $photo_base_name;
+    while (file_exists($photo_target_file)) {
+        $rand_str = generateRandomString(12);
+        $photo_target_file = $upload_dir . $rand_str . "-" . $photo_base_name;
+    }
+    if (move_uploaded_file($_FILES["fup-photo"]["tmp_name"], $photo_target_file)) {
+        $photo = "OK";
+        $photo_addr = "https://hisarliahmet.org/" . $photo_target_file;
+        $email_body .= "Fotoğraf: <a href='" . $photo_addr . "'>" . $photo_addr . "</a><br>";
+    }
+    // eof photo
 
     if (isset($_POST['txt-address'])) {
         $address = filter_var(trim($_POST['txt-address']), FILTER_SANITIZE_STRING);
@@ -71,6 +96,18 @@ if ($_POST) {
     }
 
     // paper
+    $paper_base_name = basename($_FILES["fup-paper"]["name"]);
+    $paper_target_file = $upload_dir . $paper_base_name;
+    while (file_exists($paper_target_file)) {
+        $rand_str = generateRandomString(12);
+        $paper_target_file = $upload_dir . $rand_str . "-" . $paper_base_name;
+    }
+    if (move_uploaded_file($_FILES["fup-paper"]["tmp_name"], $paper_target_file)) {
+        $paper = "OK";
+        $paper_addr = "https://hisarliahmet.org/" . $paper_target_file;
+        $email_body .= "Çalışma Dosyası: <a href='" . $paper_addr . "'>" . $paper_addr . "</a><br>";
+    }
+    // eof paper
 
     if (isset($_POST['txt-abstract-title'])) {
         $abstract_title = filter_var(trim($_POST['txt-abstract-title']), FILTER_SANITIZE_STRING);
@@ -96,8 +133,10 @@ if ($_POST) {
         !is_null_or_empty_string($institution) &&
         !is_null_or_empty_string($email) &&
         !is_null_or_empty_string($phone) &&
+        !is_null_or_empty_string($photo) &&
         !is_null_or_empty_string($address) &&
         !is_null_or_empty_string($cv) &&
+        !is_null_or_empty_string($paper) &&
         !is_null_or_empty_string($abstract_title) &&
         !is_null_or_empty_string($authors) &&
         !is_null_or_empty_string($abstract) &&
@@ -317,7 +356,8 @@ if ($_POST) {
                 <div class="pad-10-per">
                     <div class="cerceve">
                         <h3 class="center-text sec-h3"><?php echo($lang_abs_sub["bildiri_ozeti_gonderim_formu"][$pref_lang]); ?></h3>
-                        <form action="abstract-submission.php" method="post" id="frm-abstract">
+                        <form action="abstract-submission.php" method="post" id="frm-abstract"
+                              enctype="multipart/form-data">
                             <!-- Row -->
                             <div class="row">
                                 <div class="col-6">
@@ -685,6 +725,9 @@ if ($_POST) {
                 e.preventDefault();
                 return;
             }
+
+            btnSubmit.disabled = true;
+            btnSubmit.innerText = "<?php echo($lang_abs_sub["gonderiliyor"][$pref_lang]); ?>";
         });
 
         // form post result

@@ -45,6 +45,10 @@ $lang_abs_sub = [
         "en" => "Submit",
         "tr" => "Gönder"
     ],
+    "gonderiliyor" => [
+        "en" => "Submitting...",
+        "tr" => "Gönderiliyor..."
+    ],
     "ad_soyad" => [
         "en" => "Name Surname",
         "tr" => "Ad Soyad"
