@@ -726,8 +726,12 @@ if ($_POST) {
                 return;
             }
 
-            btnSubmit.disabled = true;
             btnSubmit.innerText = "<?php echo($lang_abs_sub["gonderiliyor"][$pref_lang]); ?>";
+        });
+
+        const submissionForm = document.querySelector("#frm-abstract");
+        submissionForm.addEventListener('submit', (e) => {
+            btnSubmit.disabled = true;
         });
 
         // form post result
