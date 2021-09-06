@@ -26,6 +26,12 @@ function generateRandomString($length = 10)
     return substr(str_shuffle(str_repeat($x = '123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil($length / strlen($x)))), 1, $length);
 }
 
+function filenameSanitizer($fileName)
+{
+    $dangerousCharacters = array(" ", '"', "'", "&", "/", "\\", "?", "#", ".", ",", ">", "<", "|", "~", "!");
+    return str_replace($dangerousCharacters, '_', $fileName);
+}
+
 if ($_POST) {
     $form_posted = true;
 
@@ -71,19 +77,7 @@ if ($_POST) {
         $email_body .= "Telefon: " . $phone . "<br>";
     }
 
-    // photo
-    $photo_base_name = basename($_FILES["fup-photo"]["name"]);
-    $photo_target_file = $upload_dir . $photo_base_name;
-    while (file_exists($photo_target_file)) {
-        $rand_str = generateRandomString(12);
-        $photo_target_file = $upload_dir . $rand_str . "-" . $photo_base_name;
-    }
-    if (move_uploaded_file($_FILES["fup-photo"]["tmp_name"], $photo_target_file)) {
-        $photo = "OK";
-        $photo_addr = "https://hisarliahmet.org/" . $photo_target_file;
-        $email_body .= "Fotoğraf: <a href='" . $photo_addr . "'>" . $photo_addr . "</a><br>";
-    }
-    // eof photo
+    $photo = $_FILES["fup-photo"]["name"];
 
     if (isset($_POST['txt-address'])) {
         $address = filter_var(trim($_POST['txt-address']), FILTER_SANITIZE_STRING);
@@ -95,19 +89,7 @@ if ($_POST) {
         $email_body .= "Özgeçmiş: " . $cv . "<br>";
     }
 
-    // paper
-    $paper_base_name = basename($_FILES["fup-paper"]["name"]);
-    $paper_target_file = $upload_dir . $paper_base_name;
-    while (file_exists($paper_target_file)) {
-        $rand_str = generateRandomString(12);
-        $paper_target_file = $upload_dir . $rand_str . "-" . $paper_base_name;
-    }
-    if (move_uploaded_file($_FILES["fup-paper"]["tmp_name"], $paper_target_file)) {
-        $paper = "OK";
-        $paper_addr = "https://hisarliahmet.org/" . $paper_target_file;
-        $email_body .= "Çalışma Dosyası: <a href='" . $paper_addr . "'>" . $paper_addr . "</a><br>";
-    }
-    // eof paper
+    $paper = $_FILES["fup-paper"]["name"];
 
     if (isset($_POST['txt-abstract-title'])) {
         $abstract_title = filter_var(trim($_POST['txt-abstract-title']), FILTER_SANITIZE_STRING);
@@ -141,6 +123,40 @@ if ($_POST) {
         !is_null_or_empty_string($authors) &&
         !is_null_or_empty_string($abstract) &&
         !is_null_or_empty_string($keywords)) {
+
+        // photo
+        $user_dir = $upload_dir . filenameSanitizer($name_surname);
+        if (!is_dir($user_dir)) {
+            mkdir($user_dir);
+        }
+        $user_dir = $user_dir . "/";
+
+        $photo_base_name = basename($_FILES["fup-photo"]["name"]);
+        $photo_target_file = $user_dir . $photo_base_name;
+        while (file_exists($photo_target_file)) {
+            $rand_str = generateRandomString(12);
+            $photo_target_file = $user_dir . $rand_str . "-" . $photo_base_name;
+        }
+        if (move_uploaded_file($_FILES["fup-photo"]["tmp_name"], $photo_target_file)) {
+            $photo = "OK";
+            $photo_addr = "https://hisarliahmet.org/" . $photo_target_file;
+            $email_body .= "Fotoğraf: <a href='" . $photo_addr . "'>" . $photo_addr . "</a><br>";
+        }
+        // eof photo
+
+        // paper
+        $paper_base_name = basename($_FILES["fup-paper"]["name"]);
+        $paper_target_file = $user_dir . $paper_base_name;
+        while (file_exists($paper_target_file)) {
+            $rand_str = generateRandomString(12);
+            $paper_target_file = $user_dir . $rand_str . "-" . $paper_base_name;
+        }
+        if (move_uploaded_file($_FILES["fup-paper"]["tmp_name"], $paper_target_file)) {
+            $paper = "OK";
+            $paper_addr = "https://hisarliahmet.org/" . $paper_target_file;
+            $email_body .= "Çalışma Dosyası: <a href='" . $paper_addr . "'>" . $paper_addr . "</a><br>";
+        }
+        // eof paper
 
         $paper_dept_email = "abstracts@hisarliahmet.org";
 
