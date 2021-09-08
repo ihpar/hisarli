@@ -13,3 +13,8 @@ dbms/class.db.php
 /.idea/webServers.xml
 /tester.php
 /texts.txt
+/vendor/
+/composer.json
+/composer.lock
+/composer.phar
+/uploads/
