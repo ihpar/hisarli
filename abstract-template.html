@@ -1,23 +1,17 @@
-<?php
-require 'vendor/autoload.php';
-
-use Dompdf\Dompdf;
-
-$dompdf = new Dompdf();
-$options = $dompdf->getOptions();
-$options->setDefaultFont('Times New Roman');
-$dompdf->setOptions($options);
-
-$contents = '<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
     <title>Özet Şablonu</title>
     <style>
-        html {
-            margin: 2.5cm;
+        html, body {
+            margin: 0;
             font-family: "Times New Roman";
             font-size: 12pt;
+        }
+
+        .contents {
+            margin: 2.5cm;
         }
 
         h1 {
@@ -118,14 +112,4 @@ $contents = '<!DOCTYPE html>
     </p>
 </div>
 </body>
-</html>';
-
-$dompdf->loadHtml($contents);
-
-$dompdf->setPaper('A4');
-$dompdf->render();
-// $dompdf->stream();
-$output = $dompdf->output();
-$dir_path = "uploads/";
-$file_name = "AAb_Test2.pdf";
-file_put_contents($dir_path . $file_name, $output);
+</html>
