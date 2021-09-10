@@ -50,8 +50,8 @@ $lang_abs_sub = [
         "tr" => "Gönderiliyor..."
     ],
     "ad_soyad" => [
-        "en" => "Name Surname",
-        "tr" => "Ad Soyad"
+        "en" => "Title Name Surname",
+        "tr" => "Unvan Ad Soyad"
     ],
     "kurum" => [
         "en" => "Institution",
@@ -66,12 +66,12 @@ $lang_abs_sub = [
         "tr" => "Telefon"
     ],
     "adres" => [
-        "en" => "Address",
-        "tr" => "Adres"
+        "en" => "Shipping Address",
+        "tr" => "Gönderi Adresi"
     ],
     "kisa_ozgecmis" => [
-        "en" => "Brief Resume",
-        "tr" => "Kısa Özgeçmiş"
+        "en" => "Brief Resume (Max. 100 words)",
+        "tr" => "Kısa Özgeçmiş (Maks. 100 kelime)"
     ],
     "fotograf_yukleyiniz" => [
         "en" => "Upload Your Photo",
@@ -93,17 +93,49 @@ $lang_abs_sub = [
         "en" => "Abstract Title",
         "tr" => "Özet Başlığı"
     ],
+    "ozet_basligi_tr" => [
+        "en" => "Turkish Abstract Title",
+        "tr" => "Türkçe Özet Başlığı"
+    ],
+    "ozet_basligi_en" => [
+        "en" => "English Abstract Title",
+        "tr" => "İngilizce Özet Başlığı"
+    ],
     "ozet_metni" => [
-        "en" => "Abstract",
-        "tr" => "Özet"
+        "en" => "Abstract (100 - 300 words)",
+        "tr" => "Özet (100 - 300 kelime)"
+    ],
+    "ozet_metni_tr" => [
+        "en" => "Turkish Abstract (100 - 300 words)",
+        "tr" => "Türkçe Özet (100 - 300 kelime)"
+    ],
+    "ozet_metni_en" => [
+        "en" => "English Abstract (100 - 300 words)",
+        "tr" => "İngilizce Özet (100 - 300 kelime)"
     ],
     "yazarlar" => [
         "en" => "Author(s)",
         "tr" => "Yazar(lar)"
     ],
+    "yazar_sayisi" => [
+        "en" => "Number of Authors: ",
+        "tr" => "Yazar Sayısı: "
+    ],
+    "yazar_indeksli" => [
+        "en" => "Author",
+        "tr" => "Yazar"
+    ],
     "anahtar_kelimeler" => [
         "en" => "Keywords",
         "tr" => "Anahtar Kelimeler"
+    ],
+    "anahtar_kelimeler_tr" => [
+        "en" => "Turkish Keywords",
+        "tr" => "Türkçe Anahtar Kelimeler"
+    ],
+    "anahtar_kelimeler_en" => [
+        "en" => "English Keywords",
+        "tr" => "İngilizce Anahtar Kelimeler"
     ]
 ];
 

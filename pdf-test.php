@@ -1,3 +1,12 @@
+<?php
+require 'vendor/autoload.php';
+
+use Dompdf\Dompdf;
+
+$dompdf = new Dompdf();
+$options = $dompdf->getOptions();
+
+$contents = '
 <!DOCTYPE html>
 <html>
 <head>
@@ -114,3 +123,14 @@
 
 </body>
 </html>
+';
+
+$dompdf->loadHtml($contents, "UTF-8");
+
+$dompdf->setPaper('A4');
+$dompdf->render();
+
+$output = $dompdf->output();
+$dir_path = "uploads/";
+$file_name = "AAb_Test12.pdf";
+file_put_contents($dir_path . $file_name, $output);

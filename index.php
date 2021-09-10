@@ -32,7 +32,7 @@ require_once "langs/lang_index.php";
             height: 20px;
         }
 
-        .custom-shape-divider-top-1630939785 {
+        .custom-shape-divider-top-1 {
             top: 0;
             left: 0;
             width: 100%;
@@ -40,14 +40,39 @@ require_once "langs/lang_index.php";
             line-height: 0;
         }
 
-        .custom-shape-divider-top-1630939785 svg {
+        .custom-shape-divider-top-1 svg {
             position: relative;
             display: block;
-            width: calc(100% + 2px);
-            height: 40px;
+            width: calc(120% + 2px);
+            height: 30px;
         }
 
-        .custom-shape-divider-top-1630939785 .shape-fill {
+        .custom-shape-divider-top-1 .shape-fill {
+            fill: #F2F4F7;
+        }
+
+        .custom-shape-divider-top-2 .shape-fill {
+            fill: #fff;
+        }
+
+        .custom-shape-divider-bottom-2 {
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+
+        .custom-shape-divider-bottom-2 svg {
+            position: relative;
+            display: block;
+            width: calc(120% + 2px);
+            height: 30px;
+            transform: rotateY(180deg);
+        }
+
+        .custom-shape-divider-bottom-2 .shape-fill {
             fill: #F2F4F7;
         }
 
@@ -108,7 +133,7 @@ require_once "langs/lang_index.php";
                 </div>
             </section>
 
-            <div class="custom-shape-divider-top-1630939785">
+            <div class="custom-shape-divider-top-1">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                      preserveAspectRatio="none">
                     <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
@@ -125,6 +150,14 @@ require_once "langs/lang_index.php";
                     </ul>
                 </div>
             </section>
+
+            <div class="custom-shape-divider-bottom-2">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                     preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                          class="shape-fill"></path>
+                </svg>
+            </div>
 
 
             <!-- Satir 3 Konusmacilar -->

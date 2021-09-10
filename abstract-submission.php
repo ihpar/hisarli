@@ -281,12 +281,6 @@ if ($_POST) {
             visibility: visible;
         }
 
-        @media (max-width: 1023px) {
-            .pad-25-per {
-                padding: 0 10%;
-            }
-        }
-
         @media (max-width: 839px) {
             .row {
                 display: flex;
@@ -303,8 +297,8 @@ if ($_POST) {
                 padding: 16px 0;
             }
 
-            .pad-25-per {
-                padding: 0 40px;
+            .pad-10-per {
+                padding: 0 10px;
             }
 
             .row .col-12,
@@ -356,6 +350,42 @@ if ($_POST) {
 
         #dv-contact-form-result.fade-out {
             opacity: 0;
+        }
+
+        .dv-author-count {
+            display: inline-block;
+            color: #596e87;
+            font-size: 16px;
+            text-align: left;
+            background-color: #eee;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            margin-right: 8px;
+        }
+
+        #spn-author-count {
+            font-weight: bold;
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            margin: 0;
+            padding: 12px;
+        }
+
+        fieldset legend {
+            color: #596e87;
+            font-size: 16px;
+            padding: 0 6px;
+        }
+
+        .dv-authors-wrapper fieldset {
+            margin: 16px 0;
+        }
+
+        .hidden-author {
+            display: none;
         }
     </style>
 </head>
@@ -447,7 +477,7 @@ if ($_POST) {
                                     ">
                                         <?php echo($lang_abs_sub["fotograf_yukleyiniz"][$pref_lang]); ?>
                                     </label>
-                                    <input type="file" id="fup-photo" name="fup-photo"/>
+                                    <input type="file" id="fup-photo" name="fup-photo" tabindex="5"/>
                                     <span id="spn-photo-result">
                                         <?php echo($lang_abs_sub["fotograf_secilmedi"][$pref_lang]); ?>
                                     </span>
@@ -487,6 +517,7 @@ if ($_POST) {
                                 </div>
                             </div>
                             <!-- Row -->
+                            <!--
                             <div class="row">
                                 <div class="col-12 paper-row" style="position: relative;">
                                     <label
@@ -509,6 +540,27 @@ if ($_POST) {
                                     </span>
                                 </div>
                             </div>
+                            -->
+
+                            <!-- Türkçe Özet Başlığı -->
+                            <?php if ($pref_lang == "tr") { ?>
+                                <!-- Row -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text" id="txt-abstract-title-tr"
+                                                   name="txt-abstract-title-tr"/>
+                                            <label class="mdl-textfield__label" for="txt-abstract-title-tr">
+                                                <?php echo($lang_abs_sub["ozet_basligi_tr"][$pref_lang]); ?>
+                                            </label>
+                                            <span class="mdl-textfield__error">
+                                            <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php } ?>
+
                             <!-- Row -->
                             <div class="row">
                                 <div class="col-12">
@@ -516,7 +568,8 @@ if ($_POST) {
                                         <input class="mdl-textfield__input" type="text" id="txt-abstract-title"
                                                name="txt-abstract-title"/>
                                         <label class="mdl-textfield__label" for="txt-abstract-title">
-                                            <?php echo($lang_abs_sub["ozet_basligi"][$pref_lang]); ?>
+                                            <?php echo(($pref_lang == "tr") ?
+                                                $lang_abs_sub["ozet_basligi_en"][$pref_lang] : $lang_abs_sub["ozet_basligi"][$pref_lang]); ?>
                                         </label>
                                         <span class="mdl-textfield__error">
                                             <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
@@ -527,18 +580,96 @@ if ($_POST) {
                             <!-- Row -->
                             <div class="row">
                                 <div class="col-12">
-                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <input class="mdl-textfield__input" type="text" id="txt-abstract-authors"
-                                               name="txt-abstract-authors"/>
-                                        <label class="mdl-textfield__label" for="txt-abstract-authors">
-                                            <?php echo($lang_abs_sub["yazarlar"][$pref_lang]); ?>
-                                        </label>
-                                        <span class="mdl-textfield__error">
-                                            <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
-                                        </span>
+                                    <div style="padding: 20px 0;">
+                                        <div class="dv-author-count">
+                                            <?php echo($lang_abs_sub["yazar_sayisi"][$pref_lang]); ?>
+                                            <span id="spn-author-count">1</span>
+                                        </div>
+                                        <button type="button" id="btn-add-author"
+                                                class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored">
+                                            <i class="material-icons">add</i>
+                                        </button>
+                                        <button type="button" id="btn-remove-author"
+                                                class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored">
+                                            <i class="material-icons">remove</i>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Row -->
+                            <div class="row">
+                                <div class="col-12 dv-authors-wrapper">
+                                    <?php
+                                    $max_author_count = 6;
+
+                                    for ($i = 1; $i <= $max_author_count; $i++) { ?>
+                                        <!-- Author <?php echo($i); ?> -->
+                                        <fieldset id="fs-author-<?php echo($i); ?>"
+                                                  class="fs-author <?php echo(($i > 1) ? " hidden-author" : ''); ?>">
+                                            <legend><?php echo($lang_abs_sub["yazar_indeksli"][$pref_lang] . " " . $i); ?></legend>
+                                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                <input class="mdl-textfield__input" type="text"
+                                                       id="txt-abstract-author-<?php echo($i); ?>"
+                                                       name="txt-abstract-author-<?php echo($i); ?>"/>
+                                                <label class="mdl-textfield__label"
+                                                       for="txt-abstract-author-<?php echo($i); ?>">
+                                                    <?php echo($lang_abs_sub["ad_soyad"][$pref_lang]); ?>
+                                                </label>
+                                                <span class="mdl-textfield__error">
+                                            <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
+                                        </span>
+                                            </div>
+
+                                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                <input class="mdl-textfield__input" type="text"
+                                                       id="txt-abstract-author-institution-<?php echo($i); ?>"
+                                                       name="txt-abstract-author-institution-<?php echo($i); ?>"/>
+                                                <label class="mdl-textfield__label"
+                                                       for="txt-abstract-author-institution-<?php echo($i); ?>">
+                                                    <?php echo($lang_abs_sub["kurum"][$pref_lang]); ?>
+                                                </label>
+                                                <span class="mdl-textfield__error">
+                                            <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
+                                        </span>
+                                            </div>
+
+                                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                <input class="mdl-textfield__input" type="text"
+                                                       id="txt-abstract-author-email-<?php echo($i); ?>"
+                                                       name="txt-abstract-author-email-<?php echo($i); ?>"/>
+                                                <label class="mdl-textfield__label"
+                                                       for="txt-abstract-author-email-<?php echo($i); ?>">
+                                                    <?php echo($lang_abs_sub["email"][$pref_lang]); ?>
+                                                </label>
+                                                <span class="mdl-textfield__error">
+                                            <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
+                                        </span>
+                                            </div>
+                                        </fieldset>
+                                    <?php } ?>
+                                    <input type="hidden" id="txt-author-count" name="txt-author-count" value="1">
+                                </div>
+                            </div>
+
+                            <!-- Türkçe Özet -->
+                            <?php if ($pref_lang == "tr") { ?>
+                                <!-- Row -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <textarea class="mdl-textfield__input" rows="18" id="txt-abstract-tr"
+                                                  name="txt-abstract-tr"></textarea>
+                                            <label class="mdl-textfield__label" for="txt-abstract-tr">
+                                                <?php echo($lang_abs_sub["ozet_metni_tr"][$pref_lang]); ?>
+                                            </label>
+                                            <span class="mdl-textfield__error">
+                                            <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php } ?>
+
                             <!-- Row -->
                             <div class="row">
                                 <div class="col-12">
@@ -546,7 +677,8 @@ if ($_POST) {
                                         <textarea class="mdl-textfield__input" rows="18" id="txt-abstract"
                                                   name="txt-abstract"></textarea>
                                         <label class="mdl-textfield__label" for="txt-abstract">
-                                            <?php echo($lang_abs_sub["ozet_metni"][$pref_lang]); ?>
+                                            <?php echo(($pref_lang == "tr") ?
+                                                $lang_abs_sub["ozet_metni_en"][$pref_lang] : $lang_abs_sub["ozet_metni"][$pref_lang]); ?>
                                         </label>
                                         <span class="mdl-textfield__error">
                                             <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
@@ -554,6 +686,27 @@ if ($_POST) {
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Türkçe Anahtar Kelimeler -->
+                            <?php if ($pref_lang == "tr") { ?>
+                                <!-- Row -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text"
+                                                   id="txt-abstract-keywords-tr"
+                                                   name="txt-abstract-keywords-tr"/>
+                                            <label class="mdl-textfield__label" for="txt-abstract-keywords-tr">
+                                                <?php echo($lang_abs_sub["anahtar_kelimeler_tr"][$pref_lang]); ?>
+                                            </label>
+                                            <span class="mdl-textfield__error">
+                                            <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php } ?>
+
                             <!-- Row -->
                             <div class="row">
                                 <div class="col-12">
@@ -561,7 +714,8 @@ if ($_POST) {
                                         <input class="mdl-textfield__input" type="text" id="txt-abstract-keywords"
                                                name="txt-abstract-keywords"/>
                                         <label class="mdl-textfield__label" for="txt-abstract-keywords">
-                                            <?php echo($lang_abs_sub["anahtar_kelimeler"][$pref_lang]); ?>
+                                            <?php echo(($pref_lang == "tr") ?
+                                                $lang_abs_sub["anahtar_kelimeler_en"][$pref_lang] : $lang_abs_sub["anahtar_kelimeler"][$pref_lang]); ?>
                                         </label>
                                         <span class="mdl-textfield__error">
                                             <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
@@ -614,6 +768,7 @@ if ($_POST) {
 <script>
     let photoSelected = false;
     let paperSelected = false;
+    let numAuthors = 1;
 
     function hideContactFormResult() {
         let contactFormResultDiv = document.querySelector('#dv-contact-form-result');
@@ -627,6 +782,31 @@ if ($_POST) {
 
     (function () {
         // auto run
+
+        // add - remove authors
+        const hiddenAuthorCount = document.querySelector("#txt-author-count");
+        const numAuthorSpan = document.querySelector("#spn-author-count");
+
+        const btnAddAuthor = document.querySelector("#btn-add-author");
+        btnAddAuthor.addEventListener('click', (e) => {
+            if (numAuthors === 6) return;
+            let nextAuthor = document.querySelectorAll(".hidden-author")[0];
+            nextAuthor.classList.remove("hidden-author");
+            numAuthors++;
+            numAuthorSpan.innerHTML = numAuthors.toString();
+            hiddenAuthorCount.value = numAuthors.toString();
+        });
+
+        const btnRemoveAuthor = document.querySelector("#btn-remove-author");
+        btnRemoveAuthor.addEventListener('click', (e) => {
+            if (numAuthors === 1) return;
+            let lastAuthor = document.querySelectorAll(".fs-author")[numAuthors - 1];
+            lastAuthor.classList.add("hidden-author");
+            numAuthors--;
+            numAuthorSpan.innerHTML = numAuthors.toString();
+            hiddenAuthorCount.value = numAuthors.toString();
+        });
+
         // photo upload
         const filePhoto = document.querySelector("#fup-photo");
         const filePhotoInfo = document.querySelector("#spn-photo-result");
@@ -640,6 +820,7 @@ if ($_POST) {
         });
 
         // paper upload
+        /*
         const fileAbstract = document.querySelector("#fup-paper");
         const fileAbstractInfo = document.querySelector("#spn-paper-result");
         fileAbstract.addEventListener("change", (e) => {
@@ -650,7 +831,7 @@ if ($_POST) {
             paperSelected = true;
             fileAbstract.parentNode.classList.remove("is-invalid");
         });
-
+        */
         // submit section
         const btnSubmit = document.querySelector("#btn-submit-form");
 
@@ -712,12 +893,14 @@ if ($_POST) {
                 return;
             }
 
+            /*
             if (!paperSelected) {
                 fileAbstract.parentNode.classList.add("is-invalid");
                 fileAbstract.focus();
                 e.preventDefault();
                 return;
             }
+            */
 
             if (!txtAbstractTitle.value) {
                 txtAbstractTitle.parentNode.classList.add("is-invalid");
