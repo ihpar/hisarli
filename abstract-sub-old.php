@@ -243,14 +243,42 @@ if ($_POST) {
             color: inherit;
         }
 
+        button.full-width {
+            width: 100%;
+        }
+
         input[type="file"] {
             opacity: 0;
             width: 0.1px;
             height: 0.1px;
         }
 
-        .full-width {
-            width: 100%;
+        #spn-photo-result,
+        #spn-paper-result {
+            margin-left: 12px;
+            font-style: italic;
+        }
+
+        .photo-row,
+        .paper-row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .spn-fup-error {
+            color: rgb(213, 0, 0);
+            position: absolute;
+            font-size: 12px;
+            margin-top: 60px;
+            visibility: hidden;
+            display: block;
+        }
+
+        .is-invalid .spn-fup-error {
+            visibility: visible;
         }
 
         @media (max-width: 839px) {
@@ -265,6 +293,10 @@ if ($_POST) {
                 padding-right: 16px;
             }
 
+            .sec-wrap {
+                padding: 16px 0;
+            }
+
             .pad-10-per {
                 padding: 0 10px;
             }
@@ -273,6 +305,28 @@ if ($_POST) {
             .row .col-6 {
                 padding-left: 0;
                 padding-right: 0;
+            }
+
+            .photo-label,
+            .paper-label {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            #spn-photo-result,
+            #spn-paper-result {
+                margin: 16px 0 0 0;
+                width: 100%;
+            }
+
+            .photo-row,
+            .paper-row {
+                flex-direction: column;
+            }
+
+            .spn-fup-error {
+                margin-top: 72px;
+                left: 0;
             }
         }
 
@@ -355,7 +409,7 @@ if ($_POST) {
                         <h3 class="center-text sec-h3"><?php echo($lang_abs_sub["bildiri_ozeti_gonderim_formu"][$pref_lang]); ?></h3>
                         <form action="abstract-submission.php" method="post" id="frm-abstract"
                               enctype="multipart/form-data">
-                            <!-- Row Ad Soyad Kurum -->
+                            <!-- Row -->
                             <div class="row">
                                 <div class="col-6">
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -382,7 +436,7 @@ if ($_POST) {
                                     </div>
                                 </div>
                             </div>
-                            <!-- Row Email Tel -->
+                            <!-- Row -->
                             <div class="row">
                                 <div class="col-6">
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -409,7 +463,30 @@ if ($_POST) {
                                     </div>
                                 </div>
                             </div>
-                            <!-- Row Adres -->
+                            <!-- Row -->
+                            <div class="row">
+                                <div class="col-12 photo-row" style="position: relative;">
+                                    <label
+                                            for="fup-photo"
+                                            class="
+                                            photo-label
+                                            mdl-button mdl-js-button
+                                            mdl-button--raised
+                                            mdl-js-ripple-effect
+                                            mdl-button--accent
+                                    ">
+                                        <?php echo($lang_abs_sub["fotograf_yukleyiniz"][$pref_lang]); ?>
+                                    </label>
+                                    <input type="file" id="fup-photo" name="fup-photo" tabindex="5"/>
+                                    <span id="spn-photo-result">
+                                        <?php echo($lang_abs_sub["fotograf_secilmedi"][$pref_lang]); ?>
+                                    </span>
+                                    <span class="spn-fup-error">
+                                        <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- Row -->
                             <div class="row">
                                 <div class="col-12">
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -424,7 +501,7 @@ if ($_POST) {
                                     </div>
                                 </div>
                             </div>
-                            <!-- Row Ozgecmis -->
+                            <!-- Row -->
                             <div class="row">
                                 <div class="col-12">
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -439,6 +516,32 @@ if ($_POST) {
                                     </div>
                                 </div>
                             </div>
+                            <!-- Row -->
+                            <!--
+                            <div class="row">
+                                <div class="col-12 paper-row" style="position: relative;">
+                                    <label
+                                            for="fup-paper"
+                                            class="
+                                            paper-label
+                                            mdl-button mdl-js-button
+                                            mdl-button--raised
+                                            mdl-js-ripple-effect
+                                            mdl-button--accent
+                                    ">
+                                        <?php echo($lang_abs_sub["ozet_yukleyiniz"][$pref_lang]); ?>
+                                    </label>
+                                    <input type="file" id="fup-paper" name="fup-paper"/>
+                                    <span id="spn-paper-result">
+                                        <?php echo($lang_abs_sub["ozet_secilmedi"][$pref_lang]); ?>
+                                    </span>
+                                    <span class="spn-fup-error">
+                                        <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
+                                    </span>
+                                </div>
+                            </div>
+                            -->
+
                             <!-- Türkçe Özet Başlığı -->
                             <?php if ($pref_lang == "tr") { ?>
                                 <!-- Row -->
@@ -457,7 +560,8 @@ if ($_POST) {
                                     </div>
                                 </div>
                             <?php } ?>
-                            <!-- Row En Ozet Basligi-->
+
+                            <!-- Row -->
                             <div class="row">
                                 <div class="col-12">
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -473,7 +577,7 @@ if ($_POST) {
                                     </div>
                                 </div>
                             </div>
-                            <!-- Row Yazar Sayisi -->
+                            <!-- Row -->
                             <div class="row">
                                 <div class="col-12">
                                     <div style="padding: 20px 0;">
@@ -492,7 +596,7 @@ if ($_POST) {
                                     </div>
                                 </div>
                             </div>
-                            <!-- Row Yazarlar -->
+                            <!-- Row -->
                             <div class="row">
                                 <div class="col-12 dv-authors-wrapper">
                                     <?php
@@ -546,6 +650,7 @@ if ($_POST) {
                                     <input type="hidden" id="txt-author-count" name="txt-author-count" value="1">
                                 </div>
                             </div>
+
                             <!-- Türkçe Özet -->
                             <?php if ($pref_lang == "tr") { ?>
                                 <!-- Row -->
@@ -564,7 +669,8 @@ if ($_POST) {
                                     </div>
                                 </div>
                             <?php } ?>
-                            <!-- Row Ozet-->
+
+                            <!-- Row -->
                             <div class="row">
                                 <div class="col-12">
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -580,6 +686,7 @@ if ($_POST) {
                                     </div>
                                 </div>
                             </div>
+
                             <!-- Türkçe Anahtar Kelimeler -->
                             <?php if ($pref_lang == "tr") { ?>
                                 <!-- Row -->
@@ -599,7 +706,8 @@ if ($_POST) {
                                     </div>
                                 </div>
                             <?php } ?>
-                            <!-- Row Anahtar Kelimeler -->
+
+                            <!-- Row -->
                             <div class="row">
                                 <div class="col-12">
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -615,7 +723,7 @@ if ($_POST) {
                                     </div>
                                 </div>
                             </div>
-                            <!-- Row Gonder -->
+                            <!-- Row -->
                             <div class="row" style="margin-top: 20px;">
                                 <div class="col-12">
                                     <button
@@ -699,7 +807,31 @@ if ($_POST) {
             hiddenAuthorCount.value = numAuthors.toString();
         });
 
+        // photo upload
+        const filePhoto = document.querySelector("#fup-photo");
+        const filePhotoInfo = document.querySelector("#spn-photo-result");
+        filePhoto.addEventListener("change", (e) => {
+            const [file] = e.target.files;
+            const {name: fileName, size} = file;
+            const fileSize = (size / 1000).toFixed(2);
+            filePhotoInfo.innerHTML = fileName + " - " + fileSize + "KB";
+            photoSelected = true;
+            filePhoto.parentNode.classList.remove("is-invalid");
+        });
 
+        // paper upload
+        /*
+        const fileAbstract = document.querySelector("#fup-paper");
+        const fileAbstractInfo = document.querySelector("#spn-paper-result");
+        fileAbstract.addEventListener("change", (e) => {
+            const [file] = e.target.files;
+            const {name: fileName, size} = file;
+            const fileSize = (size / 1000).toFixed(2);
+            fileAbstractInfo.innerHTML = fileName + " - " + fileSize + "KB";
+            paperSelected = true;
+            fileAbstract.parentNode.classList.remove("is-invalid");
+        });
+        */
         // submit section
         const btnSubmit = document.querySelector("#btn-submit-form");
 
@@ -740,6 +872,13 @@ if ($_POST) {
                 return;
             }
 
+            if (!photoSelected) {
+                filePhoto.parentNode.classList.add("is-invalid");
+                filePhoto.focus();
+                e.preventDefault();
+                return;
+            }
+
             if (!txtAddress.value) {
                 txtAddress.parentNode.classList.add("is-invalid");
                 txtAddress.focus();
@@ -753,6 +892,15 @@ if ($_POST) {
                 e.preventDefault();
                 return;
             }
+
+            /*
+            if (!paperSelected) {
+                fileAbstract.parentNode.classList.add("is-invalid");
+                fileAbstract.focus();
+                e.preventDefault();
+                return;
+            }
+            */
 
             if (!txtAbstractTitle.value) {
                 txtAbstractTitle.parentNode.classList.add("is-invalid");
