@@ -25,6 +25,7 @@ require_once "langs/lang_index.php";
 
         .mdl-list__item {
             font-size: 15px;
+            line-height: 20px;
         }
 
         .mdl-list__item-icon, .mdl-list__item-icon.material-icons {
@@ -127,7 +128,37 @@ require_once "langs/lang_index.php";
                     <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet sec-24-lr sec-0-r">
                         <h3 class="sec-h3"><?php echo($lang_index["alt_basliklar"][$pref_lang]); ?></h3>
                         <!-- Alt Basliklar -->
-                        <?php echo($lang_index["alt_basliklar_metin"][$pref_lang]); ?>
+                        <div class="mdl-grid no-pad">
+                            <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
+                                <ul class="mdl-list no-pad mr-16">
+                                    <?php
+                                    $sub_categories = $lang_index["alt_basliklar_liste"][$pref_lang];
+                                    $sub_category_count = count($sub_categories);
+                                    $half_count = ceil($sub_category_count / 2) + 1;
+                                    for ($i = 0; $i < $half_count; $i++) { ?>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">
+                                              <i class="material-icons mdl-list__item-icon">category</i>
+                                              <?php echo($sub_categories[$i]); ?>
+                                            </span>
+                                        </li>
+                                    <?php } ?>
+                                </ul>
+                            </div>
+                            <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
+                                <ul class="mdl-list no-pad mr-16">
+                                    <?php
+                                    for ($i = $half_count; $i < $sub_category_count; $i++) { ?>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">
+                                              <i class="material-icons mdl-list__item-icon">category</i>
+                                              <?php echo($sub_categories[$i]); ?>
+                                            </span>
+                                        </li>
+                                    <?php } ?>
+                                </ul>
+                            </div>
+                        </div>
                         <!-- Eof Alt Basliklar -->
                     </div>
                 </div>
@@ -146,7 +177,19 @@ require_once "langs/lang_index.php";
                 <div class="pad-25-per">
                     <h3 class="center-text sec-h3"><?php echo($lang_index["duyurular"][$pref_lang]); ?></h3>
                     <ul class="mdl-list">
-                        <?php echo($lang_index["duyurular_metin"][$pref_lang]); ?>
+                        <?php
+                        $announcements = $lang_index["duyurular_liste"][$pref_lang];
+                        for ($i = 0; $i < count($announcements); $i++) {
+                            ?>
+                            <li class="mdl-list__item">
+                                <span class="mdl-list__item-primary-content">
+                                  <i class="material-icons mdl-list__item-icon">campaign</i>
+                                  <div class="li-inner-wrap">
+                                    <?php echo($announcements[$i]); ?>
+                                  </div>
+                                </span>
+                            </li>
+                        <?php } ?>
                     </ul>
                 </div>
             </section>

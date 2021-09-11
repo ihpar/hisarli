@@ -98,577 +98,107 @@ değişime yardım olanakları konularına katkıda bulunmaya davet etmekten onu
         "en" => "Subtopics",
         "tr" => "Alt Başlıklar"
     ],
-    "alt_basliklar_metin" => [
-        "en" => ' <div class="mdl-grid no-pad">
-      <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
-        <ul class="mdl-list no-pad mr-16">
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Acoustic Ecology, Soundscape Studies and Music
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Anthropocene Era
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Audience Behavior on Music and Climate 
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Applied Ethnomusicology
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Archeomusicology
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Artistic Individual Differences on Music and Climate 
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Binaural Waves and Meditation
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Biomusicology
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Carbon Footprint and Art
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Climate and Plastic Arts Relationship 
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Cosmology and Geography in Music
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Ecomusicology
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Environmental Activism and Music
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Environmental Sound Sources in Composition
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Environmental Issues and Contemporary Art
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Etnography and Sound Records 
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Formation and Development of Different Musical Environments
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Garbage and Art
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Global Issues and Music
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Global Warming and Social Media 
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Innovative Technology in Musical Instruments Making
-            </span>
-          </li>
-        </ul>
-      </div>
-      
-      <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
-        <ul class="mdl-list no-pad">
-        <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Landscape, Architecture, Design and Music
-            </span>
-          </li>
-        <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Memory, Space and Music 
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Migration and Musicians
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Museum and Collector of Music
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Music and Impact of Climate Change for Consumer Behavior
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-             Music and Technology Answering to the Global Issues  
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Music Education in Climate Awareness
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Musicians in Global Changes
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Nature Noises in Music
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Political Environment and Music 
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Pro-Social Behaviors on Music and Climate Change 
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Natural Disasters in Song and Music
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Ornithological Recordings
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Perspectives on Sonic Environments
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Responses in Music to Climate Change 
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Role of Music Education Institutions 
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Sustainability Education and Music
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Sustainability of Music Cultures 
-            </span>
-          </li>
-           <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Sustainability in Art
-            </span>
-          </li>
-
-           <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Zoomusicology
-            </span>
-          </li>
-        </ul>
-      </div>
-    </div>',
-        "tr" => ' <div class="mdl-grid no-pad">
-      <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
-        <ul class="mdl-list no-pad mr-16">
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Akustik Ekoloji, Soundscape Çalışmaları ve Müzik
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Antroposen Çağı
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Arkeomüzikoloji
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Binaural Dalgalar ve Meditasyon
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Biyomüzikoloji
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Çalgı Yapımında Yenilikçi Teknoloji
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Çevre Aktivizmi ve Müzik
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Çevresel Sorunlar ve Güncel Sanat
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Çöp ve Sanat
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Ekomüzikoloji
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Etnografya ve Ses Kayıtları 
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Farklı Müzik Ortamlarının Oluşumu ve Gelişimi
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Göç ve Müzisyenler
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Hafıza, Mekan ve Müzik
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-             İklim Bilincinde Müzik Eğitimi 
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              İklim ve Plastik Sanatlar İlişkisi 
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Karbon Ayak İzi ve Sanat
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Küresel Değişimlerde Müzisyenler
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Küresel Isınma ve Sosyal Medya
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Küresel Sorunlar ve Müzik
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Küresel Sorunlara Cevap Veren Müzik ve Teknoloji
-            </span>
-          </li>
-        </ul>
-      </div>
-      
-      <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
-        <ul class="mdl-list no-pad">
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Kompozisyonda Çevresel Ses Kaynakları 
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Mesleki Müzik Eğitimi Kurumlarının Rolü 
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Müzik Kültürlerinin Sürdürülebilirliği
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Müzik Müzeciliği ve Koleksiyonerliği
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Müzikte Doğa Sesleri
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Müzikte Kosmoloji ve Coğrafya 
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Müzikte İklim Değişikliğine Tepkiler
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Müzik ve İklim Değişikliğine Yönelik Toplum Yanlışı Davranışlar
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Müzik ve İklim Konusunda Kitle Davranışları
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Müzik ve İklim Konusunda Sanatçı Bireysel Farklılıkları
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Ornitolojik Kayıtlar
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Peysaj, Mimarlık, Tasarım ve Müzik
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Politik Çevre ve Müzik
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Sanatta Sürdürülebilirlik
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Sonik Ortamlar Üzerine Perspektifler
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Sürdürülebilirlik Eğitimi ve Müzik
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Şarkı ve Müzikte Doğal Afetler
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Tüketici Davranışlarında Müzik ve İklim Değişikliklerinin Etkisi
-            </span>
-          </li>
-          <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">category</i>
-              Uygulamalı Etnomüzikoloji
-            </span>
-          </li>
-        </ul>
-      </div>
-    </div>'
+    "alt_basliklar_liste" => [
+        "en" => [
+            "Acoustic Ecology, Soundscape Studies and Music",
+            "Anthropocene Era",
+            "Audience Behavior on Music and Climate",
+            "Applied Ethnomusicology",
+            "Archaeomusicology",
+            "Artistic Individual Differences on Music and Climate",
+            "Binaural Waves and Meditation",
+            "Biomusicology",
+            "Carbon Footprint and Art",
+            "Climate and Plastic Arts Relationship",
+            "Cosmology and Geography in Music",
+            "Ecomusicology",
+            "Environmental Activism and Music",
+            "Environmental Sound Sources in Composition",
+            "Environmental Issues and Contemporary Art",
+            "Ethnography and Sound Records",
+            "Formation and Development of Different Musical Environments",
+            "Garbage and Art",
+            "Global Issues and Music",
+            "Global Warming and Social Media",
+            "Innovative Technology in Musical Instruments Making",
+            "Landscape, Architecture, Design and Music",
+            "Memory, Space and Music",
+            "Migration and Musicians",
+            "Museum and Collector of Music",
+            "Music and Impact of Climate Change for Consumer Behavior",
+            "Music and Technology Answering to the Global Issues",
+            "Music Education in Climate Awareness",
+            "Musicians in Global Changes",
+            "Nature Noises in Music",
+            "Political Environment and Music",
+            "Pro-Social Behaviors on Music and Climate Change",
+            "Natural Disasters in Song and Music",
+            "Ornithological Recordings",
+            "Perspectives on Sonic Environments",
+            "Responses in Music to Climate Change",
+            "Role of Music Education Institutions",
+            "Sustainability Education and Music",
+            "Sustainability of Music Cultures",
+            "Sustainability in Art",
+            "Zoomusicology"
+        ],
+        "tr" => [
+            "Akustik Ekoloji",
+            "Soundscape Çalışmaları ve Müzik",
+            "Antroposen Çağı",
+            "Arkeomüzikoloji",
+            "Binaural Dalgalar ve Meditasyon",
+            "Biyomüzikoloji",
+            "Çalgı Yapımında Yenilikçi Teknoloji",
+            "Çevre Aktivizmi ve Müzik",
+            "Çevresel Sorunlar ve Güncel Sanat",
+            "Çöp ve Sanat",
+            "Ekomüzikoloji",
+            "Etnografya ve Ses Kayıtları",
+            "Farklı Müzik Ortamlarının Oluşumu ve Gelişimi",
+            "Göç ve Müzisyenler",
+            "Hafıza, Mekan ve Müzik",
+            "İklim Bilincinde Müzik Eğitimi",
+            "İklim ve Plastik Sanatlar İlişkisi",
+            "Karbon Ayak İzi ve Sanat",
+            "Küresel Değişimlerde Müzisyenler",
+            "Küresel Isınma ve Sosyal Medya",
+            "Küresel Sorunlar ve Müzik",
+            "Küresel Sorunlara Cevap Veren Müzik ve Teknoloji",
+            "Kompozisyonda Çevresel Ses Kaynakları",
+            "Mesleki Müzik Eğitimi Kurumlarının Rolü",
+            "Müzik Kültürlerinin Sürdürülebilirliği",
+            "Müzik Müzeciliği ve Koleksiyonerliği",
+            "Müzikte Doğa Sesleri",
+            "Müzikte Kosmoloji ve Coğrafya",
+            "Müzikte İklim Değişikliğine Tepkiler",
+            "Müzik ve İklim Değişikliğine Yönelik Toplum Yanlışı Davranışlar",
+            "Müzik ve İklim Konusunda Kitle Davranışları",
+            "Müzik ve İklim Konusunda Sanatçı Bireysel Farklılıkları",
+            "Ornitolojik Kayıtlar", "Peysaj, Mimarlık, Tasarım ve Müzik",
+            "Politik Çevre ve Müzik", "Sanatta Sürdürülebilirlik",
+            "Sonik Ortamlar Üzerine Perspektifler",
+            "Sürdürülebilirlik Eğitimi ve Müzik",
+            "Şarkı ve Müzikte Doğal Afetler",
+            "Tüketici Davranışlarında Müzik ve İklim Değişikliklerinin Etkisi",
+            "Uygulamalı Etnomüzikoloji"
+        ]
     ],
     "duyurular" => [
         "en" => "Announcements",
         "tr" => "Duyurular"
     ],
-    "duyurular_metin" => [
-        "en" => '
-        <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">campaign</i>
-              <div class="li-inner-wrap">
-                The invitation of 12th International Hisarlı Ahmet Symposium has been announced above.
-                The starting date and sending method of abstract submission will be announced later.
-              </div>
-            </span>
-        </li>
-        <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">campaign</i>
-              <div class="li-inner-wrap">
-                Full text submission of 12th International Hisarlı Ahmet Symposium will end on September 15, 2021.
-              </div>
-            </span>
-        </li>
-        <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">campaign</i>
-              <div class="li-inner-wrap">
-                For all your questions and comments: <a href="mailto:contact@hisarliahmet.org">contact@hisarliahmet.org</a>
-              </div>
-            </span>
-        </li>
-        ',
-        "tr" => '
-        <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">campaign</i>
-              <div class="li-inner-wrap">
-                12. Uluslararası Hisarlı Ahmet Sempozyum çağrı metni ve web sayfası ilan edilmiştir.
-                ÖZET GÖNDERİM BAŞLANGIÇ TARİHİ ve YÖNTEMİ DAHA SONRA BURADAN DUYURULACAKTIR.
-              </div>
-            </span>
-        </li>
-        <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">campaign</i>
-              <div class="li-inner-wrap">
-                11. Uluslararası Hisarlı Ahmet Sempozyumu tam metin gönderimi 15 Eylül 2021\'de sona erecektir.
-                Tam metinlerinizi <a href="mailto:contact@hisarliahmet.org">contact@hisarliahmet.org</a> adresine gönderebilirsiniz.
-              </div>
-            </span>
-        </li>
-        <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-icon">campaign</i>
-              <div class="li-inner-wrap">
-                Tüm soru ve görüşlerinizi <a href="mailto:contact@hisarliahmet.org">contact@hisarliahmet.org</a> adresine iletebilirsiniz.</a>
-              </div>
-            </span>
-        </li>
-        '
+    "duyurular_liste" => [
+        "en" => [
+            "The invitation of 12th International Hisarlı Ahmet Symposium has been announced above. The starting date and sending method of abstract submission will be announced later.",
+            "Full text submission of 11th International Hisarlı Ahmet Symposium will end on September 15, 2021.",
+            "For all your questions and comments: <a href=\"mailto:contact@hisarliahmet.org\">contact@hisarliahmet.org</a>"
+        ],
+        "tr" => [
+            "12. Uluslararası Hisarlı Ahmet Sempozyum çağrı metni ve web sayfası ilan edilmiştir. ÖZET GÖNDERİM BAŞLANGIÇ TARİHİ ve YÖNTEMİ DAHA SONRA BURADAN DUYURULACAKTIR.",
+            "11. Uluslararası Hisarlı Ahmet Sempozyumu tam metin gönderimi 15 Eylül 2021'de sona erecektir. Tam metinlerinizi <a href=\"mailto:contact@hisarliahmet.org\">contact@hisarliahmet.org</a> adresine gönderebilirsiniz.",
+            "Tüm soru ve görüşlerinizi <a href=\"mailto:contact@hisarliahmet.org\">contact@hisarliahmet.org</a> adresine iletebilirsiniz.</a>"
+        ]
     ],
     "davetli_konusmacilar" => [
         "en" => "Invited Speakers",
