@@ -134,7 +134,7 @@ require_once "langs/lang_index.php";
                                     <?php
                                     $sub_categories = $lang_index["alt_basliklar_liste"][$pref_lang];
                                     $sub_category_count = count($sub_categories);
-                                    $half_count = ceil($sub_category_count / 2) + 1;
+                                    $half_count = ceil($sub_category_count / 2);
                                     for ($i = 0; $i < $half_count; $i++) { ?>
                                         <li class="mdl-list__item">
                                             <span class="mdl-list__item-primary-content">
