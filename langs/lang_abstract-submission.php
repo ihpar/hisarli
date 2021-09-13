@@ -50,16 +50,16 @@ $lang_abs_sub = [
         "tr" => "Gönderiliyor..."
     ],
     "ad_soyad" => [
-        "en" => "Name Surname",
-        "tr" => "Ad Soyad"
+        "en" => "Name-Surname",
+        "tr" => "Ad-Soyad"
     ],
     "kurum" => [
-        "en" => "Institution (Programme if student)",
-        "tr" => "Kurum (Öğrenciyse program)"
+        "en" => "Institution (programme if student)",
+        "tr" => "Kurum (öğrenciyse program)"
     ],
     "email" => [
-        "en" => "Email (Actual, in use)",
-        "tr" => "Email (Güncel, sürekli kullanılan)"
+        "en" => "Email (actual, in use)",
+        "tr" => "Email (güncel, sürekli kullanılan)"
     ],
     "telefon" => [
         "en" => "Mobile Phone",
@@ -67,11 +67,11 @@ $lang_abs_sub = [
     ],
     "adres" => [
         "en" => "Shipping Address",
-        "tr" => "Gönderi Adresi"
+        "tr" => "Posta Adresi"
     ],
     "kisa_ozgecmis" => [
-        "en" => "Brief Resume (Max. 50 words)",
-        "tr" => "Kısa Özgeçmiş (En fazla 50 kelime)"
+        "en" => "Brief Resume (max. 50 words)",
+        "tr" => "Kısa Özgeçmiş (en fazla 50 kelime)"
     ],
     "fotograf_yukleyiniz" => [
         "en" => "Upload Your Photo",
@@ -95,11 +95,11 @@ $lang_abs_sub = [
     ],
     "ozet_basligi_tr" => [
         "en" => "Turkish Abstract Title",
-        "tr" => "Türkçe Özet Başlığı"
+        "tr" => "Türkçe Özet Başlık"
     ],
     "ozet_basligi_en" => [
         "en" => "English Abstract Title",
-        "tr" => "İngilizce Özet Başlığı"
+        "tr" => "İngilizce Özet Başlık"
     ],
     "ozet_metni" => [
         "en" => "Abstract (100 - 300 words)",
@@ -138,8 +138,8 @@ $lang_abs_sub = [
         "tr" => "İngilizce Anahtar Kelimeler (3 - 5 adet)"
     ],
     "aciklama" => [
-        "en" => "Comments / Requests (If any)",
-        "tr" => "Açıklamalar / Talepler (Eğer varsa)"
+        "en" => "Comments / Requests (if any)",
+        "tr" => "Açıklamalar / Talepler (eğer varsa)"
     ],
     "bildirinin_kapsadigi_altbaslik" => [
         "en" => "Abstract's Subcategory",
@@ -154,12 +154,12 @@ $lang_abs_sub = [
         "tr" => "İletişim Kurulacak Yazar"
     ],
     "oturumlarda_tanitilmak" => [
-        "en" => "Requested to introduce the author during sessions.",
-        "tr" => "Oturumlarda tanıtılmak amacıyla talep edilmektedir."
+        "en" => "Resume is qequested to introduce the author during sessions.",
+        "tr" => "Kısa Özgeçmiş, oturumlarda tanıtılmak amacıyla talep edilmektedir."
     ],
     "olasi_belge" => [
-        "en" => "Requested for possible document / material shipping.",
-        "tr" => "Olası belge / materyal gönderimleri için talep edilmektedir."
+        "en" => "Shipping Address is requested for possible document / material shipping.",
+        "tr" => "Posta Adresi, olası belge / materyal gönderimleri için talep edilmektedir."
     ]
 ];
 

@@ -414,7 +414,7 @@ if ($_POST) {
                             <div class="row">
                                 <div class="col-12 dv-authors-wrapper">
                                     <?php
-                                    $max_author_count = 6;
+                                    $max_author_count = 10;
 
                                     for ($i = 1; $i <= $max_author_count; $i++) { ?>
                                         <!-- Author <?php echo($i); ?> -->
@@ -750,7 +750,7 @@ if ($_POST) {
 
         const btnAddAuthor = document.querySelector("#btn-add-author");
         btnAddAuthor.addEventListener('click', (e) => {
-            if (numAuthors === 6) return;
+            if (numAuthors === <?php echo($max_author_count); ?>) return;
             let nextAuthor = document.querySelectorAll(".hidden-author")[0];
             nextAuthor.classList.remove("hidden-author");
             numAuthors++;
