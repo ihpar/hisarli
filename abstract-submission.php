@@ -32,6 +32,28 @@ function filenameSanitizer($fileName)
     return str_replace($dangerousCharacters, '_', $fileName);
 }
 
+function trStrcmp($a, $b)
+{
+    $lcases = array('a', 'b', 'c', 'ç', 'd', 'e', 'f', 'g', 'ğ', 'h', 'ı', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'ö', 'p', 'q', 'r', 's', 'ş', 't', 'u', 'ü', 'w', 'v', 'y', 'z');
+    $ucases = array('A', 'B', 'C', 'Ç', 'D', 'E', 'F', 'G', 'Ğ', 'H', 'I', 'İ', 'J', 'K', 'L', 'M', 'N', 'O', 'Ö', 'P', 'Q', 'R', 'S', 'Ş', 'T', 'U', 'Ü', 'W', 'V', 'Y', 'Z');
+    $am = mb_strlen($a, 'UTF-8');
+    $bm = mb_strlen($b, 'UTF-8');
+    $maxlen = $am > $bm ? $bm : $am;
+    for ($ai = 0; $ai < $maxlen; $ai++) {
+        $aa = mb_substr($a, $ai, 1, 'UTF-8');
+        $ba = mb_substr($b, $ai, 1, 'UTF-8');
+        if ($aa != $ba) {
+            $apos = in_array($aa, $lcases) ? array_search($aa, $lcases) : array_search($aa, $ucases);
+            $bpos = in_array($ba, $lcases) ? array_search($ba, $lcases) : array_search($ba, $ucases);
+            if ($apos !== $bpos) {
+                return $apos > $bpos ? 1 : -1;
+            }
+        }
+    }
+    return 0;
+
+}
+
 if ($_POST) {
     $form_posted = true;
 
@@ -316,7 +338,7 @@ if ($_POST) {
 
         fieldset {
             border: 1px solid #ccc;
-            margin: 0;
+            margin: 12px 0;
             padding: 12px;
         }
 
@@ -330,8 +352,22 @@ if ($_POST) {
             margin: 16px 0;
         }
 
+        .sel-form {
+            width: 100%;
+            padding: 11px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
         .hidden-author {
             display: none;
+        }
+
+        .spn-additional-info {
+            font-size: 14px;
+            font-style: italic;
+            display: inline-block;
+            margin: 4px 0;
         }
     </style>
 </head>
@@ -355,124 +391,6 @@ if ($_POST) {
                         <h3 class="center-text sec-h3"><?php echo($lang_abs_sub["bildiri_ozeti_gonderim_formu"][$pref_lang]); ?></h3>
                         <form action="abstract-submission.php" method="post" id="frm-abstract"
                               enctype="multipart/form-data">
-                            <!-- Row Ad Soyad Kurum -->
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <input class="mdl-textfield__input" type="text" id="txt-name-surname"
-                                               name="txt-name-surname"/>
-                                        <label class="mdl-textfield__label" for="txt-name-surname">
-                                            <?php echo($lang_abs_sub["ad_soyad"][$pref_lang]); ?>
-                                        </label>
-                                        <span class="mdl-textfield__error">
-                                            <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <input class="mdl-textfield__input" type="text" id="txt-institution"
-                                               name="txt-institution"/>
-                                        <label class="mdl-textfield__label" for="txt-institution">
-                                            <?php echo($lang_abs_sub["kurum"][$pref_lang]); ?>
-                                        </label>
-                                        <span class="mdl-textfield__error">
-                                            <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Row Email Tel -->
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <input class="mdl-textfield__input" type="text" id="txt-email"
-                                               name="txt-email"/>
-                                        <label class="mdl-textfield__label" for="txt-email">
-                                            <?php echo($lang_abs_sub["email"][$pref_lang]); ?>
-                                        </label>
-                                        <span class="mdl-textfield__error">
-                                            <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <input class="mdl-textfield__input" type="text" id="txt-phone"
-                                               name="txt-phone"/>
-                                        <label class="mdl-textfield__label" for="txt-phone">
-                                            <?php echo($lang_abs_sub["telefon"][$pref_lang]); ?>
-                                        </label>
-                                        <span class="mdl-textfield__error">
-                                            <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Row Adres -->
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <textarea class="mdl-textfield__input" rows="3" id="txt-address"
-                                                  name="txt-address"></textarea>
-                                        <label class="mdl-textfield__label" for="txt-address">
-                                            <?php echo($lang_abs_sub["adres"][$pref_lang]); ?>
-                                        </label>
-                                        <span class="mdl-textfield__error">
-                                            <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Row Ozgecmis -->
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <textarea class="mdl-textfield__input" rows="3" id="txt-cv"
-                                                  name="txt-cv"></textarea>
-                                        <label class="mdl-textfield__label" for="txt-cv">
-                                            <?php echo($lang_abs_sub["kisa_ozgecmis"][$pref_lang]); ?>
-                                        </label>
-                                        <span class="mdl-textfield__error">
-                                            <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Türkçe Özet Başlığı -->
-                            <?php if ($pref_lang == "tr") { ?>
-                                <!-- Row -->
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                            <input class="mdl-textfield__input" type="text" id="txt-abstract-title-tr"
-                                                   name="txt-abstract-title-tr"/>
-                                            <label class="mdl-textfield__label" for="txt-abstract-title-tr">
-                                                <?php echo($lang_abs_sub["ozet_basligi_tr"][$pref_lang]); ?>
-                                            </label>
-                                            <span class="mdl-textfield__error">
-                                            <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
-                                        </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            <?php } ?>
-                            <!-- Row En Ozet Basligi-->
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <input class="mdl-textfield__input" type="text" id="txt-abstract-title"
-                                               name="txt-abstract-title"/>
-                                        <label class="mdl-textfield__label" for="txt-abstract-title">
-                                            <?php echo(($pref_lang == "tr") ?
-                                                $lang_abs_sub["ozet_basligi_en"][$pref_lang] : $lang_abs_sub["ozet_basligi"][$pref_lang]); ?>
-                                        </label>
-                                        <span class="mdl-textfield__error">
-                                            <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
                             <!-- Row Yazar Sayisi -->
                             <div class="row">
                                 <div class="col-12">
@@ -512,8 +430,8 @@ if ($_POST) {
                                                     <?php echo($lang_abs_sub["ad_soyad"][$pref_lang]); ?>
                                                 </label>
                                                 <span class="mdl-textfield__error">
-                                            <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
-                                        </span>
+                                                    <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
+                                                </span>
                                             </div>
 
                                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -525,8 +443,8 @@ if ($_POST) {
                                                     <?php echo($lang_abs_sub["kurum"][$pref_lang]); ?>
                                                 </label>
                                                 <span class="mdl-textfield__error">
-                                            <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
-                                        </span>
+                                                    <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
+                                                </span>
                                             </div>
 
                                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -538,33 +456,124 @@ if ($_POST) {
                                                     <?php echo($lang_abs_sub["email"][$pref_lang]); ?>
                                                 </label>
                                                 <span class="mdl-textfield__error">
-                                            <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
-                                        </span>
+                                                    <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
+                                                </span>
                                             </div>
+
+                                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                <textarea class="mdl-textfield__input" rows="3"
+                                                          id="txt-cv-<?php echo($i); ?>"
+                                                          name="txt-cv-<?php echo($i); ?>"></textarea>
+                                                <label class="mdl-textfield__label" for="txt-cv-<?php echo($i); ?>">
+                                                    <?php echo($lang_abs_sub["kisa_ozgecmis"][$pref_lang]); ?>
+                                                </label>
+                                                <span class="spn-additional-info">
+                                                    <?php echo($lang_abs_sub["oturumlarda_tanitilmak"][$pref_lang]); ?>
+                                                </span>
+                                                <span class="mdl-textfield__error">
+                                                    <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
+                                                </span>
+                                            </div>
+
                                         </fieldset>
                                     <?php } ?>
                                     <input type="hidden" id="txt-author-count" name="txt-author-count" value="1">
                                 </div>
                             </div>
-                            <!-- Türkçe Özet -->
+                            <!-- Alt Başlık -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <label class="mdl-textfield__label" for="sel-sub-category"
+                                               style="top: 0; font-size: 14px;">
+                                            <?php echo($lang_abs_sub["bildirinin_kapsadigi_altbaslik"][$pref_lang]); ?>
+                                        </label>
+                                        <select id="sel-sub-category" name="sel-sub-category" class="sel-form">
+                                            <option><?php echo($lang_abs_sub["seciniz"][$pref_lang]); ?></option>
+                                            <?php
+                                            require_once "langs/lang_index.php";
+                                            $sub_categories = unserialize(serialize($lang_index["alt_basliklar_liste"][$pref_lang]));
+                                            usort($sub_categories, 'trStrcmp');
+                                            //sort($sub_categories);
+                                            foreach ($sub_categories as $sub_category) {
+                                                echo("<option>$sub_category</option>");
+                                            }
+                                            ?>
+                                        </select>
+                                        <span class="mdl-textfield__error">
+                                            <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Türkçe Özet Başlığı -->
                             <?php if ($pref_lang == "tr") { ?>
                                 <!-- Row -->
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <textarea class="mdl-textfield__input" rows="18" id="txt-abstract-tr"
-                                                  name="txt-abstract-tr"></textarea>
+                                            <input class="mdl-textfield__input" type="text" id="txt-abstract-title-tr"
+                                                   name="txt-abstract-title-tr"/>
+                                            <label class="mdl-textfield__label" for="txt-abstract-title-tr">
+                                                <?php echo($lang_abs_sub["ozet_basligi_tr"][$pref_lang]); ?>
+                                            </label>
+                                            <span class="mdl-textfield__error">
+                                        <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
+                                    </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Türkçe Özet -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <textarea class="mdl-textfield__input" rows="18" id="txt-abstract-tr"
+                                              name="txt-abstract-tr"></textarea>
                                             <label class="mdl-textfield__label" for="txt-abstract-tr">
                                                 <?php echo($lang_abs_sub["ozet_metni_tr"][$pref_lang]); ?>
                                             </label>
                                             <span class="mdl-textfield__error">
-                                            <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
-                                        </span>
+                                        <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
+                                    </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Türkçe Anahtar Kelimeler -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text"
+                                                   id="txt-abstract-keywords-tr"
+                                                   name="txt-abstract-keywords-tr"/>
+                                            <label class="mdl-textfield__label" for="txt-abstract-keywords-tr">
+                                                <?php echo($lang_abs_sub["anahtar_kelimeler_tr"][$pref_lang]); ?>
+                                            </label>
+                                            <span class="mdl-textfield__error">
+                                        <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
+                                    </span>
                                         </div>
                                     </div>
                                 </div>
                             <?php } ?>
-                            <!-- Row Ozet-->
+
+                            <!-- En Ozet Basligi-->
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" id="txt-abstract-title"
+                                               name="txt-abstract-title"/>
+                                        <label class="mdl-textfield__label" for="txt-abstract-title">
+                                            <?php echo(($pref_lang == "tr") ?
+                                                $lang_abs_sub["ozet_basligi_en"][$pref_lang] : $lang_abs_sub["ozet_basligi"][$pref_lang]); ?>
+                                        </label>
+                                        <span class="mdl-textfield__error">
+                                            <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- En Ozet-->
                             <div class="row">
                                 <div class="col-12">
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -580,26 +589,7 @@ if ($_POST) {
                                     </div>
                                 </div>
                             </div>
-                            <!-- Türkçe Anahtar Kelimeler -->
-                            <?php if ($pref_lang == "tr") { ?>
-                                <!-- Row -->
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                            <input class="mdl-textfield__input" type="text"
-                                                   id="txt-abstract-keywords-tr"
-                                                   name="txt-abstract-keywords-tr"/>
-                                            <label class="mdl-textfield__label" for="txt-abstract-keywords-tr">
-                                                <?php echo($lang_abs_sub["anahtar_kelimeler_tr"][$pref_lang]); ?>
-                                            </label>
-                                            <span class="mdl-textfield__error">
-                                            <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
-                                        </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            <?php } ?>
-                            <!-- Row Anahtar Kelimeler -->
+                            <!-- En Anahtar Kelimeler -->
                             <div class="row">
                                 <div class="col-12">
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -615,6 +605,82 @@ if ($_POST) {
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Corresponding Author -->
+                            <div class="row">
+                                <div class="col-12">
+
+                                    <fieldset>
+                                        <legend><?php echo($lang_abs_sub["iletisim_kurulacak_yazar"][$pref_lang]); ?></legend>
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text"
+                                                   id="txt-corresponding-author-name"
+                                                   name="txt-corresponding-author-name">
+                                            <label class="mdl-textfield__label" for="txt-corresponding-author-name">
+                                                <?php echo($lang_abs_sub["ad_soyad"][$pref_lang]); ?>
+                                            </label>
+                                            <span class="mdl-textfield__error">
+                                                <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
+                                            </span>
+                                        </div>
+
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text"
+                                                   id="txt-corresponding-author-email"
+                                                   name="txt-corresponding-author-email">
+                                            <label class="mdl-textfield__label" for="txt-corresponding-author-email">
+                                                <?php echo($lang_abs_sub["email"][$pref_lang]); ?>
+                                            </label>
+                                            <span class="mdl-textfield__error">
+                                                <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
+                                            </span>
+                                        </div>
+
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text"
+                                                   id="txt-corresponding-author-phone"
+                                                   name="txt-corresponding-author-phone">
+                                            <label class="mdl-textfield__label" for="txt-corresponding-author-phone">
+                                                <?php echo($lang_abs_sub["telefon"][$pref_lang]); ?>
+                                            </label>
+                                            <span class="mdl-textfield__error">
+                                                <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
+                                            </span>
+                                        </div>
+
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <textarea class="mdl-textfield__input" rows="3"
+                                                  id="txt-corresponding-author-address"
+                                                  name="txt-corresponding-author-address"></textarea>
+                                            <label class="mdl-textfield__label" for="txt-corresponding-author-address">
+                                                <?php echo($lang_abs_sub["adres"][$pref_lang]); ?>
+                                            </label>
+                                            <span class="spn-additional-info">
+                                                    <?php echo($lang_abs_sub["olasi_belge"][$pref_lang]); ?>
+                                                </span>
+                                            <span class="mdl-textfield__error">
+                                                <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
+                                            </span>
+                                        </div>
+
+                                    </fieldset>
+
+                                </div>
+                            </div>
+
+                            <!-- En Açıklama/Talep -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <textarea class="mdl-textfield__input" rows="3" id="txt-comments"
+                                                  name="txt-comments"></textarea>
+                                        <label class="mdl-textfield__label" for="txt-comments">
+                                            <?php echo($lang_abs_sub["aciklama"][$pref_lang]); ?>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
                             <!-- Row Gonder -->
                             <div class="row" style="margin-top: 20px;">
                                 <div class="col-12">

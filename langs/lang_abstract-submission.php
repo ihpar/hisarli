@@ -50,28 +50,28 @@ $lang_abs_sub = [
         "tr" => "Gönderiliyor..."
     ],
     "ad_soyad" => [
-        "en" => "Title Name Surname",
-        "tr" => "Unvan Ad Soyad"
+        "en" => "Name Surname",
+        "tr" => "Ad Soyad"
     ],
     "kurum" => [
-        "en" => "Institution",
-        "tr" => "Kurum"
+        "en" => "Institution (Programme if student)",
+        "tr" => "Kurum (Öğrenciyse program)"
     ],
     "email" => [
-        "en" => "Email",
-        "tr" => "Email"
+        "en" => "Email (Actual, in use)",
+        "tr" => "Email (Güncel, sürekli kullanılan)"
     ],
     "telefon" => [
-        "en" => "Phone",
-        "tr" => "Telefon"
+        "en" => "Mobile Phone",
+        "tr" => "Cep Telefonu"
     ],
     "adres" => [
         "en" => "Shipping Address",
         "tr" => "Gönderi Adresi"
     ],
     "kisa_ozgecmis" => [
-        "en" => "Brief Resume (Max. 100 words)",
-        "tr" => "Kısa Özgeçmiş (Maks. 100 kelime)"
+        "en" => "Brief Resume (Max. 50 words)",
+        "tr" => "Kısa Özgeçmiş (En fazla 50 kelime)"
     ],
     "fotograf_yukleyiniz" => [
         "en" => "Upload Your Photo",
@@ -126,16 +126,40 @@ $lang_abs_sub = [
         "tr" => "Yazar"
     ],
     "anahtar_kelimeler" => [
-        "en" => "Keywords",
-        "tr" => "Anahtar Kelimeler"
+        "en" => "Keywords (3 - 5 words)",
+        "tr" => "Anahtar Kelimeler (3 - 5 adet)"
     ],
     "anahtar_kelimeler_tr" => [
-        "en" => "Turkish Keywords",
-        "tr" => "Türkçe Anahtar Kelimeler"
+        "en" => "Turkish Keywords (3 - 5 words)",
+        "tr" => "Türkçe Anahtar Kelimeler (3 - 5 adet)"
     ],
     "anahtar_kelimeler_en" => [
-        "en" => "English Keywords",
-        "tr" => "İngilizce Anahtar Kelimeler"
+        "en" => "English Keywords (3 - 5 words)",
+        "tr" => "İngilizce Anahtar Kelimeler (3 - 5 adet)"
+    ],
+    "aciklama" => [
+        "en" => "Comments / Requests (If any)",
+        "tr" => "Açıklamalar / Talepler (Eğer varsa)"
+    ],
+    "bildirinin_kapsadigi_altbaslik" => [
+        "en" => "Abstract's Subcategory",
+        "tr" => "Bildirinin Kapsadığı Altbaşlık"
+    ],
+    "seciniz" => [
+        "en" => "Please Select...",
+        "tr" => "Seçiniz..."
+    ],
+    "iletisim_kurulacak_yazar" => [
+        "en" => "Corresponding Author",
+        "tr" => "İletişim Kurulacak Yazar"
+    ],
+    "oturumlarda_tanitilmak" => [
+        "en" => "Requested to introduce the author during sessions.",
+        "tr" => "Oturumlarda tanıtılmak amacıyla talep edilmektedir."
+    ],
+    "olasi_belge" => [
+        "en" => "Requested for possible document / material shipping.",
+        "tr" => "Olası belge / materyal gönderimleri için talep edilmektedir."
     ]
 ];
 
