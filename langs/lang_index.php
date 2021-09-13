@@ -144,7 +144,6 @@ değişime yardım olanakları konularına katkıda bulunmaya davet etmekten onu
         ],
         "tr" => [
             "Akustik Ekoloji",
-            "Soundscape Çalışmaları ve Müzik",
             "Antroposen Çağı",
             "Arkeomüzikoloji",
             "Binaural Dalgalar ve Meditasyon",
@@ -153,7 +152,6 @@ değişime yardım olanakları konularına katkıda bulunmaya davet etmekten onu
             "Çevre Aktivizmi ve Müzik",
             "Çevresel Sorunlar ve Güncel Sanat",
             "Çöp ve Sanat",
-            "Ekomüzikoloji",
             "Etnografya ve Ses Kayıtları",
             "Farklı Müzik Ortamlarının Oluşumu ve Gelişimi",
             "Göç ve Müzisyenler",
@@ -165,6 +163,8 @@ değişime yardım olanakları konularına katkıda bulunmaya davet etmekten onu
             "Küresel Isınma ve Sosyal Medya",
             "Küresel Sorunlar ve Müzik",
             "Küresel Sorunlara Cevap Veren Müzik ve Teknoloji",
+            "Tüketici Davranışlarında Müzik ve İklim Değişikliklerinin Etkisi",
+            "Ekomüzikoloji",
             "Kompozisyonda Çevresel Ses Kaynakları",
             "Mesleki Müzik Eğitimi Kurumlarının Rolü",
             "Müzik Kültürlerinin Sürdürülebilirliği",
@@ -178,9 +178,9 @@ değişime yardım olanakları konularına katkıda bulunmaya davet etmekten onu
             "Ornitolojik Kayıtlar", "Peysaj, Mimarlık, Tasarım ve Müzik",
             "Politik Çevre ve Müzik", "Sanatta Sürdürülebilirlik",
             "Sonik Ortamlar Üzerine Perspektifler",
+            "Soundscape Çalışmaları ve Müzik",
             "Sürdürülebilirlik Eğitimi ve Müzik",
             "Şarkı ve Müzikte Doğal Afetler",
-            "Tüketici Davranışlarında Müzik ve İklim Değişikliklerinin Etkisi",
             "Uygulamalı Etnomüzikoloji"
         ]
     ],
@@ -190,11 +190,13 @@ değişime yardım olanakları konularına katkıda bulunmaya davet etmekten onu
     ],
     "duyurular_liste" => [
         "en" => [
+            "The first online working meeting of the 12th International Hisarlı Ahmet Symposium was held on September 10, 2021. The next meeting is on December 10.",
             "The invitation of 12th International Hisarlı Ahmet Symposium has been announced above. The starting date and sending method of abstract submission will be announced later.",
             "Full text submission of 11th International Hisarlı Ahmet Symposium will end on September 15, 2021.",
             "For all your questions and comments: <a href=\"mailto:contact@hisarliahmet.org\">contact@hisarliahmet.org</a>"
         ],
         "tr" => [
+            "12. Uluslararası Hisarlı Ahmet Sempozyumu çevrimiçi ilk çalışma toplantısı 10 Eylül 2021'de yapıldı. Bir sonraki toplantı Aralık 10'da. <a href=\"announcements/firststudymeeting.pdf\">Detaylar için tıklayınız...</a>",
             "12. Uluslararası Hisarlı Ahmet Sempozyum çağrı metni ve web sayfası ilan edilmiştir. ÖZET GÖNDERİM BAŞLANGIÇ TARİHİ ve YÖNTEMİ DAHA SONRA BURADAN DUYURULACAKTIR.",
             "11. Uluslararası Hisarlı Ahmet Sempozyumu tam metin gönderimi 15 Eylül 2021'de sona erecektir. Tam metinlerinizi <a href=\"mailto:contact@hisarliahmet.org\">contact@hisarliahmet.org</a> adresine gönderebilirsiniz.",
             "Tüm soru ve görüşlerinizi <a href=\"mailto:contact@hisarliahmet.org\">contact@hisarliahmet.org</a> adresine iletebilirsiniz.</a>"

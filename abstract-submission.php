@@ -477,7 +477,6 @@ if ($_POST) {
 
                                         </fieldset>
                                     <?php } ?>
-                                    <input type="hidden" id="txt-author-count" name="txt-author-count" value="1">
                                 </div>
                             </div>
                             <!-- Alt Başlık -->
@@ -684,6 +683,10 @@ if ($_POST) {
                             <!-- Row Gonder -->
                             <div class="row" style="margin-top: 20px;">
                                 <div class="col-12">
+                                    <input type="hidden" id="txt-author-count" name="txt-author-count" value="1">
+                                    <input type="hidden" id="txt-lang" name="txt-lang"
+                                           value="<?php echo($pref_lang); ?>">
+                                    <input type="hidden" id="txt-sub-category" name="txt-sub-category" value="">
                                     <button
                                             id="btn-submit-form"
                                             name="btn-submit-form"
