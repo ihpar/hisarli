@@ -23,11 +23,6 @@ function is_null_or_empty_string($str): bool
     return (!isset($str) || trim($str) === '');
 }
 
-function displayPostResult($msg)
-{
-    $form_result = $msg;
-}
-
 function generateRandomString($length = 10)
 {
     return substr(str_shuffle(str_repeat($x = '123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil($length / strlen($x)))), 1, $length);
@@ -96,11 +91,11 @@ function createAbstractPDF($form_params)
 
 function sendSubmissionEmails($paper_location, $form_params)
 {
-    $paper_dept_email = "abstracts@hisarliahmet.org";
+    global $form_result;
+    global $lang_abs_sub;
+    global $pref_lang;
 
-    $headers = 'MIME-Version: 1.0' . "\r\n"
-        . 'Content-type: text/html; charset=utf-8' . "\r\n"
-        . 'From: ' . $form_params["email"] . "\r\n";
+    $paper_dept_email = "abstracts@hisarliahmet.org";
 
     $abstract_title = $form_params["abstract_title_" . $form_params["submission_lang"]];
 
@@ -115,11 +110,18 @@ function sendSubmissionEmails($paper_location, $form_params)
     $email_body .= "Çalışma dosyası: " . '<a href=https://hisarliahmet.org/' . $paper_location . '>https://hisarliahmet.org/' . $paper_location . '</a><br><br>';
     $email_body .= "  - İyi çalışmalar";
 
+    $headers = 'MIME-Version: 1.0' . "\r\n"
+        . 'Content-type: text/html; charset=utf-8' . "\r\n"
+        . 'From: ' . $form_params["email"] . "\r\n";
+
+
     if (mail($paper_dept_email, "Özet Gönderim Formu", $email_body, $headers)) {
 
-        displayPostResult($lang_abs_sub["tesekkurler"][$pref_lang] . " " .
+        $post_result_message = $lang_abs_sub["tesekkurler"][$pref_lang] . " " .
             $form_params["name_surname"] . ". <br>" .
-            $lang_abs_sub["iletilmistir"][$pref_lang]);
+            $lang_abs_sub["iletilmistir"][$pref_lang];
+
+        $form_result = $post_result_message;
 
         // notify sender back
         $headers = 'MIME-Version: 1.0' . "\r\n"
@@ -145,6 +147,10 @@ function createSubmission($form_params)
 
 function processPost($post_obj): bool
 {
+    global $form_result;
+    global $lang_abs_sub;
+    global $pref_lang;
+    
     $authors = [];
     $subcategory = "0";
     $submission_lang = "";
@@ -174,7 +180,7 @@ function processPost($post_obj): bool
         }
 
         if ($has_missing_fields) {
-            displayPostResult($missing_fields_message);
+            $form_result = $missing_fields_message;
             return false;
         }
 
@@ -206,7 +212,7 @@ function processPost($post_obj): bool
             }
 
             if ($has_missing_fields) {
-                displayPostResult($missing_fields_message);
+                $form_result = $missing_fields_message;
                 return false;
             }
             array_push($authors, $author);
@@ -271,7 +277,7 @@ function processPost($post_obj): bool
     }
 
     if ($has_missing_fields) {
-        displayPostResult($missing_fields_message);
+        $form_result = $missing_fields_message;
         return false;
     }
 
@@ -305,7 +311,7 @@ function processPost($post_obj): bool
     }
 
     if ($has_missing_fields) {
-        displayPostResult($missing_fields_message);
+        $form_result = $missing_fields_message;
         return false;
     }
 
