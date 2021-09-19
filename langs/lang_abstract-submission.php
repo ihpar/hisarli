@@ -149,6 +149,10 @@ $lang_abs_sub = [
         "en" => "Please Select...",
         "tr" => "Seçiniz..."
     ],
+    "altbaslik_seciniz" => [
+        "en" => "Please select a subcategory.",
+        "tr" => "Lütfen altbaşlık seçiniz."
+    ],
     "iletisim_kurulacak_yazar" => [
         "en" => "Corresponding Author",
         "tr" => "İletişim Kurulacak Yazar"
@@ -160,6 +164,18 @@ $lang_abs_sub = [
     "olasi_belge" => [
         "en" => "Shipping Address is requested for possible document / material shipping.",
         "tr" => "Posta Adresi, olası belge / materyal gönderimleri için talep edilmektedir."
+    ],
+    "ozgecmis_limiti" => [
+        "en" => "Resume should not exceed 50 words.",
+        "tr" => "Kısa Özgeçmiş 50 kelimeyi geçmemelidir."
+    ],
+    "min_100_words" => [
+        "en" => "Abstract should not be less than 100 words.",
+        "tr" => "Özet 100 kelimeden az olmamalıdır."
+    ],
+    "max_300_words" => [
+        "en" => "Abstract should not exceed 300 words.",
+        "tr" => "Özet 300 kelimeyi geçmemelidir."
     ]
 ];
 
