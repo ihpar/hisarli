@@ -101,6 +101,14 @@ function sendSubmissionEmails($paper_location, $form_params)
 
     $email_body = "Çalışma başlığı: " . $abstract_title . "<br>";
     $email_body .= "Çalışma kategorisi: " . $form_params["subcategory"] . "<br><br>";
+    $email_body .= "Çalışmanın Yazar(lar)ı<br>";
+    foreach ($form_params["authors"] as $author) {
+        $email_body .= "Yazar: " . $author["name"] . "<br>";
+        $email_body .= "Kurumu: " . $author["institution"] . "<br>";
+        $email_body .= "Emaili: " . $author["email"] . "<br>";
+        $email_body .= "Özgeçmişi: " . $author["resume"] . "<br><br>";
+    }
+
     $email_body .= "İletişim Bilgileri<br>";
     $email_body .= "Gönderen: " . $form_params["name_surname"] . "<br>";
     $email_body .= "Email: " . $form_params["email"] . "<br>";
@@ -150,7 +158,7 @@ function processPost($post_obj): bool
     global $form_result;
     global $lang_abs_sub;
     global $pref_lang;
-    
+
     $authors = [];
     $subcategory = "0";
     $submission_lang = "";
@@ -552,7 +560,7 @@ if ($_POST) {
                                                 <input class="mdl-textfield__input" type="text"
                                                        id="txt-abstract-author-<?php echo($i); ?>"
                                                        name="txt-abstract-author-<?php echo($i); ?>"
-                                                       value="Yazar Ad Soyad <?php echo($i); ?>"/>
+                                                />
                                                 <label class="mdl-textfield__label"
                                                        for="txt-abstract-author-<?php echo($i); ?>">
                                                     <?php echo($lang_abs_sub["ad_soyad"][$pref_lang]); ?>
@@ -566,7 +574,7 @@ if ($_POST) {
                                                 <input class="mdl-textfield__input" type="text"
                                                        id="txt-abstract-author-institution-<?php echo($i); ?>"
                                                        name="txt-abstract-author-institution-<?php echo($i); ?>"
-                                                       value="Yazar Kurum <?php echo($i); ?>"/>
+                                                />
                                                 <label class="mdl-textfield__label"
                                                        for="txt-abstract-author-institution-<?php echo($i); ?>">
                                                     <?php echo($lang_abs_sub["kurum"][$pref_lang]); ?>
@@ -580,7 +588,7 @@ if ($_POST) {
                                                 <input class="mdl-textfield__input" type="text"
                                                        id="txt-abstract-author-email-<?php echo($i); ?>"
                                                        name="txt-abstract-author-email-<?php echo($i); ?>"
-                                                       value="yazar.email<?php echo($i); ?>@kurum"/>
+                                                />
                                                 <label class="mdl-textfield__label"
                                                        for="txt-abstract-author-email-<?php echo($i); ?>">
                                                     <?php echo($lang_abs_sub["email"][$pref_lang]); ?>
@@ -593,7 +601,7 @@ if ($_POST) {
                                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                                 <textarea class="mdl-textfield__input" rows="3"
                                                           id="txt-cv-<?php echo($i); ?>"
-                                                          name="txt-cv-<?php echo($i); ?>">Yazar Özgeçmiş <?php echo($i); ?></textarea>
+                                                          name="txt-cv-<?php echo($i); ?>"></textarea>
                                                 <label class="mdl-textfield__label" for="txt-cv-<?php echo($i); ?>">
                                                     <?php echo($lang_abs_sub["kisa_ozgecmis"][$pref_lang]); ?>
                                                 </label>
@@ -644,7 +652,7 @@ if ($_POST) {
                                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                             <input class="mdl-textfield__input" type="text" id="txt-abstract-title-tr"
                                                    name="txt-abstract-title-tr"
-                                                   value="Türkçe Başlık"/>
+                                            />
                                             <label class="mdl-textfield__label" for="txt-abstract-title-tr">
                                                 <?php echo($lang_abs_sub["ozet_basligi_tr"][$pref_lang]); ?>
                                             </label>
@@ -658,10 +666,8 @@ if ($_POST) {
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                    <textarea class="mdl-textfield__input" rows="18" id="txt-abstract-tr"
-                                              name="txt-abstract-tr">Popüler inanışın aksine, Lorem Ipsum rastgele bir metin değildir. 45'ten kalma bir klasik Latin edebiyatı parçasında kökleri vardır ve 2000 yıldan daha eskidir. Virginia'daki Hampden-Sydney College'da Latince profesörü olan Richard McClintock, bir Lorem Ipsum pasajındaki daha anlaşılması güç Latince sözcüklerden biri olan consectetur'u aradı ve kelimenin klasik edebiyattaki alıntılarını gözden geçirerek, şüphesiz kaynağı keşfetti. Lorem Ipsum, Cicero'nun MÖ 45'te yazdığı "de Finibus Bonorum et Malorum" (İyi ve Kötünün Uç Noktaları) kitabının 1.10.32 ve 1.10.33 bölümlerinden gelmektedir. Bu kitap, Rönesans döneminde çok popüler olan etik teorisi üzerine bir incelemedir. Lorem Ipsum'un ilk satırı "Lorem ipsum dolor sit amet..", 1.10.32 numaralı bölümdeki bir satırdan gelmektedir.
-
-1500'lerden beri kullanılan standart Lorem Ipsum yığını, ilgilenenler için aşağıda yeniden verilmiştir. Cicero'nun "de Finibus Bonorum et Malorum"dan 1.10.32 ve 1.10.33 bölümleri de, H. Rackham'ın 1914 çevirisinin İngilizce versiyonları eşliğinde tam orijinal halleriyle yeniden üretilmiştir.</textarea>
+                                        <textarea class="mdl-textfield__input" rows="18" id="txt-abstract-tr"
+                                                  name="txt-abstract-tr"></textarea>
                                             <label class="mdl-textfield__label" for="txt-abstract-tr">
                                                 <?php echo($lang_abs_sub["ozet_metni_tr"][$pref_lang]); ?>
                                             </label>
@@ -678,7 +684,7 @@ if ($_POST) {
                                             <input class="mdl-textfield__input" type="text"
                                                    id="txt-abstract-keywords-tr"
                                                    name="txt-abstract-keywords-tr"
-                                                   value="Türkçe anahtar kelimeler"/>
+                                            />
                                             <label class="mdl-textfield__label" for="txt-abstract-keywords-tr">
                                                 <?php echo($lang_abs_sub["anahtar_kelimeler_tr"][$pref_lang]); ?>
                                             </label>
@@ -696,7 +702,7 @@ if ($_POST) {
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                         <input class="mdl-textfield__input" type="text" id="txt-abstract-title"
                                                name="txt-abstract-title"
-                                               value="Eng Title"/>
+                                        />
                                         <label class="mdl-textfield__label" for="txt-abstract-title">
                                             <?php echo(($pref_lang == "tr") ?
                                                 $lang_abs_sub["ozet_basligi_en"][$pref_lang] : $lang_abs_sub["ozet_basligi"][$pref_lang]); ?>
@@ -712,9 +718,7 @@ if ($_POST) {
                                 <div class="col-12">
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                         <textarea class="mdl-textfield__input" rows="18" id="txt-abstract"
-                                                  name="txt-abstract">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</textarea>
+                                                  name="txt-abstract"></textarea>
                                         <label class="mdl-textfield__label" for="txt-abstract">
                                             <?php echo(($pref_lang == "tr") ?
                                                 $lang_abs_sub["ozet_metni_en"][$pref_lang] : $lang_abs_sub["ozet_metni"][$pref_lang]); ?>
@@ -731,7 +735,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                         <input class="mdl-textfield__input" type="text" id="txt-abstract-keywords"
                                                name="txt-abstract-keywords"
-                                               value="Eng keywords"/>
+                                        />
                                         <label class="mdl-textfield__label" for="txt-abstract-keywords">
                                             <?php echo(($pref_lang == "tr") ?
                                                 $lang_abs_sub["anahtar_kelimeler_en"][$pref_lang] : $lang_abs_sub["anahtar_kelimeler"][$pref_lang]); ?>
@@ -753,7 +757,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                                             <input class="mdl-textfield__input" type="text"
                                                    id="txt-corresponding-author-name"
                                                    name="txt-corresponding-author-name"
-                                                   value="Corr Ad Soyad">
+                                            />
                                             <label class="mdl-textfield__label" for="txt-corresponding-author-name">
                                                 <?php echo($lang_abs_sub["ad_soyad"][$pref_lang]); ?>
                                             </label>
@@ -766,7 +770,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                                             <input class="mdl-textfield__input" type="text"
                                                    id="txt-corresponding-author-email"
                                                    name="txt-corresponding-author-email"
-                                                   value="ismail.hakki.parlak@gmail.com">
+                                            />
                                             <label class="mdl-textfield__label" for="txt-corresponding-author-email">
                                                 <?php echo($lang_abs_sub["email"][$pref_lang]); ?>
                                             </label>
@@ -779,7 +783,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                                             <input class="mdl-textfield__input" type="text"
                                                    id="txt-corresponding-author-phone"
                                                    name="txt-corresponding-author-phone"
-                                                   value="Corr Telefon">
+                                            />
                                             <label class="mdl-textfield__label" for="txt-corresponding-author-phone">
                                                 <?php echo($lang_abs_sub["telefon"][$pref_lang]); ?>
                                             </label>
@@ -791,7 +795,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                         <textarea class="mdl-textfield__input" rows="3"
                                                   id="txt-corresponding-author-address"
-                                                  name="txt-corresponding-author-address">Corr adres</textarea>
+                                                  name="txt-corresponding-author-address"></textarea>
                                             <label class="mdl-textfield__label" for="txt-corresponding-author-address">
                                                 <?php echo($lang_abs_sub["adres"][$pref_lang]); ?>
                                             </label>
@@ -813,7 +817,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                                 <div class="col-12">
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                         <textarea class="mdl-textfield__input" rows="3" id="txt-comments"
-                                                  name="txt-comments">Yorum ve isteklerim</textarea>
+                                                  name="txt-comments"></textarea>
                                         <label class="mdl-textfield__label" for="txt-comments">
                                             <?php echo($lang_abs_sub["aciklama"][$pref_lang]); ?>
                                         </label>
