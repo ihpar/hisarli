@@ -70,6 +70,13 @@ function createAbstractPDF($form_params)
     }
     $upload_dir = $upload_dir . "/";
 
+    $today = date("d_m_Y");
+    $upload_dir .= $today;
+    if (!is_dir($upload_dir)) {
+        mkdir($upload_dir);
+    }
+    $upload_dir = $upload_dir . "/";
+
     $user_dir = $upload_dir . filenameSanitizer($form_params["name_surname"]);
     if (!is_dir($user_dir)) {
         mkdir($user_dir);
@@ -934,7 +941,8 @@ if ($_POST) {
             }
         });
 
-        btnSubmit.addEventListener('click', (e) => {
+        const submissionForm = document.querySelector("#frm-abstract");
+        submissionForm.addEventListener('submit', (e) => {
             // check authors
             let authors = [];
             for (let i = 0; i < numAuthors; i++) {
@@ -951,7 +959,7 @@ if ($_POST) {
                     txtName.parentNode.classList.add("is-invalid");
                     txtName.focus();
                     e.preventDefault();
-                    return;
+                    return false;
                 }
                 author.name = name;
 
@@ -961,7 +969,7 @@ if ($_POST) {
                     txtInstitution.parentNode.classList.add("is-invalid");
                     txtInstitution.focus();
                     e.preventDefault();
-                    return;
+                    return false;
                 }
                 author.institution = institution;
 
@@ -971,7 +979,7 @@ if ($_POST) {
                     txtEmail.parentNode.classList.add("is-invalid");
                     txtEmail.focus();
                     e.preventDefault();
-                    return;
+                    return false;
                 }
                 author.email = email;
 
@@ -983,7 +991,7 @@ if ($_POST) {
                     txtResume.parentNode.classList.add("is-invalid");
                     txtResume.focus();
                     e.preventDefault();
-                    return;
+                    return false;
                 }
 
                 if (resume.split(" ").length > 50) {
@@ -992,7 +1000,7 @@ if ($_POST) {
                     txtResume.parentNode.classList.add("is-invalid");
                     txtResume.focus();
                     e.preventDefault();
-                    return;
+                    return false;
                 }
 
                 author.resume = resume;
@@ -1005,7 +1013,7 @@ if ($_POST) {
                 selSubcategory.parentNode.classList.add("is-invalid");
                 selSubcategory.focus();
                 e.preventDefault();
-                return;
+                return false;
             }
 
             // Turkce ozet bilgileri
@@ -1016,7 +1024,7 @@ if ($_POST) {
                     txtAbstractTitleTr.parentNode.classList.add("is-invalid");
                     txtAbstractTitleTr.focus();
                     e.preventDefault();
-                    return;
+                    return false;
                 }
 
                 let txtAbstractTr = document.querySelector("#txt-abstract-tr");
@@ -1028,7 +1036,7 @@ if ($_POST) {
                     txtAbstractTr.parentNode.classList.add("is-invalid");
                     txtAbstractTr.focus();
                     e.preventDefault();
-                    return;
+                    return false;
                 }
 
                 let abstractTrLen = abstractTr.split(" ").length;
@@ -1043,7 +1051,7 @@ if ($_POST) {
                     txtAbstractTr.parentNode.classList.add("is-invalid");
                     txtAbstractTr.focus();
                     e.preventDefault();
-                    return;
+                    return false;
                 }
 
                 let txtAbstractKeywordsTr = document.querySelector("#txt-abstract-keywords-tr");
@@ -1052,7 +1060,7 @@ if ($_POST) {
                     txtAbstractKeywordsTr.parentNode.classList.add("is-invalid");
                     txtAbstractKeywordsTr.focus();
                     e.preventDefault();
-                    return;
+                    return false;
                 }
             }
 
@@ -1061,7 +1069,7 @@ if ($_POST) {
                 txtAbstractTitle.parentNode.classList.add("is-invalid");
                 txtAbstractTitle.focus();
                 e.preventDefault();
-                return;
+                return false;
             }
 
             let spnAbstractErrorEn = document.querySelector("#spn-abstract-error-en");
@@ -1071,7 +1079,7 @@ if ($_POST) {
                 txtAbstract.parentNode.classList.add("is-invalid");
                 txtAbstract.focus();
                 e.preventDefault();
-                return;
+                return false;
             }
 
             let abstractEnLen = abstractEn.split(" ").length;
@@ -1086,14 +1094,14 @@ if ($_POST) {
                 txtAbstract.parentNode.classList.add("is-invalid");
                 txtAbstract.focus();
                 e.preventDefault();
-                return;
+                return false;
             }
 
             if (!txtAbstractKeywords.value.trim()) {
                 txtAbstractKeywords.parentNode.classList.add("is-invalid");
                 txtAbstractKeywords.focus();
                 e.preventDefault();
-                return;
+                return false;
             }
 
             // Corresponding author
@@ -1101,35 +1109,31 @@ if ($_POST) {
                 txtNameSurname.parentNode.classList.add("is-invalid");
                 txtNameSurname.focus();
                 e.preventDefault();
-                return;
+                return false;
             }
 
             if (!txtEmail.value.trim()) {
                 txtEmail.parentNode.classList.add("is-invalid");
                 txtEmail.focus();
                 e.preventDefault();
-                return;
+                return false;
             }
 
             if (!txtPhone.value.trim()) {
                 txtPhone.parentNode.classList.add("is-invalid");
                 txtPhone.focus();
                 e.preventDefault();
-                return;
+                return false;
             }
 
             if (!txtAddress.value.trim()) {
                 txtAddress.parentNode.classList.add("is-invalid");
                 txtAddress.focus();
                 e.preventDefault();
-                return;
+                return false;
             }
 
             btnSubmit.innerText = "<?php echo($lang_abs_sub["gonderiliyor"][$pref_lang]); ?>";
-        });
-
-        const submissionForm = document.querySelector("#frm-abstract");
-        submissionForm.addEventListener('submit', (e) => {
             btnSubmit.disabled = true;
         });
 

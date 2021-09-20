@@ -46,6 +46,10 @@ $lang_contact = [
         "en" => "Send",
         "tr" => "Gönder"
     ],
+    "gonderiliyor" => [
+        "en" => "Sending...",
+        "tr" => "Gönderiliyor..."
+    ],
     "ad_soyad" => [
         "en" => "Name Surname",
         "tr" => "Ad Soyad"

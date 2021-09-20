@@ -11,7 +11,7 @@ $lang_abs_sub = [
     ],
     "tesekkurler" => [
         "en" => "Thank you",
-        "tr" => "Teşekkürler"
+        "tr" => "Sn."
     ],
     "iletilmistir" => [
         "en" => "Your submission has been sent to us.",
@@ -34,8 +34,14 @@ $lang_abs_sub = [
         "tr" => "Hisarli Ahmet Sempozyumu Ozet Gonderimi"
     ],
     "has_geri_bildirim_mesaji" => [
-        "en" => "We have received your study, titled {title} for Hisarli Ahmet Symposium. <br>Best regards.",
-        "tr" => "Hisarli Ahmet Sempozyumu için göndermiş olduğunuz {title} başlıklı çalışmanız tarafımıza iletilmiştir. <br>Sağlıklı günler dileriz."
+        "en" => "We have received your study, titled '{title}' for the the 12th International Hisarli Ahmet Symposium.
+<p>The result of the evaluation to be made by the Symposium Scientific Committee regarding your study will be announced on the date specified in the symposium calendar. For full details and information, please follow our website: https://hisarliahmet.org/</p>
+<p>We thank you for your interest in the symposium and wish you a healthy day.</p>
+<p>Prof. Dr. Uğur Türkmen, Chair of Organizing Committee</p>",
+        "tr" => "9-12 Haziran 2021 tarihleri arasında Kütahya Sağlık Bilimleri Üniversitesi’nde 12.’si gerçekleştirilecek Uluslararası Hisarli Ahmet Sempozyumu’na göndermiş olduğunuz '{title}' başlıklı bildiri özetiniz tarafımıza ulaşmıştır.
+ <p>Çalışmanızla ilgili Sempozyum Bilim Kurulu tarafından yapılacak değerlendirmenin sonucu sempozyum takviminde belirtilen tarihte ilan edilecektir. Tüm ayrıntılar ve bilgi için lütfen web sitemizi ziyaret/takip ediniz: https://hisarliahmet.org/</p>
+ <p>Sempozyuma göstermiş olduğunuz ilgi için teşekkür eder, sağlıklı günler dileriz.</p>
+ <p>Prof. Dr. Uğur Türkmen, Sempozyum Düzenleme Kurulu Başkanı</p>"
     ],
     "bos_birakilamaz" => [
         "en" => "This field is required.",
