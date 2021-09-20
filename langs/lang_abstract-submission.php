@@ -132,16 +132,20 @@ $lang_abs_sub = [
         "tr" => "Yazar"
     ],
     "anahtar_kelimeler" => [
-        "en" => "Keywords (3 - 5 words)",
-        "tr" => "Anahtar Kelimeler (3 - 5 adet)"
+        "en" => "Keywords (comma separated, 3 - 5 words)",
+        "tr" => "Anahtar Kelimeler (virgül ile ayrılmalıdır, 3 - 5 adet)"
     ],
     "anahtar_kelimeler_tr" => [
-        "en" => "Turkish Keywords (3 - 5 words)",
-        "tr" => "Türkçe Anahtar Kelimeler (3 - 5 adet)"
+        "en" => "Turkish Keywords (comma separated, 3 - 5 words)",
+        "tr" => "Türkçe Anahtar Kelimeler (virgül ile ayrılmalıdır, 3 - 5 adet)"
     ],
     "anahtar_kelimeler_en" => [
-        "en" => "English Keywords (3 - 5 words)",
-        "tr" => "İngilizce Anahtar Kelimeler (3 - 5 adet)"
+        "en" => "English Keywords (comma separated, 3 - 5 words)",
+        "tr" => "İngilizce Anahtar Kelimeler (virgül ile ayrılmalıdır, 3 - 5 adet)"
+    ],
+    "anahtar_kelime_sayisi_hata" => [
+        "en" => "Min 3, max 5 keywords are allowed.",
+        "tr" => "En az 3, en fazla 5 anahtar kelime girebilirsiniz."
     ],
     "aciklama" => [
         "en" => "Comments / Requests (if any)",
@@ -162,6 +166,10 @@ $lang_abs_sub = [
     "iletisim_kurulacak_yazar" => [
         "en" => "Corresponding Author",
         "tr" => "İletişim Kurulacak Yazar"
+    ],
+    "metin_yazim" => [
+        "en" => "Fill in the blank from left to right for each line. Do not leave large spaces between words (except paragraph).",
+        "tr" => "Metnin her satırını, kutucuğu soldan sağa dolduracak şekilde yazınız. Kelimeler arasında büyük boşluklar bırakmayınız (paragraf başı hariç)."
     ],
     "oturumlarda_tanitilmak" => [
         "en" => "Resume is qequested to introduce the author during sessions.",

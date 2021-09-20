@@ -679,10 +679,15 @@ if ($_POST) {
                                                 <?php echo($lang_abs_sub["ozet_metni_tr"][$pref_lang]); ?>
                                             </label>
                                             <span class="mdl-textfield__error" id="spn-abstract-error-tr">
-                                        <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
-                                    </span>
+                                                <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
+                                            </span>
                                         </div>
                                     </div>
+                                    <!--
+                                    <span class="spn-additional-info">
+                                        <?php echo($lang_abs_sub["metin_yazim"][$pref_lang]); ?>
+                                    </span>
+                                    -->
                                 </div>
                                 <!-- Türkçe Anahtar Kelimeler -->
                                 <div class="row">
@@ -695,9 +700,9 @@ if ($_POST) {
                                             <label class="mdl-textfield__label" for="txt-abstract-keywords-tr">
                                                 <?php echo($lang_abs_sub["anahtar_kelimeler_tr"][$pref_lang]); ?>
                                             </label>
-                                            <span class="mdl-textfield__error">
-                                        <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
-                                    </span>
+                                            <span class="mdl-textfield__error" id="spn-keyword-error-tr">
+                                                <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
@@ -734,6 +739,11 @@ if ($_POST) {
                                             <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
                                         </span>
                                     </div>
+                                    <!--
+                                    <span class="spn-additional-info">
+                                        <?php echo($lang_abs_sub["metin_yazim"][$pref_lang]); ?>
+                                    </span>
+                                    -->
                                 </div>
                             </div>
                             <!-- En Anahtar Kelimeler -->
@@ -747,7 +757,7 @@ if ($_POST) {
                                             <?php echo(($pref_lang == "tr") ?
                                                 $lang_abs_sub["anahtar_kelimeler_en"][$pref_lang] : $lang_abs_sub["anahtar_kelimeler"][$pref_lang]); ?>
                                         </label>
-                                        <span class="mdl-textfield__error">
+                                        <span class="mdl-textfield__error" id="spn-keyword-error-en">
                                             <?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>
                                         </span>
                                     </div>
@@ -800,9 +810,9 @@ if ($_POST) {
                                         </div>
 
                                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <textarea class="mdl-textfield__input" rows="3"
-                                                  id="txt-corresponding-author-address"
-                                                  name="txt-corresponding-author-address"></textarea>
+                                            <textarea class="mdl-textfield__input" rows="3"
+                                                      id="txt-corresponding-author-address"
+                                                      name="txt-corresponding-author-address"></textarea>
                                             <label class="mdl-textfield__label" for="txt-corresponding-author-address">
                                                 <?php echo($lang_abs_sub["adres"][$pref_lang]); ?>
                                             </label>
@@ -813,6 +823,7 @@ if ($_POST) {
                                         <span class="spn-additional-info">
                                             <?php echo($lang_abs_sub["olasi_belge"][$pref_lang]); ?>
                                         </span>
+
 
                                     </fieldset>
 
@@ -896,6 +907,7 @@ if ($_POST) {
         const exceeds50Text = "<?php echo($lang_abs_sub["ozgecmis_limiti"][$pref_lang]); ?>";
         const min100Text = "<?php echo($lang_abs_sub["min_100_words"][$pref_lang]); ?>";
         const max300Text = "<?php echo($lang_abs_sub["max_300_words"][$pref_lang]); ?>";
+        const keywordCountErrorText = "<?php echo($lang_abs_sub["anahtar_kelime_sayisi_hata"][$pref_lang]); ?>";
 
         // add - remove authors
         const hiddenAuthorCount = document.querySelector("#txt-author-count");
@@ -940,6 +952,40 @@ if ($_POST) {
                 selSubcategory.parentNode.classList.remove("is-invalid");
             }
         });
+
+        txtAbstract.addEventListener("paste", (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            let pastedText = (e.clipboardData || window.clipboardData).getData("text");
+            pastedText = pastedText.replace(/(\r\n|\n|\r)/gm, " ");
+            pastedText = pastedText.replace(/\s+/g, " ");
+            let oldText = txtAbstract.value.trim();
+            if (oldText) {
+                pastedText = oldText + " " + pastedText;
+            }
+            setTimeout(function () {
+                txtAbstract.value = pastedText;
+            }, 20);
+        });
+
+        let txtAbstractTr = null;
+        if (lang === "tr") {
+            txtAbstractTr = document.querySelector("#txt-abstract-tr");
+            txtAbstractTr.addEventListener("paste", (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                let pastedText = (e.clipboardData || window.clipboardData).getData("text");
+                pastedText = pastedText.replace(/(\r\n|\n|\r)/gm, " ");
+                pastedText = pastedText.replace(/\s+/g, " ");
+                let oldText = txtAbstractTr.value.trim();
+                if (oldText) {
+                    pastedText = oldText + " " + pastedText;
+                }
+                setTimeout(function () {
+                    txtAbstractTr.value = pastedText;
+                }, 20);
+            });
+        }
 
         const submissionForm = document.querySelector("#frm-abstract");
         submissionForm.addEventListener('submit', (e) => {
@@ -1027,7 +1073,6 @@ if ($_POST) {
                     return false;
                 }
 
-                let txtAbstractTr = document.querySelector("#txt-abstract-tr");
                 let spnAbstractErrorTr = document.querySelector("#spn-abstract-error-tr");
                 let abstractTr = txtAbstractTr.value.trim();
 
@@ -1056,7 +1101,17 @@ if ($_POST) {
 
                 let txtAbstractKeywordsTr = document.querySelector("#txt-abstract-keywords-tr");
                 let abstractKeywordsTr = txtAbstractKeywordsTr.value.trim();
+                let abstractErrorSpanTR = document.querySelector("#spn-keyword-error-tr");
                 if (!abstractKeywordsTr) {
+                    abstractErrorSpanTR.innerHTML = requiredText;
+                    txtAbstractKeywordsTr.parentNode.classList.add("is-invalid");
+                    txtAbstractKeywordsTr.focus();
+                    e.preventDefault();
+                    return false;
+                }
+                let keywordCountTr = abstractKeywordsTr.split(",").length;
+                if (keywordCountTr < 3 || keywordCountTr > 5) {
+                    abstractErrorSpanTR.innerHTML = keywordCountErrorText;
                     txtAbstractKeywordsTr.parentNode.classList.add("is-invalid");
                     txtAbstractKeywordsTr.focus();
                     e.preventDefault();
@@ -1097,7 +1152,19 @@ if ($_POST) {
                 return false;
             }
 
-            if (!txtAbstractKeywords.value.trim()) {
+            let abstractErrorSpanEn = document.querySelector("#spn-keyword-error-en");
+            let abstractKeywordsEn = txtAbstractKeywords.value.trim();
+            if (!abstractKeywordsEn) {
+                abstractErrorSpanEn.innerHTML = requiredText;
+                txtAbstractKeywords.parentNode.classList.add("is-invalid");
+                txtAbstractKeywords.focus();
+                e.preventDefault();
+                return false;
+            }
+
+            let keywordCountEn = abstractKeywordsEn.split(",").length;
+            if (keywordCountEn < 3 || keywordCountEn > 5) {
+                abstractErrorSpanEn.innerHTML = keywordCountErrorText;
                 txtAbstractKeywords.parentNode.classList.add("is-invalid");
                 txtAbstractKeywords.focus();
                 e.preventDefault();
