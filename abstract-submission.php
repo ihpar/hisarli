@@ -511,6 +511,15 @@ if ($_POST) {
             display: inline-block;
             margin: 4px 0;
         }
+
+        .mdl-textfield__label {
+            top: 0;
+            font-size: 16px;
+        }
+
+        .mdl-textfield--floating-label.is-focused .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__label, .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
+            font-size: 16px;
+        }
     </style>
 </head>
 <body>
