@@ -76,8 +76,8 @@ $lang_abs_sub = [
         "tr" => "Posta Adresi"
     ],
     "kisa_ozgecmis" => [
-        "en" => "Brief Resume (max. 50 words)",
-        "tr" => "Kısa Özgeçmiş (en fazla 50 kelime)"
+        "en" => "Brief Resume (max. 100 words)",
+        "tr" => "Kısa Özgeçmiş (en fazla 100 kelime)"
     ],
     "fotograf_yukleyiniz" => [
         "en" => "Upload Your Photo",
@@ -180,8 +180,8 @@ $lang_abs_sub = [
         "tr" => "Posta Adresi, olası belge / materyal gönderimleri için talep edilmektedir."
     ],
     "ozgecmis_limiti" => [
-        "en" => "Resume should not exceed 50 words.",
-        "tr" => "Kısa Özgeçmiş 50 kelimeyi geçmemelidir."
+        "en" => "Resume should not exceed 100 words.",
+        "tr" => "Kısa Özgeçmiş 100 kelimeyi geçmemelidir."
     ],
     "min_100_words" => [
         "en" => "Abstract should not be less than 100 words.",

@@ -913,7 +913,7 @@ if ($_POST) {
         let numAuthors = 1;
         const lang = "<?php echo($pref_lang); ?>";
         const requiredText = "<?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>";
-        const exceeds50Text = "<?php echo($lang_abs_sub["ozgecmis_limiti"][$pref_lang]); ?>";
+        const exceeds100Text = "<?php echo($lang_abs_sub["ozgecmis_limiti"][$pref_lang]); ?>";
         const min100Text = "<?php echo($lang_abs_sub["min_100_words"][$pref_lang]); ?>";
         const max300Text = "<?php echo($lang_abs_sub["max_300_words"][$pref_lang]); ?>";
         const keywordCountErrorText = "<?php echo($lang_abs_sub["anahtar_kelime_sayisi_hata"][$pref_lang]); ?>";
@@ -1049,9 +1049,9 @@ if ($_POST) {
                     return false;
                 }
 
-                if (resume.split(" ").length > 50) {
+                if (resume.split(" ").length > 100) {
                     let spnError = document.querySelector("#spn-cv-error-" + idx);
-                    spnError.innerHTML = exceeds50Text;
+                    spnError.innerHTML = exceeds100Text;
                     txtResume.parentNode.classList.add("is-invalid");
                     txtResume.focus();
                     e.preventDefault();
