@@ -23,12 +23,26 @@ function createPDF($form_params)
 
     if ($submission_lang == "tr") {
         $tr_title = '<h1 class="dark-text">' . $form_params["abstract_title_tr"] . '</h1>';
-        $tr_abstract = '<p>' . str_replace(PHP_EOL, "</p><p>", $form_params["abstract_tr"]) . '</p>';
+        $paragraphs = explode(PHP_EOL, $form_params["abstract_tr"]);
+        $tr_abstract = "";
+        foreach ($paragraphs as $paragraph) {
+            if (!isset($paragraph) || trim($paragraph) === "") {
+                continue;
+            }
+            $tr_abstract .= "<p>" . preg_replace('/\s+/', ' ', trim($paragraph)) . "</p>";
+        }
         $tr_keywords = '<p><span class="dark-text">Anahtar Kelimeler: </span>' . $form_params["keywords_tr"] . '</p>';
     }
 
     $en_title = '<h1 class="dark-text">' . $form_params["abstract_title_en"] . '</h1>';
-    $en_abstract = '<p>' . str_replace(PHP_EOL, "</p><p>", $form_params["abstract_en"]) . '</p>';
+    $paragraphs = explode(PHP_EOL, $form_params["abstract_en"]);
+    $en_abstract = "";
+    foreach ($paragraphs as $paragraph) {
+        if (!isset($paragraph) || trim($paragraph) === "") {
+            continue;
+        }
+        $en_abstract .= "<p>" . preg_replace('/\s+/', ' ', trim($paragraph)) . "</p>";
+    }
     $en_keywords = '<p><span class="dark-text">Keywords: </span>' . $form_params["keywords_en"] . '</p>';
 
     $html = '
@@ -63,8 +77,7 @@ function createPDF($form_params)
     
             p {
                 text-indent: 0.5cm;
-                text-align: justify;
-                display: block;
+                text-align: left;
             }
     
             .author-wrapper {
