@@ -17,6 +17,10 @@ $lang_abs_sub = [
         "en" => "Your submission has been sent to us.",
         "tr" => "Başvurunuz tarafımıza iletilmiştir."
     ],
+    "ana_sayfaya_don" => [
+        "en" => "BACK TO HOMEPAGE",
+        "tr" => "ANA SAYFAYA DÖN"
+    ],
     "uzgunuz" => [
         "en" => "Sorry, your submission could not be delivered.",
         "tr" => "Üzgünüz, başvurunuz iletilemedi."
@@ -34,11 +38,13 @@ $lang_abs_sub = [
         "tr" => "Hisarli Ahmet Sempozyumu Ozet Gonderimi"
     ],
     "has_geri_bildirim_mesaji" => [
-        "en" => "We have received your study, titled '{title}' for the the 12th International Hisarli Ahmet Symposium.
-<p>The result of the evaluation to be made by the Symposium Scientific Committee regarding your study will be announced on the date specified in the symposium calendar. For full details and information, please follow our website: https://hisarliahmet.org/</p>
-<p>We thank you for your interest in the symposium and wish you a healthy day.</p>
+        "en" => "We have received the abstract entitled '{title}' that you submitted for the 12th International Hisarli Ahmet Symposium to be held at the Kütahya Health Sciences University, in June 9-12, 2022.
+<p>The result of the evaluation of your work by the Symposium Scientific Committee will be announced on the date specified in the symposium calendar.</p>
+<p>For more details and information, visit/follow our website: https://hisarliahmet.org/</p>
+<p>Thank you for your interest in the symposium.</p>
+<p>Sincerely,</p>
 <p>Prof. Dr. Uğur Türkmen, Chair of Organizing Committee</p>",
-        "tr" => "9-12 Haziran 2021 tarihleri arasında Kütahya Sağlık Bilimleri Üniversitesi’nde 12.’si gerçekleştirilecek Uluslararası Hisarli Ahmet Sempozyumu’na göndermiş olduğunuz '{title}' başlıklı bildiri özetiniz tarafımıza ulaşmıştır.
+        "tr" => "9-12 Haziran 2022 tarihleri arasında Kütahya Sağlık Bilimleri Üniversitesi’nde 12.’si gerçekleştirilecek Uluslararası Hisarli Ahmet Sempozyumu’na göndermiş olduğunuz '{title}' başlıklı bildiri özetiniz tarafımıza ulaşmıştır.
  <p>Çalışmanızla ilgili Sempozyum Bilim Kurulu tarafından yapılacak değerlendirmenin sonucu sempozyum takviminde belirtilen tarihte ilan edilecektir. Tüm ayrıntılar ve bilgi için lütfen web sitemizi ziyaret/takip ediniz: https://hisarliahmet.org/</p>
  <p>Sempozyuma göstermiş olduğunuz ilgi için teşekkür eder, sağlıklı günler dileriz.</p>
  <p>Prof. Dr. Uğur Türkmen, Sempozyum Düzenleme Kurulu Başkanı</p>"

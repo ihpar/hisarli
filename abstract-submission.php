@@ -6,6 +6,7 @@ $is_secure = true;
 $page_name = "abstract-submission";
 
 $form_posted = false;
+$submission_succeeded = false;
 $form_result = "";
 
 require_once "dbms/utils.php";
@@ -99,6 +100,7 @@ function createAbstractPDF($form_params)
 function sendSubmissionEmails($paper_location, $form_params)
 {
     global $form_result;
+    global $submission_succeeded;
     global $lang_abs_sub;
     global $pref_lang;
 
@@ -106,23 +108,23 @@ function sendSubmissionEmails($paper_location, $form_params)
 
     $abstract_title = $form_params["abstract_title_" . $form_params["submission_lang"]];
 
-    $email_body = "Çalışma başlığı: " . $abstract_title . "<br>";
-    $email_body .= "Çalışma kategorisi: " . $form_params["subcategory"] . "<br><br>";
-    $email_body .= "Çalışmanın Yazar(lar)ı<br>";
+    $email_body = "BAŞLIK: " . $abstract_title . "<br>";
+    $email_body .= "Kategori: " . $form_params["subcategory"] . "<br><br>";
+    $email_body .= "YAZAR(LAR):<br>";
     foreach ($form_params["authors"] as $author) {
         $email_body .= "Yazar: " . $author["name"] . "<br>";
-        $email_body .= "Kurumu: " . $author["institution"] . "<br>";
-        $email_body .= "Emaili: " . $author["email"] . "<br>";
-        $email_body .= "Özgeçmişi: " . $author["resume"] . "<br><br>";
+        $email_body .= "Kurum: " . $author["institution"] . "<br>";
+        $email_body .= "Email: " . $author["email"] . "<br>";
+        $email_body .= "Özgeçmiş: " . $author["resume"] . "<br><br>";
     }
 
-    $email_body .= "İletişim Bilgileri<br>";
+    $email_body .= "İLETİŞİM BİLGİLERİ:<br>";
     $email_body .= "Gönderen: " . $form_params["name_surname"] . "<br>";
     $email_body .= "Email: " . $form_params["email"] . "<br>";
     $email_body .= "Tel: " . $form_params["phone"] . "<br>";
     $email_body .= "Adres: " . $form_params["address"] . "<br><br>";
     $email_body .= "Açıklamalar (varsa): " . $form_params["comments"] . "<br>";
-    $email_body .= "Çalışma dosyası: " . '<a href=https://hisarliahmet.org/' . $paper_location . '>https://hisarliahmet.org/' . $paper_location . '</a><br><br>';
+    $email_body .= "Özet Dosyası: " . '<a href=https://hisarliahmet.org/' . $paper_location . '>https://hisarliahmet.org/' . $paper_location . '</a><br><br>';
     $email_body .= "  - İyi çalışmalar";
 
     $headers = 'MIME-Version: 1.0' . "\r\n"
@@ -137,6 +139,7 @@ function sendSubmissionEmails($paper_location, $form_params)
             $lang_abs_sub["iletilmistir"][$pref_lang];
 
         $form_result = $post_result_message;
+        $submission_succeeded = true;
 
         // notify sender back
         $headers = 'MIME-Version: 1.0' . "\r\n"
@@ -158,7 +161,6 @@ function createSubmission($form_params)
     $paper_location = createAbstractPDF($form_params);
     sendSubmissionEmails($paper_location, $form_params);
 }
-
 
 function processPost($post_obj): bool
 {
@@ -456,6 +458,7 @@ if ($_POST) {
             font-size: 24px;
             line-height: 150%;
             transition: opacity 800ms;
+            padding: 16px;
         }
 
         #dv-contact-form-result.fade-out {
@@ -892,7 +895,18 @@ if ($_POST) {
 
 <?php if ($form_posted) { ?>
     <div id="dv-contact-form-result">
-        <?php echo($form_result); ?>
+        <div>
+            <span style="display: block;">
+                <?php echo($form_result); ?>
+            </span>
+            <?php if ($submission_succeeded) { ?>
+                <a style="display: block; margin-top: 16px;"
+                   class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                   href="index.php">
+                    <?php echo($lang_abs_sub["ana_sayfaya_don"][$pref_lang]); ?>
+                </a>
+            <?php } ?>
+        </div>
     </div>
 <?php } ?>
 
@@ -905,7 +919,7 @@ if ($_POST) {
             setTimeout(() => {
                 contactFormResultDiv.remove();
             }, 1000);
-        }, 3000);
+        }, 4000);
     }
 
     (function () {
@@ -913,7 +927,7 @@ if ($_POST) {
         let numAuthors = 1;
         const lang = "<?php echo($pref_lang); ?>";
         const requiredText = "<?php echo($lang_abs_sub["bos_birakilamaz"][$pref_lang]); ?>";
-        const exceeds100Text = "<?php echo($lang_abs_sub["ozgecmis_limiti"][$pref_lang]); ?>";
+        const exceeds50Text = "<?php echo($lang_abs_sub["ozgecmis_limiti"][$pref_lang]); ?>";
         const min100Text = "<?php echo($lang_abs_sub["min_100_words"][$pref_lang]); ?>";
         const max300Text = "<?php echo($lang_abs_sub["max_300_words"][$pref_lang]); ?>";
         const keywordCountErrorText = "<?php echo($lang_abs_sub["anahtar_kelime_sayisi_hata"][$pref_lang]); ?>";
@@ -1049,9 +1063,9 @@ if ($_POST) {
                     return false;
                 }
 
-                if (resume.split(" ").length > 100) {
+                if (resume.split(" ").length > 50) {
                     let spnError = document.querySelector("#spn-cv-error-" + idx);
-                    spnError.innerHTML = exceeds100Text;
+                    spnError.innerHTML = exceeds50Text;
                     txtResume.parentNode.classList.add("is-invalid");
                     txtResume.focus();
                     e.preventDefault();
@@ -1214,7 +1228,7 @@ if ($_POST) {
         });
 
         // form post result
-        <?php if ($form_posted) { ?>
+        <?php if ($form_posted && !$submission_succeeded) { ?>
         hideContactFormResult();
         <?php } ?>
         // end
