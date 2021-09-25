@@ -192,13 +192,11 @@ değişime yardım olanakları konularına katkıda bulunmaya davet etmekten onu
         "en" => [
             "The first online working meeting of the 12th International Hisarlı Ahmet Symposium was held on September 10, 2021. The next meeting is on December 10.",
             "The invitation of 12th International Hisarlı Ahmet Symposium has been announced above. The starting date and sending method of abstract submission will be announced later.",
-            "Full text submission of 11th International Hisarlı Ahmet Symposium will end on September 15, 2021.",
             "For all your questions and comments: <a href=\"mailto:contact@hisarliahmet.org\">contact@hisarliahmet.org</a>"
         ],
         "tr" => [
             "12. Uluslararası Hisarlı Ahmet Sempozyumu çevrimiçi ilk çalışma toplantısı 10 Eylül 2021'de yapıldı. Bir sonraki toplantı Aralık 10'da. <a href=\"announcements/firststudymeeting.pdf\">Detaylar için tıklayınız...</a>",
             "12. Uluslararası Hisarlı Ahmet Sempozyum çağrı metni ve web sayfası ilan edilmiştir. ÖZET GÖNDERİM BAŞLANGIÇ TARİHİ ve YÖNTEMİ DAHA SONRA BURADAN DUYURULACAKTIR.",
-            "11. Uluslararası Hisarlı Ahmet Sempozyumu tam metin gönderimi 15 Eylül 2021'de sona erecektir. Tam metinlerinizi <a href=\"mailto:contact@hisarliahmet.org\">contact@hisarliahmet.org</a> adresine gönderebilirsiniz.",
             "Tüm soru ve görüşlerinizi <a href=\"mailto:contact@hisarliahmet.org\">contact@hisarliahmet.org</a> adresine iletebilirsiniz.</a>"
         ]
     ],
@@ -207,11 +205,61 @@ değişime yardım olanakları konularına katkıda bulunmaya davet etmekten onu
         "tr" => "Davetli Konuşmacılar"
     ],
     "bilim_kurulu_baskani" => [
-        "en" => "Chairman of Scientific Board",
+        "en" => "Chair of Scientific Board",
         "tr" => "Bilim Kurulu Başkanı"
     ],
     "katkilarinizdan_dolayi" => [
         "en" => "Thank You For Your Contribution ",
         "tr" => "Katkılarınızdan Dolayı Teşekkür Ederiz"
+    ],
+    "tesekkurler_liste" => [
+        "en" => [
+            "Minister of Culture and Tourism Mehmet Nuri Ersoy",
+            "Governor of Kütahya Ali Çelik",
+            "Mayor of Kütahya Prof.Dr. Alim Işık",
+            "Rector of Çanakkale Onsekiz Mart University Prof.Dr. Sedat Murat",
+            "Rector of Afyon Kocatepe University Prof.Dr. Mehmet Karakaş",
+            "Rector of Dulumpinar University Prof.Dr. Kazım Uysal",
+            "Rector of Kütahya Health Sciences University Prof.Dr. Vural Kavuncu",
+            "Director of Kütahya Provincial of National Education Hasan Başyiğit",
+            "President of Kütahya Chamber of Commerce and Industry İsmet Özotraç",
+            "Director of Kütahya Provincial Culture and Tourism Zekerya Ünal",
+            "Director of Kütahya Culture and Social Affairs İsmail Şen",
+            "Director of Kütahya Regional Forestry Hasan Keskin",
+            "Director of Kütahya Ahmet Yakupoğlu Fine Arts High School Mustafa Demir",
+            "Board of Directors of Fine Arts Association",
+            "Board of Directors of Afyon Kocatepe University",
+            "Board of Directors of Afyon Kocatepe University",
+            "İsmet Çatık from Çatık Madencilik (Main Sponsor)",
+            "Nihat Delen from Delen Ticaret",
+            "Kırdar Bilgiören College",
+            "Ahmet Özmutaf from Kaşi Ahmet Çini Seramik",
+            "İzge Yayıncılık",
+            "Başkent Müzikevi"
+        ],
+        "tr" => [
+            "Kültür ve Turizm Bakanı Sn. Mehmet Nuri Ersoy",
+            "Kütahya Valisi Sn. Ali Çelik",
+            "Kütahya Belediye Başkanı Sn. Alim Işık",
+            "Çanakkale Onsekiz Mart Üniversitesi Rektörü Sn. Prof. Dr. Sedat Murat",
+            "Afyon Kocatepe Üniversitesi Rektörü Sn. Prof. Dr. Mehmet Karakaş",
+            "Dumlupinar Üniversitesi Rektörü Sn. Prof. Dr. Kazım Uysal",
+            "Kütaya Sağlik Bilimleri Üniversitesi Rektörü Sn. Prof. Dr. Vural Kavuncu",
+            "Kütahya Milli Eğitim Müdürü Sn. Hasan Başyiğit",
+            "Kütahya Ticaret ve Sanayi Odası Başkanı Sn. ismet Özotraç",
+            "Kütahya İl Kültür ve Turizm Müdürü Sn. Zekeriya Ünal",
+            "Kütahya Kültür ve Sosyal İşler Müdürü Sn. İsmail Şen",
+            "Kütahya Orman Bölge Müdürü Hasan Keskin",
+            "Kütahya Ahmet Yakupoğlu Güzel Sanatlar Lisesi Müdürü Sn. Mustafa Demir",
+            "Kütahya Güzel Sanatlar Derneği Yönetim Kurulu",
+            "AKÜ Devlet Konservatuvarı Yönetim Kurulu",
+            "AKÜ Devlet Konservatuvarı Mezunlar Derneği Yönetim Kurulu",
+            "Çatık Madencilik Sn. ismet Çatık (Ana Sponsor)",
+            "Delen Ticaret Sn. Nihat Delen",
+            "Kırdar Bilgiören Koleji",
+            "Kaşi Ahmet Çini Seramik Sn. Ahmet Özmutaf",
+            "İzge Yayıncılık",
+            "Başkent Müzikevi"
+        ]
     ]
 ];

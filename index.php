@@ -318,88 +318,14 @@ require_once "langs/lang_index.php";
                 <div class="pad-25-per">
                     <h3 class="center-text sec-h3"><?php echo($lang_index["katkilarinizdan_dolayi"][$pref_lang]); ?></h3>
                     <ul class="mdl-list center-text">
-                        <li class="mdl-list__item">
-                <span class="mdl-list__item-primary-content">Kültür ve Turizm Bakanı Sn. Mehmet Nuri
-                  Ersoy</span>
-                        </li>
-                        <li class="mdl-list__item">
-                            <span class="mdl-list__item-primary-content">Kütahya Valisi Sn. Ali Çelik</span>
-                        </li>
-                        <li class="mdl-list__item">
-                <span class="mdl-list__item-primary-content">Kütahya Belediye Başkanı Sn. Alim
-                  Işık</span>
-                        </li>
-                        <li class="mdl-list__item">
-                <span class="mdl-list__item-primary-content">Çanakkale Onsekiz Mart Üniversitesi Rektörü
-                  Sn. Prof. Dr. Sedat Murat</span>
-                        </li>
-                        <li class="mdl-list__item">
-                <span class="mdl-list__item-primary-content">Afyon Kocatepe Üniversitesi Rektörü Sn.
-                  Prof. Dr. Mehmet Karakaş</span>
-                        </li>
-                        <li class="mdl-list__item">
-                <span class="mdl-list__item-primary-content">Dumlupinar Üniversitesi Rektörü Sn. Prof.
-                  Dr. Kazım Uysal</span>
-                        </li>
-                        <li class="mdl-list__item">
-                <span class="mdl-list__item-primary-content">Kütaya Sağlik Bilimleri Üniversitesi
-                  Rektörü Sn. Prof. Dr. Vural Kavuncu</span>
-                        </li>
-                        <li class="mdl-list__item">
-                <span class="mdl-list__item-primary-content">Kütahya Milli Eğitim Müdürü Sn. Hasan
-                  Başyiğit</span>
-                        </li>
-                        <li class="mdl-list__item">
-                <span class="mdl-list__item-primary-content">Kütahya Ticaret ve Sanayi Odası Başkanı Sn.
-                  ismet Özotraç</span>
-                        </li>
-                        <li class="mdl-list__item">
-                <span class="mdl-list__item-primary-content">Kütahya İl Kültür ve Turizm Müdürü Sn.
-                  Zekeriya Ünal</span>
-                        </li>
-                        <li class="mdl-list__item">
-                <span class="mdl-list__item-primary-content">Kütahya Kültür ve Sosyal İşler Müdürü Sn.
-                  İsmail Şen</span>
-                        </li>
-                        <li class="mdl-list__item">
-                            <span class="mdl-list__item-primary-content">Kütahya Orman Bölge Müdürü Hasan Keskin</span>
-                        </li>
-                        <li class="mdl-list__item">
-                <span class="mdl-list__item-primary-content">Kütahya Ahmet Yakupoğlu Güzel Sanatlar
-                  Lisesi Müdürü Sn. Mustafa Demir</span>
-                        </li>
-                        <li class="mdl-list__item">
-                <span class="mdl-list__item-primary-content">Kütahya Güzel Sanatlar Derneği Yönetim
-                  Kurulu</span>
-                        </li>
-                        <li class="mdl-list__item">
-                <span class="mdl-list__item-primary-content">AKÜ Devlet Konservatuvarı Yönetim
-                  Kurulu</span>
-                        </li>
-                        <li class="mdl-list__item">
-                <span class="mdl-list__item-primary-content">AKÜ Devlet Konservatuvarı Mezunlar Derneği
-                  Yönetim Kurulu</span>
-                        </li>
-                        <li class="mdl-list__item">
-                <span class="mdl-list__item-primary-content">Çatık Madencilik Sn. ismet Çatık (Ana
-                  Sponsor)</span>
-                        </li>
-                        <li class="mdl-list__item">
-                            <span class="mdl-list__item-primary-content">Delen Ticaret Sn. Nihat Delen</span>
-                        </li>
-                        <li class="mdl-list__item">
-                            <span class="mdl-list__item-primary-content">Kırdar Bilgiören Koleji</span>
-                        </li>
-                        <li class="mdl-list__item">
-                <span class="mdl-list__item-primary-content">Kaşi Ahmet Çini Seramik Sn. Ahmet
-                  Özmutaf</span>
-                        </li>
-                        <li class="mdl-list__item">
-                            <span class="mdl-list__item-primary-content">İzge Yayıncılık</span>
-                        </li>
-                        <li class="mdl-list__item">
-                            <span class="mdl-list__item-primary-content">Başkent Müzikevi</span>
-                        </li>
+                        <?php
+                        $tesekkurler = $lang_index["tesekkurler_liste"][$pref_lang];
+                        for ($i = 0; $i < count($tesekkurler); $i++) {
+                            ?>
+                            <li class="mdl-list__item">
+                                <span class="mdl-list__item-primary-content"><?php echo($tesekkurler[$i]); ?></span>
+                            </li>
+                        <?php } ?>
                     </ul>
                 </div>
             </section>
