@@ -497,11 +497,45 @@ if ($_POST) {
             margin: 16px 0;
         }
 
-        .sel-form {
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
             width: 100%;
             padding: 11px;
             font-size: 16px;
-            box-sizing: border-box;
+            background: #f2f3f4;
+            -moz-border-radius: 0;
+            -webkit-border-radius: 0;
+            border-radius: 0;
+            border: 1px solid #cccccc;
+            cursor: pointer;
+        }
+
+        .select-container {
+            position: relative;
+            display: inline;
+        }
+
+        .select-container:after {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            pointer-events: none;
+        }
+
+        .select-container:after {
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            top: 8px;
+            right: 15px;
+            border-top: 8px solid black;
+            opacity: 0.5;
+        }
+
+        select::-ms-expand {
+            display: none;
         }
 
         .hidden-author {
@@ -640,22 +674,23 @@ if ($_POST) {
                             <div class="row">
                                 <div class="col-12">
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <label class="mdl-textfield__label" for="sel-sub-category"
-                                               style="top: 0; font-size: 14px;">
+                                        <label class="mdl-textfield__label" for="sel-sub-category" style="top: -1px;">
                                             <?php echo($lang_abs_sub["bildirinin_kapsadigi_altbaslik"][$pref_lang]); ?>
                                         </label>
-                                        <select id="sel-sub-category" name="sel-sub-category" class="sel-form">
-                                            <option value="0"><?php echo($lang_abs_sub["seciniz"][$pref_lang]); ?></option>
-                                            <?php
-                                            require_once "langs/lang_index.php";
-                                            $sub_categories = unserialize(serialize($lang_index["alt_basliklar_liste"][$pref_lang]));
-                                            usort($sub_categories, 'trStrcmp');
-                                            //sort($sub_categories);
-                                            foreach ($sub_categories as $sub_category) {
-                                                echo("<option>$sub_category</option>");
-                                            }
-                                            ?>
-                                        </select>
+                                        <div class="select-container">
+                                            <select id="sel-sub-category" name="sel-sub-category" class="sel-form">
+                                                <option value="0"><?php echo($lang_abs_sub["seciniz"][$pref_lang]); ?></option>
+                                                <?php
+                                                require_once "langs/lang_index.php";
+                                                $sub_categories = unserialize(serialize($lang_index["alt_basliklar_liste"][$pref_lang]));
+                                                usort($sub_categories, 'trStrcmp');
+                                                //sort($sub_categories);
+                                                foreach ($sub_categories as $sub_category) {
+                                                    echo("<option>$sub_category</option>");
+                                                }
+                                                ?>
+                                            </select>
+                                        </div>
                                         <span class="mdl-textfield__error">
                                             <?php echo($lang_abs_sub["altbaslik_seciniz"][$pref_lang]); ?>
                                         </span>
