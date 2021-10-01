@@ -316,9 +316,9 @@ $lang_global = [
 
     "yer" => [
 
-        "en" => "Kütahya Health Sciences University The Conference Hall",
+        "en" => "Kütahya Health Sciences University",
 
-        "tr" => "Kütahya Sağlık Bilimleri Üniversitesi Rektörlük Konferans Salonu"
+        "tr" => "Kütahya Sağlık Bilimleri Üniversitesi"
 
     ],
 
@@ -367,6 +367,14 @@ $lang_global = [
         "en" => "Workshops",
 
         "tr" => "Atölye Çalışması"
+
+    ],
+
+    "ozet_gonderim" => [
+
+        "en" => "Abstract Submission",
+
+        "tr" => "Özet Gönderim"
 
     ]
 

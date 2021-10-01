@@ -65,7 +65,7 @@ function trStrcmp($a, $b)
 function createAbstractPDF($form_params)
 {
     $submissionPaperPDF = createPDF($form_params);
-    $upload_dir = "uploads/Abs_" . date("Y");
+    $upload_dir = "uploads/Abs_12th";
     if (!is_dir($upload_dir)) {
         mkdir($upload_dir);
     }
