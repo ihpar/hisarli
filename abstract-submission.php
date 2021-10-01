@@ -502,7 +502,10 @@ if ($_POST) {
             -moz-appearance: none;
             appearance: none;
             width: 100%;
-            padding: 11px;
+            padding: 11px 25px 11px 11px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
             font-size: 16px;
             background: #f2f3f4;
             -moz-border-radius: 0;
