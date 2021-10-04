@@ -75,8 +75,8 @@ if (!$is_secure) {
 
                     <!--<li><a href="accommodation.php"><?php echo($lang_global["konaklama"][$pref_lang]); ?></a></li>-->
 
-                    <li><a
-                                href="presentation-guidelines.php"><?php echo($lang_global["bildiri_sunum_kurallari"][$pref_lang]); ?></a>
+                    <li>
+                        <a href="presentation-guidelines.php"><?php echo($lang_global["bildiri_sunum_kurallari"][$pref_lang]); ?></a>
                     </li>
 
                     <?php if ($pref_lang == "tr") { ?>
@@ -218,7 +218,8 @@ if (!$is_secure) {
                     </li>
 
                     <li class="dropdown_item-3">
-                        <a href="transportation.php"><?php echo($lang_global["ulasim"][$pref_lang]); ?></a></li>
+                        <a href="transportation.php"><?php echo($lang_global["ulasim"][$pref_lang]); ?></a>
+                    </li>
 
                     <!--<li class="dropdown_item-4">
                     <a href="accommodation.php"><?php echo($lang_global["konaklama"][$pref_lang]); ?></a>
@@ -265,34 +266,33 @@ if (!$is_secure) {
                 </ul>
 
             </li>
+
             <li class="dropdown">
 
                 <?php echo($lang_global["kurullar"][$pref_lang]); ?>
 
                 <ul class="dropdown_menu rot-x-menu">
 
-                    <li class="dropdown_item-1"><a
-
-                                href="honor-board.php"><?php echo($lang_global["onur_kurulu"][$pref_lang]); ?></a></li>
-
-                    <li class="dropdown_item-2"><a
-
-                                href="executive-board.php"><?php echo($lang_global["yurutme_kurulu"][$pref_lang]); ?></a>
+                    <li class="dropdown_item-1">
+                        <a href="honor-board.php"><?php echo($lang_global["onur_kurulu"][$pref_lang]); ?></a>
                     </li>
 
-                    <li class="dropdown_item-3"><a
-
-                                href="scientific-committee.php"><?php echo($lang_global["bilim_kurulu"][$pref_lang]); ?></a>
+                    <li class="dropdown_item-2">
+                        <a href="executive-board.php"><?php echo($lang_global["yurutme_kurulu"][$pref_lang]); ?></a>
                     </li>
 
-                    <li class="dropdown_item-4"><a
+                    <li class="dropdown_item-3">
+                        <a href="scientific-committee.php"><?php echo($lang_global["bilim_kurulu"][$pref_lang]); ?></a>
+                    </li>
 
-                                href="organizing-committee.php"><?php echo($lang_global["duzenleme_kurulu"][$pref_lang]); ?></a>
+                    <li class="dropdown_item-4">
+                        <a href="organizing-committee.php"><?php echo($lang_global["duzenleme_kurulu"][$pref_lang]); ?></a>
                     </li>
 
                 </ul>
 
             </li>
+
             <!--
 
       <li class="dropdown">
@@ -344,12 +344,10 @@ if (!$is_secure) {
             <?php } ?>-->
 
             <li class="dropdown">
-
                 <a href="contact.php"><?php echo($lang_global["iletisim"][$pref_lang]); ?></a>
-
             </li>
 
-            <li class="dropdown" style="background-color: #D80027;">
+            <li class="dropdown" style="background-color: #ff000080;">
                 <a href="abstract-submission.php"><?php echo($lang_global["ozet_gonderim"][$pref_lang]); ?></a>
             </li>
 
@@ -360,17 +358,12 @@ if (!$is_secure) {
         <!-- Dil Secimi -->
 
         <ul class="ul-flags">
-
             <li>
-
                 <a class="a-flag tr" href="?lang=tr">&nbsp;</a>
-
             </li>
 
             <li>
-
                 <a class="a-flag en" href="?lang=en">&nbsp;</a>
-
             </li>
 
         </ul>
