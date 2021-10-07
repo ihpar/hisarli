@@ -12,6 +12,8 @@ require_once "modules/header_prefixes.php";
 require_once "langs/lang_global.php";
 
 require_once "langs/lang_boards.php";
+
+require_once "langs/lang_honor-board.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -150,91 +152,18 @@ require_once "langs/lang_boards.php";
                         <h3 class="center-text sec-h3"><?php echo($lang_global["onur_kurulu"][$pref_lang]); ?></h3>
 
                         <table class="mdl-data-table">
-
                             <tbody>
-
-                            <tr>
-
-                                <td class="w-50"><p>Ali ÇELİK</p></td>
-
-                                <td class="w-50"><p>Kütahya Valisi/Governor</p></td>
-
-                            </tr>
-
-                            <tr>
-
-                                <td><p>Alim IŞIK</p></td>
-
-                                <td><p>Kütahya Belediye Başkanı/Major</p></td>
-
-                            </tr>
-
-                            <tr>
-
-                                <td><p>Prof. Dr. Sedat MURAT</p></td>
-
-                                <td><p>Çanakkale Onsekiz Mart Üniversitesi Rektörü/Rector</p></td>
-
-                            </tr>
-
-                            <tr>
-
-                                <td><p>Prof. Dr. Mehmet KARAKAŞ</p></td>
-
-                                <td><p>Afyon Kocatepe Üniversitesi Rektörü/Rector</p></td>
-
-                            </tr>
-
-                            <tr>
-
-                                <td><p>Prof. Dr. Kazım UYSAL</p></td>
-
-                                <td><p>Dumlupınar Üniversitesi Rektörü/Rector</p></td>
-
-                            </tr>
-
-                            <tr>
-
-                                <td><p>Prof. Dr. Vural KAVUNCU</p></td>
-
-                                <td><p>Kütahya Sağlık Bilimleri Üniversitesi Rektörü/Rector</p></td>
-
-                            </tr>
-
-                            <tr>
-
-                                <td><p>Mustafa Kemal ALTINSOY</p></td>
-
-                                <td><p>Kütahya Güzel Sanatlar Derneği Başkanı/The President of Association</p></td>
-
-                            </tr>
-
-                            <tr>
-
-                                <td><p>Mustafa HİSARLI</p></td>
-
-                                <td><p>Yüksek Mimar-TRT Sanatçısı/Architect-TRT Performer</p></td>
-
-                            </tr>
-
-                            <tr>
-
-                                <td><p>Nihat DELEN</p></td>
-
-                                <td><p>İşadamı/Businessman</p></td>
-
-                            </tr>
-
-                            <tr>
-
-                                <td><p>İsmet ÇATIK</p></td>
-
-                                <td><p>İşadamı/Businessman</p></td>
-
-                            </tr>
-
+                            <?php foreach ($lang_honor_board["kurul"][$pref_lang] as $member) { ?>
+                                <tr>
+                                    <td>
+                                        <p><?php echo($member[0]); ?></p>
+                                    </td>
+                                    <td>
+                                        <p><?php echo($member[1]); ?></p>
+                                    </td>
+                                </tr>
+                            <?php } ?>
                             </tbody>
-
                         </table>
 
 
@@ -265,9 +194,18 @@ require_once "langs/lang_boards.php";
 <script>
 
     (function () {
-
         // auto run
-
+        /*
+        let table = document.querySelector("table.mdl-data-table");
+        let rows = table.rows;
+        let res = [];
+        for (let row of rows) {
+            let cells = row.cells;
+            let left = cells[0].children[0].innerHTML;
+            let right = cells[1].children[0].innerHTML;
+            res.push([left, right]);
+        }
+         */
     })();
 
 </script>
