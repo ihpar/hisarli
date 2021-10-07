@@ -8,18 +8,15 @@ $is_secure = true;
 
 $page_name = "kgsd";
 
-
 require_once "dbms/utils.php";
-
 
 require_once "modules/header_prefixes.php";
 
-
 require_once "langs/lang_global.php";
-
 
 require_once "langs/lang_boards.php";
 
+require_once "langs/lang_scientific-committee.php";
 ?>
 
 <!DOCTYPE html>
@@ -31,102 +28,102 @@ require_once "langs/lang_boards.php";
 
     <?php require_once("modules/header_includes.php"); ?>
 
-  <style type="text/css">
+    <style type="text/css">
 
-      .pad-10-per {
+        .pad-10-per {
 
-          padding: 0 10%;
+            padding: 0 10%;
 
-          text-align: justify;
+            text-align: justify;
 
-          margin-left: auto;
+            margin-left: auto;
 
-          margin-right: auto;
+            margin-right: auto;
 
-          max-width: 3000px;
+            max-width: 3000px;
 
-          display: flex;
+            display: flex;
 
-      }
-
-
-      .cerceve {
-
-          border-style: solid;
-
-          border-width: 16px;
-
-          border-color: #bbb;
-
-          padding: 16px;
-
-          margin-left: auto;
-
-          margin-right: auto;
-
-          display: inline-block;
-
-      }
+        }
 
 
-      h3.sec-h3 {
+        .cerceve {
 
-          margin-bottom: 18px;
+            border-style: solid;
 
-      }
+            border-width: 16px;
 
+            border-color: #bbb;
 
-      h4.sec-h4 {
+            padding: 16px;
 
-          font-size: 24px;
+            margin-left: auto;
 
-          margin: 16px auto;
+            margin-right: auto;
 
-      }
+            display: inline-block;
 
-
-      table.mdl-data-table tr td:first-child {
-
-          text-align: right;
-
-      }
+        }
 
 
-      table.mdl-data-table tr td:last-child {
+        h3.sec-h3 {
 
-          text-align: left;
+            margin-bottom: 18px;
 
-      }
-
-
-      .mdl-data-table {
-
-          margin: 0 auto;
-
-          width: 100%;
-
-          white-space: initial;
-      }
-
-      .w-50 {
-
-          width: 50%;
-
-      }
+        }
 
 
-      @media (max-width: 839px) {
+        h4.sec-h4 {
 
-          .pad-10-per {
+            font-size: 24px;
 
-              padding: 0 24px;
+            margin: 16px auto;
 
-          }
-
-      }
+        }
 
 
-  </style>
+        table.mdl-data-table tr td:first-child {
+
+            text-align: right;
+
+        }
+
+
+        table.mdl-data-table tr td:last-child {
+
+            text-align: left;
+
+        }
+
+
+        .mdl-data-table {
+
+            margin: 0 auto;
+
+            width: 100%;
+
+            white-space: initial;
+        }
+
+        .w-50 {
+
+            width: 50%;
+
+        }
+
+
+        @media (max-width: 839px) {
+
+            .pad-10-per {
+
+                padding: 0 24px;
+
+            }
+
+        }
+
+
+    </style>
 
 </head>
 
@@ -135,335 +132,69 @@ require_once "langs/lang_boards.php";
 
 <div class="mdl-layout">
 
-  <!-- Navigation -->
+    <!-- Navigation -->
 
     <?php require_once("modules/navigation.php"); ?>
 
-  <!--Eof Navigation -->
+    <!--Eof Navigation -->
 
 
-  <div class="mdl-layout__content" style="display: flex; flex-direction: column">
+    <div class="mdl-layout__content" style="display: flex; flex-direction: column">
 
-    <div style="flex-grow: 1">
+        <div style="flex-grow: 1">
 
-      <!-- Banner -->
+            <!-- Banner -->
 
-        <?php require_once("modules/banner.php"); ?>
+            <?php require_once("modules/banner.php"); ?>
 
 
-      <!-- Icerik -->
+            <!-- Icerik -->
 
-      <section class="pad-tb-24">
+            <section class="pad-tb-24">
 
-        <div class="pad-10-per">
+                <div class="pad-10-per">
 
-          <div class="cerceve" style="overflow-x:auto;">
+                    <div class="cerceve" style="overflow-x:auto;">
 
-            <h3 class="center-text sec-h3"><?php echo($lang_boards["bilim_kurulu"][$pref_lang]); ?></h3>
+                        <h3 class="center-text sec-h3"><?php echo($lang_global["bilim_kurulu"][$pref_lang]); ?></h3>
 
 
-            <!-- Bilim Kurulu -->
+                        <!-- Bilim Kurulu -->
 
-            <table class="mdl-data-table">
+                        <table class="mdl-data-table">
+                            <tbody>
+                            <?php foreach ($lang_scientific_board["kurul"][$pref_lang] as $member) { ?>
+                                <tr>
+                                    <td>
+                                        <p><?php echo($member[0]); ?></p>
+                                    </td>
+                                    <td>
+                                        <p><?php echo($member[1]); ?></p>
+                                    </td>
+                                </tr>
+                            <?php } ?>
+                            </tbody>
+                        </table>
 
-              <tbody>
 
-              <tr>
+                    </div>
 
-                <td class="w-50">
+                </div>
 
-                  <p>Lilian Maria Tonella Tüzün (Başkan/Chairman)</p>
+            </section>
 
-                </td>
 
-                <td class="w-50">
-
-                  <p>Anadolu Üniversitesi</p>
-
-                </td>
-
-              </tr>
-
-              <tr>
-
-                <td>
-
-                  <p> Aaron Alley</p>
-
-                </td>
-
-                <td>
-
-                  <p>North Carolina Greensboro Üniversitesi (ABD/USA)</p>
-
-                </td>
-
-              </tr>
-
-              <tr>
-
-                <td>
-
-                  <p>Anjo Arko</p>
-
-                </td>
-
-                <td>
-
-                  <p>Guillard Kolej (ABD/USA)</p>
-
-                </td>
-
-              </tr>
-
-              <tr>
-
-                <td>
-
-                  <p>Aykut Barış Çerezcioğlu</p>
-
-                </td>
-
-                <td>
-
-                  <p>Dokuz Eylül Üniversitesi</p>
-
-                </td>
-
-              </tr>
-
-              <tr>
-
-                <td>
-
-                  <p>Erberk Eryılmaz</p>
-
-                </td>
-
-                <td>
-
-                  <p>Ankara Müzik ve Güzel Sanatlar Üniversitesi</p>
-
-                </td>
-
-              </tr>
-
-              <tr>
-
-                <td>
-
-                  <p>Gülay Mirzaoğlu</p>
-
-                </td>
-
-                <td>
-
-                  <p>Hacettepe Üniversitesi</p>
-
-                </td>
-
-              </tr>
-
-              <tr>
-
-                <td>
-
-                  <p>Hasan Tatlı</p>
-
-                </td>
-
-                <td>
-
-                  <p>Çanakkale Onsekiz Mart Üniversitesi</p>
-
-                </td>
-
-              </tr>
-
-              <tr>
-
-                <td>
-
-                  <p>Havva Işık</p>
-
-                </td>
-
-                <td>
-
-                  <p>Akdeniz Üniversitesi</p>
-
-
-                </td>
-
-              </tr>
-
-              <tr>
-
-                <td>
-
-                  <p>İhsan Çiçek</p>
-
-                </td>
-
-                <td>
-
-                  <p>Ankara Üniversitesi</p>
-
-                </td>
-
-              </tr>
-
-              <tr>
-
-                <td>
-
-                  <p>İlhan Ersoy</p>
-
-                </td>
-
-                <td>
-
-                  <p>Ege Üniversitesi</p>
-
-                </td>
-
-              </tr>
-
-              <tr>
-
-                <td>
-
-                  <p>Marcus Siqueira</p>
-
-                </td>
-
-                <td>
-
-                  <p>Conservatorio di Musica Giovan Battısta Martini Bologna (İtalya/Italy)</p>
-
-                </td>
-
-              </tr>
-
-              <tr>
-
-                <td>
-
-                  <p>Junrong Ban</p>
-
-                </td>
-
-                <td>
-
-                  <p>Nanjing Üniversitesi (Çin Halk Cumhuriyeti/People's Republic of China)</p>
-
-                </td>
-
-              </tr>
-
-              <tr>
-
-                <td>
-
-                  <p>Malgorzata Zarebinskaya</p>
-
-                </td>
-
-                <td>
-
-                  <p>Rzeszow Üniversitesi (Polonya/Poland)</p>
-
-                </td>
-
-              </tr>
-
-              <tr>
-
-                <td>
-
-                  <p>Marcus Siqueira</p>
-
-                </td>
-
-                <td>
-
-                  <p>Giovan Battista di Bologna Üniversitesi (İtalya/Italy)</p>
-
-                </td>
-
-              </tr>
-
-              <tr>
-
-                <td>
-
-                  <p>Mauricio Funcia De Bonis</p>
-
-                </td>
-
-                <td>
-
-                  <p>Sao Paoulo Devlet Üniversitesi (Brezilya/Brasil)</p>
-
-                </td>
-
-              </tr>
-
-              <tr>
-
-                <td>
-
-                  <p>Oksan E. Dobzhanskaya</p>
-
-                </td>
-
-                <td>
-
-                  <p>Artic Devlet Kültür ve Sanat Enstitüsü (Rusya/Russia)</p>
-
-                </td>
-
-              </tr>
-
-              <tr>
-
-                <td>
-
-                  <p>Veysel Sönmez</p>
-
-                </td>
-
-                <td>
-
-                  <p>Emekli Öğretim Üyesi/Former Lecturer</p>
-
-                </td>
-
-              </tr>
-
-              </tbody>
-
-            </table>
-
-
-          </div>
+            <!-- Eof Icerik -->
 
         </div>
 
-      </section>
 
+        <!-- Footer -->
 
-      <!-- Eof Icerik -->
+        <?php require_once("modules/footer.php"); ?>
+
 
     </div>
-
-
-    <!-- Footer -->
-
-      <?php require_once("modules/footer.php"); ?>
-
-
-  </div>
 
 </div>
 
