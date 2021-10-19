@@ -301,22 +301,19 @@ Bilimleri Bölümü Müzik Teknolojisi Anabilim Dalı’nda öğretim üyeliği 
             climate change</p>
                 ",
         "tr" => "
-            <p>Brazilian by nationality and Turkish by citizen, Lilian Maria Tonella Tüzün is pianist focused on
-            contemporary music, researcher, Director of the International Istanbul Ceren Necipoglu Harp Festival,
-            Department Coordinator of Erasmus+ and Head of the Piano Department of the State Conservatory of Anadolu University.
-            Author of History of the Piano in Brazil (USA) and Piano in Brazil (Turkey), coauthor of Music Therapy in Turkey (UK)
-            and Latin America in World Politics (Turkey), besides other articles related to refugee and immigrant problems in international journals.
-            She recorded for Callisto label Virtuoso, Ministry of Culture of Brazil Willy Corrêa de Oliveira piano music,
-            Çagsav Empathy in the Sky and the album New Music for Kanun and Piano. </p>
-            <p> Winner of several piano competitions, she was awarded by Anadolu University Art Prize (2017),
-            honored by Council at the Order of Rio Branco of the Ministry for Foreign Affairs of Brazil with the Ordem do Rio Branco at level of Official in recognition of the excellence of 
-            services rendered to Brazil (2018) and honored by Cagfen Association in the Artist Category of the city with the tribute
-            Woman's Hand (2020).</p>
-            <p>Currently she investigates the principles and opportunities of collective digital piano classes shaped in
-            favor to the community, specially Alzheimer's patients, Autism, Down Syndrome, children and elderly people from
-            peripheral groups, the refugees and excluded population. Besides that, she is focusing on cross-cultural areas
-            and projects of adhesion of contemporary art in the post-pandemic and challenging world of global
-            climate change</p>
+            <p>Araştırmacı/öğretim üyesi ve çağdaş müzik odaklı piyanist Brezilya asıllı Türk vatandaşı Prof. Lilian Maria Tonella Tüzün,
+            Anadolu Üniversitesi Devlet Konservatuvarı (AÜDK) Erasmus Koordinatörü, AÜDK Piyano Anasanat Dalı Başkanı ve Uluslararası İstanbul Ceren Necipoğlu Arp
+            Festivali direktörüdür. “Piano Music in Brazil: The History of Piano Playing and Compositions” ve “Brezilya’da Piyano” kitaplarının yazarıdır.
+            “Music Therapy in Turkey” ve “Dünya Politikalarında Latin Amerika” adlı kitapların da yazarları arasında yer alan Tüzün’ün aynı zamanda mülteci ve
+            göçmen sorunlarıyla ilgili pek çok makalesi bulunmaktadır.</p>
+            <p>Tüzün, piyanist olarak Callisto etiketli “Virtuoso”, Brezilya Kültür Bakanlığı yayını olan
+            “Willy Corrêa de Oliveira Piano Music” ve Cağsav etiketli “Empathy in the Sky” adlı albümlerde yer almıştır.
+            Son albümü “New Music for Kanun and Piano” 2021 yılında yayınlanmıştır.</p>
+            <p>Çeşitli piyano yarışmalarından aldığı ödüllerin yanı sıra Anadolu Üniversitesi Sanat Ödülü (2017), Brezilya Uluslararası İlişkiler Bakanlığı Rio Branco
+            Nişanı (2018) ve Çağfen Koleji’nin Kadın Eli ödüllerine layık görülmüştür (2020).</p>
+            <p>Şu anda özellikle Alzheimer hastaları, Otizm veya Down sendromlular, çevre gruplardan çocuklar ve yaşlılar, mülteciler ve toplumdan dışlanmış bireyleri toplum
+            lehine şekillendirebilecek toplu piyano dersleri ve prensipleri üzerine araştırmalar yapmaktadır. Bunun yanı sıra Tüzün, pandemi sonrası çağdaş sanat ve
+            küresel iklim değişikliği konuları üzerine akademik çalışmalarını sürdürmektedir.</p>
         "
     ]
 ];

@@ -7,14 +7,14 @@ $lang_honor_board = [
 
     "kurul" => [
         "en" => [
-            ["Ali ÇELİK", "Governor"],
-            ["Alim IŞIK", "Major"],
-            ["Prof. Dr. Sedat MURAT", "Rector"],
-            ["Prof. Dr. Mehmet KARAKAŞ", "Rector"],
-            ["Prof. Dr. Kazım UYSAL", "Rector"],
-            ["Prof. Dr. Vural KAVUNCU", "Rector"],
-            ["Mustafa Kemal ALTINSOY", "The President of Association"],
-            ["Mustafa HİSARLI", "Architect-TRT Performer"],
+            ["Ali ÇELİK", "Governor of Kütahya"],
+            ["Prof. Dr. Alim IŞIK", "Mayor of Kütahya"],
+            ["Prof. Dr. Sedat MURAT", "Rector of Çanakkale Onsekiz Mart University"],
+            ["Prof. Dr. Mehmet KARAKAŞ", "Rector of Afyon Kocatepe University"],
+            ["Prof. Dr. Kazım UYSAL", "Rector of Dulumpınar University"],
+            ["Prof. Dr. Vural KAVUNCU", "Rector of Kütahya Health Sciences University"],
+            ["Mustafa Kemal ALTINSOY", "President of Kütahya Fine Arts Association"],
+            ["Mustafa HİSARLI", "Architect, TRT Artist"],
             ["Nihat DELEN", "Businessman"],
             ["İsmet ÇATIK", "Businessman"]
         ],

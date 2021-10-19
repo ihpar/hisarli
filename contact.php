@@ -341,11 +341,21 @@ if ($_POST) {
 
                                 <h4 class="sec-h4"
                                     style="margin-bottom: 16px;"><?php echo($lang_contact["iletisim_bilgileri"][$pref_lang]); ?></h4>
-                                <p><a href="tel:+90 272 218 26 29">+90 272 218 26 29</a></p>
                                 <p>contact<i class="material-icons small-at">alternate_email</i>hisarliahmet.org</p>
                                 <p>https://hisarliahmet.org</p>
-                                <p>Afyon Kocatepe Üniversitesi Devlet Konservatuvarı Ahmet Necdet Sezer Kampüsü, 03204
-                                    Afyonkarahisar Merkez/Afyonkarahisar</p>
+                                <div class="footer--left" class="a-footer-social">
+                                    <a href="https://instagram.com/hisarliahmetsym" target="_blank" class="a-footer-social">
+                                        <img alt="instagram" src="img/social/logo-instagram.svg"/>
+                                    </a>
+                                    &nbsp;
+                                    <a href="https://www.facebook.com/hisarliahmetsym" target="_blank" class="a-footer-social">
+                                        <img alt="facebook" src="img/social/logo-facebook.svg"/>
+                                    </a>
+                                    &nbsp;
+                                    <!--<a href="https://twitter.com/hisarliahmetsym" target="_blank" class="a-footer-social">
+                                        <img alt="twitter" src="img/social/logo-twitter.svg"/>-->
+                                    </a>
+                                </div>
                                 <!-- Eof Iletisim bilgileri -->
                             </div>
                         </div>

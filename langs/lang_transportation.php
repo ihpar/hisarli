@@ -17,12 +17,12 @@ $lang_transportation = [
     "ulasim_bilgileri" => [
         "en" => "
                 <div>
-                  <p>Kutahya Health Science University (KHSU) --> The Conference Hall of Rectorship Building </p>
+                  <p>Kutahya Health Sciences University (KHSU) --> The Conference Hall of Rectorship Building </p>
                   <p>KHSU Evliya Celebi Campus, Kutahya, TURKEY</p>
                   <p>Evliya Çelebi Campus is located on the 10th km of the Kütahya-Tavşanlı highway and can be reached in 30 minutes by taxi/car from Zafer Airport or in 10 minutes by taxi/car from the city center or about 30 minutes by  Buses numbered A-1, 7, 7-A, 7-B and 16 departing from the city center.</p>
                   
                   <p>Tel: +90 (274) 260 00 43-44-45-46</p>
-                  <p><a href=\"https://www.ksbu.edu.tr/Website/Default.aspx?LangID=2\">Kutahya Health Science University Website</a>
+                  <p><a href=\"https://www.ksbu.edu.tr/Website/Default.aspx?LangID=2\">Kutahya Health Sciences University Website</a>
                   </p>
                 
                   <div>

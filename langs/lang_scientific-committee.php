@@ -7,26 +7,26 @@ $lang_scientific_board = [
 
     "kurul" => [
         "en" => [
-            ["Lilian Maria Tonella TÜZÜN (Chair)", "Anadolu University"],
-            [" Aaron ALLEN", "North Carolina Greensboro Üniversitesi (ABD/USA)"],
-            ["Aykut Barış ÇEREZCİOĞLU", "Dokuz Eylül Üniversitesi"],
-            ["Erberk ERYILMAZ", "Ankara Müzik ve Güzel Sanatlar Üniversitesi"],
-            ["Gülay MİRZAOĞLU", "Hacettepe Üniversitesi"],
-            ["Hasan TATLI", "Çanakkale Onsekiz Mart Üniversitesi"],
-            ["Havva IŞIK", "Akdeniz Üniversitesi"],
-            ["İhsan ÇİÇEK", "Ankara Üniversitesi"],
-            ["İlhan ERSOY", "Ege Üniversitesi"],
-            ["Junrong BAN", "Nanjing Üniversitesi (Çin Halk Cumhuriyeti/People's Republic of China)"],
-            ["Malgorzata ZAREBINSKA", "Rzeszow Üniversitesi (Polonya/Poland)"],
-            ["Marcus SIQUEIRA", "Giovan Battista di Bologna Üniversitesi (İtalya/Italy)"],
-            ["Mauricio Funcia De BONIS", "Sao Paulo Devlet Üniversitesi (Brezilya/Brazil)"],
-            ["Merve Eken KÜÇÜKAKSOY", "Çanakkale Onsekiz Mart Üniversitesi"],
-            ["Oksana DOBZHANSKAYA", "Arctic State Institute of Culture and Arts (Rusya/Russian)"],
-            ["Veysel SÖNMEZ", "Emekli Öğretim Üyesi/Former Lecturer"]
+            ["Lilian Maria Tonella TÜZÜN (Chair)", "Anadolu University (Turkey)"],
+            ["Aaron S. ALLEN", "University of North Carolina at Greensboro (USA)"],
+            ["Aykut Barış ÇEREZCİOĞLU", "Dokuz Eylül University (Turkey)"],
+            ["Erberk ERYILMAZ", "Ankara Music and Fine Arts University (Turkey)"],
+            ["Gülay MİRZAOĞLU", "Hacettepe University (Turkey)"],
+            ["Hasan TATLI", "Çanakkale Onsekiz Mart University (Turkey)"],
+            ["Havva IŞIK", "Akdeniz University (Turkey)"],
+            ["İhsan ÇİÇEK", "Ankara University (Turkey)"],
+            ["İlhan ERSOY", "Ege University (Turkey)"],
+            ["Junrong BAN", "Nanjing University (People's Republic of China)"],
+            ["Malgorzata ZAREBINSKA", "Rzeszow University (Poland)"],
+            ["Marcus SIQUEIRA", "Bologna Music Conservatory Giovan Battista (Italy)"],
+            ["Mauricio Funcia De BONIS", "São Paulo State University (Brazil)"],
+            ["Merve Eken KÜÇÜKAKSOY", "Çanakkale Onsekiz Mart University (Turkey)"],
+            ["Oksana DOBZHANSKAYA", "Arctic State Institute of Culture and Arts (Russia)"],
+            ["Veysel SÖNMEZ", "Retired Lecturer (Hacettepe University) (Turkey)"]
         ],
         "tr" => [
             ["Lilian Maria Tonella TÜZÜN (Başkan)", "Anadolu Üniversitesi"],
-            [" Aaron ALLEN", "North Carolina Greensboro Üniversitesi (ABD/USA)"],
+            ["Aaron S. ALLEN", "Kuzey Carolina Greensboro Üniversitesi (ABD)"],
             ["Aykut Barış ÇEREZCİOĞLU", "Dokuz Eylül Üniversitesi"],
             ["Erberk ERYILMAZ", "Ankara Müzik ve Güzel Sanatlar Üniversitesi"],
             ["Gülay MİRZAOĞLU", "Hacettepe Üniversitesi"],
@@ -34,13 +34,13 @@ $lang_scientific_board = [
             ["Havva IŞIK", "Akdeniz Üniversitesi"],
             ["İhsan ÇİÇEK", "Ankara Üniversitesi"],
             ["İlhan ERSOY", "Ege Üniversitesi"],
-            ["Junrong BAN", "Nanjing Üniversitesi (Çin Halk Cumhuriyeti/People's Republic of China)"],
-            ["Malgorzata ZAREBINSKA", "Rzeszow Üniversitesi (Polonya/Poland)"],
-            ["Marcus SIQUEIRA", "Giovan Battista di Bologna Üniversitesi (İtalya/Italy)"],
-            ["Mauricio Funcia De BONIS", "Sao Paulo Devlet Üniversitesi (Brezilya/Brazil)"],
+            ["Junrong BAN", "Nanjing Üniversitesi (Çin Halk Cumhuriyeti)"],
+            ["Malgorzata ZAREBINSKA", "Rzeszow Üniversitesi (Polonya)"],
+            ["Marcus SIQUEIRA", "Giovan Battista Bologna Müzik Konservatuvarı (İtalya)"],
+            ["Mauricio FUNCIA DE BONIS", "Sao Paulo Devlet Üniversitesi (Brezilya)"],
             ["Merve Eken KÜÇÜKAKSOY", "Çanakkale Onsekiz Mart Üniversitesi"],
-            ["Oksana DOBZHANSKAYA", "Arctic State Institute of Culture and Arts (Rusya/Russian)"],
-            ["Veysel SÖNMEZ", "Emekli Öğretim Üyesi/Former Lecturer"]
+            ["Oksana DOBZHANSKAYA", "Arktik Devlet Kültür ve Sanat Enstitüsü (Rusya)"],
+            ["Veysel SÖNMEZ", "Emekli Öğretim Üyesi (Hacettepe Üniversitesi)"]
         ]
     ]
 

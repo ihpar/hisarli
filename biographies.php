@@ -129,9 +129,9 @@ require_once "langs/lang_biographies.php";
         <div class="clear-float"></div>
       </section>-->
 
-      <section class="pad-tb-24 grey-bg" id="abdullah">
+      <section class="pad-tb-24 grey-bg" id="lilian">
         <div class="pad-5-per">
-          <img src="img/people/lilian.png" class="img-full">
+          <img src="img/people/lilian.jpg" class="img-full">
           <h3 class="sec-h3">Lilian Maria Tonella Tüzün</h3>
             <?php echo($lang_biographies["Lilian_Bio"][$pref_lang]); ?>
         </div>

@@ -15,8 +15,8 @@ require_once "langs/lang_footer.php";
                 <img alt="facebook" src="img/social/logo-facebook-white.svg"/>
             </a>
             &nbsp;
-            <a href="https://twitter.com/hisarliahmetsym" target="_blank" class="a-footer-social">
-                <img alt="twitter" src="img/social/logo-twitter-white.svg"/>
+            <!--<a href="https://twitter.com/hisarliahmetsym" target="_blank" class="a-footer-social">
+                <img alt="twitter" src="img/social/logo-twitter-white.svg"/>-->
             </a>
         </div>
         <div class="footer--right">
@@ -25,14 +25,8 @@ require_once "langs/lang_footer.php";
             </a>
         </div>
     </div>
-
     <div class="mdl-mega-footer--middle-section">
         <p class="no-bottom">contact<i class="material-icons small-at">alternate_email</i>hisarliahmet.org</p>
-        <p class="no-bottom">+90 272 218 26 29</p>
-        <p class="no-bottom">
-            Afyon Kocatepe Üniversitesi Devlet Konservatuvarı Ahmet Necdet Sezer Kampüsü, 03204 Afyonkarahisar
-            Merkez/Afyonkarahisar
-        </p>
     </div>
 
     <div class="mdl-mega-footer--bottom-section">
