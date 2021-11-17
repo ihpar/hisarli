@@ -270,26 +270,11 @@ $lang_biographies = [
             where he recently hand built a solar-powered log cabin with and for his parents.</p>
                 ",
         "tr" => "
-            <p>Aaron S. Allen, Ph.D., is director of the Environmental & Sustainability Studies Program and associate professor of music. A native of rural Appalachia,
-            he earned his B.S. (environmental studies) and B.A. (music) at Tulane University. Dr. Allen then earned a Ph.D. in music at Harvard University.
-            He was the recipient of the Paul Mellon Rome Prize and spent the 2011-12 academic year at the American Academy in Rome. </p>
-            <p>Before being appointed the director of Environmental & Sustainability Studies in 2015, Dr. Allen served as UNCG’s first Academic Sustainability Coordinator. 
-            He worked with faculty to increase and improve sustainability throughout UNCG, especially through workshops on how to incorporate sustainability into the curriculum.
-            His environmental leadership began with three years as president of the student environmental organization at Tulane, where he led efforts to institutionalize sustainability.
-            Dr. Allen continues to serve on the executive committee of the UNCG Sustainability Council.
-            He is also a member of the Council of Environmental Deans and Directors and a member of the board of directors of Population Connection.</p>
-            <p>Dr. Allen co-founded and for five years chaired the Ecocriticism Study Group of the American Musicological Society,
-            and he co-founded and chaired the Ecomusicology Special Interest Group of the Society for Ethnomusicology. 
-            Allen’s conference presentations on ecomusicology include venues in music scholarship (e.g., the American Musicological Society and the Society for Ethnomusicology),
-            interdisciplinary studies (e.g., 19th-Century Studies Association), and environmental studies (e.g., American Society for Environmental History,
-            Association for the Study of Literature and Environment, Association of Environmental Studies and Sciences); he has given invited lectures at institutions in North America,
-            Europe, and Asia.</p>
-            <p>After completing a dissertation on Beethoven reception in nineteenth-century Italy, Dr. Allen has continued to develop this unusual field of reception studies.
-            He has delivered conference presentations and invited talks and has published papers on the topic. He is slowly working on a book tentatively entitled Fidelio in Italy:
-            Beethoven Reception, Historiography, and the Crisis of 19th-Century Opera. Dr. Allen travels to Italy frequently and offers a unique travel class that combines music and
-            sustainability studies.</p>
-            <p>Aaron is originally from rural West Virginia, and his interests as an outdoorsman, environmentalist, and woodworker result from his time on the family farm,
-            where he recently hand built a solar-powered log cabin with and for his parents.</p>
+            <p>Aaron S. Allen, Ph.D., Çevre ve Sürdürülebilirlik Çalışmaları Programı direktörü ve müzik doçentidir. Kırsal Appalachia'lı bir yerlidir, B.S. (fen fakültesi) (çevre çalışmaları) ve B.A. (edebiyat fakültesi) (müzik) Tulane Üniversitesi'nde. Dr. Allen daha sonra Harvard Üniversitesi'nde müzik alanında doktora derecesini aldı. Paul Mellon Roma Ödülü'nü aldı ve 2011-12 akademik yılını Roma'daki Amerikan Akademisi'nde geçirdi.</p>
+            <p>2015 yılında Çevre ve Sürdürülebilirlik Çalışmaları direktörü olarak atanmadan önce Dr. Allen, UNCG'nin ilk Akademik Sürdürülebilirlik Koordinatörü olarak görev yaptı. Sürdürülebilirliğin nasıl dahil edileceğine dair UNCG genelinde, özellikle çalıştaylar üzerinden, sürdürülebilirliği artırmak ve iyileştirmek için fakülteyle birlikte çalıştı. Çevreci liderliği, sürdürülebilirliğin kurumsallaşmasına yol açtığı Tulane'de çevreci öğrenci komisyonunun başkanı olarak üç yıl çalışmasıyla başladı. Dr. Allen, UNCG Sürdürülebilirlik Konseyi'nin yürütme kurulunda görevine devam etmektedir. Çevre Dekanları ve Yönetim Kurulu üyesi ve Nüfus Bağlantısı yönetim kurulu üyesidir.</p>
+            <p>Dr. Allen, Amerikan Müzikoloji Derneği'nin Ekoeleştiri Çalışma Grubu'nun kurucu ortağı ve beş yıl boyunca başkanlığını yaptı ve Etnomüzikoloji Derneği'nin Ekomüzikoloji Özel İlgi Grubu'nun kurucu ortağı ve başkanlığını yaptı. Allen'ın ekomüzikoloji üzerine konferans sunumları, müzikteki mekanları (örneğin, Amerikan Müzikoloji Derneği ve Etnomüzikoloji Derneği), disiplinler arası çalışmaları (örneğin, 19. Yüzyıl Araştırmaları Derneği) ve çevre araştırmalarını (örneğin, Amerikan Çevre Tarihi Derneği, Çevre Bilimleri Derneği) içerir. Edebiyat ve Çevre Çalışması, Çevre Araştırmaları ve Bilimleri Derneği); Kuzey Amerika, Avrupa ve Asya'daki kurumlarda davetli dersler verdi.
+On dokuzuncu yüzyıl İtalya'sında Beethoven resepsiyonu üzerine bir tezi tamamladıktan sonra, Dr. Allen bu alışılmadık alımlama çalışmaları alanını geliştirmeye devam etti. Konferans sunumları ve davetli konuşmalar yaptı ve konuyla ilgili makaleler yayınladı. Yavaş yavaş, geçici olarak Fidelio in Italy: Beethoven Reception, Historiography, and the Crisis of 19th-Century Opera (İtalya'da Fidelio: Beethoven Alımlaması, 19. Yüzyıl Operasının Tarihi ve Eleştirisi) adlı bir kitap üzerinde çalışıyor. Dr. Allen sık sık İtalya'ya seyahat ediyor ve müzik ile sürdürülebilirlik çalışmalarını birleştiren benzersiz bir seyahat sınıfı ortaya koyuyor.</p>
+            <p>Aaron aslen Batı Virginia'nın kırsal kesimindendir ve bir açık havacı, çevreci ve ahşap işçisi olarak ilgi alanları, yakın zamanda ailesiyle birlikte ve onun için güneş enerjili bir kütük kulübesi inşa ettiği aile çiftliğinde geçirdiği zamanlarından oluşmaktadır.</p>
         "
     ],
 

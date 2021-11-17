@@ -19,3 +19,5 @@ dbms/class.db.php
 /composer.phar
 /uploads/
 /arch/
+/dbms/DBHelper.php
+/dbms/utils.php
