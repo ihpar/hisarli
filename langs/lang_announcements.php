@@ -41,20 +41,17 @@ $lang_announcements = [
     "ilk_toplanti" => [
 
         "en" => "
-            <p>ÇOMÜ Devlet Konservatuvarı yürütücülüğünde gerçekleştirilen 12. Uluslararası Hisarlı Ahmet Sempozyumu çevrimiçi toplantısına, düzenleme kurulu başkanı Uğur Türkmen,
-            bilim kurulu başkanı Lilian Tonella Tüzün ve bilim kurulu üyeleri Aaron Allen, Ban Junrong, Duygu Kahraman, Erberk Yılmaz, Malgorzata Zarebinska ve Aykut Barış Çerezcioğlu katıldı.</p>
-            <p>Toplantıda, Hisarlı Ahmet ve Kütahya, Uluslararası Hisarlı Ahmet Sempozyumu hakkında genel bilgiler, 12. Uluslararası Hisarlı Ahmet Sempozyumu'nun amacı-kapsamı ve formatı,
-            bilim kurulu üyelerinin iş birliği, bilim kurulu üyelerinin öneri ve soruları, bir sonraki toplantı tarihi ve toplantı kapanışı konuları üzerinde duruldu.</p>
-            <p>Bir sonraki toplantının 10 Aralık 2021 tarihinde yapılması kararlaştırıldı.</p>
-
+            <p>Dean of the organizing committee Uğur Türkmen, head of scientific committee Lilian Tonella Tüzün and scientific committee members Aaron Allen, Ban Junrong, Duygu Kahraman, Erberk Yılmaz, Malgorzata Zarebinska, and Aykut Barış Çerezcioğlu attended the online meeting of the 12th International Hisarlı Ahmet Symposium, which was conducted by ÇOMÜ State Conservatory.
+            </p><p>
+            At the meeting, the subjects, Hisarlı Ahmet and Kütahya, the International Hisarlı Ahmet Symposium, the purpose, scope, and format of the 12th International Hisarlı Ahmet Symposium, the cooperation of the members of the scientific committee, the suggestions and questions of the members of the scientific committee, the next meeting date and the closing of the meeting were dwelled upon. 
+            </p><p>
+            The next meeting was decided to be held on 10 December 2021.</p>
                 ",
-        "tr" => "
-            <p>ÇOMÜ Devlet Konservatuvarı yürütücülüğünde gerçekleştirilen 12. Uluslararası Hisarlı Ahmet Sempozyumu çevrimiçi toplantısına, düzenleme kurulu başkanı Uğur Türkmen,
+        "tr" => "<p>ÇOMÜ Devlet Konservatuvarı yürütücülüğünde gerçekleştirilen 12. Uluslararası Hisarlı Ahmet Sempozyumu çevrimiçi toplantısına, düzenleme kurulu başkanı Uğur Türkmen,
             bilim kurulu başkanı Lilian Tonella Tüzün ve bilim kurulu üyeleri Aaron Allen, Ban Junrong, Duygu Kahraman, Erberk Yılmaz, Malgorzata Zarebinska ve Aykut Barış Çerezcioğlu katıldı.</p>
             <p>Toplantıda, Hisarlı Ahmet ve Kütahya, Uluslararası Hisarlı Ahmet Sempozyumu hakkında genel bilgiler, 12. Uluslararası Hisarlı Ahmet Sempozyumu'nun amacı-kapsamı ve formatı,
             bilim kurulu üyelerinin iş birliği, bilim kurulu üyelerinin öneri ve soruları, bir sonraki toplantı tarihi ve toplantı kapanışı konuları üzerinde duruldu.</p>
-            <p>Bir sonraki toplantının 10 Aralık 2021 tarihinde yapılması kararlaştırıldı.</p>
-                "
+            <p>Bir sonraki toplantının 10 Aralık 2021 tarihinde yapılması kararlaştırıldı.</p>"
     ]
 ];
 ?>
