@@ -118,16 +118,16 @@ require_once "langs/lang_biographies.php";
             <?php echo($lang_biographies["Melik_Ertugrul_Bayraktarkatal_Bio"][$pref_lang]); ?>
         </div>
         <div class="clear-float"></div>
-      </section>
+      </section> -->
 
-      <section class="pad-tb-24" id="cihan">
+      <section class="pad-tb-24" id="allen">
         <div class="pad-5-per">
-          <img src="img/people/cihan.png" class="img-full">
-          <h3 class="sec-h3">Cihan Işıkhan</h3>
-            <?php echo($lang_biographies["Cihan_Isikhan_Bio"][$pref_lang]); ?>
+          <img src="img/people/allen.jpg" class="img-full">
+          <h3 class="sec-h3">Aaron S. Allen</h3>
+            <?php echo($lang_biographies["Aaron_Allen_Bio"][$pref_lang]); ?>
         </div>
         <div class="clear-float"></div>
-      </section>-->
+      </section>
 
       <section class="pad-tb-24 grey-bg" id="lilian">
         <div class="pad-5-per">

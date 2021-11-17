@@ -193,8 +193,9 @@ $lang_index = [
             "For all your questions and comments: <a href=\"mailto:contact@hisarliahmet.org\">contact@hisarliahmet.org</a>"
         ],
         "tr" => [
-            "Özet modülümüz 1 Ekim itibariyle aktif edilmiştir. Sempozyuma bildirinizle katılmak için ana menüdeki <a href=\"abstract-submission.php\">Özet Gönderim</a> butonuna tıklayarak formu eksiksiz doldurup gönderebilirsiniz.",
-            "12. Uluslararası Hisarlı Ahmet Sempozyumu çevrimiçi ilk çalışma toplantısı 10 Eylül 2021'de yapıldı. Bir sonraki toplantı Aralık 10'da. <a href=\"announcements/firststudymeeting.pdf\">Detaylar için tıklayınız...</a>",
+            "Sempozyum bilgilendirme ziyaretleri yapıldı. Ayrıntılar için <a href=\"announcements.php#bilgilendirme_ziyaret\">tıklayınız.</a>",
+            "Sempozyuma bildirinizle katılmak için ana menüdeki <a href=\"abstract-submission.php\">Özet Gönderim</a> butonuna tıklayarak formu eksiksiz doldurup gönderebilirsiniz.",
+            "Sempozyum çevrimiçi ilk çalışma toplantısı 10 Eylül 2021'de yapıldı. Bir sonraki toplantı Aralık 10'da. Ayrıntılar için <a href=\"announcements.php#ilk_toplanti\">tıklayınız.</a>",
             "Tüm soru ve görüşlerinizi <a href=\"mailto:contact@hisarliahmet.org\">contact@hisarliahmet.org</a> adresine iletebilirsiniz.</a>"
         ]
     ],

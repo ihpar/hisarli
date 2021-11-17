@@ -18,3 +18,4 @@ dbms/class.db.php
 /composer.lock
 /composer.phar
 /uploads/
+/arch/

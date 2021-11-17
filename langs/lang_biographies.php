@@ -245,38 +245,51 @@ $lang_biographies = [
         "
     ],
 
-    "Cihan_Isikhan_Bio" => [
+    "Aaron_Allen_Bio" => [
 
         "en" => "
-            <p>1992 yılında Dokuz Eylül Üniversitesi Güzel Sanatlar Fakültesi Müzik Bilimleri Bölümü Müzik
-Teknolojisi Anabilim Dalı’nda lisans öğrenimini tamamladı. Mezuniyet sonrası bir süre özel
-bir televizyon kuruluşunda ses operatörü olarak çalışan Işıkhan, 1997 yılında mezun olduğu
-birime öğretim elemanı olarak atandı.</p>
-</p>2006 yılında aldığı doktora derecesi,Prof. Dr. Yetkin Özer ve Doç. Dr. Adil Alpkoçak
-danışmanlıklarıyla tamamlanan“ Dizi Temelli Ezgi Karşılaştırma:Algısal Perde Hiyerarşisinde Tonal-Diyatonik Ayrımı”adlı doktora tezi sayesinde
-“Müzik Sorgulama Sistemleri” alanında yürütülen disiplinler arası ortak bir çalışmanın sonucudur. Bu çalışmayla birlikte yine
-disiplinler arası olarak yürütülen ezgi ayıklama (melody extraction), makam sınıflandırma gibi bilgisayar temelli ses teknolojisi proje ve uygulamaları, IEEE başta olmak üzere çok sayıda
-uluslararası bilimsel kuruluşlar desteğiyle sunulmuş ve yayımlanmıştır.</p>
-<p>Güzel Sanatlar alanında Müzik teknolojisi disipliniyle Türkiye’de ilk doçentlik ünvanı alanlararasında olan Işıkhan, bu alanda “Türk Müziği Çalgılarında Kayıt Yöntemleri ve Mikrofonlama
-Teknikleri”, “Dokuz Eylül Üniversitesine Ait Kapalı Alanlarda Akustik Ölçme ve Değerlendirme Uygulamaları” gibi tamamlanan bilimsel araştırma projelerinde çalışmış, ayrıca Kültür
-Bakanlığı tarafından maddi destek sağlanan çok sayıda belgeselin film müzikleri ve ses tasarımını yapmıştır. Işıkhan halen, Dokuz Eylül Üniversitesi Güzel Sanatlar Fakültesi Müzik
-Bilimleri Bölümü Müzik Teknolojisi Anabilim Dalı’nda öğretim üyeliği görevini devam ettirmektedir.</p>
+            <p>Aaron S. Allen, Ph.D., is director of the Environmental & Sustainability Studies Program and associate professor of music. A native of rural Appalachia,
+            he earned his B.S. (environmental studies) and B.A. (music) at Tulane University. Dr. Allen then earned a Ph.D. in music at Harvard University.
+            He was the recipient of the Paul Mellon Rome Prize and spent the 2011-12 academic year at the American Academy in Rome. </p>
+            <p>Before being appointed the director of Environmental & Sustainability Studies in 2015, Dr. Allen served as UNCG’s first Academic Sustainability Coordinator. 
+            He worked with faculty to increase and improve sustainability throughout UNCG, especially through workshops on how to incorporate sustainability into the curriculum.
+            His environmental leadership began with three years as president of the student environmental organization at Tulane, where he led efforts to institutionalize sustainability.
+            Dr. Allen continues to serve on the executive committee of the UNCG Sustainability Council.
+            He is also a member of the Council of Environmental Deans and Directors and a member of the board of directors of Population Connection.</p>
+            <p>Dr. Allen co-founded and for five years chaired the Ecocriticism Study Group of the American Musicological Society,
+            and he co-founded and chaired the Ecomusicology Special Interest Group of the Society for Ethnomusicology. 
+            Allen’s conference presentations on ecomusicology include venues in music scholarship (e.g., the American Musicological Society and the Society for Ethnomusicology),
+            interdisciplinary studies (e.g., 19th-Century Studies Association), and environmental studies (e.g., American Society for Environmental History,
+            Association for the Study of Literature and Environment, Association of Environmental Studies and Sciences); he has given invited lectures at institutions in North America,
+            Europe, and Asia.</p>
+            <p>After completing a dissertation on Beethoven reception in nineteenth-century Italy, Dr. Allen has continued to develop this unusual field of reception studies.
+            He has delivered conference presentations and invited talks and has published papers on the topic. He is slowly working on a book tentatively entitled Fidelio in Italy:
+            Beethoven Reception, Historiography, and the Crisis of 19th-Century Opera. Dr. Allen travels to Italy frequently and offers a unique travel class that combines music and
+            sustainability studies.</p>
+            <p>Aaron is originally from rural West Virginia, and his interests as an outdoorsman, environmentalist, and woodworker result from his time on the family farm,
+            where he recently hand built a solar-powered log cabin with and for his parents.</p>
                 ",
         "tr" => "
-            <p>1992 yılında Dokuz Eylül Üniversitesi Güzel Sanatlar Fakültesi Müzik Bilimleri Bölümü Müzik
-Teknolojisi Anabilim Dalı’nda lisans öğrenimini tamamladı. Mezuniyet sonrası bir süre özel
-bir televizyon kuruluşunda ses operatörü olarak çalışan Işıkhan, 1997 yılında mezun olduğu
-birime öğretim elemanı olarak atandı.</p>
-</p>2006 yılında aldığı doktora derecesi,Prof. Dr. Yetkin Özer ve Doç. Dr. Adil Alpkoçak
-danışmanlıklarıyla tamamlanan“ Dizi Temelli Ezgi Karşılaştırma:Algısal Perde Hiyerarşisinde Tonal-Diyatonik Ayrımı”adlı doktora tezi sayesinde
-“Müzik Sorgulama Sistemleri” alanında yürütülen disiplinler arası ortak bir çalışmanın sonucudur. Bu çalışmayla birlikte yine
-disiplinler arası olarak yürütülen ezgi ayıklama (melody extraction), makam sınıflandırma gibi bilgisayar temelli ses teknolojisi proje ve uygulamaları, IEEE başta olmak üzere çok sayıda
-uluslararası bilimsel kuruluşlar desteğiyle sunulmuş ve yayımlanmıştır.</p>
-<p>Güzel Sanatlar alanında Müzik teknolojisi disipliniyle Türkiye’de ilk doçentlik ünvanı alanlararasında olan Işıkhan, bu alanda “Türk Müziği Çalgılarında Kayıt Yöntemleri ve Mikrofonlama
-Teknikleri”, “Dokuz Eylül Üniversitesine Ait Kapalı Alanlarda Akustik Ölçme ve Değerlendirme Uygulamaları” gibi tamamlanan bilimsel araştırma projelerinde çalışmış, ayrıca Kültür
-Bakanlığı tarafından maddi destek sağlanan çok sayıda belgeselin film müzikleri ve ses tasarımını yapmıştır.
-<p>Işıkhan halen, Dokuz Eylül Üniversitesi Güzel Sanatlar Fakültesi Müzik
-Bilimleri Bölümü Müzik Teknolojisi Anabilim Dalı’nda öğretim üyeliği görevini devam ettirmektedir.</p>
+            <p>Aaron S. Allen, Ph.D., is director of the Environmental & Sustainability Studies Program and associate professor of music. A native of rural Appalachia,
+            he earned his B.S. (environmental studies) and B.A. (music) at Tulane University. Dr. Allen then earned a Ph.D. in music at Harvard University.
+            He was the recipient of the Paul Mellon Rome Prize and spent the 2011-12 academic year at the American Academy in Rome. </p>
+            <p>Before being appointed the director of Environmental & Sustainability Studies in 2015, Dr. Allen served as UNCG’s first Academic Sustainability Coordinator. 
+            He worked with faculty to increase and improve sustainability throughout UNCG, especially through workshops on how to incorporate sustainability into the curriculum.
+            His environmental leadership began with three years as president of the student environmental organization at Tulane, where he led efforts to institutionalize sustainability.
+            Dr. Allen continues to serve on the executive committee of the UNCG Sustainability Council.
+            He is also a member of the Council of Environmental Deans and Directors and a member of the board of directors of Population Connection.</p>
+            <p>Dr. Allen co-founded and for five years chaired the Ecocriticism Study Group of the American Musicological Society,
+            and he co-founded and chaired the Ecomusicology Special Interest Group of the Society for Ethnomusicology. 
+            Allen’s conference presentations on ecomusicology include venues in music scholarship (e.g., the American Musicological Society and the Society for Ethnomusicology),
+            interdisciplinary studies (e.g., 19th-Century Studies Association), and environmental studies (e.g., American Society for Environmental History,
+            Association for the Study of Literature and Environment, Association of Environmental Studies and Sciences); he has given invited lectures at institutions in North America,
+            Europe, and Asia.</p>
+            <p>After completing a dissertation on Beethoven reception in nineteenth-century Italy, Dr. Allen has continued to develop this unusual field of reception studies.
+            He has delivered conference presentations and invited talks and has published papers on the topic. He is slowly working on a book tentatively entitled Fidelio in Italy:
+            Beethoven Reception, Historiography, and the Crisis of 19th-Century Opera. Dr. Allen travels to Italy frequently and offers a unique travel class that combines music and
+            sustainability studies.</p>
+            <p>Aaron is originally from rural West Virginia, and his interests as an outdoorsman, environmentalist, and woodworker result from his time on the family farm,
+            where he recently hand built a solar-powered log cabin with and for his parents.</p>
         "
     ],
 

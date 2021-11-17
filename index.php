@@ -193,6 +193,71 @@ require_once "langs/lang_index.php";
                     </ul>
                 </div>
             </section>
+            <!-- Satir 3 Konusmacilar -->
+
+            <section class="pad-tb-24">
+                <h3 class="center-text sec-h3"><?php echo($lang_index["davetli_konusmacilar"][$pref_lang]); ?></h3>
+                <!--
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
+                        <a href="biographies.php#nadja">
+                            <div class="mdl-card mdl-shadow--2dp person-card"
+                                 style="background-image: url('img/people/nadja.png')">
+                                <div class="mdl-card__actions">Nadja Wallaszkovits</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
+                        <a href="biographies.php#johannes">
+                            <div class="mdl-card mdl-shadow--2dp person-card"
+                                 style="background-image: url('img/people/johannes.png')">
+                                <div class="mdl-card__actions">Johannes Kretz</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
+                        <a href="biographies.php#john">
+                            <div class="mdl-card mdl-shadow--2dp person-card"
+                                 style="background-image: url('img/people/john.png')">
+                                <div class="mdl-card__actions">John Rink</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
+                        <a href="biographies.php#turan">
+                            <div class="mdl-card mdl-shadow--2dp person-card"
+                                 style="background-image: url('img/people/turan.png')">
+                                <div class="mdl-card__actions">Turan Sağer</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                -->
+
+                <div class="mdl-grid" style="justify-content: center">
+                    <!--
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
+                        <a href="biographies.php#ruhi">
+                            <div class="mdl-card mdl-shadow--2dp person-card"
+                                 style="background-image: url('img/people/ruhi.png')">
+                                <div class="mdl-card__actions">Ruhi Ayangil</div>
+                            </div>
+                        </a>
+                    </div>
+                    -->
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
+                        <a href="biographies.php#allen">
+                            <div class="mdl-card mdl-shadow--2dp person-card"
+                                 style="background-image: url('img/people/allen.jpg')">
+                                <div class="mdl-card__actions">Aaron S. Allen</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
 
             <div class="custom-shape-divider-bottom-2">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -201,77 +266,6 @@ require_once "langs/lang_index.php";
                           class="shape-fill"></path>
                 </svg>
             </div>
-
-
-            <!-- Satir 3 Konusmacilar -->
-            <!--
-      <section class="pad-tb-24">
-        <h3 class="center-text sec-h3"><?php echo($lang_index["davetli_konusmacilar"][$pref_lang]); ?></h3>
-        <div class="mdl-grid">
-          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
-            <!-- Card
-            <a href="biographies.php#nadja">
-              <div class="mdl-card mdl-shadow--2dp person-card" style="background-image: url('img/people/nadja.png')">
-                <div class="mdl-card__actions">Nadja Wallaszkovits</div>
-              </div>
-            </a>
-            <!-- Eof Card
-          </div>
-
-          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
-            <!-- Card
-            <a href="biographies.php#johannes">
-              <div class="mdl-card mdl-shadow--2dp person-card"
-                   style="background-image: url('img/people/johannes.png')">
-                <div class="mdl-card__actions">Johannes Kretz</div>
-              </div>
-            </a>
-            <!-- Eof Card
-          </div>
-
-          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
-            <!-- Card
-            <a href="biographies.php#john">
-              <div class="mdl-card mdl-shadow--2dp person-card" style="background-image: url('img/people/john.png')">
-                <div class="mdl-card__actions">John Rink</div>
-              </div>
-            </a>
-            <!-- Eof Card
-          </div>
-
-          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
-            <!-- Card
-            <a href="biographies.php#turan">
-              <div class="mdl-card mdl-shadow--2dp person-card" style="background-image: url('img/people/turan.png')">
-                <div class="mdl-card__actions">Turan Sağer</div>
-              </div>
-            </a>
-            <!-- Eof Card
-          </div>
-        </div>
-
-        <div class="mdl-grid" style="justify-content: center">
-          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
-            <!-- Card -
-            <a href="biographies.php#ruhi">
-              <div class="mdl-card mdl-shadow--2dp person-card" style="background-image: url('img/people/ruhi.png')">
-                <div class="mdl-card__actions">Ruhi Ayangil</div>
-              </div>
-            </a>
-            <!-- Eof Card
-          </div>
-
-          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
-            <!-- Card
-            <a href="biographies.php#melik">
-              <div class="mdl-card mdl-shadow--2dp person-card" style="background-image: url('img/people/melik.png')">
-                <div class="mdl-card__actions">Melik Ertuğrul Bayraktarkatal</div>
-              </div>
-            </a>
-            <!-- Eof Card
-          </div>
-        </div>
-      </section> -->
 
             <!-- Satir 4 Bilim Kurulu -->
             <section class="pad-tb-24" style="background-color: #f2f4f7">
