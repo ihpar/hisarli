@@ -12,6 +12,10 @@ $lang_organization_chart = [
     "pdf_file" => [
         "en" => "img/assets/organization_chart_en.pdf",
         "tr" => "img/assets/organization_chart_tr.pdf"
+    ],
+    "image_file" => [
+        "en" => "img/assets/organization_chart_en.jpg",
+        "tr" => "img/assets/organization_chart_tr.jpg"
     ]
 ];
 

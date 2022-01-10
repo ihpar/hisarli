@@ -67,8 +67,11 @@ require_once "langs/lang_organization-chart.php";
                 <div class="pad-10-per">
                     <div class="cerceve">
                         <h3 class="center-text sec-h3"><?php echo($lang_organization_chart["baslik"][$pref_lang]); ?></h3>
-                        <iframe src="<?php echo($lang_organization_chart["pdf_file"][$pref_lang]); ?>" width="100%"
-                                height="790px"></iframe>
+                        <!--<iframe src="<?php echo($lang_organization_chart["pdf_file"][$pref_lang]); ?>" width="100%"
+                                height="790px"></iframe>-->
+                        <a href="<?php echo($lang_organization_chart["pdf_file"][$pref_lang]); ?>" download>
+                            <img src="<?php echo($lang_organization_chart["image_file"][$pref_lang]); ?>" width="100%;">
+                        </a>
                     </div>
                 </div>
             </section>
