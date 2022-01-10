@@ -34,6 +34,14 @@ $lang_global = [
 
     ],
 
+    "organizasyon_semasi" => [
+
+        "en" => "Organization Chart",
+
+        "tr" => "Organizasyon Şeması"
+
+    ],
+
     "ulasim" => [
 
         "en" => "Transportation",

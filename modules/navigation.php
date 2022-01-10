@@ -99,6 +99,11 @@ if (!$is_secure) {
                     <li>
                         <a href="past-symposiums.php"><?php echo($lang_global["gecmis_sempozyumlar"][$pref_lang]); ?></a>
                     </li>
+
+                    <li>
+                        <a href="organization-chart.php"><?php echo($lang_global["organizasyon_semasi"][$pref_lang]); ?></a>
+                    </li>
+
                     <!-- <li><a href="paper-guidelines.php"><?php echo($lang_global["tam_metin_yazim_kurallari"][$pref_lang]); ?></a>
           </li>-->
 
@@ -259,7 +264,10 @@ if (!$is_secure) {
                     <li class="dropdown_item-4">
                         <a href="past-symposiums.php"><?php echo($lang_global["gecmis_sempozyumlar"][$pref_lang]); ?></a>
                     </li>
-                    <!--<li class="dropdown_item-5"><a
+                    <li class="dropdown_item-5">
+                        <a href="organization-chart.php"><?php echo($lang_global["organizasyon_semasi"][$pref_lang]); ?></a>
+                    </li>
+                    <!--<li class="dropdown_item-6"><a
                         href="paper-guidelines.php"><?php echo($lang_global["tam_metin_yazim_kurallari"][$pref_lang]); ?></a>
             </li>-->
 
