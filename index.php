@@ -238,16 +238,7 @@ require_once "langs/lang_index.php";
                 -->
 
                 <div class="mdl-grid" style="justify-content: center">
-                    <!--
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
-                        <a href="biographies.php#ruhi">
-                            <div class="mdl-card mdl-shadow--2dp person-card"
-                                 style="background-image: url('img/people/ruhi.png')">
-                                <div class="mdl-card__actions">Ruhi Ayangil</div>
-                            </div>
-                        </a>
-                    </div>
-                    -->
+
                     <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
                         <a href="biographies.php#allen">
                             <div class="mdl-card mdl-shadow--2dp person-card"
@@ -256,6 +247,23 @@ require_once "langs/lang_index.php";
                             </div>
                         </a>
                     </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
+                        <a href="biographies.php#oksana">
+                            <div class="mdl-card mdl-shadow--2dp person-card"
+                                 style="background-image: url('img/people/oksana.jpg')">
+                                <div class="mdl-card__actions">Oksana Dobzhanskaya</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
+                        <a href="biographies.php#thiago">
+                            <div class="mdl-card mdl-shadow--2dp person-card"
+                                 style="background-image: url('img/people/thiago.jpg')">
+                                <div class="mdl-card__actions">Thiago Cury</div>
+                            </div>
+                        </a>
+                    </div>
+
                 </div>
             </section>
 

@@ -18,55 +18,55 @@ require_once "langs/lang_biographies.php";
 
 <head>
     <?php require_once("modules/header_includes.php"); ?>
-  <style type="text/css">
-      .img-full {
-          float: left;
-          width: 25%;
-          margin-right: 16px;
-      }
+    <style type="text/css">
+        .img-full {
+            float: left;
+            width: 25%;
+            margin-right: 16px;
+        }
 
-      .pad-5-per {
-          padding: 0 5%;
-          text-align: justify;
-          margin-left: auto;
-          margin-right: auto;
-          max-width: 3000px;
-      }
+        .pad-5-per {
+            padding: 0 5%;
+            text-align: justify;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 3000px;
+        }
 
-      h3.sec-h3 {
-          margin-bottom: 18px;
-      }
+        h3.sec-h3 {
+            margin-bottom: 18px;
+        }
 
-      .grey-bg {
-          background-color: #f2f4f7;
-      }
+        .grey-bg {
+            background-color: #f2f4f7;
+        }
 
-      .clear-float {
-          clear: both;
-      }
+        .clear-float {
+            clear: both;
+        }
 
-      @media screen and (max-width: 550px) {
-          .img-full {
-              width: 100%;
-          }
+        @media screen and (max-width: 550px) {
+            .img-full {
+                width: 100%;
+            }
 
-      }
-  </style>
+        }
+    </style>
 </head>
 
 <body>
 <div class="mdl-layout">
-  <!-- Navigation -->
+    <!-- Navigation -->
     <?php require_once("modules/navigation.php"); ?>
-  <!--Eof Navigation -->
+    <!--Eof Navigation -->
 
-  <div class="mdl-layout__content" style="display: flex; flex-direction: column">
-    <div style="flex-grow: 1">
-      <!-- Banner -->
-        <?php require_once("modules/banner.php"); ?>
+    <div class="mdl-layout__content" style="display: flex; flex-direction: column">
+        <div style="flex-grow: 1">
+            <!-- Banner -->
+            <?php require_once("modules/banner.php"); ?>
 
-      <!-- Icerik -->
-        <!--<section class="pad-tb-24" id="nadja">
+            <!-- Icerik -->
+            <!--<section class="pad-tb-24" id="nadja">
         <div class="pad-5-per">
           <img src="img/people/nadja.png" class="img-full">
           <h3 class="sec-h3">Nadja Wallaszkovits</h3>
@@ -92,25 +92,6 @@ require_once "langs/lang_biographies.php";
         </div>
         <div class="clear-float"></div>
       </section>
-
-      <section class="pad-tb-24 grey-bg" id="turan">
-        <div class="pad-5-per">
-          <img src="img/people/turan.png" class="img-full">
-          <h3 class="sec-h3">Turan Sağer</h3>
-            <?php echo($lang_biographies["Sager_Bio"][$pref_lang]); ?>
-        </div>
-        <div class="clear-float"></div>
-      </section>
-
-      <section class="pad-tb-24" id="ruhi">
-        <div class="pad-5-per">
-          <img src="img/people/ruhi.png" class="img-full">
-          <h3 class="sec-h3">Ruhi Ayangil</h3>
-            <?php echo($lang_biographies["Ruhi_Ayangil_Bio"][$pref_lang]); ?>
-        </div>
-        <div class="clear-float"></div>
-      </section>
-
       <section class="pad-tb-24 grey-bg" id="melik">
         <div class="pad-5-per">
           <img src="img/people/melik.png" class="img-full">
@@ -119,36 +100,51 @@ require_once "langs/lang_biographies.php";
         </div>
         <div class="clear-float"></div>
       </section> -->
-
-      <section class="pad-tb-24" id="allen">
-        <div class="pad-5-per">
-          <img src="img/people/allen.jpg" class="img-full">
-          <h3 class="sec-h3">Aaron S. Allen</h3>
-            <?php echo($lang_biographies["Aaron_Allen_Bio"][$pref_lang]); ?>
+            <section class="pad-tb-24" id="allen">
+                <div class="pad-5-per">
+                    <img src="img/people/allen.jpg" class="img-full">
+                    <h3 class="sec-h3">Aaron S. Allen</h3>
+                    <?php echo($lang_biographies["Aaron_Allen_Bio"][$pref_lang]); ?>
+                </div>
+                <div class="clear-float"></div>
+            </section>
+            <section class="pad-tb-24 grey-bg" id="oksana">
+                <div class="pad-5-per">
+                    <img src="img/people/oksana.jpg" class="img-full">
+                    <h3 class="sec-h3">Oksana Dobzhanskaya</h3>
+                    <?php echo($lang_biographies["Oksana_Bio"][$pref_lang]); ?>
+                </div>
+                <div class="clear-float"></div>
+            </section>
+            <section class="pad-tb-24" id="thiago">
+                <div class="pad-5-per">
+                    <img src="img/people/thiago.jpg" class="img-full">
+                    <h3 class="sec-h3">Thiago Cury</h3>
+                    <?php echo($lang_biographies["Thiago_Bio"][$pref_lang]); ?>
+                </div>
+                <div class="clear-float"></div>
+            </section>
+            <section class="pad-tb-24 grey-bg" id="lilian">
+                <div class="pad-5-per">
+                    <img src="img/people/lilian.jpg" class="img-full">
+                    <h3 class="sec-h3">Lilian Maria Tonella Tüzün</h3>
+                    <?php echo($lang_biographies["Lilian_Bio"][$pref_lang]); ?>
+                </div>
+                <div class="clear-float"></div>
+            </section>
+            <!-- Eof Icerik -->
         </div>
-        <div class="clear-float"></div>
-      </section>
-
-      <section class="pad-tb-24 grey-bg" id="lilian">
-        <div class="pad-5-per">
-          <img src="img/people/lilian.jpg" class="img-full">
-          <h3 class="sec-h3">Lilian Maria Tonella Tüzün</h3>
-            <?php echo($lang_biographies["Lilian_Bio"][$pref_lang]); ?>
-        </div>
-        <div class="clear-float"></div>
-      </section>
-      <!-- Eof Icerik -->
+        <!-- Footer -->
+        <?php require_once("modules/footer.php"); ?>
     </div>
-    <!-- Footer -->
-      <?php require_once("modules/footer.php"); ?>
-  </div>
+</div>
 
-  <script src="js/material.js"></script>
-  <script>
-      (function () {
-          // auto run
-      })();
-  </script>
+<script src="js/material.js"></script>
+<script>
+    (function () {
+        // auto run
+    })();
+</script>
 </body>
 
 </html>
