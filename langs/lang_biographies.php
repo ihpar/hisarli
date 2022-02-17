@@ -49,199 +49,136 @@ $lang_biographies = [
                 "
     ],
 
-    "John_Rink_Bio" => [
+    "Marisa_Bio" => [
 
         "en" => "
-            <p>John Rink is Professor of Musical Performance Studies at the University of Cambridge,
-            Fellow and Director of Studies in Music at St John’s College, and Director of the Cambridge Centre for
-            Musical Performance Studies.
-            <p>He specialises in Chopin studies, performance studies, music analysis,
-            and digital musicology.</p> 
-            <p>His books include The Practice of Performance (1995), Chopin: The Piano Concertos
-            (1997), Musical Performance (2002) and Annotated Catalogue of Chopin’s First Editions
-            (with Christophe Grabowski; 2010); the last of these received the C. B. Oldman Prize in 2011
-            and the Vincent H. Duckles Award in 2012.</p>
-            <p>John Rink is General Editor of a series of books on musical
-            performance which Oxford University Press published in 2017–18. He is also
-            Editor in Chief of The Complete Chopin – A New Critical Edition (Edition Peters),
-            in addition to directing the Online Chopin Variorum Edition and Chopin’s First Editions Online
-            (www.chopinonline.ac.uk).</p>
-            <p>He also directed the AHRC Research Centre for Musical Performance as Creative
-            Practice (CMPCP; www.cmpcp.ac.uk) from 2009 to 2015. He holds three visiting professorships and serves
-            on numerous advisory boards. He performs regularly as a pianist and lecture-recitalist, with a specialist
-            interest in Pleyel pianos. He served on the jury of the 17th International
-            Fryderyk Chopin Piano Competition in 2015, and will again be on the jury for the 18th
-            Chopin Competition in 2021.</p>",
+            <p>Professor at The State University of São Paulo (UNESP) specialised on Techniques of Music Education,
+            Doctor in Anthropology and master’s in psychology of Education, has Undergraduate Studies in Music. 
+            Professor of the Graduate Program of Music in the same University. She was Dean of the Institute of Arts,
+            Coordinator of the Choral of Unesp, Director of the Municipal School of Music in São Paulo, Creator of the Municipal School of
+            Artistic Initiation – EMIA - and of the Technical School of Arts – ETEC de Artes -  of the State of São Paulo.
+            Author of several books on Music Education and Acoustic Ecology. Translator of five of Murray Schafer´s books,
+            she was distinguished with The General Governor Award by the Canadian Embassy in Brazil in 1996, by the diffusion
+            for Murray Schafer´s name and the translation of some of his books to Portuguese. Honored member of FLADEM – Forum Latino-americano de
+            Educação Musical, member of the Brazilian Society of Music Education – ABEM - and of The Wolf Project in Canada.
+            During eight years participated of the Project “Caminhos Sonoros” (Sound Paths) in Mairiporã, São Paulo, with children
+            of the public schools of that city.  Leader of G-PEM, the Research Group in Music Education in the IA/Unesp. </p>
+            <p>For more details about Marisa Fonterrada please click <a href=https://unesp.br/portaldocentes/docentes/196612>HERE.</a></p>",
         "tr" => "
-            <p>John Rink is Professor of Musical Performance Studies at the University of Cambridge,
-            Fellow and Director of Studies in Music at St John’s College, and Director of the Cambridge Centre for
-            Musical Performance Studies.
-            <p>He specialises in Chopin studies, performance studies, music analysis,
-            and digital musicology.</p> 
-            <p>His books include The Practice of Performance (1995), Chopin: The Piano Concertos
-            (1997), Musical Performance (2002) and Annotated Catalogue of Chopin’s First Editions
-            (with Christophe Grabowski; 2010); the last of these received the C. B. Oldman Prize in 2011
-            and the Vincent H. Duckles Award in 2012.</p>
-            <p>John Rink is General Editor of a series of books on musical
-            performance which Oxford University Press published in 2017–18. He is also
-            Editor in Chief of The Complete Chopin – A New Critical Edition (Edition Peters),
-            in addition to directing the Online Chopin Variorum Edition and Chopin’s First Editions Online
-            (www.chopinonline.ac.uk).</p>
-            <p>He also directed the AHRC Research Centre for Musical Performance as Creative
-            Practice (CMPCP; www.cmpcp.ac.uk) from 2009 to 2015. He holds three visiting professorships and serves
-            on numerous advisory boards. He performs regularly as a pianist and lecture-recitalist, with a specialist
-            interest in Pleyel pianos. He served on the jury of the 17th International
-            Fryderyk Chopin Piano Competition in 2015, and will again be on the jury for the 18th
-            Chopin Competition in 2021.</p>
+            <p>São Paulo Devlet Üniversitesi Sanat Enstitüsü’nden emekli Prof. Marisa Fonterrada, eğitim psikolojisinde uzman ve antropolojide doktor unvanlarına sahiptir.
+            Sanat Enstitüsü’nde dekanlık, üniversite korosunda koordinatörlük, São Paulo Belediye Müzik Okulu’nda müdürlük yapan Fonterrada,
+            São Paulo Belediye Sanat Girişimi Okulu ve Teknik Sanat Okulu kurucuları arasındadır.</p>
+            <p>Müzik eğitimi ve akustik ekoloji üzerine kitapları vardır. Murray Schafer'in beş kitabının çevirmeni olarak 1996'da Brezilya'daki Kanada Büyükelçiliği tarafından
+            Murray Schafer'in adının yayılması ve bazı kitaplarının Portekizce'ye çevrilmesine katkılarından dolayı Genel Vali Ödülü'ne layık görülmüştür.
+            Forum Latino-Americano de Educação Musical onur üyesi, Brezilya Müzik Eğitimi Derneği ve Kanada The Wolf Project üyesidir.
+            Sekiz yıl boyunca São Paulo Mairiporã'daki “Caminhos Sonoros” (Ses Yolları) projesine, şehrin devlet okullarında okuyan çocuklar ile katılmıştır.
+            Halen, São Paulo Devlet Üniversitesi Müzik Eğitimi Araştırma Grubu’nun yöneticisidir.</p>
+            <p>Marisa Fonterrada hakkında daha fazla bilgi için <a href=https://unesp.br/portaldocentes/docentes/196612>TIKLAYINIZ.</a></p>
         "
     ],
 
-    "Sager_Bio" => [
+    "Thiago_Bio" => [
 
         "en" => "
-            <p>P1972 yılında Kahramanmaraş’ta doğdu. 1994 yılında İnönü Üniversitesi Eğitim Fakültesi Güzel Sanatlar
-            Eğitimi Müzik Öğretmenliği Bölümü’nden mezun oldu. 1998 yılında Gazi Üniversitesi Fen Bilimleri
-            Enstitüsü’nde Yüksek Lisans eğitimini, 2002 yılında Gazi Üniversitesi Eğitim Bilimleri Enstitüsü’nde
-            Doktora eğitimini tamamladı.</p> 
-            <p>1994-2002 yılları arasında İnönü Üniversitesi Eğitim Fakültesi’nde
-            Araştırma Görevlisi, 2002-2005 yılları arasında Yardımcı Doçent, 2005-2010 yılları arasında Doçent
-            olarak görev yaptı ve 2010 yılında Profesör ünvanını almaya hak kazandı.</p> 
-            <p>2002– 2014 yılları arasında
-            İnönü Üniversitesi, Gazi Üniersitesi ve Kırıkkale Üniversitesi’nde dersler verdi. 2011 yılında
-            Tennesse State University Faculty of Liberal Arts Department of Music’de YÖK bursu ile misafir
-            akademisyen olarak araştırmalar yaptı. 2010-2014 yılları arasında İnönü Üniversitesi Güzel Sanatlar
-            ve Tasarım Fakültesi Dekanı olarak görev yaptı. 2010-2012 yılları arasında Yüksek Öğretim Kurulu’nda
-            ÜAK Doçentlik Sınav Komisyon Üyeliği, Doçentlik Alt Komisyon Üyeliği yapan Turan Sağer,
-            akademik hayatı boyunca TÜBİTAK, Kalkınma Bakanlığı ve Bilimsel Araştırma Projeleri kapsamında
-            25 projenin yürütücüsü olarak ve diğer görevlerde yer aldı.</p>
-            <p>İdari görevlerinin yanında sanatçı kimliği ile icracı, orkestra şefi ve aranjör olarak ulusal ve
-            uluslararası bir çok konserde yer alan Turan Sağer’in, 7 kitabı ve 2 kitap bölümü, ulusal ve
-            uluslararası hakemli dergilerde yayımlanan 40 makalesi ve 46 bildirisi bulunmaktadır.
-            2016 ve 2017 yıllarında Yıldız Teknik Üniversitesi tarafından uluslararası yayın ve akademik
-            teşvik ödülüne layık görüldü. Halen, YÖK Kalite Kurulu Dış Değerlendirici, Eğitim Fakülteleri
-            Lisans Ders Programları Komisyon Üyesi, Müzik Öğretmenliği Lisansüstü Program Hazırlama Komisyon Üyesi,
-            Ankara Müzik ve Güzel Sanatlar Üniversitesi Kurucu Rektör Yrd., Yıldız Teknik Üniversitesi Protokol ve
-            İletişimden Sorumlu Rektör Danışmanı, Yıldız Teknik Üniversitesi Sanat ve Tasarım Fakültesi Dekanı ve
-            ÜAK Sanat Dalları Eğitim Konseyi Başkanı olarak görev yapmaktadır.</p>
-
+            <p>Thiago Cury is at home in a multitude of sectors, from live performance and education to audio recording and publishing.
+            The Brazilian graduated composer (University of São Paulo), arts manager and music producer has been developing sound
+            creations for cinema, theater, opera, dance, performance, and art exhibitions where he had collaborated with
+            José Mojica Marins (Coffin Joe), Antonio Araújo - Teatro da Vertigem, Jorge Bodansky, Phillipe Barcinsky,
+            Carlos Nader, Evaldo Mocarzel, Luiz Fernando Bongiovanni, Marie Ange Bordas, amongst others. In 2006 he founded ÁguaForte,
+            a record label and publishing company focused on new and exploratory music,
+            where he develops special projects, promoting concerts, recordings, and published scores.
+            Since 2009 Cury had been attending festivals, conferences, and music markets worldwide such as Womex,
+            Classical:NEXT, ISPA, JazzAhead, FIM-Pro, Circulart, Bafim, Focus Musique Contemporaine,
+            Porto Musical, SIM São Paulo, amongst others. In 2009 he’s worked as a music consultant for the Brazilian Ministry of Culture,
+            and in 2010 he was appointed as director of the Music Center of Funarte, the Brazilian National Foundation for the Arts.
+            In 2013 Cury had created Festival Música Estranha (Strange Music Festival), in São Paulo, now on its tenth edition.
+            The festival works with a post-genre curatorial approach and aims to build connections with related reference
+            alternative-classical and exploratory new music scenes Festivals and events in Brazil, Latin America, and around the globe.</p>
+            <p>Thiago is a member of Abrafin (Brazilian Association of independent Festivals) ISCM (International Society for Contemporary Music)
+            and Laras (Latin Academy of Recording Arts & Sciences).</p>
                 ",
         "tr" => "
-            <p>1972 yılında Kahramanmaraş’ta doğdu. 1994 yılında İnönü Üniversitesi Eğitim Fakültesi Güzel Sanatlar
-            Eğitimi Müzik Öğretmenliği Bölümü’nden mezun oldu. 1998 yılında Gazi Üniversitesi Fen Bilimleri
-            Enstitüsü’nde Yüksek Lisans eğitimini, 2002 yılında Gazi Üniversitesi Eğitim Bilimleri Enstitüsü’nde
-            Doktora eğitimini tamamladı.</p> 
-            <p>1994-2002 yılları arasında İnönü Üniversitesi Eğitim Fakültesi’nde
-            Araştırma Görevlisi, 2002-2005 yılları arasında Yardımcı Doçent, 2005-2010 yılları arasında Doçent
-            olarak görev yaptı ve 2010 yılında Profesör ünvanını almaya hak kazandı.</p> 
-            <p>2002– 2014 yılları arasında
-            İnönü Üniversitesi, Gazi Üniersitesi ve Kırıkkale Üniversitesi’nde dersler verdi. 2011 yılında
-            Tennesse State University Faculty of Liberal Arts Department of Music’de YÖK bursu ile misafir
-            akademisyen olarak araştırmalar yaptı. 2010-2014 yılları arasında İnönü Üniversitesi Güzel Sanatlar
-            ve Tasarım Fakültesi Dekanı olarak görev yaptı. 2010-2012 yılları arasında Yüksek Öğretim Kurulu’nda
-            ÜAK Doçentlik Sınav Komisyon Üyeliği, Doçentlik Alt Komisyon Üyeliği yapan Turan Sağer,
-            akademik hayatı boyunca TÜBİTAK, Kalkınma Bakanlığı ve Bilimsel Araştırma Projeleri kapsamında
-            25 projenin yürütücüsü olarak ve diğer görevlerde yer aldı.</p>
-            <p>İdari görevlerinin yanında sanatçı kimliği ile icracı, orkestra şefi ve aranjör olarak ulusal ve
-            uluslararası bir çok konserde yer alan Turan Sağer’in, 7 kitabı ve 2 kitap bölümü, ulusal ve
-            uluslararası hakemli dergilerde yayımlanan 40 makalesi ve 46 bildirisi bulunmaktadır.
-            2016 ve 2017 yıllarında Yıldız Teknik Üniversitesi tarafından uluslararası yayın ve akademik
-            teşvik ödülüne layık görüldü. Halen, YÖK Kalite Kurulu Dış Değerlendirici, Eğitim Fakülteleri
-            Lisans Ders Programları Komisyon Üyesi, Müzik Öğretmenliği Lisansüstü Program Hazırlama Komisyon Üyesi,
-            Ankara Müzik ve Güzel Sanatlar Üniversitesi Kurucu Rektör Yrd., Yıldız Teknik Üniversitesi Protokol ve
-            İletişimden Sorumlu Rektör Danışmanı, Yıldız Teknik Üniversitesi Sanat ve Tasarım Fakültesi Dekanı ve
-            ÜAK Sanat Dalları Eğitim Konseyi Başkanı olarak görev yapmaktadır.</p>
+            <p>Bestecilik, sanat yönetmenliği ve müzik prodüktörlüğü alanlarında Sao Paulo Üniversitesi'nden mezun Brezilyalı sanatçı Thiago Cury,
+            yayıncılıktan canlı performansa ses kayıtlarından eğitime kadar çok çeşitli alanlarda çalışmaktadır.
+            Ses tasarımlarıyla katıldığı sinema, tiyatro, opera, dans, canlı performans, sergi gibi etkinliklerde José Mojica Marins (Coffin Joe),
+            Antonio Araújo - Teatro da Vertigem, Jorge Bodansky, Phillipe Barcinsky, Carlos Nader, Evaldo Mocarzel, Luiz Fernando Bongiovanni,
+            Marie Ange Bordas gibi çok sayıda sanatçıyla ortak çalışmalar yapmıştır. 2006’da kurduğu plak şirketi AquaForte ile çağdaş müzik içerikli çok sayıda konser kaydı ve özel projeler yayınlamıştır.
+            2009 yılından bu yana aralarında Womex, Classical:NEXT, ISPA, JazzAhead, FIM-Pro, Circulart, Bafim, Focus Musique Contemporaine,
+            Porto Musical, SIM São Paulo gibi önemli festival ve konferansların olduğu çok sayıda etkinliğe katılmıştır.
+            2009 yılında Brezilya Kültür Bakanlığı'na müzik danışmanı, 2010 yılında Brezilya Ulusal Sanat Vakfı Funarte Müzik Merkezi'ne müdür olarak atanmıştır.
+            Bu yıl 10.su düzenlenecek olan Strange Music Festival'inin kurucusu olan Thiago, Abrafin (Brazilian Association of Independent
+            Festivals), ISCM (International Society for Contemporary Music) ve Laras (Latin Academy of Recording Arts & Sciences) organizasyon
+            ve kuruluşların üyesidir.</p>
+            
         "
     ],
 
-    "Ruhi_Ayangil_Bio" => [
+    "Oksana_Bio" => [
 
         "en" => "
-            <p>1953 Yılında doğdu. Geleneksel sanat müziğimizin önde gelen bir kanun virtüözü, koro yönetmeni ve
-            eğitimcisi olan Ayangil, Boğaziçi Üniversitesi’nde müzik teorisi dersleri vermiş,
-            1973-81 yılları arasında bu üniversitenin korosunu yönetmiştir.
-            1976-86 yıllarında İTÜ Türk Müziği Devlet Konservatuvarı’nda kanun öğretmenliği yapan sanatçımız,
-            1985 yılında İstanbul Üniversitesi Devlet Konservatuvar’ında Türk müziği icra heyeti üyesi olarak
-            görev almıştır. Ferid Alnar’ın “Kanun Konçertosu”nu besteciden sonra ilk kez Ayangil seslendirmiştir
-            (1980).  Sanatçı, kendi adını taşıyan Türk Müziği Orkestra ve Korosunu kurmuş, bu toplulukla İstanbul
-            Müzik Festivali’nde konserler vermiştir. Yurt dışında resitaller veren, SSCB, Hollanda ve Polonya’da
-            geleneksel müzik konserleri yöneten Ruhi Ayangil, hazırladığı radyo ve TV programlarında geleneksel
-            sanat müziğimizin düzeyli örneklerini sunmuştur.</p>
-            <p>İstanbul Üniversitesi Hukuk Fakültesi mezunu olan Ayangil; fakülte yıllarında İstanbul Belediye
-            Konservatuvarı’nda İhsan Balkır’dan şan, Duygu Ünal’dan solfej, Uğur Ünel’den armoni dersleri aldı.
-            Cemal Reşit Rey ile özel olarak piyano, armoni ve kompozisyon çalıştı. İstanbul, İzmir,
-            Çukurova Devlet Senfoni Orkestralarını, Anadolu Oda Orkestrası, Oradea Filarmoni, Boğaziçi Üniversitesi
-            Korosu, Ayangil Türk Müziği Orkestra ve Korosunu yönetti. Fehim Paşa Konağı oyun müziği, Yorgun Savaşçı
-            film müziğini besteledi.  Ferid Alnar kanun konçertosu, Yalçın Tura Şarkıları, Şeyh Galip’e Saygı Kantatı,
-            gibi sesli kayıtları vardır. Türkiye Yazarlar Birliği 1988 yılın sanatçısı, Hürriyet Jaycees
-            kültürel başarı Türkiye birinciliği ile ödüllendirilmiştir.</p>
+            <p>Doctor of Art History (2008). Associate Professor at the Department of Cultural Studies and Art (2010).
+            Since 2013, she has been working at the Arctic State Institute of Culture and Arts as a Professor of the Department of Art History.</p>
+            <p>Education:</p>
+            <p>1986-1991 - Novosibirsk State Conservatory named after M.I. Glinka (Faculty of Theory and Composition)</p>
+            <p>1991-1995 - postgraduate study at Novosibirsk State Conservatory (awarded the qualification 'musicologist, researcher').</p>
+            <p>1997 - dissertation ‘The Shamanic rite of Nganasan: the experience of ethnomusicological research’ for the degree of Candidate of Art History (Dissertation Council of the Novosibirsk State Conservatory).</p>
+            <p>2008 - dissertation ‘Shamanic music of the Samoyed peoples in the syncretic unity of the rite’ for the degree of Doctor of Art History (Dissertation Council of the Tchaikovsky Moscow State Conservatory).</p>
+            <p>The author of 3 scientific monographs, more than 200 scientific papers.</p> 
+            <p>Full member of the Finno-Ugric Society (Helsinki), expert of the Krasnoyarsk Regional Fund for the Support of Scientific and Scientific-Technical Activities.
+            Member of the editorial boards of peer-reviewed journals: scientific almanac ‘Traditional Culture’, journal ‘Bulletin of the Arctic State Institute of Culture and Arts’,
+            online journal ‘Musical Art of Eurasia: Traditions and modernity’. </p>
+            <p>Member of the Expert Council on the Formation of registers of Intangible Cultural Heritage objects of the Russian Committee for the Preservation of Intangible Cultural 
+            Heritage under the Commission of the Russian Federation for UNESCO.</p> 
+            <p>Member of the Russian Geographical Society.</p>
+            <p>For more details about Oksana Dobzhanskaya please click <a href=https://oksanadobzhanskaya.academia.edu/contact>HERE.</a></p>
                 ",
         "tr" => "
-            <p>1953 Yılında doğdu. Geleneksel sanat müziğimizin önde gelen bir kanun virtüözü, koro yönetmeni ve
-            eğitimcisi olan Ayangil, Boğaziçi Üniversitesi’nde müzik teorisi dersleri vermiş,
-            1973-81 yılları arasında bu üniversitenin korosunu yönetmiştir.
-            1976-86 yıllarında İTÜ Türk Müziği Devlet Konservatuvarı’nda kanun öğretmenliği yapan sanatçımız,
-            1985 yılında İstanbul Üniversitesi Devlet Konservatuvar’ında Türk müziği icra heyeti üyesi olarak
-            görev almıştır. Ferid Alnar’ın “Kanun Konçertosu”nu besteciden sonra ilk kez Ayangil seslendirmiştir
-            (1980).  Sanatçı, kendi adını taşıyan Türk Müziği Orkestra ve Korosunu kurmuş, bu toplulukla İstanbul
-            Müzik Festivali’nde konserler vermiştir. Yurt dışında resitaller veren, SSCB, Hollanda ve Polonya’da
-            geleneksel müzik konserleri yöneten Ruhi Ayangil, hazırladığı radyo ve TV programlarında geleneksel
-            sanat müziğimizin düzeyli örneklerini sunmuştur.</p>
-            <p>İstanbul Üniversitesi Hukuk Fakültesi mezunu olan Ayangil; fakülte yıllarında İstanbul Belediye
-            Konservatuvarı’nda İhsan Balkır’dan şan, Duygu Ünal’dan solfej, Uğur Ünel’den armoni dersleri aldı.
-            Cemal Reşit Rey ile özel olarak piyano, armoni ve kompozisyon çalıştı. İstanbul, İzmir,
-            Çukurova Devlet Senfoni Orkestralarını, Anadolu Oda Orkestrası, Oradea Filarmoni, Boğaziçi Üniversitesi
-            Korosu, Ayangil Türk Müziği Orkestra ve Korosunu yönetti. Fehim Paşa Konağı oyun müziği, Yorgun Savaşçı
-            film müziğini besteledi.  Ferid Alnar kanun konçertosu, Yalçın Tura Şarkıları, Şeyh Galip’e Saygı Kantatı,
-            gibi sesli kayıtları vardır. Türkiye Yazarlar Birliği 1988 yılın sanatçısı, Hürriyet Jaycees
-            kültürel başarı Türkiye birinciliği ile ödüllendirilmiştir.</p>
+            <p>1991 yılında Novosibirsk Devlet Konservatuvarı’nda (sonraki adıyla M.I Glinka Üniversitesi-Teori ve Kompozisyon Fakültesi) lisans eğitimini tamamlayan Dobzhanskaya,
+            aynı yıl aynı kurumda müzikoloji alanında lisansüstü eğitimine başladı. 1997’de ‘Nganasan Şaman Ayini’ adıyla yüksek lisans tezini,
+            2008’de ‘Ayinin Birleştirici Etkisiyle Samoyed Halkının Şaman Müziği’ adıyla doktora tezini tamamladı.</p>
+            <p>Sanat tarihinde doktor (2008), kültür çalışmaları ve sanat alanında doçent (2010) unvanlarına sahip Dobzhanskaya,
+            2013’den bu yana Rusya-Yakutistan Arktik Devlet Kültür ve Sanat Enstitüsü’nde profesör olarak çalışmaktadır.
+            <p>3 tanesi spesifik konu olmak üzere 200 üzerinde bilimsel makalesi vardır.</p>
+            <p>Helsinki Fin-Ugor Derneği ile bilimsel ve teknik araştırmaları desteklemek amacıyla Sibirya Federal Üniversitesi’nde kurulan Krasnoryarsk Bölgesel Fonu’nun üyesidir.
+            <p>‘Traditional Culture’, ‘Bulletin of the Arctic State Institute of Culture and Arts’ ve ‘Musical Art of Eurasia: Traditions and Modernity’ adlı uluslararası hakemli dergi ve
+            yıllıkların editörleri arasındadır.</p>
+            <p>Dobzhanskaya aynı zamanda UNESCO’nun Rusya Federasyonu Komisyonuna bağlı Rusya Somut Olmayan Kültürel Mirasın Korunması Komitesi'nin,
+            somut olmayan kültürel miras niteliğindeki nesnelerinin kayıtlarının tutulmasına ilişkin uzman konseyi ile Russian Geographical Derneği üyesidir.</p>
+            <p>Oksana Dobzhanskaya hakkında daha fazla bilgi için <a href=https://oksanadobzhanskaya.academia.edu>TIKLAYINIZ.</a></p>
         "
     ],
 
-    "Melik_Ertugrul_Bayraktarkatal_Bio" => [
+    "Cohen_Bio" => [
 
         "en" => "
-            <p>He started the Music Department of Gazi Education Institute in 1971.
-            He received piano education from Nurhan Büyükgönenç, harmony education from Prof. Eduard Zuckmayer and
-            Prof. Turgut Aldemir and form knowledge education from Nurhan Cangal.</p>
-            <p>He taught music from 1974, when he graduated from school, until 1977. In 1974-1976,
-            the artists studied composition with Prof. Muammer Sun between 1974-1976, piano with Ferhunde Erkin
-            in 1975-1976 and Turkish music sound systems, maqams, forms, harmony and composition with Kemal İlerici
-            between 1975-1979. In addition, he studied contemporary music with Prof. Turgut Aldemir and orchestra
-            conductorship with Orhan Tanrıkulu.</p>
-            <p>He passed the exam in 1978 and was appointed to Gazi Education Institute Music Department as an
-            assistant for harmony and counterpoint. Later, in 1986, he was appointed to Hacettepe University
-            State Conservatory as a performer lecturer in the Department of Composition and Conducting.
-            The artist received “Proficiency in Art” degree in 1991 and became an associate professor in 1996.
-            The composer, who served as the head of the “Ethnomusicology and Folklore Department” in
-            the same institution, has written works for orchestra, chamber music groups, singing,
-            and various solo instruments. “Six Anatolian Pieces”, written for guitar, has entered the repertoire
-            of many guitarists from different countries. The composer, who has many publications, has articles
-            published internationally. He is the editor of “and Music” magazine. Bayraktarkatal, who received
-            Professor’s degree at the Music Education Department of Ondokuz Mayıs University and is currently
-            the Director of the Başkent University State Conservatory and the Head of the Music Department;
-            teaches Harmony, Modal and Maqamal Harmony, Jazz Music and Harmony, Form Knowledge.</p>
+            <p>Andrea Cohen is a pianist, a composer and a radio artist. Born in Argentina, she lives and works in Paris.
+            She is the author and performer of several musical theatre works in which musical and theatrical elements are integrated into a personal,
+            mixed language. </p>
+            <p>As radio producer, she has been collaborating with Radio France (France Culture and France Musique) since 1985.
+            Andrea Cohen has written the book “ Les compositeurs et l’art radiophonique” (Composers and radio art),
+            co-edition INA-L’Harmattan, 2015 and an educational  book  : “Manuel de pédagogie musicale: Art sonore,
+            Musique mixte et théâtre musical” edition Minerve, 2019.</p>
+            <p>Since 1990 she has given  workshops for actors, musicians and teachers with a particular approach to  contemporary music.
+            She taught “Radio Art” in France  (Universite de Marne-Ia-Vallee)  and in UK ( De Montfort University, Leicester)
+            and conducted several workshops in Europe and in Latin America.</p>
+            <p>Between 2000 and 2015, she created and developed   with Wiska Radkiewicz,  the  SOUNDSON  project,
+            a  program of musical education based of  sound exchange, using  digital technology and the  Internet. </p>
+            <p>In 2020 she was invited by the University of Campiñas for an artistic Residence in the frame of the program Idea, Hilda Hilst.</p>
+            <p>For more details about Andrea Cohen please click <a href=https://andreacohen.eu>HERE.</a></p>
                 ",
         "tr" => "
-            <p>He started the Music Department of Gazi Education Institute in 1971.
-            He received piano education from Nurhan Büyükgönenç, harmony education from Prof. Eduard Zuckmayer and
-            Prof. Turgut Aldemir and form knowledge education from Nurhan Cangal.</p>
-            <p>He taught music from 1974, when he graduated from school, until 1977. In 1974-1976,
-            the artists studied composition with Prof. Muammer Sun between 1974-1976, piano with Ferhunde Erkin
-            in 1975-1976 and Turkish music sound systems, maqams, forms, harmony and composition with Kemal İlerici
-            between 1975-1979. In addition, he studied contemporary music with Prof. Turgut Aldemir and orchestra
-            conductorship with Orhan Tanrıkulu.</p>
-            <p>He passed the exam in 1978 and was appointed to Gazi Education Institute Music Department as an
-            assistant for harmony and counterpoint. Later, in 1986, he was appointed to Hacettepe University
-            State Conservatory as a performer lecturer in the Department of Composition and Conducting.
-            The artist received “Proficiency in Art” degree in 1991 and became an associate professor in 1996.
-            The composer, who served as the head of the “Ethnomusicology and Folklore Department” in
-            the same institution, has written works for orchestra, chamber music groups, singing,
-            and various solo instruments. “Six Anatolian Pieces”, written for guitar, has entered the repertoire
-            of many guitarists from different countries. The composer, who has many publications, has articles
-            published internationally. He is the editor of “and Music” magazine. Bayraktarkatal, who received
-            Professor’s degree at the Music Education Department of Ondokuz Mayıs University and is currently
-            the Director of the Başkent University State Conservatory and the Head of the Music Department;
-            teaches Harmony, Modal and Maqamal Harmony, Jazz Music and Harmony, Form Knowledge.</p>
+            <p>Piyanist, besteci ve radyo sanatçısı Andrea Cohen, Arjantin'de doğdu. Şu anda Paris'te yaşayan ve çalışmalarını burada yürüten Cohen,
+            müzikal ve tiyatral unsurların kişisel ve karma bir dille bütünleştiği birçok müzikal tiyatro eserinin yazarı ve icracısıdır.</p>
+            <p>Radyo yapımcısı olarak 1985'ten beri Radio France (Fransa Culture ve France Musique) ile iş birliği yapmaktadır.
+            2015’de “Les Composurs et l'art Radiophonique (Besteciler ve Radyo Sanatı)” ve 2019 yılında bir eğitim kitabı olan “Manuel de pédagogiemusicale:
+            Art Sonore, Musique Mixte et Théâtre Muzikal” yayınlarının yazarı/editörüdür. </p>
+            <p>1990'dan bu yana çağdaş müzikte özel bir yaklaşım kullanarak aktörler, müzisyenler ve eğiticiler için atölye çalışmaları yapmaktadır.
+            Fransa'da (Universite de Marne-Ia-Vallee) ve Birleşik Krallık'ta (De Montfort Üniversitesi, Leicester) “Radyo Sanatı” dersleri vermiştir ve Avrupa ve
+            Latin Amerika'da çeşitli atölye çalışmalarını yürütmektedir.</p>
+            <p>2000-2015 yılları arasında, Wiska Radkiewicz ile dijital teknoloji ve interneti kullanarak ses alışverişine dayalı bir müzik eğitimi programı olan SOUNDSON projesini yaratıp geliştirmiştir.
+            2020'de Campiñas Üniversitesi tarafından Idea, Hilda Hilst programı çerçevesinde sanatsal bir etkinlik için davet edilmiştir.</p>
+            <p>Andrea Cohen hakkında daha fazla bilgi için <a href=https://andreacohen.eu>TIKLAYINIZ.</a></p>
+            
         "
     ],
 
@@ -251,7 +188,7 @@ $lang_biographies = [
             <p>Aaron S. Allen, Ph.D., is director of the Environmental & Sustainability Studies Program and associate professor of music. A native of rural Appalachia,
             he earned his B.S. (environmental studies) and B.A. (music) at Tulane University. Dr. Allen then earned a Ph.D. in music at Harvard University.
             He was the recipient of the Paul Mellon Rome Prize and spent the 2011-12 academic year at the American Academy in Rome. </p>
-            <p>Before being appointed the director of Environmental & Sustainability Studies in 2015, Dr. Allen served as UNCG’s first Academic Sustainability Coordinator. 
+            <p>Before being appointed the director of Environmental & Sustainability Studies in 2015, Dr. Allen served as UNCG’s (The University of North Carolina Greensboro) first Academic Sustainability Coordinator. 
             He worked with faculty to increase and improve sustainability throughout UNCG, especially through workshops on how to incorporate sustainability into the curriculum.
             His environmental leadership began with three years as president of the student environmental organization at Tulane, where he led efforts to institutionalize sustainability.
             Dr. Allen continues to serve on the executive committee of the UNCG Sustainability Council.
@@ -268,13 +205,22 @@ $lang_biographies = [
             sustainability studies.</p>
             <p>Aaron is originally from rural West Virginia, and his interests as an outdoorsman, environmentalist, and woodworker result from his time on the family farm,
             where he recently hand built a solar-powered log cabin with and for his parents.</p>
+            <p>For more details about Dr. Aaron S. Allen please click <a href=https://vpa.uncg.edu/home/directory/bio-aaronsallen/>HERE.</a></p>
                 ",
         "tr" => "
-            <p>Aaron S. Allen, Ph.D., Çevre ve Sürdürülebilirlik Çalışmaları Programı direktörü ve müzik doçentidir. Kırsal Appalachia'lı bir yerlidir, B.S. (fen fakültesi) (çevre çalışmaları) ve B.A. (edebiyat fakültesi) (müzik) Tulane Üniversitesi'nde. Dr. Allen daha sonra Harvard Üniversitesi'nde müzik alanında doktora derecesini aldı. Paul Mellon Roma Ödülü'nü aldı ve 2011-12 akademik yılını Roma'daki Amerikan Akademisi'nde geçirdi.</p>
-            <p>2015 yılında Çevre ve Sürdürülebilirlik Çalışmaları direktörü olarak atanmadan önce Dr. Allen, UNCG'nin ilk Akademik Sürdürülebilirlik Koordinatörü olarak görev yaptı. Sürdürülebilirliğin nasıl dahil edileceğine dair UNCG genelinde, özellikle çalıştaylar üzerinden, sürdürülebilirliği artırmak ve iyileştirmek için fakülteyle birlikte çalıştı. Çevreci liderliği, sürdürülebilirliğin kurumsallaşmasına yol açtığı Tulane'de çevreci öğrenci komisyonunun başkanı olarak üç yıl çalışmasıyla başladı. Dr. Allen, UNCG Sürdürülebilirlik Konseyi'nin yürütme kurulunda görevine devam etmektedir. Çevre Dekanları ve Yönetim Kurulu üyesi ve Nüfus Bağlantısı yönetim kurulu üyesidir.</p>
-            <p>Dr. Allen, Amerikan Müzikoloji Derneği'nin Ekoeleştiri Çalışma Grubu'nun kurucu ortağı ve beş yıl boyunca başkanlığını yaptı ve Etnomüzikoloji Derneği'nin Ekomüzikoloji Özel İlgi Grubu'nun kurucu ortağı ve başkanlığını yaptı. Allen'ın ekomüzikoloji üzerine konferans sunumları, müzikteki mekanları (örneğin, Amerikan Müzikoloji Derneği ve Etnomüzikoloji Derneği), disiplinler arası çalışmaları (örneğin, 19. Yüzyıl Araştırmaları Derneği) ve çevre araştırmalarını (örneğin, Amerikan Çevre Tarihi Derneği, Çevre Bilimleri Derneği) içerir. Edebiyat ve Çevre Çalışması, Çevre Araştırmaları ve Bilimleri Derneği); Kuzey Amerika, Avrupa ve Asya'daki kurumlarda davetli dersler verdi.
-On dokuzuncu yüzyıl İtalya'sında Beethoven resepsiyonu üzerine bir tezi tamamladıktan sonra, Dr. Allen bu alışılmadık alımlama çalışmaları alanını geliştirmeye devam etti. Konferans sunumları ve davetli konuşmalar yaptı ve konuyla ilgili makaleler yayınladı. Yavaş yavaş, geçici olarak Fidelio in Italy: Beethoven Reception, Historiography, and the Crisis of 19th-Century Opera (İtalya'da Fidelio: Beethoven Alımlaması, 19. Yüzyıl Operasının Tarihi ve Eleştirisi) adlı bir kitap üzerinde çalışıyor. Dr. Allen sık sık İtalya'ya seyahat ediyor ve müzik ile sürdürülebilirlik çalışmalarını birleştiren benzersiz bir seyahat sınıfı ortaya koyuyor.</p>
-            <p>Aaron aslen Batı Virginia'nın kırsal kesimindendir ve bir açık havacı, çevreci ve ahşap işçisi olarak ilgi alanları, yakın zamanda ailesiyle birlikte ve onun için güneş enerjili bir kütük kulübesi inşa ettiği aile çiftliğinde geçirdiği zamanlarından oluşmaktadır.</p>
+            <p>Aaron S. Allen, çevre ve sürdürülebilirlik çalışmaları program direktörü ve müzik doçentidir. Çevre çalışmaları üzerine bilimde; 
+            müzik üzerine sanatta uzmanlığı bulunan Allen, Harvard Üniversitesi'nden müzik alanında doktora derecesine sahiptir. 
+            Paul Mellon Roma Ödülü sahibi Allen, 2011-12 akademik yılını Roma'daki Amerikan Akademisi'nde geçirmiştir.</p>
+            <p>2015 yılında çevre ve sürdürülebilirlik çalışmaları direktörü olarak atanmadan önce Allen, 
+            UNCG'nin (The University of North Carolina Greensboro) ilk akademik sürdürülebilirlik koordinatörü olarak görev yaptı. 
+            Sürdürülebilirliğin nasıl dahil edileceğine dair UNCG genelinde, özellikle çalıştaylar üzerinden, sürdürülebilirliği arttırmak ve iyileştirmek için çalıştı.
+            Allen, UNCG Sürdürülebilirlik Konseyi'nin yürütme kurulunda görevine devam etmektedir.</p>
+            <p>Allen Amerikan Müzikoloji Derneği'nin Ekoeleştiri Çalışma Grubu'nun kurucu ortağı ve beş yıl boyunca başkanlığını yaptı.
+             Etnomüzikoloji Derneği'nin Ekomüzikoloji Özel İlgi Grubu'nun kurucu ortağı ve başkanlığını gerçekleştirdi.
+             Allen'ın çok sayıda ekomüzikoloji üzerine konferansları, disiplinlerarası çalışmaları ve çevre araştırmaları vardır. 
+             Allen, aynı zamanda Kuzey Amerika, Avrupa ve Asya'daki çeşitli kurumlarda  dersler vermektedir.
+           <p>Aaron S. Allen hakkında daha fazla bilgi için <a href=https://vpa.uncg.edu/home/directory/bio-aaronsallen/>TIKLAYINIZ.</a></p>
+
         "
     ],
 
@@ -283,7 +229,7 @@ On dokuzuncu yüzyıl İtalya'sında Beethoven resepsiyonu üzerine bir tezi tam
         "en" => "
             <p>Brazilian by nationality and Turkish by citizen, Lilian Maria Tonella Tüzün is pianist focused on
             contemporary music, researcher, Director of the International Istanbul Ceren Necipoglu Harp Festival,
-            Department Coordinator of Erasmus+ and Head of the Piano Department of the State Conservatory of Anadolu University.
+            Department Coordinator of Erasmus+ and Director of the State Conservatory of Anadolu University.
             Author of History of the Piano in Brazil (USA) and Piano in Brazil (Turkey), coauthor of Music Therapy in Turkey (UK)
             and Latin America in World Politics (Turkey), besides other articles related to refugee and immigrant problems in international journals.
             She recorded for Callisto label Virtuoso, Ministry of Culture of Brazil Willy Corrêa de Oliveira piano music,
@@ -297,10 +243,11 @@ On dokuzuncu yüzyıl İtalya'sında Beethoven resepsiyonu üzerine bir tezi tam
             peripheral groups, the refugees and excluded population. Besides that, she is focusing on cross-cultural areas
             and projects of adhesion of contemporary art in the post-pandemic and challenging world of global
             climate change</p>
+            <p>For more details about Lilian Maria Tonella Tüzün please click <a href=https://akademik.anadolu.edu.tr/lmtuzun>HERE.</a> (Turkish)</p>
                 ",
         "tr" => "
             <p>Araştırmacı/öğretim üyesi ve çağdaş müzik odaklı piyanist Brezilya asıllı Türk vatandaşı Prof. Lilian Maria Tonella Tüzün,
-            Anadolu Üniversitesi Devlet Konservatuvarı (AÜDK) Erasmus Koordinatörü, AÜDK Piyano Anasanat Dalı Başkanı ve Uluslararası İstanbul Ceren Necipoğlu Arp
+            Anadolu Üniversitesi Devlet Konservatuvarı (AÜDK) Müdürü, AÜDK Erasmus Koordinatörü ve Uluslararası İstanbul Ceren Necipoğlu Arp
             Festivali direktörüdür. “Piano Music in Brazil: The History of Piano Playing and Compositions” ve “Brezilya’da Piyano” kitaplarının yazarıdır.
             “Music Therapy in Turkey” ve “Dünya Politikalarında Latin Amerika” adlı kitapların da yazarları arasında yer alan Tüzün’ün aynı zamanda mülteci ve
             göçmen sorunlarıyla ilgili pek çok makalesi bulunmaktadır.</p>
@@ -312,6 +259,7 @@ On dokuzuncu yüzyıl İtalya'sında Beethoven resepsiyonu üzerine bir tezi tam
             <p>Şu anda özellikle Alzheimer hastaları, Otizm veya Down sendromlular, çevre gruplardan çocuklar ve yaşlılar, mülteciler ve toplumdan dışlanmış bireyleri toplum
             lehine şekillendirebilecek toplu piyano dersleri ve prensipleri üzerine araştırmalar yapmaktadır. Bunun yanı sıra Tüzün, pandemi sonrası çağdaş sanat ve
             küresel iklim değişikliği konuları üzerine akademik çalışmalarını sürdürmektedir.</p>
+           <p>Lilian Maria Tonella Tüzün hakkında daha fazla bilgi için <a href=https://akademik.anadolu.edu.tr/lmtuzun>TIKLAYINIZ.</a></p>
         "
     ]
 ];

@@ -82,24 +82,8 @@ require_once "langs/lang_biographies.php";
             <?php echo($lang_biographies["Johannes_Kretz_Bio"][$pref_lang]); ?>
         </div>
         <div class="clear-float"></div>
-      </section>
+      </section>-->
 
-      <section class="pad-tb-24" id="john">
-        <div class="pad-5-per">
-          <img src="img/people/john.png" class="img-full">
-          <h3 class="sec-h3">John Rink</h3>
-            <?php echo($lang_biographies["John_Rink_Bio"][$pref_lang]); ?>
-        </div>
-        <div class="clear-float"></div>
-      </section>
-      <section class="pad-tb-24 grey-bg" id="melik">
-        <div class="pad-5-per">
-          <img src="img/people/melik.png" class="img-full">
-          <h3 class="sec-h3">Melik Ertuğrul Bayraktarkatal</h3>
-            <?php echo($lang_biographies["Melik_Ertugrul_Bayraktarkatal_Bio"][$pref_lang]); ?>
-        </div>
-        <div class="clear-float"></div>
-      </section> -->
             <section class="pad-tb-24" id="allen">
                 <div class="pad-5-per">
                     <img src="img/people/allen.jpg" class="img-full">
@@ -121,6 +105,22 @@ require_once "langs/lang_biographies.php";
                     <img src="img/people/thiago.jpg" class="img-full">
                     <h3 class="sec-h3">Thiago Cury</h3>
                     <?php echo($lang_biographies["Thiago_Bio"][$pref_lang]); ?>
+                </div>
+                <div class="clear-float"></div>
+            </section>
+            <section class="pad-tb-24 grey-bg" id="cohen">
+                <div class="pad-5-per">
+                    <img src="img/people/andreacohen.jpg" class="img-full">
+                    <h3 class="sec-h3">Andrea Cohen</h3>
+                    <?php echo($lang_biographies["Cohen_Bio"][$pref_lang]); ?>
+                </div>
+                <div class="clear-float"></div>
+            </section>
+            <section class="pad-tb-24" id="marisa">
+                <div class="pad-5-per">
+                    <img src="img/people/marisa.jpg" class="img-full">
+                    <h3 class="sec-h3">Marisa Fonterrada</h3>
+                    <?php echo($lang_biographies["Marisa_Bio"][$pref_lang]); ?>
                 </div>
                 <div class="clear-float"></div>
             </section>

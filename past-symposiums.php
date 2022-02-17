@@ -316,6 +316,11 @@ require_once "langs/lang_past-symposiums.php";
               <img src="img/covers/2021.jpg" class="img-poster">
               <div class="middle">
                 <div class="text">
+                    <a style="float: right" href="img/covers/2021proc.pdf" target="_blank"
+                       title="<?php echo($lang_past_symposiums["download_proceeding"][$pref_lang]); ?>"
+                       class="a-download-pdf">
+                        <img alt="pdf download" src="img/assets/download-pdf.svg">
+                    </a>
                     <?php echo($lang_past_symposiums["2021"][$pref_lang]); ?>
                 </div>
               </div>

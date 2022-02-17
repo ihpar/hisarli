@@ -32,7 +32,9 @@ if (!$is_secure) {
                     <li style="background-color: #D80027;">
                         <a href="abstract-submission.php"><?php echo($lang_global["ozet_gonderim"][$pref_lang]); ?></a>
                     </li>
-
+                    <li class="dropdown">
+                        <a href="index.php#duyurular"><?php echo($lang_global["duyurular"][$pref_lang]); ?></a>
+                    </li>
                     <li>
                         <div class="li-mobile-section-header"><?php echo($lang_global["ana_sayfa"][$pref_lang]); ?></div>
                     </li>
@@ -357,6 +359,9 @@ if (!$is_secure) {
 
             <li class="dropdown" style="background-color: #ff000080;">
                 <a href="abstract-submission.php"><?php echo($lang_global["ozet_gonderim"][$pref_lang]); ?></a>
+            </li>
+            <li class="dropdown">
+                <a href="index.php#duyurular"><?php echo($lang_global["duyurular"][$pref_lang]); ?></a>
             </li>
 
         </ul>

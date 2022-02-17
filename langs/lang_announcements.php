@@ -6,21 +6,19 @@ if (!$is_secure) {
 
 $lang_announcements = [
     "bilgilendirme_ziyaret_baslik" => [
-        "en" => "16.11.2021: International Hisarlı Ahmet Symposium Information Visits were Held",
+        "en" => "16.11.2021: The Information Visits for 12th International Hisarlı Ahmet Symposium were Held",
         "tr" => "16.11.2021: Uluslararası Hisarlı Ahmet Sempozyumu Bilgilendirme Ziyaretleri Yapıldı"
     ],
 
     "bilgilendirme_ziyaret" => [
 
         "en" => "
-           <p>The International Hisarlı Ahmet Symposium, which will be held for the 12th time between 9-12 June 2021, with the cooperation of Çanakkale Onsekiz Mart University (ÇOMÜ)
-           State Conservatory and Kütahya Fine Arts Association, visitations for information and exchange of ideas were made.</p>
-            <p>ÇOMÜ conservatory director and also the chairman of the symposium organizing committee, Prof. Dr. Uğur Türkmen, chairman of the symposium scientific committee,
-            Prof. Dr. Lilian Maria Tonella Tüzün, artistic events curator Assoc. Dr. Duygu Kahraman and Kütahya Fine Arts Association President Mustafa Kemal Altınsoy
-            made a series of visits.</p>
-            <p>After giving information to the Governor of Kütahya, Mr. Ali Çelik, thoughts on the symposium were shared with Kütahya Dumlupınar University Rector, Prof. Dr. Kazım Uysal,
-            Prof. Dr. Vural Kavuncu the rector of Kütahya University of Health Sciences, which will host the symposium, Dumlupınar University Fine Arts Faculty Dean Levent Mercin and Kütahya Chamber of Commerce Board members.
-            Details: <a href=http://t.ly/xSMw>Kütahya Governor</a>, <a href=http://t.ly/kX99>KSBÜ</a> </p>      
+           <p>The visitations for information and exchange of ideas about The International Hisarlı Ahmet Symposium which will be held for the 12th one between 9-12 June 2022, and associated with the cooperation of Çanakkale Onsekiz Mart University (ÇOMÜ)
+           State Conservatory and Kütahya Fine Arts Association were held on November 16 in Kutahya.</p>
+            <p>The visits were held by Prof. Dr. Uğur Türkmen who is the director of ÇOMÜ conservatory and also who is the chairman of organizing committee of the symposium, Prof. Dr. Lilian Maria Tonella Tüzün who is the chairman of scientific committee of the symposium,
+            Assoc. Prof. Duygu Kahraman who is the curator of artistic events of the symposium and Mustafa Kemal Altınsoy who is the president of Kütahya Fine Arts Association.</p>
+            <p>After giving information to Mr. Ali Çelik who is the Governor of Kütahya, thoughts on the symposium were shared with Prof. Dr. Kazım Uysal who is the rector of Kütahya Dumlupınar University,
+            with Prof. Dr. Vural Kavuncu who is the rector of Kütahya University of Health Sciences which will host the symposium, with Prof. Dr. Levent Mercin who is Dean of Dumlupınar University Fine Arts Faculty and with Commerce Board members of Kütahya Chamber.</p>      
                 ",
         "tr" => "
            <p>Çanakkale Onsekiz Mart Üniversitesi (ÇOMÜ) Devlet Konservatuvarı ile Kütahya Güzel Sanatlar Derneği iş birliğinde 9-12 Haziran 2022 tarihleri arasında 12’ncisi düzenlenecek olan ve teması “Müzik ve
@@ -34,24 +32,23 @@ $lang_announcements = [
     ],
 
     "ilk_toplanti_baslik" => [
-        "en" => "10.09.2021: First Meeting of the Symposium Online was Held",
+        "en" => "10.09.2021: The First Online Meeting of the Symposium was Held",
         "tr" => "10.09.2021: Sempozyum Çevrimiçi İlk Toplantısı Yapıldı"
     ],
 
     "ilk_toplanti" => [
 
         "en" => "
-            <p>Dean of the organizing committee Uğur Türkmen, head of scientific committee Lilian Tonella Tüzün and scientific committee members Aaron Allen, Ban Junrong, Duygu Kahraman, Erberk Yılmaz, Malgorzata Zarebinska, and Aykut Barış Çerezcioğlu attended the online meeting of the 12th International Hisarlı Ahmet Symposium, which was conducted by ÇOMÜ State Conservatory.
+            <p>Chairman of the organizing committee Uğur Türkmen, chairman of scientific committee Lilian Tonella Tüzün and members of scientific committee Aaron Allen, Ban Junrong, Duygu Kahraman, Erberk Yılmaz, Malgorzata Zarebinska, and Aykut Barış Çerezcioğlu attended the online meeting of the 12th International Hisarlı Ahmet Symposium, which was conducted by ÇOMÜ State Conservatory.
             </p><p>
             At the meeting, the subjects, Hisarlı Ahmet and Kütahya, the International Hisarlı Ahmet Symposium, the purpose, scope, and format of the 12th International Hisarlı Ahmet Symposium, the cooperation of the members of the scientific committee, the suggestions and questions of the members of the scientific committee, the next meeting date and the closing of the meeting were dwelled upon. 
-            </p><p>
             The next meeting was decided to be held on 10 December 2021.</p>
                 ",
         "tr" => "<p>ÇOMÜ Devlet Konservatuvarı yürütücülüğünde gerçekleştirilen 12. Uluslararası Hisarlı Ahmet Sempozyumu çevrimiçi toplantısına, düzenleme kurulu başkanı Uğur Türkmen,
             bilim kurulu başkanı Lilian Tonella Tüzün ve bilim kurulu üyeleri Aaron Allen, Ban Junrong, Duygu Kahraman, Erberk Yılmaz, Malgorzata Zarebinska ve Aykut Barış Çerezcioğlu katıldı.</p>
             <p>Toplantıda, Hisarlı Ahmet ve Kütahya, Uluslararası Hisarlı Ahmet Sempozyumu hakkında genel bilgiler, 12. Uluslararası Hisarlı Ahmet Sempozyumu'nun amacı-kapsamı ve formatı,
-            bilim kurulu üyelerinin iş birliği, bilim kurulu üyelerinin öneri ve soruları, bir sonraki toplantı tarihi ve toplantı kapanışı konuları üzerinde duruldu.</p>
-            <p>Bir sonraki toplantının 10 Aralık 2021 tarihinde yapılması kararlaştırıldı.</p>"
+            bilim kurulu üyelerinin iş birliği, bilim kurulu üyelerinin öneri ve soruları, bir sonraki toplantı tarihi ve toplantı kapanışı konuları üzerinde duruldu.
+            Bir sonraki toplantının 10 Aralık 2021 tarihinde yapılması kararlaştırıldı.</p>"
     ]
 ];
 ?>

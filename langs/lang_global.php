@@ -384,6 +384,14 @@ $lang_global = [
 
         "tr" => "Özet Gönderim"
 
+    ],
+
+    "duyurular" => [
+
+        "en" => "ANNOUNCEMENTS",
+
+        "tr" => "DUYURULAR"
+
     ]
 
 ];
