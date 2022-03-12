@@ -70,6 +70,14 @@ require_once "langs/lang_announcements.php";
             <?php require_once("modules/banner.php"); ?>
 
             <!-- Icerik -->
+            <section class="pad-tb-24" id="iklimsura">
+                <div class="pad-5-per">
+                    <img src="announcements/iklimsura.jpg" class="img-full">
+                    <h4 class="sec-h4"><?php echo($lang_announcements["iklim_sura_baslik"][$pref_lang]); ?></h4>
+                    <?php echo($lang_announcements["iklim_sura"][$pref_lang]); ?>
+                </div>
+                <div class="clear-float"></div>
+            </section>
             <section class="pad-tb-24" id="bilgilendirme_ziyaret">
                 <div class="pad-5-per">
                     <img src="announcements/ziyaretler.jpeg" class="img-full">
@@ -78,7 +86,6 @@ require_once "langs/lang_announcements.php";
                 </div>
                 <div class="clear-float"></div>
             </section>
-
             <section class="pad-tb-24" id="ilk_toplanti">
                 <div class="pad-5-per">
                     <img src="announcements/ilk toplanti.jpg" class="img-full">

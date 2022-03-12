@@ -386,13 +386,21 @@ $lang_global = [
 
     ],
 
-    "duyurular" => [
+    "genclik_seminerleri-abstractguidelines" => [
 
         "en" => "ANNOUNCEMENTS",
 
-        "tr" => "DUYURULAR"
+        "tr" => "Özet Yazım Kuralları"
 
-    ]
+    ],
+
+    "duyurular" => [
+
+    "en" => "ANNOUNCEMENTS",
+
+    "tr" => "DUYURULAR"
+
+],
 
 ];
 

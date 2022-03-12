@@ -167,7 +167,7 @@ $lang_biographies = [
             <p>For more details about Andrea Cohen please click <a href=https://andreacohen.eu>HERE.</a></p>
                 ",
         "tr" => "
-            <p>Piyanist, besteci ve radyo sanatçısı Andrea Cohen, Arjantin'de doğdu. Şu anda Paris'te yaşayan ve çalışmalarını burada yürüten Cohen,
+            <p>Piyanist, besteci ve radyo sanatçısı Andrea Cohen, Arjantin'de doğdu. Paris'te yaşayan ve çalışmalarını burada yürüten Cohen,
             müzikal ve tiyatral unsurların kişisel ve karma bir dille bütünleştiği birçok müzikal tiyatro eserinin yazarı ve icracısıdır.</p>
             <p>Radyo yapımcısı olarak 1985'ten beri Radio France (Fransa Culture ve France Musique) ile iş birliği yapmaktadır.
             2015’de “Les Composurs et l'art Radiophonique (Besteciler ve Radyo Sanatı)” ve 2019 yılında bir eğitim kitabı olan “Manuel de pédagogiemusicale:
@@ -220,6 +220,68 @@ $lang_biographies = [
              Allen'ın çok sayıda ekomüzikoloji üzerine konferansları, disiplinlerarası çalışmaları ve çevre araştırmaları vardır. 
              Allen, aynı zamanda Kuzey Amerika, Avrupa ve Asya'daki çeşitli kurumlarda  dersler vermektedir.
            <p>Aaron S. Allen hakkında daha fazla bilgi için <a href=https://vpa.uncg.edu/home/directory/bio-aaronsallen/>TIKLAYINIZ.</a></p>
+
+        "
+    ],
+    "Ihsan_Bio" => [
+
+        "en" => "
+            <p>He completed his primary, secondary and high school education in Çorlu. He graduated from Ankara
+            University, Faculty of Language, History and Geography, Department of Physical Geography and
+            Geology in 1983. He worked as a research assistant at Karadeniz Technical University, Fatih Faculty of
+            Education between 1985-1987. In 1987, he started to work as a research assistant at the Faculty of
+            Language, History and Geography, Department of Geography, Department of Physical Geography. In
+            1992, he completed his doctorate in the Department of Physical Geography with his doctoral thesis
+            named \"Physical Geography of Isparta Plain and Its Surroundings\" at Ankara University, Department
+            of Geography. He was appointed assistant professor in 1992, associate professor in 2005, and professor
+            in 2010. He served as the Vice President of the Department of Geography between 1993-1999, Head of
+            the Department of Geography between 2011-2017, Member of the University Executive Board between
+            2013-2015, Faculty Senate Representative between 2015-2016, and Faculty Dean between 2016-2020.
+            He is a member of many national and international professional organizations and has been serving as
+            the Vice President of the Turkish Geographical Society since 2013. He has also been a TÜBİTAK
+            BİDEB Advisory Board Member since 2020. He studies climatology, the physical causes of climate
+            change and urban climatology. He has many chapters published in international and national books and
+            articles published in international and national indexed journals. He is married and has a child.</p>
+            <p>For more details about İhsan Çiçek please click <a href=http://cv.ankara.edu.tr/ihcicek@ankara.edu.tr>HERE.</a> (Turkish)</p>
+                ",
+        "tr" => "
+            <p>İlk, orta ve lise öğrenimini Çorlu’da tamamladı. Ankara Üniversitesi, Dil ve Tarih-Coğrafya Fakültesi,
+            Fiziki Coğrafya ve Jeoloji kürsüsünden 1983 yılında mezun oldu. 1985-1987 yılları arasında Karadeniz
+            Teknik Üniversitesi, Fatih Eğitim Fakültesi’nde araştırma görevlisi olarak çalıştı. 1987 yılında Dil ve
+            Tarih-Coğrafya Fakültesi, Coğrafya Bölümü, Fiziki Coğrafya Anabilim Dalı’nda araştırma görevliliğine
+            başladı. 1992 yılında Ankara Üniversitesi, Coğrafya Anabilim Dalı’nda “Isparta Ovası ve Yakın
+            Çevresinin Fiziki Coğrafyası” isimli doktora tezi ile Fiziki Coğrafya Bilim Dalı’nda doktorasını
+            tamamladı. 1992 yılında yardımcı doçentlik, 2005 yılında doçentlik, 2010 yılında profesörlük kadrosuna
+            atandı. 1993-1999 yılları arasında Coğrafya Bölümü Başkan yardımcılığı, 2011-2017 yılları arasında
+            Coğrafya Bölümü Başkanlığı, 2013-2015 yılları arasında Üniversite Yönetim Kurulu Üyeliği, 2015-
+            2016 yılları arasında Fakülte Senato Temsilciliği, 2016—2020 yılları atasında Fakülte Dekanlığı yaptı.
+            Pek çok ulusal ve uluslararası mesleki kuruluşa üye olup, 2013 yılından beri Türk Coğrafya Kurumu
+            Derneği Başkan Yardımcılığı görevini yürütmektedir. Aynı zamanda 2020 yılından beri TÜBİTAK
+            BİDEB Danışma Kurulu Üyeliği’ni de yürütmektedir. Klimatoloji, iklim değişikliğinin fiziksel
+            sebepleri ve şehir klimatolojisi konusunda çalışmalar yapmaktadır. Alanıyla ilgili yayınlanan
+            uluslararası ve ulusal kitap bölümleri, uluslararası ve ulusal indeksli dergilerde yayınlanmış birçok
+            makalesi bulunmaktadır. Evli ve bir çocuk babasıdır.</p>
+           <p>İhsan Çiçek hakkında daha fazla bilgi için <a href=http://cv.ankara.edu.tr/ihcicek@ankara.edu.tr>TIKLAYINIZ.</a></p>
+
+        "
+    ],
+    "Ekinci_Bio" => [
+
+        "en" => "
+            <p>\"Four Seasons Three Homelands\"</p>
+            <p>He was born in 1944. He started teaching in 1966. He is known for his works for Teke
+            Region. He presented papers at symposiums and congresses and received awards. Ekinci, who
+            travelled his region step by step; made significant contributions by opening his personal
+            archive to young people taking postgraduate education, and brought most of Teke Region
+            instruments to Süleyman Demirel University Music Cultures Research Center.</p>
+                ",
+        "tr" => "
+            <p>\"Dört Mevsim Üç Yurt\"</p>
+            <p>1944 Yılında Dünya’ya gelir. 1966 Yılında öğretmenliğe başlar. Teke Yöresi çalışmaları ile
+            tanınır. Sempozyum ve kongrelerde bildiriler sunar, ödüller alır. Yöresini adım adım tarayan
+            Ekinci, kişisel arşivini lisansüstü eğitim alan gençlere açarak önemli katkılar sağlamış ve Teke
+            Yöresi sazlarının birçoğunu Süleyman Demirel Üniversitesi Müzik Kültürleri Araştırma
+            Merkezine kazandırmıştır.</p>
 
         "
     ],

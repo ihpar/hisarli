@@ -90,7 +90,14 @@ require_once "langs/lang_biographies.php";
                     <h3 class="sec-h3">Aaron S. Allen</h3>
                     <?php echo($lang_biographies["Aaron_Allen_Bio"][$pref_lang]); ?>
                 </div>
+
                 <div class="clear-float"></div>
+                <div class="center-text sec-h3">
+                    <a href="#top" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                        <i class="material-icons">arrow_upward</i>
+                    </a>
+                </div>
+
             </section>
             <section class="pad-tb-24 grey-bg" id="oksana">
                 <div class="pad-5-per">
@@ -99,6 +106,11 @@ require_once "langs/lang_biographies.php";
                     <?php echo($lang_biographies["Oksana_Bio"][$pref_lang]); ?>
                 </div>
                 <div class="clear-float"></div>
+                <div class="center-text sec-h3">
+                    <a href="#top" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                        <i class="material-icons">arrow_upward</i>
+                    </a>
+                </div>
             </section>
             <section class="pad-tb-24" id="thiago">
                 <div class="pad-5-per">
@@ -107,6 +119,11 @@ require_once "langs/lang_biographies.php";
                     <?php echo($lang_biographies["Thiago_Bio"][$pref_lang]); ?>
                 </div>
                 <div class="clear-float"></div>
+                <div class="center-text sec-h3">
+                    <a href="#top" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                        <i class="material-icons">arrow_upward</i>
+                    </a>
+                </div>
             </section>
             <section class="pad-tb-24 grey-bg" id="cohen">
                 <div class="pad-5-per">
@@ -115,6 +132,11 @@ require_once "langs/lang_biographies.php";
                     <?php echo($lang_biographies["Cohen_Bio"][$pref_lang]); ?>
                 </div>
                 <div class="clear-float"></div>
+                <div class="center-text sec-h3">
+                    <a href="#top" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                        <i class="material-icons">arrow_upward</i>
+                    </a>
+                </div>
             </section>
             <section class="pad-tb-24" id="marisa">
                 <div class="pad-5-per">
@@ -123,6 +145,37 @@ require_once "langs/lang_biographies.php";
                     <?php echo($lang_biographies["Marisa_Bio"][$pref_lang]); ?>
                 </div>
                 <div class="clear-float"></div>
+                <div class="center-text sec-h3">
+                    <a href="#top" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                        <i class="material-icons">arrow_upward</i>
+                    </a>
+                </div>
+            </section>
+            <section class="pad-tb-24" id="ihsan">
+                <div class="pad-5-per">
+                    <img src="img/people/ihsancicek.jpg" class="img-full">
+                    <h3 class="sec-h3">İhsan Çiçek</h3>
+                    <?php echo($lang_biographies["Ihsan_Bio"][$pref_lang]); ?>
+                </div>
+                <div class="clear-float"></div>
+                <div class="center-text sec-h3">
+                    <a href="#top" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                        <i class="material-icons">arrow_upward</i>
+                    </a>
+                </div>
+            </section>
+            <section class="pad-tb-24" id="ekinci">
+                <div class="pad-5-per">
+                    <img src="img/people/ekinci.jpg" class="img-full">
+                    <h3 class="sec-h3">Abdurrahman Ekinci</h3>
+                    <?php echo($lang_biographies["Ekinci_Bio"][$pref_lang]); ?>
+                </div>
+                <div class="clear-float"></div>
+                <div class="center-text sec-h3">
+                    <a href="#top" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                        <i class="material-icons">arrow_upward</i>
+                    </a>
+                </div>
             </section>
             <section class="pad-tb-24 grey-bg" id="lilian">
                 <div class="pad-5-per">
@@ -131,6 +184,7 @@ require_once "langs/lang_biographies.php";
                     <?php echo($lang_biographies["Lilian_Bio"][$pref_lang]); ?>
                 </div>
                 <div class="clear-float"></div>
+                
             </section>
             <!-- Eof Icerik -->
         </div>

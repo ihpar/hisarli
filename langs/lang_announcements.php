@@ -9,7 +9,6 @@ $lang_announcements = [
         "en" => "16.11.2021: The Information Visits for 12th International Hisarlı Ahmet Symposium were Held",
         "tr" => "16.11.2021: Uluslararası Hisarlı Ahmet Sempozyumu Bilgilendirme Ziyaretleri Yapıldı"
     ],
-
     "bilgilendirme_ziyaret" => [
 
         "en" => "
@@ -29,6 +28,23 @@ $lang_announcements = [
             Rektörü Sn. Prof. Dr. Vural Kavuncu, Dumlupınar Üniversitesi Güzel Sanatlar Fakültesi Dekanı Sn. Prof. Dr. Levent Mercin ve Kütahya Ticaret Odası Yönetim Kurulu üyeleri ile sempozyuma yönelik düşünceler
             paylaşıldı. Ziyaretlerle ilgili kurumsal haberler için tıklayınız: <a href=http://t.ly/xSMw>Kütahya Valiliği</a>, <a href=http://t.ly/kX99>KSBÜ</a> </p>      
                 "
+    ],
+
+    "iklim_sura_baslik" => [
+        "en" => "22.02.2022: 12th International Hisarlı Ahmet Symposium was introduced in the Climate Council",
+        "tr" => "22.02.2022: 12. Uluslararası Hisarlı Ahmet Sempozyumu İklim Şurası’nda tanıtıldı."
+    ],
+
+    "iklim_sura" => [
+
+        "en" => "
+            <p>12th International Hisarlı Ahmet Symposium that associated with the cooperation of Çanakkale Onsekiz Mart University and Kütahya Fine Arts Association was introduced in the Climate Council organized by the Ministry of Environment,
+            Urbanization and Climate Change in Konya. While our symposium science committee chairman Prof. Dr. Lilian Maria Tonella Tüzün made their presentations
+            on “Music and Climate”, the artists Lecturer Sedat Çılgın and Dr. Lecturer İlter Cebeci from State Consevatory of Çanakkale Onsekiz Mart University sang folk songs with the theme of “Nature and Climate”.
+            We congratulate and thank our colleagues who took part in the event, which our Minister Murat Kurum also listened to.</p>",
+        "tr" => "<p>Çanakkale Onsekiz Mart Üniversitesi Devlet Konservatuvarı ile Kütahya Güzel Sanatlar Derneği iş birliğiyle gerçekleşecek olan 12. Uluslararası Hisarlı Ahmet Sempozyumu, Konya’da Çevre Şehircilik ve İklim Değişikliği Bakanlığınca düzenlenen İklim Şurası’nda tanıtıldı. Sempozyum
+bilim kurulu başkanımız Prof. Dr. Lilian Maria Tonella Tüzün “Müzik ve İklim” konusunda sunumlarını yaparken; Çanakkale 18 Mart Üniversitesi Devlet Konservatuvarı sanatçıları Öğr. Gör. Sedat Çılgın ve Dr. Öğr. Üyesi
+İlter Cebeci “Doğa ve İklim” temalı türküler seslendirdiler. Bakanımız Murat Kurum’unda dinlediği etkinlikte yer alan meslektaşlarımızı kutluyor, teşekkür ediyoruz.</p>"
     ],
 
     "ilk_toplanti_baslik" => [

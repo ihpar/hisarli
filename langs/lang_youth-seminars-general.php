@@ -6,7 +6,7 @@ if (!$is_secure) {
 
 $lang_youth_seminars_general = [
     "genel bilgiler" => [
-        "en" => "Youth Seminars-General Information",
+        "en" => "This page is intentionally left blank...",
         "tr" => "Gençlik Seminerleri-Genel Bilgiler"
     ],
 

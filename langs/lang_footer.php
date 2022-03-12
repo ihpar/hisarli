@@ -8,8 +8,8 @@ if (!$is_secure) {
 
 $lang_footer = [
     "sempozyum" => [
-        "en" => "12th International Hisarli Ahmet Symposium, last update: 16 February 2022, 11.14",
-        "tr" => "12. Uluslararası Hisarlı Ahmet Sempozyumu, son güncelleme: 16 Şubat 2022, 11.14"
+        "en" => "12th International Hisarli Ahmet Symposium, last update: 12 March 2022, 15.28",
+        "tr" => "12. Uluslararası Hisarlı Ahmet Sempozyumu, son güncelleme: 12 Mart 2022, 15.28"
     ],
     "web_tasarim" => [
         "en" => "Web Design",

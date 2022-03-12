@@ -67,7 +67,7 @@ require_once "langs/lang_youth-seminars-general.php";
                 <div class="pad-10-per">
                     <div class="cerceve">
                         <h3 class="center-text sec-h3"><?php echo($lang_youth_seminars_general["genel bilgiler"][$pref_lang]); ?></h3>
-                        <iframe src="img/assets/HisarliGenclikSeminer.pdf" width="100%" height="750px"></iframe>
+                        <iframe src="img/assets/HisarliGenclikSeminer2.pdf" width="100%" height="750px"></iframe>
                     </div>
                 </div>
             </section>

@@ -178,7 +178,7 @@ $lang_abs_sub = [
         "tr" => "Metnin her satırını, kutucuğu soldan sağa dolduracak şekilde yazınız. Kelimeler arasında büyük boşluklar bırakmayınız (paragraf başı hariç)."
     ],
     "oturumlarda_tanitilmak" => [
-        "en" => "Resume is qequested to introduce the author during sessions.",
+        "en" => "The Resume is requested to introduce the author during sessions.",
         "tr" => "Kısa Özgeçmiş, oturumlarda tanıtılmak amacıyla talep edilmektedir."
     ],
     "olasi_belge" => [
