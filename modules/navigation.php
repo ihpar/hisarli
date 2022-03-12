@@ -179,14 +179,7 @@ if (!$is_secure) {
         </div>
         <!-- Eof mobil menu -->
 
-        <!-- ////////////////////////////////////////////////// -->
-
-        <div style="height: 56px; align-self: center;">
-            <a href="logo.php" target="_blank">
-                <img src="img/logo/logo_small.png" style="height: 100%;"/>
-            </a>
-        </div>
-
+        
         <!-- Masaustu Menu -->
 
         <ul class="pc-menu">
