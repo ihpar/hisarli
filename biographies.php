@@ -66,24 +66,29 @@ require_once "langs/lang_biographies.php";
             <?php require_once("modules/banner.php"); ?>
 
             <!-- Icerik -->
-            <!--<section class="pad-tb-24" id="nadja">
-        <div class="pad-5-per">
-          <img src="img/people/nadja.png" class="img-full">
-          <h3 class="sec-h3">Nadja Wallaszkovits</h3>
-            <?php echo($lang_biographies["Nadja_Wallaszkovits_Bio"][$pref_lang]); ?>
-        </div>
-        <div class="clear-float"></div>
-      </section>
 
-      <section class="pad-tb-24 grey-bg" id="johannes">
-        <div class="pad-5-per">
-          <img src="img/people/johannes.png" class="img-full">
-          <h3 class="sec-h3">Johannes Kretz</h3>
-            <?php echo($lang_biographies["Johannes_Kretz_Bio"][$pref_lang]); ?>
-        </div>
-        <div class="clear-float"></div>
-      </section>-->
+            <!--
+            <section class="pad-tb-24" id="nadja">
+                <div class="pad-5-per">
+                    <img src="img/people/nadja.png" class="img-full">
+                    <h3 class="sec-h3">Nadja Wallaszkovits</h3>
+                    <?php echo($lang_biographies["Nadja_Wallaszkovits_Bio"][$pref_lang]); ?>
+                </div>
+                <div class="clear-float"></div>
+            </section>
+            -->
 
+            <!--
+            <section class="pad-tb-24 grey-bg" id="johannes">
+                <div class="pad-5-per">
+                    <img src="img/people/johannes.png" class="img-full">
+                    <h3 class="sec-h3">Johannes Kretz</h3>
+                    <?php echo($lang_biographies["Johannes_Kretz_Bio"][$pref_lang]); ?>
+                </div>
+                <div class="clear-float"></div>
+            </section>
+            -->
+            
             <section class="pad-tb-24" id="allen">
                 <div class="pad-5-per">
                     <img src="img/people/allen.jpg" class="img-full">
@@ -93,12 +98,13 @@ require_once "langs/lang_biographies.php";
 
                 <div class="clear-float"></div>
                 <div class="center-text sec-h3">
-                    <a href="#top" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                    <a href="#top"
+                       class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
                         <i class="material-icons">arrow_upward</i>
                     </a>
                 </div>
-
             </section>
+
             <section class="pad-tb-24 grey-bg" id="oksana">
                 <div class="pad-5-per">
                     <img src="img/people/oksana.jpg" class="img-full">
@@ -107,11 +113,13 @@ require_once "langs/lang_biographies.php";
                 </div>
                 <div class="clear-float"></div>
                 <div class="center-text sec-h3">
-                    <a href="#top" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                    <a href="#top"
+                       class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
                         <i class="material-icons">arrow_upward</i>
                     </a>
                 </div>
             </section>
+
             <section class="pad-tb-24" id="thiago">
                 <div class="pad-5-per">
                     <img src="img/people/thiago.jpg" class="img-full">
@@ -120,11 +128,13 @@ require_once "langs/lang_biographies.php";
                 </div>
                 <div class="clear-float"></div>
                 <div class="center-text sec-h3">
-                    <a href="#top" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                    <a href="#top"
+                       class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
                         <i class="material-icons">arrow_upward</i>
                     </a>
                 </div>
             </section>
+
             <section class="pad-tb-24 grey-bg" id="cohen">
                 <div class="pad-5-per">
                     <img src="img/people/andreacohen.jpg" class="img-full">
@@ -133,11 +143,13 @@ require_once "langs/lang_biographies.php";
                 </div>
                 <div class="clear-float"></div>
                 <div class="center-text sec-h3">
-                    <a href="#top" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                    <a href="#top"
+                       class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
                         <i class="material-icons">arrow_upward</i>
                     </a>
                 </div>
             </section>
+
             <section class="pad-tb-24" id="marisa">
                 <div class="pad-5-per">
                     <img src="img/people/marisa.jpg" class="img-full">
@@ -146,12 +158,14 @@ require_once "langs/lang_biographies.php";
                 </div>
                 <div class="clear-float"></div>
                 <div class="center-text sec-h3">
-                    <a href="#top" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                    <a href="#top"
+                       class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
                         <i class="material-icons">arrow_upward</i>
                     </a>
                 </div>
             </section>
-            <section class="pad-tb-24" id="ihsan">
+
+            <section class="pad-tb-24 grey-bg" id="ihsan">
                 <div class="pad-5-per">
                     <img src="img/people/ihsancicek.jpg" class="img-full">
                     <h3 class="sec-h3">İhsan Çiçek</h3>
@@ -159,11 +173,13 @@ require_once "langs/lang_biographies.php";
                 </div>
                 <div class="clear-float"></div>
                 <div class="center-text sec-h3">
-                    <a href="#top" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                    <a href="#top"
+                       class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
                         <i class="material-icons">arrow_upward</i>
                     </a>
                 </div>
             </section>
+
             <section class="pad-tb-24" id="ekinci">
                 <div class="pad-5-per">
                     <img src="img/people/ekinci.jpg" class="img-full">
@@ -172,11 +188,13 @@ require_once "langs/lang_biographies.php";
                 </div>
                 <div class="clear-float"></div>
                 <div class="center-text sec-h3">
-                    <a href="#top" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                    <a href="#top"
+                       class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
                         <i class="material-icons">arrow_upward</i>
                     </a>
                 </div>
             </section>
+
             <section class="pad-tb-24 grey-bg" id="lilian">
                 <div class="pad-5-per">
                     <img src="img/people/lilian.jpg" class="img-full">
@@ -184,8 +202,9 @@ require_once "langs/lang_biographies.php";
                     <?php echo($lang_biographies["Lilian_Bio"][$pref_lang]); ?>
                 </div>
                 <div class="clear-float"></div>
-                
+
             </section>
+
             <!-- Eof Icerik -->
         </div>
         <!-- Footer -->
