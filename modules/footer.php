@@ -5,13 +5,20 @@ if (!$is_secure) {
 require_once "langs/lang_footer.php";
 ?>
 <footer class="mdl-mega-footer">
+    <div style="text-align: center;">
+        <a href="logo.php" target="_blank" style="height: 56px; display: block;">
+            <img src="img/logo/logo_small.png" style="height: 100%;"/>
+        </a>
+    </div>
     <div class="footer-top">
         <div class="footer--left" class="a-footer-social">
-            <a href="https://instagram.com/hisarliahmetsymposium?utm_medium=copy_link" target="_blank" class="a-footer-social">
+            <a href="https://instagram.com/hisarliahmetsymposium?utm_medium=copy_link" target="_blank"
+               class="a-footer-social">
                 <img alt="instagram" src="img/social/logo-instagram-white.svg"/>
             </a>
             &nbsp;
-            <a href="https://www.facebook.com/Hisarlı-Ahmet-Symposium-112692497991222/?ti=as" target="_blank" class="a-footer-social">
+            <a href="https://www.facebook.com/Hisarlı-Ahmet-Symposium-112692497991222/?ti=as" target="_blank"
+               class="a-footer-social">
                 <img alt="facebook" src="img/social/logo-facebook-white.svg"/>
             </a>
             &nbsp;

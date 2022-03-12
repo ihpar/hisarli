@@ -1,19 +1,12 @@
 <?php
-
 if (!$is_secure) {
-
     exit(0);
-
 }
-
 ?>
 
 <div class="menu-container" id="top">
-
     <nav>
-
-        <!-- Hamburger -->
-
+        <!-- Mobil menu -->
         <div id="dv-spacer"></div>
 
         <div id="menuToggle">
@@ -32,9 +25,11 @@ if (!$is_secure) {
                     <li style="background-color: #D80027;">
                         <a href="abstract-submission.php"><?php echo($lang_global["ozet_gonderim"][$pref_lang]); ?></a>
                     </li>
+
                     <li class="dropdown">
                         <a href="index.php#duyurular"><?php echo($lang_global["duyurular"][$pref_lang]); ?></a>
                     </li>
+
                     <li>
                         <div class="li-mobile-section-header"><?php echo($lang_global["ana_sayfa"][$pref_lang]); ?></div>
                     </li>
@@ -89,14 +84,16 @@ if (!$is_secure) {
                         <div class="li-mobile-section-header"><?php echo($lang_global["sempozyum"][$pref_lang]); ?></div>
                     </li>
 
-                    <!--<li><a href="accepted.php"><?php echo($lang_global["kabul edilenler"][$pref_lang]); ?></a>
-          </li>-->
+                    <!--
+                    <li><a href="accepted.php"><?php echo($lang_global["kabul edilenler"][$pref_lang]); ?></a>
+                    </li>
 
-                    <!--<li><a href="schedule.php"><?php echo($lang_global["program"][$pref_lang]); ?></a>
-          </li>-->
+                    <li><a href="schedule.php"><?php echo($lang_global["program"][$pref_lang]); ?></a>
+                    </li>
 
-                    <!--<li><a href="abstract-book.php"><?php echo($lang_global["ozet_kitapcik"][$pref_lang]); ?></a>
-          </li>-->
+                    <li><a href="abstract-book.php"><?php echo($lang_global["ozet_kitapcik"][$pref_lang]); ?></a>
+                    </li>
+                    -->
 
                     <li>
                         <a href="past-symposiums.php"><?php echo($lang_global["gecmis_sempozyumlar"][$pref_lang]); ?></a>
@@ -106,8 +103,10 @@ if (!$is_secure) {
                         <a href="organization-chart.php"><?php echo($lang_global["organizasyon_semasi"][$pref_lang]); ?></a>
                     </li>
 
-                    <!-- <li><a href="paper-guidelines.php"><?php echo($lang_global["tam_metin_yazim_kurallari"][$pref_lang]); ?></a>
-          </li>-->
+                    <!--
+                    <li><a href="paper-guidelines.php"><?php echo($lang_global["tam_metin_yazim_kurallari"][$pref_lang]); ?></a>
+                    </li>
+                    -->
 
                     <li>
                         <div class="li-mobile-section-header"><?php echo($lang_global["kurullar"][$pref_lang]); ?></div>
@@ -125,25 +124,32 @@ if (!$is_secure) {
                         <a href="organizing-committee.php"><?php echo($lang_global["duzenleme_kurulu"][$pref_lang]); ?></a>
                     </li>
 
-                    <!--<li><div class="li-mobile-section-header"><?php echo($lang_global["etkinlikler"][$pref_lang]); ?></div></li>
+                    <!--
+                    <li><div class="li-mobile-section-header"><?php echo($lang_global["etkinlikler"][$pref_lang]); ?></div></li>
 
-          <li><a href="concerts.php"><?php echo($lang_global["konserler"][$pref_lang]); ?></a></li>
+                      <li><a href="concerts.php"><?php echo($lang_global["konserler"][$pref_lang]); ?></a></li>
 
-          <li><a href="conferences.php"><?php echo($lang_global["konferanslar"][$pref_lang]); ?></a></li>
+                      <li><a href="conferences.php"><?php echo($lang_global["konferanslar"][$pref_lang]); ?></a></li>
 
-          <li><a href="workshops.php"><?php echo($lang_global["atolye_calismalari"][$pref_lang]); ?></a></li>
+                      <li><a href="workshops.php"><?php echo($lang_global["atolye_calismalari"][$pref_lang]); ?></a></li>
 
-          <li><a href="panel.php"><?php echo($lang_global["panel"][$pref_lang]); ?></a></li>-->
+                      <li><a href="panel.php"><?php echo($lang_global["panel"][$pref_lang]); ?></a></li>
+                    -->
 
                     <?php if ($pref_lang == "tr") { ?>
-            <li><div class="li-mobile-section-header"><?php echo($lang_global["genclik_seminerleri"][$pref_lang]); ?></div></li>
+                        <li>
+                            <div class="li-mobile-section-header"><?php echo($lang_global["genclik_seminerleri"][$pref_lang]); ?></div>
+                        </li>
 
-                <li> <a href="youth-seminars-announcement.php"><?php echo($lang_global["genclik_seminerleri-duyuru"][$pref_lang]); ?></a>
-                </li>
-                <li><a href="youth-seminars-general.php"><?php echo($lang_global["genclik_seminerleri-general"][$pref_lang]); ?></a>
-          </li>
+                        <li>
+                            <a href="youth-seminars-announcement.php"><?php echo($lang_global["genclik_seminerleri-duyuru"][$pref_lang]); ?></a>
+                        </li>
+                        <li>
+                            <a href="youth-seminars-general.php"><?php echo($lang_global["genclik_seminerleri-general"][$pref_lang]); ?></a>
+                        </li>
 
-          <li><!--<a
+                        <!--
+                        <li><a
                 href="youth-seminars-invited.php"><?php echo($lang_global["genclik_seminerleri-invited"][$pref_lang]); ?></a>
           </li>
 
@@ -154,12 +160,14 @@ if (!$is_secure) {
 
           <li><a
                 href="youth-seminars-program.php"><?php echo($lang_global["genclik_seminerleri-program"][$pref_lang]); ?></a>
-          </li>-->
-            <?php } ?>
+          </li>
+-->
+                    <?php } ?>
 
                     <li>
                         <div class="li-mobile-section-header"><?php echo($lang_global["iletisim"][$pref_lang]); ?></div>
                     </li>
+
                     <li>
                         <a href="contact.php"><?php echo($lang_global["iletisim"][$pref_lang]); ?></a>
                     </li>
@@ -169,17 +177,22 @@ if (!$is_secure) {
             </div>
 
         </div>
+        <!-- Eof mobil menu -->
 
-        <!-- Eof Hamburger -->
+        <!-- ////////////////////////////////////////////////// -->
+
+        <div style="height: 56px; align-self: center;">
+            <a href="logo.php" target="_blank">
+                <img src="img/logo/logo_small.png" style="height: 100%;"/>
+            </a>
+        </div>
 
         <!-- Masaustu Menu -->
 
         <ul class="pc-menu">
 
             <li class="dropdown">
-
                 <a href="index.php"><?php echo($lang_global["ana_sayfa"][$pref_lang]); ?></a>
-
             </li>
 
             <li class="dropdown">
@@ -252,26 +265,30 @@ if (!$is_secure) {
 
                 <ul class="dropdown_menu rot-x-menu">
 
-                    <!--<li class="dropdown_item-1"><a
-                href="accepted.php"><?php echo($lang_global["kabul edilenler"][$pref_lang]); ?></a>
-          </li>-->
+                    <!--
+                    <li class="dropdown_item-1"><a
+                        href="accepted.php"><?php echo($lang_global["kabul edilenler"][$pref_lang]); ?></a>
+                  </li>
 
-                    <!--<li class="dropdown_item-2"><a href="schedule.php"><?php echo($lang_global["program"][$pref_lang]); ?></a>
-          </li>-->
+                    <li class="dropdown_item-2"><a href="schedule.php"><?php echo($lang_global["program"][$pref_lang]); ?></a>
+                    </li>
 
-                    <!--<li class="dropdown_item-3"><a
-                href="abstract-book.php"><?php echo($lang_global["ozet_kitapcik"][$pref_lang]); ?></a>
-          </li>-->
+                    <li class="dropdown_item-3"><a
+                        href="abstract-book.php"><?php echo($lang_global["ozet_kitapcik"][$pref_lang]); ?></a>
+                  </li>
+                    -->
 
                     <li class="dropdown_item-4">
                         <a href="past-symposiums.php"><?php echo($lang_global["gecmis_sempozyumlar"][$pref_lang]); ?></a>
                     </li>
+
                     <li class="dropdown_item-5">
                         <a href="organization-chart.php"><?php echo($lang_global["organizasyon_semasi"][$pref_lang]); ?></a>
                     </li>
+
                     <!--<li class="dropdown_item-6"><a
                         href="paper-guidelines.php"><?php echo($lang_global["tam_metin_yazim_kurallari"][$pref_lang]); ?></a>
-            </li>-->
+                    </li>-->
 
                 </ul>
 
@@ -322,38 +339,38 @@ if (!$is_secure) {
 
             <!--<li class="dropdown_item-4"><a
                 href="panel.php"><?php echo($lang_global["panel"][$pref_lang]); ?></a></li>
+            -->
 
-        </ul>
+            <?php if ($pref_lang == "tr") { ?>
+                <li class="dropdown">
 
-      </li>-->
+                    <?php echo($lang_global["genclik_seminerleri"][$pref_lang]); ?>
 
-        <?php if ($pref_lang == "tr") { ?>
-        <li class="dropdown">
+                    <ul class="dropdown_menu rot-x-menu">
 
-          <?php echo($lang_global["genclik_seminerleri"][$pref_lang]); ?>
+                        <li class="dropdown_item-1"><a
+                                    href="youth-seminars-announcement.php"><?php echo($lang_global["genclik_seminerleri-duyuru"][$pref_lang]); ?></a>
+                        </li>
 
-        <ul class="dropdown_menu rot-x-menu">
+                        <li class="dropdown_item-2"><a
+                                    href="youth-seminars-general.php"><?php echo($lang_global["genclik_seminerleri-general"][$pref_lang]); ?></a>
+                        </li>
 
-            <li class="dropdown_item-1"><a
-                        href="youth-seminars-announcement.php"><?php echo($lang_global["genclik_seminerleri-duyuru"][$pref_lang]); ?></a>
-            </li>
-          <li class="dropdown_item-2"><a
-                href="youth-seminars-general.php"><?php echo($lang_global["genclik_seminerleri-general"][$pref_lang]); ?></a>
-          </li>
-            <li class="dropdown_item-2"><a
-                        href="youth-seminars-abstractguidelines.php"><?php echo($lang_global["genclik_seminerleri-abstractguidelines"][$pref_lang]); ?></a>
-            </li>
-            <!--<li class="dropdown_item-3"><a
+                        <li class="dropdown_item-2"><a
+                                    href="youth-seminars-abstractguidelines.php"><?php echo($lang_global["genclik_seminerleri-abstractguidelines"][$pref_lang]); ?></a>
+                        </li>
+                        <!--<li class="dropdown_item-3"><a
                 href="youth-seminars-invited.php"><?php echo($lang_global["genclik_seminerleri-invited"][$pref_lang]); ?></a>
-          </li>-->
-            <!--<li class="dropdown_item-4"><a
+          </li>
+          <li class="dropdown_item-4"><a
                 href="youth-seminars-accepted.php"><?php echo($lang_global["genclik_seminerleri-kabul-edilenler"][$pref_lang]); ?></a>
           </li>
           <li class="dropdown_item-5"><a
                 href="youth-seminars-program.php"><?php echo($lang_global["genclik_seminerleri-program"][$pref_lang]); ?></a>
           </li>-->
 
-        </ul>
+                    </ul>
+                </li>
             <?php } ?>
 
             <li class="dropdown">
@@ -371,6 +388,8 @@ if (!$is_secure) {
 
         <!-- Eof Masaustu Menu -->
 
+        <!-- ////////////////////////////////////////////////// -->
+
         <!-- Dil Secimi -->
 
         <ul class="ul-flags">
@@ -385,7 +404,5 @@ if (!$is_secure) {
         </ul>
 
         <!-- Eof Dil Secimi -->
-
     </nav>
-
 </div>
