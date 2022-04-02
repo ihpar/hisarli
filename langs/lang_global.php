@@ -401,6 +401,13 @@ $lang_global = [
     "tr" => "DUYURULAR"
 
 ],
+    "cautionbar" => [
+
+        "en" => "YouTube LIVE",
+
+        "tr" => "YouTube CANLI YAYIN"
+
+    ],
 
 ];
 

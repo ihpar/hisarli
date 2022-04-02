@@ -277,8 +277,8 @@ $lang_biographies = [
                 ",
         "tr" => "
             <p>\"Dört Mevsim Üç Yurt\"</p>
-            <p>1944 Yılında Dünya’ya gelir. 1966 Yılında öğretmenliğe başlar. Teke Yöresi çalışmaları ile
-            tanınır. Sempozyum ve kongrelerde bildiriler sunar, ödüller alır. Yöresini adım adım tarayan
+            <p>1944 Yılında Dünya’ya geldi. 1966 Yılında öğretmenliğe başladı. Teke Yöresi çalışmaları ile
+            tanınır. Sempozyum ve kongrelerde bildiriler sunmuş, ödüller almıştır. Yöresini adım adım tarayan
             Ekinci, kişisel arşivini lisansüstü eğitim alan gençlere açarak önemli katkılar sağlamış ve Teke
             Yöresi sazlarının birçoğunu Süleyman Demirel Üniversitesi Müzik Kültürleri Araştırma
             Merkezine kazandırmıştır.</p>

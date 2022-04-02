@@ -2,7 +2,7 @@
 if (!$is_secure) {
     exit(0);
 }
-$css_ver = "?v=15";
+$css_ver = "?v=16";
 
 require_once "langs/lang_header-includes.php";
 ?>

@@ -9,6 +9,61 @@ $lang_announcements = [
         "en" => "16.11.2021: The Information Visits for 12th International Hisarlı Ahmet Symposium were Held",
         "tr" => "16.11.2021: Uluslararası Hisarlı Ahmet Sempozyumu Bilgilendirme Ziyaretleri Yapıldı"
     ],
+    "konser_baslik" => [
+        "en" => "12th International Hisarlı Ahmet Symposium continues to be promoted in concerts...",
+        "tr" => "12. Uluslararası Hisarlı Ahmet Sempozyumu konserlerle tanıtılmaya devam ediyor..."
+    ],
+    "konser" => [
+
+        "en" => "
+           <p> <a href=\"announcements/hisarlıtanıtımkonser.jpeg\">8 April 2022, Kütahya Health Sciences University</a></p>
+               ",
+        "tr" => "
+           <p><a href=\"announcements/hisarlıtanıtımkonser.jpeg\">8 Nisan 2022, Kütahya Sağlık Bilimleri Üniversitesi</a></p>
+                       
+                "
+    ],
+    "hybrid_baslik" => [
+        "en" => "12. International Hisarlı Ahmet Symposium will be held in the hybrid mode: online and on-site in conference hall.",
+        "tr" => "12. Uluslararası Hisarlı Ahmet Sempozyumu bu yıl karma/hibrit (yüzyüze+çevrimiçi) yapılacaktır."
+    ],
+    "hybrid" => [
+
+        "en" => "
+           <p>Although the effect of the measures taken has decreased considerably compared to the previous years, 
+           this year's 12th International Hisarlı Ahmet Symposium sessions will be held as HYBRID mode (online + face-to-face (onset on conference hall))
+           to make a positive contribution by providing as little mobility as possible in transportation to CLIMATE,
+           where the Covid epidemic continues globally, and we are feeling its increasingly negative change.</p>
+           <p>All participants whose papers are accepted will be asked by our secretariat which option (online or onset)
+           they will participate in the symposium through the communication channels after the acceptance.Participants are kindly requested to pay
+           attention to <a href=\"presentation-guidelines.php\">the presentation guidelines.</a></p>
+               ",
+        "tr" => "
+           <p>Alınan önlemlerle etkisi geçtiğimiz yıllara göre bir hayli azalsa da Covid salgınının küresel olarak halen devam ediyor olması
+           ve giderek olumsuz değişimini hissettiğimiz İKLİM’e, ulaşımda olabildiğince az sayıda hareketlilik
+           sağlayarak olumlu bir katkı sunabilmek amacıyla bu yılki 12. Uluslararası Hisarlı Ahmet Sempozyumu oturumları KARMA/HİBRİT
+           (çevrimiçi+yüz yüze) olarak düzenlenecektir. </p>
+           <p>Bildirisi kabul edilen tüm katılımcılara hangi seçenekle (yüz yüze veya çevrimiçi) sempozyuma katılacağı sekreteryamız tarafından kabul sonrası iletişim kanalları üzerinden sorulacak olup,
+           katılımcılarımızın <a href=\"presentation-guidelines.php\">bildiri sunum kurallarına</a> dikkat etmeleri önemle rica olunur.</p>
+                       
+                "
+    ],
+    "basından_baslik" => [
+        "en" => "22.03.2022: 12th International Hisarlı Ahmet Symposium continues to be promoted in the press...",
+        "tr" => "22.03.2022: 12. Uluslararası Hisarlı Ahmet Sempozyumu basında tanıtılmaya devam ediyor."
+    ],
+    "basından" => [
+
+        "en" => "
+           <p><a href=\"announcements/trthabervideo.mp4\">TRT Haber</a></p>
+           <p><a href=http://t.ly/PSsN>Star</a></p>
+               
+                ",
+        "tr" => "
+           <p>Sempozyum tarihi yaklaşırken, 'Müzik ve İklim' temalı 12. Uluslararası Hisarlı Ahmet Sempozyumu'nun basın tanıtımları tüm hızıyla devam ediyor: TRT Haber için <a href=\"announcements/trthabervideo.mp4\">tıklayınız</a>. Star gazetesi için <a href=http://t.ly/PSsN>tıklayınız.</a></p>
+                       
+                "
+    ],
     "bilgilendirme_ziyaret" => [
 
         "en" => "
@@ -44,7 +99,8 @@ $lang_announcements = [
             We congratulate and thank our colleagues who took part in the event, which our Minister Murat Kurum also listened to.</p>",
         "tr" => "<p>Çanakkale Onsekiz Mart Üniversitesi Devlet Konservatuvarı ile Kütahya Güzel Sanatlar Derneği iş birliğiyle gerçekleşecek olan 12. Uluslararası Hisarlı Ahmet Sempozyumu, Konya’da Çevre Şehircilik ve İklim Değişikliği Bakanlığınca düzenlenen İklim Şurası’nda tanıtıldı. Sempozyum
 bilim kurulu başkanımız Prof. Dr. Lilian Maria Tonella Tüzün “Müzik ve İklim” konusunda sunumlarını yaparken; Çanakkale 18 Mart Üniversitesi Devlet Konservatuvarı sanatçıları Öğr. Gör. Sedat Çılgın ve Dr. Öğr. Üyesi
-İlter Cebeci “Doğa ve İklim” temalı türküler seslendirdiler. Bakanımız Murat Kurum’unda dinlediği etkinlikte yer alan meslektaşlarımızı kutluyor, teşekkür ediyoruz.</p>"
+İlter Cebeci “Doğa ve İklim” temalı türküler seslendirdiler. Bakanımız Murat Kurum’unda dinlediği etkinlikte yer alan meslektaşlarımızı kutluyor,
+teşekkür ediyoruz... Sunum ve konser için <a href=https://www.youtube.com/watch?v=gTsJv-iQ5H0>TIKLAYINIZ.</a></p>"
     ],
 
     "ilk_toplanti_baslik" => [

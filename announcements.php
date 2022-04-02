@@ -70,6 +70,30 @@ require_once "langs/lang_announcements.php";
             <?php require_once("modules/banner.php"); ?>
 
             <!-- Icerik -->
+            <section class="pad-tb-24" id="hybrid">
+                <div class="pad-5-per">
+                    <img src="announcements/hybrid.jpg" class="img-full">
+                    <h4 class="sec-h4"><?php echo($lang_announcements["hybrid_baslik"][$pref_lang]); ?></h4>
+                    <?php echo($lang_announcements["hybrid"][$pref_lang]); ?>
+                </div>
+                <div class="clear-float"></div>
+            </section>
+            <section class="pad-tb-24" id="konser">
+                <div class="pad-5-per">
+                    <img src="announcements/konser.jpg" class="img-full">
+                    <h4 class="sec-h4"><?php echo($lang_announcements["konser_baslik"][$pref_lang]); ?></h4>
+                    <?php echo($lang_announcements["konser"][$pref_lang]); ?>
+                </div>
+                <div class="clear-float"></div>
+            </section>
+            <section class="pad-tb-24" id="basından">
+                <div class="pad-5-per">
+                    <img src="announcements/basından.jpg" class="img-full">
+                    <h4 class="sec-h4"><?php echo($lang_announcements["basından_baslik"][$pref_lang]); ?></h4>
+                    <?php echo($lang_announcements["basından"][$pref_lang]); ?>
+                </div>
+                <div class="clear-float"></div>
+            </section>
             <section class="pad-tb-24" id="iklimsura">
                 <div class="pad-5-per">
                     <img src="announcements/iklimsura.jpg" class="img-full">
