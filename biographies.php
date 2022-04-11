@@ -88,7 +88,7 @@ require_once "langs/lang_biographies.php";
                 <div class="clear-float"></div>
             </section>
             -->
-            
+
             <section class="pad-tb-24" id="allen">
                 <div class="pad-5-per">
                     <img src="img/people/allen.jpg" class="img-full">
@@ -195,7 +195,52 @@ require_once "langs/lang_biographies.php";
                 </div>
             </section>
 
-            <section class="pad-tb-24 grey-bg" id="lilian">
+            <section class="pad-tb-24 grey-bg" id="banjunrong">
+                <div class="pad-5-per">
+                    <img src="img/people/banjunrong.jpg" class="img-full">
+                    <h3 class="sec-h3">Ban Junrong</h3>
+                    <?php echo($lang_biographies["Ban_Bio"][$pref_lang]); ?>
+                </div>
+                <div class="clear-float"></div>
+                <div class="center-text sec-h3">
+                    <a href="#top"
+                       class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                        <i class="material-icons">arrow_upward</i>
+                    </a>
+                </div>
+            </section>
+
+            <section class="pad-tb-24" id="hangsu">
+                <div class="pad-5-per">
+                    <img src="img/people/hangsu.jpg" class="img-full">
+                    <h3 class="sec-h3">Hang Su</h3>
+                    <?php echo($lang_biographies["Hang_Bio"][$pref_lang]); ?>
+                </div>
+                <div class="clear-float"></div>
+                <div class="center-text sec-h3">
+                    <a href="#top"
+                       class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                        <i class="material-icons">arrow_upward</i>
+                    </a>
+                </div>
+            </section>
+
+            <section class="pad-tb-24 grey-bg" id="wanzhonghua">
+                <div class="pad-5-per">
+                    <img src="img/people/wanzhonghua.jpg" class="img-full">
+                    <h3 class="sec-h3">Wan Zhonghua</h3>
+                    <?php echo($lang_biographies["Wan_Bio"][$pref_lang]); ?>
+                </div>
+                <div class="clear-float"></div>
+                <div class="center-text sec-h3">
+                    <a href="#top"
+                       class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                        <i class="material-icons">arrow_upward</i>
+                    </a>
+                </div>
+            </section>
+
+            <section class="pad-tb-24" id="lilian">
                 <div class="pad-5-per">
                     <img src="img/people/lilian.jpg" class="img-full">
                     <h3 class="sec-h3">Lilian Maria Tonella Tüzün</h3>
