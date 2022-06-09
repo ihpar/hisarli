@@ -86,7 +86,7 @@ $lang_global = [
 
         "en" => "Abstracts Book",
 
-        "tr" => "Özet Kitapçığı"
+        "tr" => "Özet Kitabı"
 
     ],
 
@@ -241,6 +241,13 @@ $lang_global = [
         "tr" => "Etkinlikler"
 
     ],
+    "takvim" => [
+
+        "en" => "Activities Calendar",
+
+        "tr" => "Etkinlikler Takvimi"
+
+    ],
 
     "genclik_seminerleri" => [
 
@@ -284,7 +291,7 @@ $lang_global = [
     ],
     "genclik_seminerleri-kabul-edilenler" => [
 
-        "en" => "Accepted Papers",
+        "en" => "Accepted Presentations",
 
         "tr" => "Kabul Edilen Bildiriler"
 
@@ -346,9 +353,9 @@ $lang_global = [
 
     ],
 
-    "konferanslar" => [
+    "konferans" => [
 
-        "en" => "Conferences",
+        "en" => "Conference",
 
         "tr" => "Konferans"
 
@@ -356,7 +363,7 @@ $lang_global = [
 
     "kabul edilenler" => [
 
-        "en" => "Accepted Papers",
+        "en" => "Accepted Presentations",
 
         "tr" => "Kabul Edilen Bildiriler"
 
@@ -364,17 +371,31 @@ $lang_global = [
 
     "panel" => [
 
-        "en" => "Panels",
+        "en" => "Panel/Round Table",
 
-        "tr" => "Panel"
+        "tr" => "Panel/Açık Oturum"
 
     ],
 
     "atolye_calismalari" => [
 
-        "en" => "Workshops",
+        "en" => "Workshop",
 
         "tr" => "Atölye Çalışması"
+
+    ],
+    "sergi" => [
+
+        "en" => "Exhibition",
+
+        "tr" => "Sergi"
+
+    ],
+    "soylesi" => [
+
+        "en" => "Conversation",
+
+        "tr" => "Söyleşi"
 
     ],
 
@@ -393,21 +414,28 @@ $lang_global = [
         "tr" => "Özet Yazım Kuralları"
 
     ],
+    "genclik_seminerleri-kurallar" => [
+
+        "en" => "Rules and Notes",
+
+        "tr" => "Kurallar ve Notlar"
+
+    ],
 
     "duyurular" => [
 
-    "en" => "ANNOUNCEMENTS",
+        "en" => "ANNOUNCEMENTS",
 
-    "tr" => "DUYURULAR"
-
-],
-    "cautionbar" => [
-
-        "en" => "YouTube LIVE",
-
-        "tr" => "YouTube CANLI YAYIN"
+        "tr" => "DUYURULAR"
 
     ],
+    "cautionbar" => [
+
+        "en" => '<a href="https://www.youtube.com/channel/UC6i6FHRYVmFfwjgX_YFcXmQ"><span class="blink">YouTube Live (Panel - 17.30)</span></a>',
+
+        "tr" => '<a href="https://www.youtube.com/channel/UC6i6FHRYVmFfwjgX_YFcXmQ"><span class="blink">YouTube Canlı Yayın (Panel - 17.30)</span></a>'
+
+    ]
 
 ];
 

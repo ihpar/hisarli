@@ -104,8 +104,9 @@ require_once "langs/lang_panel.php";
 
             <!-- Icerik -->
             <section class="pad-tb-24">
+                <h3 class="center-text sec-h3"><?php echo($lang_panel["panel"][$pref_lang]); ?></h3>
                 <div class="cerceve">
-                    <h3 class="center-text sec-h3"><?php echo($lang_panel["panel"][$pref_lang]); ?></h3>
+                    <h3 class="center-text sec-h3">#1</h3>
                     <div class="mdl-grid" style="justify-content: center">
                         <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
 
@@ -143,7 +144,7 @@ require_once "langs/lang_panel.php";
             <div class="mdl-card mdl-shadow--2dp speaker-card">
                 <div class="card-image" style="background-image: url('img/people/wanzhonghua.jpg')"></div>
                 <div class="card-footer">
-                    <a class="speaker-name" href="biographies.php#wanzhonghua">Wan ZHONGHUA</a>
+                    <a class="speaker-name" href="biographies.php#wanzhonghua">Wan ZHONGRU</a>
                     <span class="conf-date">South China Normal University, China</span>
         </a>
     </div>
@@ -155,16 +156,15 @@ require_once "langs/lang_panel.php";
 <h5 class="center-text sec-h3"><?php echo($lang_panel["panel1baslik"][$pref_lang]); ?></h5>
 <h6 class="center-text sec-h3"><?php echo($lang_panel["panel1continue"][$pref_lang]); ?></h6>
 <h6 class="center-text sec-h3"><?php echo($lang_panel["panel1tarih"][$pref_lang]); ?></h6>
-<p class="center-text sec-h3"><a href="https://www.youtube.com/channel/UC6i6FHRYVmFfwjgX_YFcXmQ" target="_blank"
-                                 class="a-footer-social"><img alt="youtube" src="img/social/logo-youtube.svg"/></p>
+<p class="center-text sec-h3"><a href="" target="_blank" class="a-footer-social"><img alt="zoom" src="img/social/logo-zoom.svg"/></a> +
+    <a href="https://www.youtube.com/channel/UC6i6FHRYVmFfwjgX_YFcXmQ" target="_blank" class="a-footer-social"><img alt="youtube" src="img/social/logo-youtube.svg"/></a></p>
 </a>
 <p class="center-text sec-h3"><?php echo($lang_panel["panel1link"][$pref_lang]); ?></p>
 </div>
 </section>
 <section class="pad-tb-24">
     <div class="cerceve">
-        <h3 class="center-text sec-h3"><?php echo($lang_panel["panel"][$pref_lang]); ?></h3>
-
+        <h3 class="center-text sec-h3">#2</h3>
         <div class="mdl-grid" style="justify-content: center">
             <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
 
@@ -212,9 +212,10 @@ require_once "langs/lang_panel.php";
     </div>
     <p>
     <h5 class="center-text sec-h3"><?php echo($lang_panel["panel2baslik"][$pref_lang]); ?></h5>
+    <h6 class="center-text sec-h3"><?php echo($lang_panel["panel2continue"][$pref_lang]); ?></h6>
     <h6 class="center-text sec-h3"><?php echo($lang_panel["panel2tarih"][$pref_lang]); ?></h6>
-    <p class="center-text sec-h3"><a href="https://www.youtube.com/channel/UC6i6FHRYVmFfwjgX_YFcXmQ" target="_blank"
-                                     class="a-footer-social"><img alt="youtube" src="img/social/logo-youtube.svg"/></p>
+    <p class="center-text sec-h3"><a href="" target="_blank" class="a-footer-social"><img alt="zoom" src="img/social/logo-zoom.svg"/></a> +
+        <a href="https://www.youtube.com/channel/UC6i6FHRYVmFfwjgX_YFcXmQ" target="_blank" class="a-footer-social"><img alt="youtube" src="img/social/logo-youtube.svg"/></a></p>
     </a>
     <p class="center-text sec-h3"><?php echo($lang_panel["panel1link"][$pref_lang]); ?></p>
     </div>
@@ -222,8 +223,7 @@ require_once "langs/lang_panel.php";
 </section>
 <section class="pad-tb-24">
     <div class="cerceve">
-        <h3 class="center-text sec-h3"><?php echo($lang_panel["panel"][$pref_lang]); ?></h3>
-
+        <h3 class="center-text sec-h3">#3</h3>
         <div class="mdl-grid" style="justify-content: center">
             <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
 
@@ -247,7 +247,7 @@ require_once "langs/lang_panel.php";
             <div class="mdl-card mdl-shadow--2dp speaker-card">
                 <div class="card-image" style="background-image: url('img/people/akin.jpg')"></div>
                 <div class="card-footer">
-                    <a class="speaker-name" href="biographies.php#cohen">Akın Oktay</a>
+                    <a class="speaker-name" href="biographies.php#cohen">Akın Oktav</a>
                     <span class="conf-date">Alanya Alaaddin Keykubat Üniversitesi</span>
         </a>
     </div>
@@ -273,8 +273,8 @@ require_once "langs/lang_panel.php";
     <h5 class="center-text sec-h3"><?php echo($lang_panel["panel3baslik"][$pref_lang]); ?></h5>
     <h6 class="center-text sec-h3"><?php echo($lang_panel["panel3tarih"][$pref_lang]); ?></h6>
     <h6 class="center-text sec-h3"><?php echo($lang_panel["panel3continue"][$pref_lang]); ?></h6>
-    <p class="center-text sec-h3"><a href="https://www.youtube.com/channel/UC6i6FHRYVmFfwjgX_YFcXmQ" target="_blank"
-                                     class="a-footer-social"><img alt="youtube" src="img/social/logo-youtube.svg"/></p>
+    <p class="center-text sec-h3"><a href="" target="_blank" class="a-footer-social"><img alt="zoom" src="img/social/logo-zoom.svg"/></a> +
+        <a href="https://www.youtube.com/channel/UC6i6FHRYVmFfwjgX_YFcXmQ" target="_blank" class="a-footer-social"><img alt="youtube" src="img/social/logo-youtube.svg"/></a></p>
     </a>
     <p class="center-text sec-h3"><?php echo($lang_panel["panel1link"][$pref_lang]); ?></p>
     </div>
