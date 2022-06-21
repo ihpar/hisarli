@@ -12,6 +12,7 @@ require_once "lang_abstracts_book.php";
 require_once "lang_calendar.php";
 require_once "lang_boards.php";
 require_once "lang_scientific-committee.php";
+require_once "lang_panel.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -146,6 +147,49 @@ require_once "lang_scientific-committee.php";
             margin: 0 auto;
             width: 100%;
             white-space: initial;
+        }
+
+        .card-image {
+            background-color: rgba(0, 0, 10, 0.1);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center 0;
+            width: 100%;
+            height: 0;
+            padding-bottom: 110%;
+        }
+
+        .card-footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .speaker-card {
+            background-color: rgba(0, 0, 10, 0.1);
+            width: 100%;
+        }
+
+        .speaker-name {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .conf-title {
+            display: block;
+            font-size: 16px;
+            margin: 4px;
+        }
+
+        .conf-date {
+            display: block;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -386,6 +430,7 @@ require_once "lang_scientific-committee.php";
 
             <!-- Konusmacilar -->
             <section class="pad-tb-24">
+                <!-- Davetli Konusmacilar -->
                 <h3 class="center-text sec-h3"><?php echo($lang_index["davetli_konusmacilar"][$pref_lang]); ?></h3>
                 <div class="mdl-grid" style="justify-content: center">
                     <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
@@ -412,6 +457,104 @@ require_once "lang_scientific-committee.php";
                             <div class="mdl-card__actions">Abdurrahman Ekinci</div>
                         </div>
                     </div>
+                </div>
+                <!-- Davetli Konusmacilar Panel -->
+                <h3 class="center-text sec-h3"><?php echo($lang_panel["panel"][$pref_lang]); ?></h3>
+                <div class="mdl-grid" style="justify-content: center">
+
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
+                        <div class="mdl-card mdl-shadow--2dp speaker-card">
+                            <div class="card-image" style="background-image: url('img/people/banjunrong.jpg')"></div>
+                            <div class="card-footer">
+                                <span class="speaker-name">Ban JUNRONG</span>
+                                <span class="conf-title">(chair)</span>
+                                <span class="conf-date">School of Art of Aeronautics and Astronautics Nanjing University, China</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
+                        <div class="mdl-card mdl-shadow--2dp speaker-card">
+                            <div class="card-image" style="background-image: url('img/people/hangsu.jpg')"></div>
+                            <div class="card-footer">
+                                <span class="speaker-name">Hang SU</span>
+                                <span class="conf-date">School of Art of Aeronautics and Astronautics Nanjing University, China</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
+                        <div class="mdl-card mdl-shadow--2dp speaker-card">
+                            <div class="card-image" style="background-image: url('img/people/wanzhonghua.jpg')"></div>
+                            <div class="card-footer">
+                                <span class="speaker-name">Wan ZHONGRU</span>
+                                <span class="conf-date">South China Normal University, China</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
+                        <div class="mdl-card mdl-shadow--2dp speaker-card">
+                            <div class="card-image" style="background-image: url('img/people/marisa.jpg')"></div>
+                            <div class="card-footer">
+                                <span class="speaker-name">Marisa FONTERRADA</span>
+                                <span class="conf-title">(chair)</span>
+                                <span class="conf-date">Sao Paulo State University, Brazil</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
+                        <div class="mdl-card mdl-shadow--2dp speaker-card">
+                            <div class="card-image" style="background-image: url('img/people/andreacohen.jpg')"></div>
+                            <div class="card-footer">
+                                <span class="speaker-name">Andrea COHEN</span>
+                                <span class="conf-date">Radio France, Argentina</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
+                        <div class="mdl-card mdl-shadow--2dp speaker-card">
+                            <div class="card-image" style="background-image: url('img/people/thiago.jpg')"></div>
+                            <div class="card-footer">
+                                <span class="speaker-name">Thiago CURY</span>
+                                <span class="conf-date">Strange Music Festival Director, Brazil</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
+                        <div class="mdl-card mdl-shadow--2dp speaker-card">
+                            <div class="card-image" style="background-image: url('img/people/abdullah.png')"></div>
+                            <div class="card-footer">
+                                <span class="speaker-name">Abdullah Akat</span>
+                                <span class="conf-title">(oturum başkanı)</span>
+                                <span class="conf-date">İstanbul Üniversitesi</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
+                        <div class="mdl-card mdl-shadow--2dp speaker-card">
+                            <div class="card-image" style="background-image: url('img/people/akin.jpg')"></div>
+                            <div class="card-footer">
+                                <span class="speaker-name">Akın Oktav</span>
+                                <span class="conf-date">Alanya Alaaddin Keykubat Üniversitesi</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
+                        <div class="mdl-card mdl-shadow--2dp speaker-card">
+                            <div class="card-image" style="background-image: url('img/people/alitan.jpg')"></div>
+                            <div class="card-footer">
+                                <span class="speaker-name">Ali Tan</span>
+                                <span class="conf-date">İstanbul Medeniyet Üniversitesi</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
